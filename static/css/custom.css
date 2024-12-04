@@ -1,0 +1,30 @@
+﻿.well {
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /*f4f5f7*/
+    border-radius: 0;
+}
+
+.wk-panel-hover {
+    padding: 21px;
+    color: #444;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+
+
+/*.uk-checkbox, .uk-input, .uk-radio, .uk-select, .uk-textarea, .uneditable-input:not([class*="uk-"]), input[type="checkbox"]:not([class*="uk-"]), input[type="color"]:not([class*="uk-"]), input[type="date"]:not([class*="uk-"]), input[type="datetime-local"]:not([class*="uk-"]), input[type="datetime"]:not([class*="uk-"]), input[type="email"]:not([class*="uk-"]), input[type="month"]:not([class*="uk-"]), input[type="number"]:not([class*="uk-"]), input[type="password"]:not([class*="uk-"]), input[type="radio"]:not([class*="uk-"]), input[type="search"]:not([class*="uk-"]), input[type="tel"]:not([class*="uk-"]), input[type="text"]:not([class*="uk-"]), input[type="time"]:not([class*="uk-"]), input[type="url"]:not([class*="uk-"]), input[type="week"]:not([class*="uk-"]), select:not([class*="uk-"]), textarea:not([class*="uk-"]) {
+ 
+        margin-top: 0px;
+ margin-left: -20px;
+}*/
+
+button, input[type="button"], input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"], label, select {
+    cursor: auto;
+}
+
+.input-append .add-on, .input-append .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .add-on, .input-prepend .btn, .input-prepend .btn-group > .dropdown-toggle {
+    vertical-align: middle;
+}

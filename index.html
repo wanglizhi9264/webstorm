@@ -1,0 +1,3480 @@
+﻿<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png" sizes="any">
+                <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+        <meta charset="utf-8" />
+	
+	<meta name="title" content="Attira i tuoi nuovi clienti con i Display da vetrina" />
+	<meta name="metatitle" content="Attira i tuoi nuovi clienti con i Display da vetrina" />
+	<meta name="twitter:title" content="Attira i tuoi nuovi clienti con i Display da vetrina" />
+	<meta name="twitter:description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage." />
+	<meta name="twitter:image" content="https://www.imprinting.info/images/display/signage/hero-samsung-vetrina-04.jpg" />
+	<meta property="og:title" content="Attira i tuoi nuovi clienti con i Display da vetrina" />
+	<meta property="og:description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage." />
+	<meta property="og:url" content="https://www.imprinting.info/display-pubblicitari" />
+	<meta property="og:image" content="https://www.imprinting.info/images/display/signage/hero-samsung-vetrina-04.jpg" />
+	<meta name="description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage." />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Attira i tuoi nuovi clienti con i Display da vetrina</title>
+	<link href="https://www.imprinting.info/component/search/?gad_source=5&amp;gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r39SrLIWdN4kVhqUPNPls4v-fu5syWU9x4h5zUjJjzfHwxnPq2i&amp;Itemid=398&amp;format=opensearch" rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml" />
+	<link href="static/css/hd-counter.css" rel="stylesheet" />
+	<link href="static/css/theme.12.css" rel="stylesheet" />
+	<link href="static/css/custom.css" rel="stylesheet" />
+	<style>
+
+
+.bfClearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.bfFadingClass{
+display:none;
+}
+
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"cdc274263a48bc872bb7a8efd441efc9","system.paths":{"root":"","base":""}}</script>
+	<script src="static/js/mootools-core.js"></script>
+	<script src="static/js/core.js"></script>
+	<script src="static/js/mootools-more.js"></script>
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery-noconflict.js"></script>
+	<script src="static/js/jquery-migrate.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/sweetalert.min.js"></script>
+	<script src="static/js/hd-counter.js" defer></script>
+	<script src="static/js/uikit.min.js"></script>
+	<script src="static/js/uikit-icons-horizon.min.js"></script>
+	<script src="static/js/theme.js"></script>
+	<script>
+<!--
+                    jQuery(document).ready(function()
+                    {
+                            jQuery(".hasTooltip").tooltip({"html": true,"container": "body"});
+                    });
+var JQuery = jQuery;
+
+			var inlineErrorElements = new Array();
+			var bfSummarizers = new Array();
+			var bfDeactivateField = new Array();
+			var bfDeactivateSection = new Array();
+			
+
+                        function bf_validate_nextpage(element, action)
+                        {
+                            if(typeof bfUseErrorAlerts != "undefined"){
+                             JQuery(".bfErrorMessage").html("");
+                             JQuery(".bfErrorMessage").css("display","none");
+                            }
+
+                            error = ff_validation(ff_currentpage);
+                            if (error != "") {
+                               if(typeof bfUseErrorAlerts == ""){
+                                   alert(error);
+                                } else {
+                                   bfShowErrors(error);
+                                }
+                                ff_validationFocus("");
+                            } else {
+                                ff_switchpage(ff_currentpage+1);
+                                self.scrollTo(0,0);
+                            }
+                        }
+
+
+			function bfCheckMaxlength(id, maxlength, showMaxlength){
+				if( JQuery("#ff_elem"+id).val().length > maxlength ){
+					JQuery("#ff_elem"+id).val( JQuery("#ff_elem"+id).val().substring(0, maxlength) );
+				}
+				if(showMaxlength){
+					JQuery("#bfMaxLengthCounter"+id).text( "(" + (maxlength - JQuery("#ff_elem"+id).val().length) + " chars left)" );
+				}
+			}
+			function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty){
+				bfSummarizers.push( { id : id, connectWith : connectWith, type : type, emptyMessage : emptyMessage, hideIfEmpty : hideIfEmpty } );
+			}
+			function bfField(name){
+				var value = "";
+				switch(ff_getElementByName(name).type){
+					case "radio":
+						if(JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "" && typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+							value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+							if(!isNaN(value)){
+								value = Number(value);
+							}
+						}
+						break;
+					case "checkbox":
+					case "select-one":
+					case "select-multiple":
+						var nodeList = document["ff_form70"][""+ff_getElementByName(name).name+""];
+						if(ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined"){
+							if(typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+								value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						} else {
+							var val = "";
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								value = val.substr(0, val.length - 2);
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						}
+						break;
+					default:
+						if(!isNaN(ff_getElementByName(name).value)){
+							value = Number(ff_getElementByName(name).value);
+						} else {
+							value = ff_getElementByName(name).value;
+						}
+				}
+				return value;
+			}
+			function populateSummarizers(){
+				// cleaning first
+
+				for(var i = 0; i < bfSummarizers.length; i++){
+					JQuery("#"+bfSummarizers[i].id).parent().css("display", "");
+					JQuery("#"+bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">"+bfSummarizers[i].emptyMessage+"</span>");
+				}
+				for(var i = 0; i < bfSummarizers.length; i++){
+					var summVal = "";
+					switch(bfSummarizers[i].type){
+						case "bfTextfield":
+						case "bfTextarea":
+						case "bfHidden":
+						case "bfCalendar":
+						case "bfNumberInput":
+                        case "bfCalendarResponsive":
+						case "bfFile":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() != ""){
+								JQuery("#"+bfSummarizers[i].id).text( JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() ).html();
+								var breakableText = JQuery("#"+bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+								if(breakableText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										breakableText = calc(breakableText);
+									}
+								}
+
+								JQuery("#"+bfSummarizers[i].id).html(breakableText);
+								summVal = breakableText;
+							}
+						break;
+						case "bfRadioGroup":
+						case "bfCheckbox":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "undefined"){
+								var theText = JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val();
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+						case "bfCheckboxGroup":
+						case "bfSelect":
+							var val = "";
+							var nodeList = document["ff_form70"]["ff_nm_"+bfSummarizers[i].connectWith+"[]"];
+
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								var theText = val.substr(0, val.length - 2);
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+					}
+
+					if( ( bfSummarizers[i].hideIfEmpty && summVal == "" ) || ( typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_"+bfSummarizers[i].connectWith+"[]"] ) ){
+                        JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+					} else {
+					    JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+					}
+				}
+			}
+
+		    bfToggleFieldsLoaded = false;
+		    bfSectionFieldsDeactivated = false;
+			JQuery(document).ready(function() {
+				if(typeof bfFade != "undefined")bfFade();
+				if(typeof bfRollover != "undefined")bfRollover();
+				if(typeof bfRollover2 != "undefined")bfRollover2();
+				if(typeof bfRegisterToggleFields != "undefined"){ 
+				    bfRegisterToggleFields(); 
+                }else{
+                    bfToggleFieldsLoaded = true;
+                }
+				if(typeof bfDeactivateSectionFields != "undefined"){ 
+				    bfDeactivateSectionFields(); 
+				}else{
+				    bfSectionFieldsDeactivated = true;
+				}
+                if(JQuery.bfvalidationEngine)
+                {
+                    JQuery.bfvalidationEngineLanguage.newLang();
+                    JQuery(".ff_elem").change(
+                        function(){
+                            JQuery.bfvalidationEngine.closePrompt(this);
+                        }
+                    );
+                }
+				JQuery(".bfQuickMode .hasTip").css("color","inherit"); // fixing label text color issue
+				JQuery(".bfQuickMode .bfTooltip").css("color","inherit"); // fixing label text color issue
+                JQuery("input[type=text]").bind("keypress", function(evt) {
+                    if(evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+			});
+		
+//-->
+document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });
+	</script>
+	<link rel="stylesheet" href="static/css/system.css" />
+	<script>UIkit.util.ready(() => {
+              UIkit.lightbox('#my-slider .uk-slider-items');
+      });</script>
+	<script>var $theme = {};</script>
+	<!-- Joomla Facebook Integration Begin -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '389175478706596', {}, {agent: 'pljoomla'});
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="static/picture/fc1677aa3e6c4f9d866915983780fcfa.gif"/>
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- Joomla Facebook Integration end -->
+
+    </head>
+    <body class="">
+	
+	    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNBQV47');</script>
+<!-- End Google Tag Manager -->
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<div class="tm-header-mobile uk-hidden@m" uk-header>
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://www.imprinting.info/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="50" height="51" src="static/picture/logo-im-colore.svg"></a>
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+                        
+                        <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="slide" flip>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-vertical">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-195">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-102 uk-active js-accordion uk-open uk-parent"><a href> Display <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-130 uk-active"><a href="/display-pubblicitari"> Business Display</a></li>
+		<li class="item-390"><a href="/videowall-e-ledwall"> Videowall e Ledwall</a></li>
+		<li class="item-425"><a href="/display-solutions/totem"> Totem</a></li>
+		<li class="item-132"><a href="/lavagne-interattive"> Lavagne Interattive</a></li>
+		<li class="item-117"><a href="/hotel-tv-samsung-smart-hospitality"> Hospitality TV</a></li>
+		<li class="item-454"><a href="/hospital-tv-strutture-sanitarie"> Healthcare</a></li></ul></li>
+	<li class="item-428 js-accordion uk-parent"><a href> IT <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-460"><a href="/sale-riunioni"> Sale riunioni</a></li>
+		<li class="item-451"><a href="/noleggio-notebook-samsung-galaxy-book3"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></li>
+	<li class="item-392 js-accordion uk-parent"><a href> Printing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-391"><a href="/production-printing"> Production Printing</a></li>
+		<li class="item-393"><a href="/printing-solutions"> Printing Solutions</a></li>
+		<li class="item-455"><a href="/offerte-multifunzione-ufficio"> Offerte Multifunzione Ufficio</a></li></ul></li>
+	<li class="item-348 uk-parent"><a href="/finishing"> Finishing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-429"><a href="/finishing/dtf"> DTF</a></li></ul></li>
+	<li class="item-417"><a href="/lavori"> Lavori</a></li>
+	<li class="item-353"><a href="/blog"> Blog</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-159">
+
+    
+    
+<div class="uk-margin-remove-last-child custom" ><p><a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">Contatti</a></p></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-182">
+
+    
+    
+<div class="uk-margin-remove-last-child custom" ><div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid" uk-grid>
+<div class="uk-first-column"><a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;"></a></div>
+<div><a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;"></a></div>
+<div><a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: instagram; width: 20; height: 20;"></a></div>
+<div><a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;"></a></div>
+</div></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-tm-4">
+
+    
+    
+
+    <form id="search-tm-4" action="/display-pubblicitari" method="post" role="search" class="uk-search uk-search-default uk-width-1-1"><span uk-search-icon></span><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input"><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="398"></form>
+
+
+
+
+
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</div>
+
+
+
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://www.imprinting.info/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="60" height="61" src="static/picture/logo-im-colore.svg"><img class="uk-logo-inverse" alt loading="eager" width="60" height="61" src="static/picture/logo-im-bianco.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav" id="module-194">
+    
+	<li class="item-102 uk-active uk-parent"><a role="button"> Display</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-130 uk-active"><a href="/display-pubblicitari"> Business Display</a></li>
+		<li class="item-390"><a href="/videowall-e-ledwall"> Videowall e Ledwall</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-425"><a href="/display-solutions/totem"> Totem</a></li>
+		<li class="item-132"><a href="/lavagne-interattive"> Lavagne Interattive</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-117"><a href="/hotel-tv-samsung-smart-hospitality"> Hospitality TV</a></li>
+		<li class="item-454"><a href="/hospital-tv-strutture-sanitarie"> Healthcare</a></li></ul></div></div></div></li>
+	<li class="item-428 uk-parent"><a role="button"> IT</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-460"><a href="/sale-riunioni"> Sale riunioni</a></li>
+		<li class="item-451"><a href="/noleggio-notebook-samsung-galaxy-book3"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></div></div></div></li>
+	<li class="item-392 uk-parent"><a role="button"> Printing</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-391"><a href="/production-printing"> Production Printing</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-393"><a href="/printing-solutions"> Printing Solutions</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-455"><a href="/offerte-multifunzione-ufficio"> Offerte Multifunzione Ufficio</a></li></ul></div></div></div></li>
+	<li class="item-348 uk-parent"><a href="/finishing"> Finishing</a>
+	<div class="uk-navbar-dropdown"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-429"><a href="/finishing/dtf"> DTF</a></li></ul></div></div></div></li>
+	<li class="item-417"><a href="/lavori"> Lavori</a></li>
+	<li class="item-353"><a href="/blog"> Blog</a></li></ul>
+
+<div class="uk-navbar-item" id="module-154">
+
+    
+    
+<div class="uk-margin-remove-last-child custom" ><p><a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">Contatti</a></p></div>
+
+</div>
+
+
+    <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-tm-3" action="/display-pubblicitari" method="post" role="search" class="uk-search uk-search-large"><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input uk-text-center" autofocus><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="398"></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</div>
+
+            
+            
+
+            
+            <div id="system-message-container" data-messages="[]">
+</div>
+
+            <!-- Builder #page --><style class="uk-margin-remove-adjacent">#page\#0 .uk-button-default { padding: 0 50px; line-height: 40px; font-size: 12px; border-radius: 3px; background-color: #fff; color: #1E2B4F; border: 1px solid #1E2B4F; white-space:nowrap; } #page\#1 .uk-button-default { padding: 0 20px; line-height: 26px; font-size: 12px; border-radius: 3px; background-color: #fff; color: #1E2B4F; border: 0px solid #f7931e; } #page\#2 .uk-section-xsmall { padding-top: 7px; padding-bottom: 10px; } #page\#3 .uk-accordion-title { font-size: 20px; font-weight: 800; } #page\#4 .uk-checkbox, #page\#4 .uk-radio, #page\#4 input[type=checkbox]:not([class*=uk-]), #page\#4 input[type=radio]:not([class*=uk-]) { margin-top: 3px; } #page\#4 .uk-input, #page\#4 .uk-select:not([multiple]):not([size]), #page\#4 .uneditable-input:not([class*=uk-]), #page\#4 input[type=color]:not([class*=uk-]), #page\#4 input[type=date]:not([class*=uk-]), #page\#4 input[type=datetime-local]:not([class*=uk-]), #page\#4 input[type=datetime]:not([class*=uk-]), #page\#4 input[type=email]:not([class*=uk-]), #page\#4 input[type=month]:not([class*=uk-]), #page\#4 input[type=number]:not([class*=uk-]), #page\#4 input[type=password]:not([class*=uk-]), #page\#4 input[type=search]:not([class*=uk-]), #page\#4 input[type=tel]:not([class*=uk-]), #page\#4 input[type=text]:not([class*=uk-]), #page\#4 input[type=time]:not([class*=uk-]), #page\#4 input[type=url]:not([class*=uk-]), #page\#4 input[type=week]:not([class*=uk-]), #page\#4 select:not([class*=uk-]):not([multiple]):not([size]) { height: 40px!important; } #page\#4 .bfQuickMode .controls .control-label { width: 100%; } #page\#4 .bfQuickMode .bfSubmitButton { float: none; display: block; margin-left: auto; margin-right: auto; white-space:nowrap; padding: 0 30px; vertical-align: middle; font-size: 12px; line-height: 40px; } #page\#5 .uk-overlay-primary{background: rgba(30,43,79,.5);} </style>
+<div class="uk-visible@s uk-section-default uk-position-relative">
+        <div data-src="/templates/yootheme/cache/67/hero-samsung-vetrina-03-67f26e04.jpeg" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/2d\/hero-samsung-vetrina-03-2d059ed3.webp 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9zaWduYWdlL2hlcm8tc2Ftc3VuZy12ZXRyaW5hLTAzLmpwZyIsW1sidHlwZSIsWyJ3ZWJwIiwiODUiXV0sWyJkb1Jlc2l6ZSIsWzEwMjMsNTYyLDEwMjMsNTYyXV0sWyJkb0Nyb3AiLFsxMDI0LDU2MiwwLDBdXV0sMTY5NDAyNzE0NF0%3D&amp;file=f7%2Fhero-samsung-vetrina-03-f73d4ce4.webp&amp;hash=61094875 1024w, \/templates\/yootheme\/cache\/dd\/hero-samsung-vetrina-03-dddf85b3.webp 1200w, \/templates\/yootheme\/cache\/22\/hero-samsung-vetrina-03-229d502e.webp 1366w, \/templates\/yootheme\/cache\/89\/hero-samsung-vetrina-03-89acc6ad.webp 1600w, \/templates\/yootheme\/cache\/e4\/hero-samsung-vetrina-03-e4d3ae27.webp 1761w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1200\/659) 182vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-top-left uk-section uk-section-xsmall uk-padding-remove-top">    
+        
+                <div class="uk-position-cover" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0) 100%);; background-clip: padding-box"></div>        
+        
+            
+                                <div class="uk-container uk-position-relative">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-margin-remove-vertical" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/22/trasparente-00-22c6838e.webp 600w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/trasparente-00-accc90af.png" width="600" height="400" class="el-image" alt="trasparente" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-grid-collapse uk-child-width-1-1" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-light uk-width-1-1">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<h1 class="uk-heading-small uk-font-secondary uk-margin uk-text-center">        Cattura l'attenzione dei tuoi nuovi clienti <br />con i display professionali Samsung    </h1>
+                
+                        </div>
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div id="page#0" class="uk-margin uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-default" href="#form" uk-scroll>
+    
+        Parla con un esperto    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-hidden@s uk-section-default">
+        <div data-src="/templates/yootheme/cache/6b/hero-samsung-vetrina-03-6b6114d5.jpeg" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/d4\/hero-samsung-vetrina-03-d42a9acf.webp 600w, \/templates\/yootheme\/cache\/5f\/hero-samsung-vetrina-03-5fe24b14.webp 768w, \/templates\/yootheme\/cache\/58\/hero-samsung-vetrina-03-5894012e.webp 1024w, \/templates\/yootheme\/cache\/96\/hero-samsung-vetrina-03-9674ac17.webp 1200w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 600\/329) 182vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-right uk-section uk-padding-remove-vertical">    
+        
+        
+        
+            
+                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/26/trasparente-00-2694b26f.webp 600w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/trasparente-00-a89ea14e.png" width="600" height="350" class="el-image" alt="trasparente" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-hidden@s uk-section-default uk-section uk-padding-remove-vertical">
+    
+        
+        
+        
+            
+                
+                    
+                    <div class="uk-grid-margin-small uk-container uk-container-large uk-padding-remove-horizontal"><div class="tm-grid-expand uk-grid-column-medium uk-grid-row-small" uk-grid>
+<div class="uk-light uk-width-1-2@s uk-width-1-2@m uk-width-1-2@l uk-width-1-3@xl">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+
+<div class="uk-grid-item-match uk-width-1-2@s uk-width-1-2@m uk-width-1-3@l">
+        <div class="uk-flex">    
+                <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-tile-xsmall uk-flex uk-flex-bottom" style="background-color: rgba(255, 255, 255, 0.8);">        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-h3 uk-font-secondary uk-margin-small uk-text-left@s uk-text-center">        Cattura l'attenzione dei tuoi <br>nuovi clienti con i display <br>professionali Samsung    </div>
+                
+                        </div>
+            
+                </div>
+        
+        </div>
+    
+</div>
+</div></div>
+                
+            
+        
+    
+</div>
+
+<div id="page#2" class="uk-hidden@s sticky-bottom uk-section-default uk-light" uk-sticky="animation: uk-animation-slide-top">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xsmall" style="background-color: rgb(30, 43, 79);">    
+        
+        
+        
+            
+                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div id="page#1" class="uk-margin-remove-vertical uk-text-center">
+        <div class="uk-flex-middle uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>    
+    
+                <div class="el-item">
+        
+        
+<a class="el-content uk-button uk-button-default uk-button-small" href="#form" uk-scroll>
+    
+        Chiedi un preventivo    
+    
+</a>
+
+
+                </div>
+        
+    
+                <div class="el-item">
+        
+        
+<a class="el-content uk-button uk-button-default uk-button-small" href="tel:+390691133623">
+    
+    
+        <span uk-icon="receiver"></span>    
+</a>
+
+
+                </div>
+        
+    
+        </div>
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+</div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-xlarge">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/e3/icone-samsung-18-e3cb26e5.webp 70w, /templates/yootheme/cache/d7/icone-samsung-18-d7f5a521.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-18-db247c73.png" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Rapporto qualità/prezzo                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/25/icone-samsung-5-anni-25f5b6a7.webp 70w, /templates/yootheme/cache/c1/icone-samsung-5-anni-c1b54c36.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-5-anni-2d844ad5.png" width="70" height="70" class="el-image" alt="icona 5 anni" loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Garanzia sull'hardware                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/de/icone-samsung-20-de5c1e43.webp 70w, /templates/yootheme/cache/85/icone-samsung-20-85c50b4b.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-20-c8bdd091.png" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Qualità immagini Premium                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ba/icone-samsung-21-ba667899.webp 70w, /templates/yootheme/cache/f0/icone-samsung-21-f05acdd6.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-21-91dbe8fa.png" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Più luminosi del sole                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/16/icone-samsung-22-1628d3f7.webp 70w, /templates/yootheme/cache/6e/icone-samsung-22-6efa8671.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-22-7a71a047.png" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Consegna e installazione                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/72/icone-samsung-23-7212b52d.webp 70w, /templates/yootheme/cache/1b/icone-samsung-23-1b6540ec.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icone-samsung-23-2317982c.png" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <div class="el-title uk-h4 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Supporto Interattivo                    </div>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-expand">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2 class="uk-h2 uk-text-center">        <strong>Scopri i nostri display pubblicitari</strong>    </h2><div class="uk-panel uk-text-emphasis uk-width-large uk-margin-auto uk-text-center@s uk-text-center">Coinvolgi i tuoi clienti in un'esperienza stimolante e personalizzata attraverso i nostri sistemi Digital Signage</div>
+<div class="uk-margin-large uk-text-center" uk-slider="velocity: 0.5; autoplay: 1; pauseOnHover: false; autoplayInterval: 5000;">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-match">                                <li class="uk-width-1-1 uk-width-1-3@m">
+<a class="el-item uk-panel uk-margin-remove-first-child uk-link-toggle uk-display-block" href="#interno" uk-scroll aria-label="Display per interno">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/2f/display-interno-ambientato-01-2f11bf8b.webp 600w, /templates/yootheme/cache/bc/display-interno-ambientato-01-bcfafa33.webp 768w, /templates/yootheme/cache/f8/display-interno-ambientato-01-f802cc25.webp 1024w, /templates/yootheme/cache/fc/display-interno-ambientato-01-fc797288.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/display-interno-ambientato-01-dd372c9d.jpeg" width="600" height="400" class="el-image" alt="display signage all'interno dello store" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Display per interno                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Ultra definizione e design slim</div>        
+        
+        
+        
+        
+    
+</a></li>                                <li class="uk-width-1-1 uk-width-1-3@m">
+<a class="el-item uk-panel uk-margin-remove-first-child uk-link-toggle uk-display-block" href="#vetrina" uk-scroll aria-label="Display da vetrina">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/4e/display-vetrina-ambientato-02-4e4ccd41.webp 600w, /templates/yootheme/cache/a2/display-vetrina-ambientato-02-a21d10b7.webp 768w, /templates/yootheme/cache/84/display-vetrina-ambientato-02-84c113da.webp 1024w, /templates/yootheme/cache/80/display-vetrina-ambientato-02-80baad77.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/display-vetrina-ambientato-02-fe40d393.jpeg" width="600" height="400" class="el-image" alt="display signage nella vetrina dello store" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Display da vetrina                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Alta luminosità per ogni condizione</div>        
+        
+        
+        
+        
+    
+</a></li>                                <li class="uk-width-1-1 uk-width-1-3@m">
+<a class="el-item uk-panel uk-margin-remove-first-child uk-link-toggle uk-display-block" href="#interattivi" uk-scroll aria-label="Display interattivi">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/20/touch-cinema-01-203e470c.webp 600w, /templates/yootheme/cache/4f/touch-cinema-01-4f2a4a5e.webp 768w, /templates/yootheme/cache/da/touch-cinema-01-da1be8c9.webp 1024w, /templates/yootheme/cache/de/touch-cinema-01-de605664.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/touch-cinema-01-aa910125.jpeg" width="600" height="400" class="el-image" alt="schermo touch mostra i film all'interno di un cinema" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">                        Display interattivi                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top"><p>Touch capacitivo integrato</p></div>        
+        
+        
+        
+        
+    
+</a></li>                            </ul>
+
+        
+        
+    </div>
+
+        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top" uk-margin><li uk-slider-item="0"><a href aria-label="Go to slide 1"></a></li><li uk-slider-item="1"><a href aria-label="Go to slide 2"></a></li><li uk-slider-item="2"><a href aria-label="Go to slide 3"></a></li></ul>    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section" style="background-color: #1E2B4F;">    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-expand">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-h1 uk-visible@s uk-margin-remove-vertical uk-text-right@m uk-text-center">        <strong>Mostra i tuoi prodotti in grande stile</strong>    </div>
+<div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">        <strong>Mostra i tuoi prodotti in grande stile</strong>    </div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-left@m uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary uk-button-large" href="#form" uk-scroll>
+    
+        Inizia ora    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div id="benefit" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-xlarge">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h2 uk-margin-remove-vertical uk-text-center">        <strong>I benefici degli schermi pubblicitari LCD</strong>    </h3><div class="uk-panel uk-margin uk-text-center">Il digital signage indirizza i flussi di clientela in store. Dal report emerge che il digital signage stimola l'attenzione del cliente più di ogni altro strumento di direct marketing.</div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-grid-column-medium uk-grid-row-large uk-grid-divider uk-grid-margin-large" uk-grid>
+<div class="uk-width-1-3@l">
+    
+        
+            
+            
+            
+                
+                    <div class="counter-container uk-margin uk-text-center" data-number="80" data-percentage="80" data-radius="80" data-duration="1500" data-uniqid="counter-675004d216ceb">
+    <style>
+    #counter-675004d216ceb .counter-value {
+        animation: counter-675004d216ceb 1500ms;
+    }
+
+    @keyframes counter-675004d216ceb {
+        from {
+            stroke-dashoffset: 502.65482457437;
+        }
+
+        to {
+            stroke-dashoffset: 100.53096491487;
+        }
+    }
+    </style>
+
+    
+        <div class="uk-inline">
+
+            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9" fill="none" />
+                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133" stroke-width="9" fill="none" />
+            </svg>
+
+            <div class="uk-position-center uk-overlay">
+                <span class="el-number uk-heading-small">80</span>                <span class="el-unit"> %</span>                <span class="el-text"><br>delle persone</span>            </div>
+
+        </div>
+
+    
+</div>
+
+<div class="uk-h3 uk-text-center">        <strong>Ingressi in store</strong>    </div><div class="uk-panel uk-margin uk-text-center">L’80% delle persone coinvolte nello studio Nielsen "Digital Out-of-home Advertising Report 2020" afferma di essere entrato in un negozio perché uno schermo ha attirato la sua attenzione.</div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@l">
+    
+        
+            
+            
+            
+                
+                    <div class="counter-container uk-margin uk-text-center" data-number="86" data-percentage="86" data-radius="80" data-duration="1500" data-uniqid="counter-675004d21708e">
+    <style>
+    #counter-675004d21708e .counter-value {
+        animation: counter-675004d21708e 1500ms;
+    }
+
+    @keyframes counter-675004d21708e {
+        from {
+            stroke-dashoffset: 502.65482457437;
+        }
+
+        to {
+            stroke-dashoffset: 70.371675440411;
+        }
+    }
+    </style>
+
+    
+        <div class="uk-inline">
+
+            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9" fill="none" />
+                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133" stroke-width="9" fill="none" />
+            </svg>
+
+            <div class="uk-position-center uk-overlay">
+                <span class="el-number uk-heading-small">86</span>                <span class="el-unit"> %</span>                <span class="el-text"><br>dei negozianti</span>            </div>
+
+        </div>
+
+    
+</div>
+
+<div class="uk-h3 uk-text-center">        <strong>+30% di vendite</strong>    </div><div class="uk-panel uk-margin uk-text-center">L'86% dei negozianti intervistati ha registrato un aumento delle vendite del 30% dall'introduzione dei display nel proprio store.</div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@l">
+    
+        
+            
+            
+            
+                
+                    <div class="counter-container uk-margin uk-text-center" data-number="89" data-percentage="89" data-radius="80" data-duration="1500" data-uniqid="counter-675004d217410">
+    <style>
+    #counter-675004d217410 .counter-value {
+        animation: counter-675004d217410 1500ms;
+    }
+
+    @keyframes counter-675004d217410 {
+        from {
+            stroke-dashoffset: 502.65482457437;
+        }
+
+        to {
+            stroke-dashoffset: 55.29203070318;
+        }
+    }
+    </style>
+
+    
+        <div class="uk-inline">
+
+            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9" fill="none" />
+                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133" stroke-width="9" fill="none" />
+            </svg>
+
+            <div class="uk-position-center uk-overlay">
+                <span class="el-number uk-heading-small">89</span>                <span class="el-unit"> %</span>                <span class="el-text"><br>acquista</span>            </div>
+
+        </div>
+
+    
+</div>
+
+<div class="uk-h3 uk-text-center">        <strong>Finalizza acquisto</strong>    </div><div class="uk-panel uk-margin uk-text-center">Il 45% dei passanti nota i display con le indicazioni per uno store; il 70% dopo aver visto la pubblicità su un display si reca nello store; l'89% effettua un acquisto nel corso della visita allo store.</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-xlarge">                
+                    
+                    <div class="tm-grid-expand uk-grid-column-collapse uk-grid-row-medium uk-grid-margin-medium" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-5@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-h6 uk-margin uk-text-center">        Trusted<br>by    </div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-4-5@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-center" uk-slider="velocity: 1; autoplay: 1; pauseOnHover: false; autoplayInterval: 3000;">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-match">                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ef/logo_coldwell-efa29bae.webp 140w, /templates/yootheme/cache/58/logo_coldwell-58d2a5b7.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_coldwell-9f4fef7e.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/96/logo_conad-9657364f.webp 140w, /templates/yootheme/cache/a7/logo_conad-a7d34d07.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_conad-8455ef15.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/55/logo_invitalia-55e7ddce.webp 140w, /templates/yootheme/cache/c4/logo_invitalia-c412e19f.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_invitalia-e7fdbf2d.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/69/logo_arena-6952af4e.webp 140w, /templates/yootheme/cache/3f/logo_arena-3f73ab88.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_arena-ceb92df4.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c4/logo_solo-affitti-c45ac80d.webp 140w, /templates/yootheme/cache/18/logo_solo-affitti-18c2de8b.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_solo-affitti-90f3bd83.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/95/logo_lacoste-95a77cfa.webp 140w, /templates/yootheme/cache/23/logo_lacoste-23ae058d.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_lacoste-b0be67ee.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/04/logo_accenture-04650602.webp 140w, /templates/yootheme/cache/04/logo_accenture-04124a87.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_accenture-702a3571.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/1f/logo_as-roma-1f5da1b6.webp 140w, /templates/yootheme/cache/57/logo_as-roma-577d770d.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_as-roma-704c1493.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ad/logo_philip-morris-adc8f56b.webp 140w, /templates/yootheme/cache/ad/logo_philip-morris-ad654978.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_philip-morris-3b73d2f9.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/e5/logo_dan-john-e561fc46.webp 140w, /templates/yootheme/cache/80/logo_dan-john-8087b005.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_dan-john-9e730c6d.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-3 uk-width-1-5@m">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/88/logo_dem-88821028.webp 140w, /templates/yootheme/cache/f7/logo_dem-f781f3cc.webp 280w" sizes="(min-width: 140px) 140px">
+<img src="static/picture/logo_dem-71c034e9.png" width="140" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></li>                            </ul>
+
+        
+        
+    </div>
+
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="interno" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2 class="uk-h2 uk-text-center">        <strong>Display per l'interno dei negozi</strong>    </h2><div class="uk-panel uk-margin uk-text-center">L’innovativa tecnologia di upscaling UHD intelligente Samsung garantisce immagini dalla perfetta qualità UHD anche in presenza di contenuti a bassa risoluzione, affinando i bordi e riducendo il rumore. Grazie a questa soluzione futuristica avrai sempre la massima qualità delle immagini indipendentemente dalla risoluzione dei contenuti originari.</div>
+<div class="uk-margin">
+
+        <img src="static/picture/display-hero-01-56c99541.jpeg" width="1200" height="674" class="el-image" alt="描述图片的替代文本" loading="lazy">
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/06/img_sub_features_standalone1-0622fe0c.webp 70w, /templates/yootheme/cache/8a/img_sub_features_standalone1-8a523cf4.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_standalone1-a64f8929.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Qualità d'immagine PREMIUM                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Attira il pubblico e migliora la visibilità in ambienti affollati creando un'esperienza cliente di qualità con le immagini Ultra HD.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ed/img_sub_features_standalone2-ed88b6b1.webp 70w, /templates/yootheme/cache/4e/img_sub_features_standalone2-4e8c38f3.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_standalone2-1dc49486.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Efficienza operativa ottimizzata                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Il MagicINFO Player integrato, consente una gestione dei contenuti semplice e veloce, con una transizioni  senza soluzione di continuità.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/b4/img_sub_features_standalone3-b4ee8eda.webp 70w, /templates/yootheme/cache/bb/img_sub_features_standalone3-bbe93931.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_standalone3-74bd9fe3.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Operatività prolungata                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Design resistente alla polvere con pannello frontale antiriflesso, per una maggiore visibilità delle immagini.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-padding-remove-vertical">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="vetrina" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2 class="uk-h2 uk-text-center">        <strong>Display da vetrina</strong>    </h2><div class="uk-panel uk-margin uk-text-center">Alta visibilità grazie ai colori brillanti e alla straordinaria luminosità fino a 4000 nit che consentono di fornire informazioni chiare 24/7. Il pannello antiriflesso dei display da vetrina offre una migliore visibilità indipendentemente dalla luce ambientale, assicurando che le informazioni siano sempre perfettamente visibili.</div>
+<div class="uk-margin">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ce/alta-luminosita-01-ce6cd6ee.webp 768w, /templates/yootheme/cache/1b/alta-luminosita-01-1b7b8e24.webp 1024w, /templates/yootheme/cache/da/alta-luminosita-01-da43a0d3.webp 1366w, /templates/yootheme/cache/2e/alta-luminosita-01-2e425f94.webp 1440w" sizes="(min-width: 1440px) 1440px">
+<img src="static/picture/alta-luminosita-01-1c2ab174.jpeg" width="1440" height="1032" class="el-image" alt loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/05/img_sub_features_outdoor1-05f37ecd.webp 70w, /templates/yootheme/cache/31/img_sub_features_outdoor1-31b4824b.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_outdoor1-7dde8f38.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Design All Inclusive                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Un display completamente integrato con un power box incorporato, resistente agli urti e protetto da un proprio sistema di raffreddamento.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/a1/img_sub_features_outdoor2-a118a0b7.webp 70w, /templates/yootheme/cache/ba/img_sub_features_outdoor2-ba2b108b.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_outdoor2-89140450.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Più luminosi del sole                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">L'elevata luminosità, il sensore di regolazione in base alle condizioni esterne, la tecnologia antiriflesso e l'elevato rapporto di contrasto, rende le immagini perfettamente visibili anche alla luce diretta del sole.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/f8/img_sub_features_outdoor3-f87e98dc.webp 70w, /templates/yootheme/cache/4f/img_sub_features_outdoor3-4f4e1149.webp 140w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/img_sub_features_outdoor3-e06d0f35.jpeg" width="70" height="70" class="el-image" alt loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Robusto in condizioni estreme                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">I display Samsung Full Outdoor sono certificati IP56 per resistere a polvere, acqua, pioggia, neve, nevischio e corrosione.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-padding-remove-vertical">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="interattivi" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2 class="uk-h2 uk-text-center">        <strong>Display interattivi</strong>    </h2><div class="uk-panel uk-margin uk-text-center"><p>La tecnologia touch integrata offre agli utenti un'esperienza esclusiva, in grado di catturare l'attenzione condensando contenuti dettagliati in un design compatto. Sviluppati per applicazioni professionali, i display interattivi assicurano la massima efficacia operativa nella riproduzione dei media e prestazioni affidabili per ogni esigenza di business.</p></div>
+<div class="uk-margin">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/b5/display-interattivi-cosmetici-01-b5bb643c.webp 768w, /templates/yootheme/cache/15/display-interattivi-cosmetici-01-1518ee71.webp 1024w, /templates/yootheme/cache/88/display-interattivi-cosmetici-01-88cc774e.webp 1200w, /templates/yootheme/cache/5f/display-interattivi-cosmetici-01-5f205790.webp 1366w, /templates/yootheme/cache/72/display-interattivi-cosmetici-01-7299d5d2.webp 1372w" sizes="(min-width: 1200px) 1200px">
+<img src="static/picture/display-interattivi-cosmetici-01-24258949.jpeg" width="1200" height="799" class="el-image" alt="giovane donna utilizza un display touch interattivo" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/74/icona-fast-response-02-74706062.webp 70w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icona-fast-response-02-6d1de069.png" width="70" height="70" class="el-image" alt="icona faste response" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Tempo di risposta veloce                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">La funzionalità touchscreen altamente reattiva offre un'esperienza utente intuitiva e coinvolgente, mentre il design user-friendly rende l'interazione digitale confortevole e produttiva.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/e3/icona-multi-touch-02-e3d55d1f.webp 70w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icona-multi-touch-02-e9f21ca9.png" width="70" height="70" class="el-image" alt="icona multi touch" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Multi-touch                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Attraverso la rapida funzionalità multi-touch, l'interfaccia intuitiva permette di coinvolgere l'utente in nuove interazioni, stimolando l'interesse verso l'acquisto.
+</div>        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/81/icona-sicurezza-03-81f93e24.webp 70w" sizes="(min-width: 70px) 70px">
+<img src="static/picture/icona-sicurezza-03-0d191b3c.png" width="70" height="70" class="el-image" alt="icona protezione accessi knox" loading="lazy">
+</picture>        
+                    
+
+        
+                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Protezione totale                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top">Il potente sistema di sicurezza a tre livelli Knox offre la massima protezione ad applicazione, piattaforma e sistema, limitando l'accesso ai contenuti e all'hardware, mentre la gestione remota delle porte di rete e USB previene le violazioni di accesso.</div>        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-padding-remove-vertical">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="calcolatore" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c8/display-interno-02-c82e10f2.webp 500w, /templates/yootheme/cache/27/display-interno-02-2750d1a0.webp 600w" sizes="(min-width: 500px) 500px">
+<img src="static/picture/display-interno-02-fc2d8b33.png" width="500" height="500" class="el-image" alt="display signage" loading="lazy">
+</picture>    
+    
+</div>
+<div class="uk-panel uk-text-small uk-margin uk-text-center">Scegli le proporzioni del display (16:9, 4:3, o personalizzate in Advance Mode), inserisci un valore dimensionale (diagonale, larghezza o altezza) per calcolare automaticamente le altre dimensioni.</div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    <div><div class="omni-calculator" data-calculator="other/screen-size" data-width="100%" data-config='{"screen":{"label":"Schermo","advanced":true},"aspect_ratio_1":{"advanced":true},"screen_type_VS":{"label":"Tipo","advanced":true},"radius_VS":{"label":"Curvatura","help":"Il raggio di curvatura è in mm"},"radius":{"label":"Raggio"},"diagonal":{"label":"Diagonale","default":"55"},"width":{"label":"Larghezza (W)"},"length_curved":{"advanced":true},"height":{"label":"Altezza (H)"},"area":{"label":"Superficie","advanced":true},"width_curved":{"label":"Base (w)","advanced":true},"depth_curved":{"label":"Profondità (d)","advanced":true}}' data-currency="EUR" data-show-row-controls="false" data-version="3" data-t="1666707928538">
+  <div class="omni-calculator-header">Calcolatore Display</div>
+  <div class="omni-calculator-footer">
+    <a href="https://www.omnicalculator.com/other/screen-size" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="static/picture/omni.png" /></a>
+  </div>
+</div>
+<script async src="static/js/sdk.js"></script></div>
+                
+                        </div>
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section" style="background-color: #1E2B4F;">    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-h1 uk-visible@s uk-margin-remove-vertical uk-text-right@m uk-text-center">        <strong>Parla con un esperto di Digital Signage</strong>    </div>
+<div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">        <strong>Parla con un esperto<br>di Digital Signage</strong>    </div>
+                
+                        </div>
+            
+        
+    
+</div>
+
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-margin uk-text-left@m uk-text-center">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-primary uk-button-large" href="#form" uk-scroll>
+    
+        Richiedi una consulenza ora    
+    
+</a>
+
+
+        
+    
+    
+</div>
+
+                
+                        </div>
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div id="magicinfo" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin-remove-vertical uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/71/marchio-magicinfo-colore-02-71488b68.webp 250w, /templates/yootheme/cache/ca/marchio-magicinfo-colore-02-ca9d022d.webp 500w" sizes="(min-width: 250px) 250px">
+<img src="static/picture/marchio-magicinfo-colore-02-f0e56df9.png" width="250" height="100" class="el-image" alt="logo magic info" loading="lazy">
+</picture>    
+    
+</div>
+
+<h3 class="uk-h2 uk-font-primary uk-visible@s uk-margin-small uk-text-center">        <strong>Gestisci tutto con un software unico</strong>    </h3>
+<h3 class="uk-h3 uk-font-primary uk-hidden@s uk-margin-small uk-text-center">        <strong>Gestisci tutto con un software unico</strong>    </h3><hr><div class="uk-panel uk-text-lead uk-margin uk-text-center"><p>Combinare visione e strategia, esperienza e semplicità di pubblicazione per rendere ogni progetto un successo. L’integrazione di Wi-Fi e Bluetooth consente servizi più personalizzati e interattivi e semplifica il modo di mostrare i contenuti.</p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="wifi" class="uk-section-default uk-section uk-padding-remove-top">
+    
+        
+        
+        
+            
+                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-visible@s uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/eb/wifi-and-bluetooth-built-in-01-eb210ed5.webp 768w, /templates/yootheme/cache/ee/wifi-and-bluetooth-built-in-01-ee3293ce.webp 1024w, /templates/yootheme/cache/2b/wifi-and-bluetooth-built-in-01-2b556d81.webp 1366w, /templates/yootheme/cache/cb/wifi-and-bluetooth-built-in-01-cb5b813a.webp 1600w, /templates/yootheme/cache/7b/wifi-and-bluetooth-built-in-01-7b1b1905.webp 1920w, /templates/yootheme/cache/be/wifi-and-bluetooth-built-in-01-bebc63d2.webp 2000w" sizes="(min-width: 2000px) 2000px">
+<img src="static/picture/wifi-and-bluetooth-built-in-01-0c0e9375.jpeg" width="2000" height="778" class="el-image" alt="wi fi integrato" loading="lazy">
+</picture>    
+    
+</div>
+
+<div class="uk-hidden@s uk-margin">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/eb/wifi-and-bluetooth-built-in-01-eb210ed5.webp 768w, /templates/yootheme/cache/d6/wifi-and-bluetooth-built-in-01-d69f800b.webp 1024w, /templates/yootheme/cache/2f/wifi-and-bluetooth-built-in-01-2f8ea7d3.webp 1199w, /templates/yootheme/cache/67/wifi-and-bluetooth-built-in-01-67c1df22.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img src="static/picture/wifi-and-bluetooth-built-in-01-d5732f85.jpeg" width="1200" height="467" class="el-image" alt loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-large">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h1 uk-font-primary uk-visible@s uk-margin-remove-vertical uk-text-center">        <strong>I nostri servizi includono</strong>    </h3>
+<div class="uk-h2 uk-font-primary uk-hidden@s uk-margin-remove-vertical uk-text-center">        <strong>I nostri servizi includono</strong>    </div><hr>
+<div class="uk-margin uk-text-center">
+    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/94/icone-flip_mani-94690a32.webp 120w, /templates/yootheme/cache/53/icone-flip_mani-531cbb3d.webp 240w" sizes="(min-width: 120px) 120px">
+<img src="static/picture/icone-flip_mani-e3f2499d.png" width="120" height="120" class="el-image" alt loading="lazy">
+</picture>        
+                    <div class="uk-padding-small uk-margin-remove-first-child">
+
+        
+                <h3 class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">                        Consulenza pre-vendita                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel">per scegliere insieme i prodotti in grado di soddisfare al meglio le esigenze di ogni cliente</div>        
+        
+        
+</div>        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/2d/icone-flip_meet-2d48bff2.webp 120w, /templates/yootheme/cache/4f/icone-flip_meet-4fd389e3.webp 240w" sizes="(min-width: 120px) 120px">
+<img src="static/picture/icone-flip_meet-3ebbe41f.png" width="120" height="120" class="el-image" alt loading="lazy">
+</picture>        
+                    <div class="uk-padding-small uk-margin-remove-first-child">
+
+        
+                <h3 class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">                        Consulenza fiscale                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel">per svolgere le pratiche di noleggio e agevolazione fiscale</div>        
+        
+        
+</div>        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/57/icone-flip_assistenza-57a5556a.webp 120w, /templates/yootheme/cache/94/icone-flip_assistenza-94ef1cf1.webp 240w" sizes="(min-width: 120px) 120px">
+<img src="static/picture/icone-flip_assistenza-1f29897f.png" width="120" height="120" class="el-image" alt loading="lazy">
+</picture>        
+                    <div class="uk-padding-small uk-margin-remove-first-child">
+
+        
+                <h3 class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">                        Assistenza post-vendita                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel">per seguire i nostri clienti nella risoluzione dei problemi 24/7</div>        
+        
+        
+</div>        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/09/icone-flip_formazione-090713f1.webp 120w, /templates/yootheme/cache/a2/icone-flip_formazione-a2397f3a.webp 240w" sizes="(min-width: 120px) 120px">
+<img src="static/picture/icone-flip_formazione-0d7786f1.png" width="120" height="120" class="el-image" alt loading="lazy">
+</picture>        
+                    <div class="uk-padding-small uk-margin-remove-first-child">
+
+        
+                <h3 class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">                        Formazione tecnica                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel">per tramettere le principali nozioni per la conoscenza e l'uso dei dispositivi</div>        
+        
+        
+</div>        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="faq" class="uk-section-secondary uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-small">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h1 uk-font-secondary uk-margin-remove-vertical uk-text-center">        FAQ    </h3><hr>
+<div uk-accordion="collapsible: true;" id="page#3">
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">Come si inseriscono i contenuti all’interno dei display?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">L’inserimento dei contenuti all’interno dei display avviene attraverso il software integrato MagicINFO™, una soluzione all-in-one per la gestione di materiali, dati e dispositivi. Dalla creazione fino alla pubblicazione e al monitoraggio, gli utenti possono avere il controllo completo degli schermi da un’unica piattaforma centralizzata.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">Quali sono i formati digitali supportati?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">I formati digitali supportati sono le più comuni estensioni dei file multimediali (Immagini: bmp, jpeg, gif, png e tif, etc…; Video: mp4, mov, wmv, avi, webm, html5, etc…; Audio: mp3, wav, etc…; Documenti: txt, doc, htm, etc…).</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">Non posso creare o gestire i contenuti: potete farlo al posto mio?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Certamente. All’interno del nostro ufficio Marketing abbiamo strutturato un team di designer e videomaker che producono quotidianamente contenuti, motion graphics e infografiche da trasmettere ai display in base alle esigenze e agli obiettivi dei Clienti che non possono gestire il palinsesto in autonomia.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">Vi occupate anche della programmazione di campagne marketing?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Certamente. Su richiesta dei nostri Clienti strutturiamo campagne di online advertising sui principali motori di ricerca e social network, creando strategie volte a soddisfare la domanda consapevole e quella latente per  perseguire obiettivi come awareness, lead generation, incremento delle vendite, etc…</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">I vostri prodotti si collegano alla rete Wi-Fi?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Sì. I display si collegano alla rete LAN e/o Wi-Fi e consentono l’accesso ad Internet allo stesso modo con cui si accede ad Internet da un PC.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">È possibile esporre i vostri prodotti all’esterno?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Certamente. I display professionali Samsung per esterni sono progettati per resistere alle intemperie, alle alte temperature e ai danni accidentali, garantendo sempre una visione dei contenuti chiara e nitida indipendentemente dalle condizioni di illuminazione.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">I vostri display possono essere esposti al sole?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Certamente. I display professionali Samsung da vetrina sono progettati per resistere alle alte temperature e restituire sempre, grazie ai rapporti di contrasto elevati e all’alta luminosità, immagini brillanti e senza riflessi, anche sotto la luce diretta del sole.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">Si può disattivare il touch screen?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Dipende dai modelli. Alcuni display interattivi dotati di schermo touch screen non consentono la disattivazione dello stesso.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">I vostri dispositivi sono personalizzabili?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">I nostri totem multimediali, costituiti da un’elegante struttura di design che ospita un display professionale Samsung, sono interamente personalizzabili, dal materiale, alle dimensioni dello schermo, alle finiture esterne.</div>        
+        </div>
+    </div>
+        <div class="el-item">
+
+        <a class="el-title uk-accordion-title" href="#">È possibile noleggiare i vostri prodotti?</a>
+
+        <div class="uk-accordion-content">            
+
+        <div class="el-content uk-panel">Certamente. Per tutti i nostri prodotti è prevista anche la possibilità di richiedere un noleggio operativo a 36 o 60 mesi, con riscatto o meno del bene al termine del contratto.</div>        
+        </div>
+    </div>
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="form" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-h1 uk-visible@s uk-margin-remove-vertical uk-text-center">        <b>Richiedi maggiori informazioni</b>    </div>
+<div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-center">        <b>Richiedi maggiori informazioni</b>    </div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    <div id="page#4">
+<!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.  All rights reserved. -->
+<div class="bfClearfix">
+<script type="text/javascript">
+<!--
+ff_processor=new Object();ff_processor.okrun=true;ff_processor.ip='89.185.29.186';ff_processor.agent='Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';ff_processor.browser='Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+ff_processor.opsys='win';ff_processor.provider='Unknown';ff_processor.submitted='2024-12-04 07:29:22';ff_processor.form=70;ff_processor.form_id='ff_form70';ff_processor.page=1;ff_processor.target=2;ff_processor.runmode=0;ff_processor.inframe=0;ff_processor.inline=0;
+ff_processor.template=0;ff_processor.homepage='https://www.imprinting.info';ff_processor.mossite='https://www.imprinting.info';ff_processor.images='https://www.imprinting.info/components/com_breezingforms/images';ff_processor.border='';ff_processor.align='';
+ff_processor.top='';ff_processor.suffix='';ff_processor.status=null;ff_processor.message=null;ff_processor.record_id=null;ff_processor.showgrid=false;ff_processor.traceBuffer=null;
+//-->
+</script>
+<script type="text/javascript" src="static/js/facileforms.js"></script>
+<div id="ff_formdiv70" class="bfFormDiv">
+<style>
+#bfLabel3339 {
+    font-size: 15px;
+}
+</style>
+
+<style>
+#ff_elem3339 {
+    border: 1px solid #000;
+}
+</style>
+<script type="text/javascript">
+<!--
+
+function checkFileExtensions(){
+			return true;
+		}
+		var bfReCaptchaLoaded = true;
+                                    function bfCheckCaptcha(){
+					if(checkFileExtensions()){
+                                                function bfValidateCaptcha()
+                                                {
+                                                    if(typeof bfInvisibleRecaptcha != "undefined" && bfInvisibleRecaptcha === false){
+														if(typeof bfDoFlashUpload != 'undefined'){
+															bfDoFlashUpload();
+														} else {
+															ff_submitForm2();
+														}
+														return;
+                                                    }
+                                                    
+                                                    if(typeof onloadBFNewRecaptchaCallback == "undefined"){
+                                                        challengeField = JQuery("input#recaptcha_challenge_field").val();
+                                                        responseField = JQuery("input#recaptcha_response_field").val();
+                                                        var html = JQuery.ajax({
+                                                        type: "POST",
+                                                        url: "/component/breezingforms/raw/true/bfReCaptcha/true/form/70/tmpl/component?raw=true&amp;bfReCaptcha=true&amp;form=70&amp;Itemid=0&amp;tmpl=component",
+                                                        data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField,
+                                                        async: false
+                                                        }).responseText;
+
+                                                        if (html.replace(/^\s+|\s+$/, "") == "success")
+                                                        {
+                                                            if(typeof bfDoFlashUpload != 'undefined'){
+                                                                bfDoFlashUpload();
+                                                            } else {
+                                                                ff_submitForm2();
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                                if(typeof bfUseErrorAlerts == "undefined"){
+                                                                        alert("The captcha is missing or wrong!");
+                                                                } else {
+                                                                    if(typeof inlineErrorElements != "undefined"){
+                                                                        inlineErrorElements.push(["bfReCaptchaEntry","The captcha is missing or wrong!"]);
+                                                                    }
+                                                                    bfShowErrors("The captcha is missing or wrong!");
+                                                                }
+
+                                                                if(ff_currentpage != 1)ff_switchpage(1);
+                                                                Recaptcha.focus_response_field();
+
+                                                                Recaptcha.reload();
+
+                                                                if(document.getElementById("bfSubmitButton")){
+                                                                    document.getElementById("bfSubmitButton").disabled = false;
+                                                                }
+                                                                if(typeof JQuery != "undefined"){JQuery(".bfCustomSubmitButton").prop("disabled", false);}
+                                                                if(typeof ladda_button != "undefined"){
+                                                                    bf_restore_submitbutton();
+                                                                }
+                                                                
+                                                        }
+                                                    }
+                                                    else{
+                                                        
+                                                        if(typeof bfInvisibleRecaptcha != "undefined"){
+                                                        
+                                                            grecaptcha.execute();
+                                                        }
+                                                        
+                                                        var gresponse = grecaptcha.getResponse();
+                                                        
+                                                        if(gresponse == ""){
+                                                            
+                                                            if(typeof bfInvisibleRecaptcha == "undefined"){
+                                                            
+	                                                            if(typeof bfUseErrorAlerts == "undefined"){
+	                                                                    alert("The captcha is missing or wrong!");
+	                                                            } else {
+	                                                                if(typeof inlineErrorElements != "undefined"){
+	                                                                    inlineErrorElements.push(["bfReCaptchaEntry","The captcha is missing or wrong!"]);
+	                                                                }
+	                                                                bfShowErrors("The captcha is missing or wrong!");
+	                                                            }
+                                                            
+                                                            
+                                                                if(ff_currentpage != 1)ff_switchpage(1);
+                                                            }
+                                                            if(document.getElementById("bfSubmitButton")){
+                                                                document.getElementById("bfSubmitButton").disabled = false;
+                                                            }
+                                                            if(typeof JQuery != "undefined"){JQuery(".bfCustomSubmitButton").prop("disabled", false);}
+                                                            if(typeof ladda_button != "undefined"){
+                                                                bf_restore_submitbutton();
+                                                            }
+                                                            
+                                                            
+                                                        }else{
+               
+                                                            if(typeof bfDoFlashUpload != 'undefined'){
+                                                                bfDoFlashUpload();
+                                                            } else {
+                                                                ff_submitForm2();
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                bfValidateCaptcha();
+
+					}
+				}function ff_initialize(condition)
+{}
+onload=function()
+{ff_initialize('formentry');ff_initialize('pageentry');if(ff_processor&&ff_processor.traceBuffer)ff_traceWindow();}
+var ff_currentpage=1;
+function ff_switchpage(page){if(document.getElementById("bfPage1"))document.getElementById("bfPage1").style.display="none";if(document.getElementById("bfPage2"))document.getElementById("bfPage2").style.display="none";if(document.getElementById("bfPage"+page))document.getElementById("bfPage"+page).style.display="";
+ff_currentpage=page;ff_initialize("pageentry");}
+function ff_display02_submitted(status,message){if(status==0){ff_switchpage(2);}else{alert(message);}}
+var ff_validationFocusName='';
+var ff_elements=[['ff_elem5766','ff_div5766','bfFakeName4',1,5766],['ff_elem5765','ff_div5765','bfFakeName3',1,5765],['ff_elem5764','ff_div5764','bfFakeName2',1,5764],['ff_elem5763','ff_div5763','bfFakeName',1,5763],['ff_elem4174','ff_div4174','nome',1,4174],
+['ff_elem4173','ff_div4173','azienda',1,4173],['ff_elem4172','ff_div4172','email',1,4172],['ff_elem4171','ff_div4171','telefono',1,4171],['ff_elem4170','ff_div4170','cittaconsegna',1,4170],['ff_elem4176','ff_div4176','tipologiadisplay',1,4176],['ff_elem4169','ff_div4169','messaggio',1,4169],
+['ff_elem4167','ff_div4167','acquisizione',1,4167],['ff_elem4168','ff_div4168','privacy',1,4168],['ff_elem5696','ff_div5696','recaptcha',1,5696]
+];
+function ff_getElementByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return eval('document.ff_form70.'+ff_elements[i][0]);return null;}
+function ff_getPageByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return ff_elements[i][3];return 0;}
+function ff_validationFocus(name)
+{if(name==undefined||name==''){if(ff_validationFocusName!=''){ff_switchpage(ff_getPageByName(ff_validationFocusName));if(ff_getElementByName(ff_validationFocusName).focus){ff_getElementByName(ff_validationFocusName).focus();}}}else{if(ff_validationFocusName=='')
+ff_validationFocusName=name;}}
+function ff_getElementByIndex(index)
+{if(index>=0&&index<ff_elements.length)
+return eval('document.ff_form70.'+ff_elements[index][0]);return null;}
+function ff_anychecked(element,message)
+{var name='';if(!element.name){if(element.length&&element.length!=0){name=element[0].name;var cnt=0;for(var i=0;i<element.length;i++)
+if(element[i].name==name)
+if(element[i].checked)cnt++;if(cnt==0){ff_validationFocus(element[0].name);if(message=='')message="Please check or select "+name+".\n";return message;}}else{return '';}}else{name=element.name;if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);
+var cnt=0;for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+if(ff_getElementByIndex(i).checked)cnt++;if(cnt==0){ff_validationFocus(element.name);if(message=='')message="Please check or select "+name+".\n";return message;}}return '';}
+function ff_validemail(element,message)
+{var check=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!check.test(element.value)){if(message=='')message=element.name+" is no valid email address.\n";ff_validationFocus(element.name);return message;}return '';}
+function ff_valuenotempty(element,message)
+{if(element.value!='')return '';if(message=='')message="Please enter "+element.name+".\n";ff_validationFocus(element.name);return message;}
+function ff_validation(page)
+{if(typeof inlineErrorElements!='undefined')inlineErrorElements=new Array();error='';ff_validationFocusName='';if(page==1||page==0){if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_nome[]']){errorout=ff_valuenotempty(document.ff_form70['ff_nm_nome[]'],"Inserisci nome e cognome\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["nome",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_azienda[]']){errorout=ff_valuenotempty(document.ff_form70['ff_nm_azienda[]'],"Inserisci la ragione sociale\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["azienda",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_email[]']){errorout=ff_validemail(document.ff_form70['ff_nm_email[]'],"Inserisci la tua e-mail\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["email",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_telefono[]']){errorout=ff_valuenotempty(document.ff_form70['ff_nm_telefono[]'],"Inserisci un recapito telefonico\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["telefono",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_cittaconsegna[]']){errorout=ff_valuenotempty(document.ff_form70['ff_nm_cittaconsegna[]'],"Inserisci la tua città\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["cittaconsegna",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_privacy[]']){errorout=ff_anychecked(document.ff_form70['ff_nm_privacy[]'],"Si prega di spuntare la casella\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["privacy",errorout]);}}}if(error!=""&&document.getElementById('ff_capimgValue')){document.getElementById('ff_capimgValue').src='/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom='+Math.random();
+document.getElementById('bfCaptchaEntry').value="";}if(error!=""&&document.getElementById("bfSubmitButton")){document.getElementById("bfSubmitButton").disabled=false;}if(error!=""&&typeof JQuery!="undefined"){JQuery(".bfCustomSubmitButton").prop("disabled",false);}
+return error;}
+function ff_validate_nextpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);}}
+function ff_validate_prevpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);}}}
+function ff_resetForm(element,action)
+{eval('document.'+ff_processor.form_id).reset();}
+function ff_submitForm()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}bfCheckCaptcha();}function ff_submitForm2()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}if(typeof bf_ajax_submit!='undefined'){bf_ajax_submit()}else{document.ff_form70.submit();}
+}
+function ff_validate_submit(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(0);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);}ff_validationFocus();
+}else
+ff_submitForm();}
+//-->
+</script>
+<form data-ajax="false"  action="https://www.imprinting.info/display-pubblicitari?gad_source=5&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p2s0Wg463lwWAVNffNFcO2uzmbv6P1jWGi17eq3v14f4E9XL03T1JRoCQ3UQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p9AVBUG0efy_-HWOAGAe1_dcnCsklXjnwGa3X6Nv1Qkf8GkaxQqWKBoC1rwQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p2OHc39iC7yTEpamL0Z7iSN6WREbVMUOZVlTeKEaSQZ8mK9feTBFexoCrUYQAvD_BwE?gad_source=1?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4Iw4-DlXmK8jkDsfcTTT-lQ8QJetLuY5AjTtULgX5yaM7dxsnrhQxoCku8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p-akyzFqqwLz4SlkQqr6XXvll5tz9bgWO80wc3b-CLapjkhDFD-orxoCFp8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pxxbFLjaYqyAao7C1BnbaSbTGZCLV6JB8m9KMOeAkdQPqhETN2RsFhoCkEoQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4XSl85Ti9CSDHhcn9y_uSgXX6Xu8VxteBzlYWHF_yn7bGYljiSgEhoC0z0QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4PU_wfqtuDCnb8nCVD6DylcWNAbYGlxooS7aVnGTkzl3q5xg87P_BoCHX8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p-8QuPwrcfEnsu5xXR4upO8BIMGPVLWeyn_2So86J4nJDDo0EUVJcRoCFhcQAvD_BwE?gad_source=1&gclid=EAIaIQobChMI9NLJx7fLggMVJ4RoCR20WgNCEAAYAiAAEgKNCfD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p5HskpBBGC_I02XV5C3XRgtToHfJicEAktsnM5ImJpwA7DVVwkVImBoC0PYQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pwWjYBEapUsbUPeDajaw74Hnj7SeBcqxgf_oWkID3r62NKbJUFHADhoC0l8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pySaERpwEJ3iQES2g9XNyWEenJEG7qKm-EOTYC_5fVmVlwprinWi4xoCjI8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p9-n1MR84E_Gur94mYxiV8ZNWCgEmJ8NBcD2y9piRTzTIx_0GnvjbhoCxpsQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p1HB0iyr-tFX_9NFiaDRmytlRmteqiVKNtX2UkZ8FmfHfeyHpWy68xoCqCUQAvD_BwE?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r0cUrmm0-s_9GqtwWqLXk9xkEG8E2c1OgrBZmCz5rDzQD-HZO2hPNAaAqEdEALw_wcB?gad_source=1&gclid=EAIaIQobChMI-YifhJbNggMV9DcGAB1VtAI-EAAYAiAAEgKDs_D_BwE?gad_source=1&gclid=EAIaIQobChMI5enbt7TNggMVy5SDBx3w2wvxEAAYASAAEgL8GfD_BwE?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r39SrLIWdN4kVhqUPNPls4v-fu5syWU9x4h5zUjJjzfHwxnPq2i" method="post" name="ff_form70" id="ff_form70" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+<div id="bfPage1" class="bfPage">
+<section  class=" " id="datirichiedente">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfElemWrap control-group" id="bfElemWrap4174">
+<div class="controls form-inline"><div class=""><input placeholder="Nome e cognome" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_nome[]" value="" id="ff_elem4174"/>
+</div></div></div>
+<div class="bfElemWrap control-group" id="bfElemWrap4173">
+<div class="controls form-inline"><div class=""><input placeholder="Azienda" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_azienda[]" value="" id="ff_elem4173"/>
+</div></div></div>
+</div><!-- section normal --></section>
+<section  class=" " id="contatti">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfElemWrap control-group" id="bfElemWrap4172">
+<div class="controls form-inline"><div class=""><input placeholder="Email" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_email[]" value="" id="ff_elem4172"/>
+</div></div></div>
+<div class="bfElemWrap control-group" id="bfElemWrap4171">
+<div class="controls form-inline"><div class=""><input placeholder="Telefono" class=" ff_elem inputbox" type="number" name="ff_nm_telefono[]" value="" id="ff_elem4171" step="" max="" min=""/>
+</div></div><script type="text/javascript">
+							JQuery(document).ready(
+								JQuery("#ff_elem4171").css("width", "100%")
+							);</script></div>
+<div class="bfElemWrap control-group" id="bfElemWrap4170">
+<div class="controls form-inline"><div class=""><input placeholder="Citt&agrave;" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem4170"/>
+</div></div></div>
+</div><!-- section normal --></section>
+<section  class=" " id="tipologiadisplay">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<p>Tipologia display LCD</p>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group" id="bfElemWrap4176">
+<div class="controls form-inline"><div class=" "><span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176" for="ff_elem4176"><input  class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Interno" id="ff_elem4176"/>
+Interno</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176_1" for="ff_elem4176_1"><input  class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Vetrina" id="ff_elem4176_1"/>
+Vetrina</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176_2" for="ff_elem4176_2"><input  class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Touch" id="ff_elem4176_2"/>
+Touch</label></span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfElemWrap control-group" id="bfElemWrap4169">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4169" for="ff_elem4169">Lascia un messaggio (facoltativo)</label>
+<textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;" name="ff_nm_messaggio[]" id="ff_elem4169"></textarea>
+</div></div></div>
+<div class="bfElemWrap control-group" id="bfElemWrap4167">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4167" for="ff_elem4167">Come ci hai conosciuto?</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167" for="ff_elem4167"><input  class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google" id="ff_elem4167"/>
+Google</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_1" for="ff_elem4167_1"><input  class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social" id="ff_elem4167_1"/>
+Social</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_2" for="ff_elem4167_2"><input  class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail" id="ff_elem4167_2"/>
+Mail</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_3" for="ff_elem4167_3"><input  class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro" id="ff_elem4167_3"/>
+Altro</label></span></div></div></div>
+<section  class=" " id="privacy">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span6" id="bfElemWrap4168">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4168" for="ff_elem4168">Acconsento al trattamento dei miei dati in merito a questa richiesta. <i class="icon-asterisk"></i> 
+</label>
+<span class=""><input style="vertical-align: baseline;" class="ff_elem" type="checkbox" name="ff_nm_privacy[]" value="Acconsento" id="ff_elem4168"/>
+</span></div></div></div>
+<div class="bfElemWrap control-group span6" id="bfElemWrap5696">
+<div class="controls form-inline"><div class=" "><span class="">                                        <div id="bfInvisibleReCaptchaContainer"></div>
+                                        <div id="bfInvisibleReCaptcha"></div>
+                                    
+									<script data-usercentrics="reCAPTCHA" type="text/javascript">
+										bfInvisibleRecaptcha = true;
+                                        var onloadBFNewRecaptchaCallback = function (){
+                                            grecaptcha.render('bfInvisibleReCaptchaContainer', {
+                                                'sitekey': '6LfT_8opAAAAALwv-9ku0UuthpYT2dJefeCr0nL_',
+                                                'expired-callback': recaptchaExpiredCallback,
+                                                'callback': recaptchaCheckedCallback,
+                                                "badge" : "",
+                                                'size': 'invisible'
+                                            });
+                                        };
+										
+										function recaptchaCheckedCallback(token){
+											if(token!=''){
+												bfInvisibleRecaptcha = false;
+											}
+											if(typeof bf_htmltextareainit != 'undefined'){
+												bf_htmltextareainit();
+											}
+											ff_validate_submit(this, 'click');
+										};
+										
+										function recaptchaExpiredCallback(){
+											grecaptcha.reset();
+										};
+									</script>
+                                    <script data-usercentrics="reCAPTCHA" src="static/js/api.js" async defer></script>
+                                    </span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfClearfix"></div><div class="form-actions"><div class=""><button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button" onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');" value="Invia la richiesta"><span>Invia la richiesta</span></button>
+</div></div></div><!-- bfPage end -->
+<div id="bfPage2" class="bfPage" style="display:none;">
+<div class="">
+<h2 style="text-align: center;">Grazie per la richiesta</h2>
+<p style="text-align: center;"><span class="lead">Verrai contattato al più presto da un nostro responsabile commerciale per offrirti la soluzione più adatta alle tue esigenze. </span></p>
+</div>
+</div>
+<noscript>Please turn on javascript to submit your data. Thank you!</noscript>
+<input type="hidden" name="ff_contentid" value="214"/>
+<input type="hidden" name="ff_applic" value=""/>
+<input type="hidden" name="ff_record_id" value=""/>
+<input type="hidden" name="ff_module_id" value="0"/>
+<input type="hidden" name="ff_form" value="70"/>
+<input type="hidden" name="ff_task" value="submit"/>
+<input type="hidden" name="ff_target" value="2"/>
+<input type="hidden" name="ff_align" value=""/>
+<input type="hidden" name="option" value="com_content"/>
+<input type="hidden" name="Itemid" value="398"/>
+<input type="hidden" name="id" value="214"/>
+</form>
+</div><!-- form end -->
+</div>
+</div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-large">                
+                    
+                    <div class="tm-grid-expand uk-grid-divider uk-grid-margin" uk-grid>
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/63/Google-Reviews-5-stelle-01-63d2e1c9.webp 220w, /templates/yootheme/cache/73/Google-Reviews-5-stelle-01-7370ce43.webp 399w, /templates/yootheme/cache/71/Google-Reviews-5-stelle-01-711bef45.webp 400w" sizes="(min-width: 220px) 220px">
+<img src="static/picture/google-reviews-5-stelle-01-8888c4eb.png" width="220" height="93" class="el-image" alt="recensioni" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-3-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-width-2xlarge uk-margin-auto" uk-slider="autoplay: 1; pauseOnHover: false; autoplayInterval: 4000;">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-match">                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+        
+                    
+
+        
+                <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">                        Emiliano Papale                    </div>        
+        
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w" sizes="(min-width: 150px) 150px">
+<img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30" class="el-image uk-margin-top" alt="stelle" loading="lazy">
+</picture>        
+        
+                <div class="el-content uk-panel uk-margin-top">Azienda composta da professionisti del Digital Signage e del Printing. Li consiglio.</div>        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+        
+                    
+
+        
+                <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">                        Mario Iannelli                    </div>        
+        
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w" sizes="(min-width: 150px) 150px">
+<img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30" class="el-image uk-margin-top" alt="stelle" loading="lazy">
+</picture>        
+        
+                <div class="el-content uk-panel uk-margin-top">Molto gentili e competenti.</div>        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+        
+                    
+
+        
+                <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">                        Roberto Romano                    </div>        
+        
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w" sizes="(min-width: 150px) 150px">
+<img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30" class="el-image uk-margin-top" alt="stelle" loading="lazy">
+</picture>        
+        
+                <div class="el-content uk-panel uk-margin-top">Cortesi, competenti e professionali.</div>        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+        
+                    
+
+        
+                <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">                        Biagio D'Auria                    </div>        
+        
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w" sizes="(min-width: 150px) 150px">
+<img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30" class="el-image uk-margin-top" alt="stelle" loading="lazy">
+</picture>        
+        
+                <div class="el-content uk-panel uk-margin-top">I Totem acquistati rispecchiano fedelmente quello che ci hanno proposto nel preventivo e comunque molto più che superiori alle nostre aspettative. Dal punto di vista del software, la programmazione...</div>        
+        
+        
+        
+        
+    
+</div></li>                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+        
+                    
+
+        
+                <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">                        Fabio Fraccastoro                    </div>        
+        
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w" sizes="(min-width: 150px) 150px">
+<img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30" class="el-image uk-margin-top" alt="stelle" loading="lazy">
+</picture>        
+        
+                <div class="el-content uk-panel uk-margin-top">Grande azienda con personale moooolto preparato.</div>        
+        
+        
+        
+        
+    
+</div></li>                            </ul>
+
+        
+        
+    </div>
+
+        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s" uk-margin><li uk-slider-item="0"><a href aria-label="Go to slide 1"></a></li><li uk-slider-item="1"><a href aria-label="Go to slide 2"></a></li><li uk-slider-item="2"><a href aria-label="Go to slide 3"></a></li><li uk-slider-item="3"><a href aria-label="Go to slide 4"></a></li><li uk-slider-item="4"><a href aria-label="Go to slide 5"></a></li></ul>    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-h2 uk-font-primary uk-visible@s uk-margin-remove-vertical uk-text-center">        <strong>Case study</strong>    </div>
+<div class="uk-h2 uk-font-primary uk-hidden@s uk-margin-remove-vertical uk-text-center">        <strong>Case study</strong>    </div>
+                
+            
+        
+    
+</div>
+</div></div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div uk-slider="center: 1; autoplay: 1; pauseOnHover: false; autoplayInterval: 5000;" id="page#5" class="uk-margin uk-text-center">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slider-items uk-grid uk-grid-small uk-grid-match">                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/431-vimel-store" target="_blank" aria-label="Vimel Store">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/de/_DCR1030-HDR-1-dec25dd2.webp 600w, /templates/yootheme/cache/6d/_DCR1030-HDR-1-6d2d105b.webp 768w, /templates/yootheme/cache/00/_DCR1030-HDR-1-007fe0eb.webp 1024w, /templates/yootheme/cache/59/_DCR1030-HDR-1-59ce76c5.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/_dcr1030-hdr-1-655a5eb7.jpeg" width="600" height="400" alt="Vimel Store San Cesareo" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/de/_DCR1030-HDR-1-dec25dd2.webp 600w, /templates/yootheme/cache/6d/_DCR1030-HDR-1-6d2d105b.webp 768w, /templates/yootheme/cache/00/_DCR1030-HDR-1-007fe0eb.webp 1024w, /templates/yootheme/cache/59/_DCR1030-HDR-1-59ce76c5.webp 1200w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/_dcr1030-hdr-1-655a5eb7.jpeg" width="600" height="400" alt="Vimel Store San Cesareo" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        Vimel Store    </div>
+
+
+
+</div></div>        
+</a>
+</li>                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/429-ama-roma" target="_blank" aria-label="AMA Roma">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/81/_DCR0267-1_ed-8137d6ea.webp 600w, /templates/yootheme/cache/32/_DCR0267-1_ed-32d89b63.webp 768w, /templates/yootheme/cache/64/_DCR0267-1_ed-6450b4b0.webp 1024w, /templates/yootheme/cache/3d/_DCR0267-1_ed-3de1229e.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/_dcr0267-1_ed-3c68a33e.jpeg" width="600" height="400" alt="AMA Roma" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/81/_DCR0267-1_ed-8137d6ea.webp 600w, /templates/yootheme/cache/32/_DCR0267-1_ed-32d89b63.webp 768w, /templates/yootheme/cache/64/_DCR0267-1_ed-6450b4b0.webp 1024w, /templates/yootheme/cache/3d/_DCR0267-1_ed-3de1229e.webp 1200w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/_dcr0267-1_ed-3c68a33e.jpeg" width="600" height="400" alt="AMA Roma" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        AMA Roma    </div>
+
+
+
+</div></div>        
+</a>
+</li>                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/425-hego-good-food-lab" target="_blank" aria-label="Hego Good Food Lab">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c6/hego-cs-cover-c6b0ab2c.webp 600w, /templates/yootheme/cache/75/hego-cs-cover-755fe6a5.webp 768w, /templates/yootheme/cache/d7/hego-cs-cover-d7ebe579.webp 1024w, /templates/yootheme/cache/8e/hego-cs-cover-8e5a7357.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/hego-cs-cover-0c201202.jpeg" width="600" height="400" alt="Hego Good Food Lab" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/c6/hego-cs-cover-c6b0ab2c.webp 600w, /templates/yootheme/cache/75/hego-cs-cover-755fe6a5.webp 768w, /templates/yootheme/cache/d7/hego-cs-cover-d7ebe579.webp 1024w, /templates/yootheme/cache/8e/hego-cs-cover-8e5a7357.webp 1200w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/hego-cs-cover-0c201202.jpeg" width="600" height="400" alt="Hego Good Food Lab" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        Hego Good Food Lab    </div>
+
+
+
+</div></div>        
+</a>
+</li>                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/422-ibl-banca" target="_blank" aria-label="IBL Banca">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/41/cover-social-2-41540362.webp 600w, /templates/yootheme/cache/5d/cover-social-2-5d21933e.webp 768w, /templates/yootheme/cache/2b/cover-social-2-2b79aa23.webp 945w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/cover-social-2-b75d325c.jpeg" width="600" height="400" alt="IBL Banca" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/41/cover-social-2-41540362.webp 600w, /templates/yootheme/cache/5d/cover-social-2-5d21933e.webp 768w, /templates/yootheme/cache/2b/cover-social-2-2b79aa23.webp 945w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/cover-social-2-b75d325c.jpeg" width="600" height="400" alt="IBL Banca" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        IBL Banca    </div>
+
+
+
+</div></div>        
+</a>
+</li>                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/421-centri-ottici-milleocchiali" target="_blank" aria-label="Centri Ottici Milleocchiali">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/f3/_DCR4523-1-f3fc73f3.webp 600w, /templates/yootheme/cache/40/_DCR4523-1-40133e7a.webp 768w, /templates/yootheme/cache/20/_DCR4523-1-2027623a.webp 1024w, /templates/yootheme/cache/79/_DCR4523-1-7996f414.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/_dcr4523-1-b5a6ba20.jpeg" width="600" height="400" alt="Centri Ottici Milleocchiali" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/f3/_DCR4523-1-f3fc73f3.webp 600w, /templates/yootheme/cache/40/_DCR4523-1-40133e7a.webp 768w, /templates/yootheme/cache/20/_DCR4523-1-2027623a.webp 1024w, /templates/yootheme/cache/79/_DCR4523-1-7996f414.webp 1200w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/_dcr4523-1-b5a6ba20.jpeg" width="600" height="400" alt="Centri Ottici Milleocchiali" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        Centri Ottici Milleocchiali    </div>
+
+
+
+</div></div>        
+</a>
+</li>                                <li class="el-item">
+
+<a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle" href="/lavori/20-display-smart-signage/408-eurofer-implementa-un-sistema-digital-signage-nelle-sue-8-sedi" target="_blank" aria-label="Eurofer">
+        
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/8d/_DCR7167-HDR-1_cover-social-8dae1da1.webp 600w, /templates/yootheme/cache/92/_DCR7167-HDR-1_cover-social-9278188e.webp 768w, /templates/yootheme/cache/a9/_DCR7167-HDR-1_cover-social-a958ecdd.webp 945w" sizes="(min-width: 600px) 600px">
+<img src="static/picture/_dcr7167-hdr-1_cover-social-99a75346.jpeg" width="600" height="400" alt="Eurofer" loading="lazy" class="uk-invisible">
+</picture>
+<picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/8d/_DCR7167-HDR-1_cover-social-8dae1da1.webp 600w, /templates/yootheme/cache/92/_DCR7167-HDR-1_cover-social-9278188e.webp 768w, /templates/yootheme/cache/a9/_DCR7167-HDR-1_cover-social-a958ecdd.webp 945w" sizes="(max-aspect-ratio: 600/400) 150vh">
+<img src="static/picture/_dcr7167-hdr-1_cover-social-99a75346.jpeg" width="600" height="400" alt="Eurofer" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+</picture>
+
+        
+        
+                <div class="uk-position-center uk-tile-default"><div class="uk-overlay uk-margin-remove-first-child">
+
+<div class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">        Eurofer    </div>
+
+
+
+</div></div>        
+</a>
+</li>                            </ul>
+
+        
+        
+    </div>
+
+        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s" uk-margin><li uk-slider-item="0"><a href aria-label="Go to slide 1"></a></li><li uk-slider-item="1"><a href aria-label="Go to slide 2"></a></li><li uk-slider-item="2"><a href aria-label="Go to slide 3"></a></li><li uk-slider-item="3"><a href aria-label="Go to slide 4"></a></li><li uk-slider-item="4"><a href aria-label="Go to slide 5"></a></li><li uk-slider-item="5"><a href aria-label="Go to slide 6"></a></li></ul>    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                
+            
+        
+    
+</div>
+
+            
+            
+
+            <!-- Builder #footer -->
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin-small uk-text-center">
+        <a class="el-link" href="/index.php"><img src="static/picture/logo-reg-footer.svg" width="120" height="120" class="el-image" alt="logo IM" loading="lazy"></a>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Solutions    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/display-pubblicitari" class="el-link uk-link-muted uk-margin-remove-last-child">Display</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/it/sale-riunioni" class="el-link uk-link-muted uk-margin-remove-last-child"><p>IT</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/production-printing" class="el-link uk-link-muted uk-margin-remove-last-child">Printing</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/finishing" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Finishing</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Company    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/azienda" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Azienda</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://imprinting.info/careers" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Careers</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/home-it/informativa-sulla-privacy" class="el-link uk-link-muted uk-margin-remove-last-child">Privacy</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="https://shop.imprinting.info" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">Shop</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Focus    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/blog" class="el-link uk-link-muted uk-margin-remove-last-child">Blog</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/lavori" class="el-link uk-link-muted uk-margin-remove-last-child">Lavori</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="/marketing" class="el-link uk-link-muted uk-margin-remove-last-child">Marketing</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-center">        Seguici anche su    </h3>
+<div class="uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl" target="_blank" rel="noreferrer"><span uk-icon="icon: linkedin; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions" target="_blank" rel="noreferrer"><span uk-icon="icon: facebook; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/" target="_blank" rel="noreferrer"><span uk-icon="icon: instagram; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" target="_blank" rel="noreferrer"><span uk-icon="icon: youtube; width: 20; height: 20;"></span></a></div>
+    
+    </div></div>
+<div class="uk-margin-medium uk-text-center">
+    <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w" sizes="(min-width: 76px) 76px">
+<img src="static/picture/logo-asroma-proudmember-02-bb320a23.png" width="76" height="90" class="el-image" alt="logo as roma" loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr><div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri, 43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloakd53175c9549c8b499021688b14948a17">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addyd53175c9549c8b499021688b14948a17 = addyd53175c9549c8b499021688b14948a17 + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_textd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd53175c9549c8b499021688b14948a17 + '\'>'+addy_textd53175c9549c8b499021688b14948a17+'<\/a>';
+		</script></span> - Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale<br /> Via Lorenzo Bonincontri, 43 - 00147 Roma RM<br />REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloakd33e5696de302d7e7e8d894e5e7d4f9e">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addyd33e5696de302d7e7e8d894e5e7d4f9e = addyd33e5696de302d7e7e8d894e5e7d4f9e + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_textd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd33e5696de302d7e7e8d894e5e7d4f9e + '\'>'+addy_textd33e5696de302d7e7e8d894e5e7d4f9e+'<\/a>';
+		</script></span> <br />Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">Tutti i marchi riportati appartengono ai legittimi proprietari</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+		
+		 <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    </body>
+</html>
