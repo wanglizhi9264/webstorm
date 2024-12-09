@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "San Francisco Display Ultralight";
+  src: url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot) format("embedded-opentype"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"), url("https://shop.imprinting.info/wp-content/themes/yootheme-child/css/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Thin";
+  src: url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot) format("embedded-opentype"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("https://shop.imprinting.info/wp-content/themes/yootheme-child/css/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Medium";
+  src: url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot) format("embedded-opentype"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("https://shop.imprinting.info/wp-content/themes/yootheme-child/css/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Semibold";
+  src: url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot) format("embedded-opentype"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("https://shop.imprinting.info/wp-content/themes/yootheme-child/css/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg") format("svg")
+}
+
+@font-face {
+  font-family: "San Francisco Display Bold";
+  src: url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot) format("embedded-opentype"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(../../../../assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("https://shop.imprinting.info/wp-content/themes/yootheme-child/css/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg") format("svg")
+}

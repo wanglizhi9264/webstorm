@@ -1,0 +1,39 @@
+.column-title{vertical-align:bottom;position:relative}
+.column-title > a {color:#6c757d;display:block}
+.column-title::before{right:1em;content:"\2191";position:absolute;bottom:.9em;display:block;opacity:.5;}
+.column-title::after{right:.5em;content:"\2193";position:absolute;bottom:.9em;display:block;opacity:.5;}
+.gridPager > td > table > tbody > tr > td > a, .gridPager > td > table > tbody > tr > td > span {padding:.15rem .5rem;font-size:.75rem;border-radius:.1rem;display:inline-block;font-weight:400;line-height:1.625;color:#495057;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.gridPager > td > table > tbody > tr > td > a:hover {background-color:#495057;border-color:#495057;color:#FFF;text-decoration:none;opacity:1;}
+.gridPager > td > table {margin:0;padding:0;border:0;border-spacing:0;border-collapse:collapse;}
+.gridPager > td > table > tbody > tr > td {margin:0;padding:0;border:0;border-spacing:0;border-collapse:collapse;}
+.gridPager > td > table > tbody > tr > td > a {color:#FFF;border-color:#495057;background-color:#495057;opacity:.65;}
+.gridPager > td > table > tbody > tr > td > span {color:#fff;background-color:#495057;border-color:#495057;pointer-events:none;}
+.tooltip {opacity:1 !important}
+.bg-gradient-primary {background-image:linear-gradient(310deg,#0664a3,#3f80ea);}
+.bg-gradient-info {background-image:linear-gradient(310deg,#2152ff,#21d4fd);}
+.bg-gradient-dark{background-image:linear-gradient(310deg,#141727,#3a416f);}
+.bg-gradient-success {background-image: linear-gradient(310deg,#17ad37,#98ec2d);}
+.bg-gradient-warning {background-image: linear-gradient(310deg,#f53939,#fac60b);}
+.bg-gradient-danger {background-image:linear-gradient(310deg,#ea0606,#ff3d59);}
+.bg-curved{background: url(https://assistenza.imprinting.info/img/white-curved.jpg) center center no-repeat;background-size:cover;}
+.bg-curved2{background: url(https://assistenza.imprinting.info/img/curved1.jpg) center center no-repeat;background-size:cover;}
+.bg-curved3{background: url(https://assistenza.imprinting.info/img/curved6.jpg) center center no-repeat;background-size:cover;}
+.bg-curved4{background: url(https://assistenza.imprinting.info/img/curved7.jpg) center center no-repeat;background-size:cover;}
+.bg-curved5{background: url(https://assistenza.imprinting.info/img/curved8.jpg) center center no-repeat;background-size:cover;}
+.bg-curved6{background: url(https://assistenza.imprinting.info/img/curved9.jpg) center center no-repeat;background-size:cover;}
+.bg-curved7{background: url(https://assistenza.imprinting.info/img/curved10.jpg) center center no-repeat;background-size:cover;}
+.bg-curved8{background: url(https://assistenza.imprinting.info/img/curved11.jpg) center center no-repeat;background-size:cover;}
+.bg-curved9{background: url(https://assistenza.imprinting.info/img/curved14.jpg) center center no-repeat;background-size:cover;}
+.bg-assistenza {background: #951D40;}
+.animation1{animation: animatedBg1 10s ease-in-out infinite alternate;}
+@keyframes animatedBg1 {
+  from {background-position: 50% 50%;background-size:100%;}
+  to {background-position: 70% 25%;background-size:110%;}
+  /*0%   {background-position: 50% 50%;}
+  50%  {background-position: 60% 20%;}
+  100% {background-position: 20% 60%;}*/
+}
+.blur {box-shadow: inset 0 0 2px #fefefed1;-webkit-backdrop-filter: saturate(200%) blur(30px);backdrop-filter: saturate(200%) blur(30px);background-color: hsla(0,0%,100%,.8)!important;}
+.btn-shadow{box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);}
+.h50{height:50px;}
+.multisteps-form__progress{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr))}.multisteps-form__progress-btn{transition-property:all;transition-duration:.15s;transition-timing-function:linear;transition-delay:0s;position:relative;padding-top:20px;color:#dee2e6;text-indent:-9999px;border:none;background-color:transparent;outline:none!important;}@media (min-width:500px){.multisteps-form__progress-btn{text-indent:0}}.multisteps-form__progress-btn:before{position:absolute;top:0;left:50%;display:block;width:13px;height:13px;content:"";transform:translateX(-50%);transition:all .15s linear 0s,transform .15s cubic-bezier(.05,1.09,.16,1.4) 0s;border:2px solid currentColor;border-radius:50%;background-color:#fff;box-sizing:border-box;z-index:3}.multisteps-form__progress-btn:after{position:absolute;top:5px;left:calc(-50% - 13px / 2);transition-property:all;transition-duration:.15s;transition-timing-function:linear;transition-delay:0s;display:block;width:100%;height:2px;content:"";background-color:currentColor;z-index:1}.multisteps-form__progress-btn:first-child:after{display:none}.multisteps-form__progress-btn.js-active{color:#344767}.multisteps-form__progress-btn.js-active span{color:#8392ab}.multisteps-form__progress-btn.js-active:before{transform:translateX(-50%) scale(1.2);background-color:currentColor}.multisteps-form__form{position:relative}.multisteps-form__panel{position:absolute;top:0;left:0;width:100%;height:0;opacity:0;visibility:hidden}.multisteps-form__panel.js-active{height:auto;opacity:1;visibility:visible}.multisteps-form__panel[data-animation=scaleIn]{transform:scale(.9)}.multisteps-form__panel[data-animation=scaleIn].js-active{transition-property:all;transition-duration:.2s;transition-timing-function:linear;transition-delay:0s;transform:scale(1)}

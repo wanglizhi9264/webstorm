@@ -1,0 +1,9 @@
+/* Herzog Dupont for YOOtheme Pro Copyright (C) 2019-2022 Thomas Weidlich GNU GPL v3 */
+
+.el-circle {
+	transform: rotate(-90deg);
+}
+
+.counter-value {
+	stroke-linecap: round;
+}

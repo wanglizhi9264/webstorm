@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png" sizes="any">
+                <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+        <meta charset="utf-8">
+	<base href="https://www.imprinting.info/blog/410-come-creare-un-esperienza-coinvolgente-attraverso-l-utilizzo-di-schermi-digitali-in-uno-showroom">
+	<meta name="title" content="Display digitali: come progettare uno showroom coinvolgente?">
+	<meta name="metatitle" content="Display digitali: come progettare uno showroom coinvolgente?">
+	<meta name="twitter:title" content="Display digitali: come progettare uno showroom coinvolgente?">
+	<meta name="twitter:description" content="In che modo gli schermi professionali per il Digital Signage possono trasformare uno showroom in un’esperienza coinvolgente ed immersiva che conquista i clienti?">
+	<meta name="twitter:image" content="https://www.imprinting.info/images/blog/2024/09/DS-SHOWROOM-cover-social.jpg">
+	<meta property="og:title" content="Display digitali: come progettare uno showroom coinvolgente?">
+	<meta property="og:description" content="In che modo gli schermi professionali per il Digital Signage possono trasformare uno showroom in un’esperienza coinvolgente ed immersiva che conquista i clienti?">
+	<meta property="og:url" content="https://www.imprinting.info/blog/410-come-creare-un-esperienza-coinvolgente-attraverso-l-utilizzo-di-schermi-digitali-in-uno-showroom">
+	<meta property="og:image" content="https://www.imprinting.info/images/blog/2024/09/DS-SHOWROOM-cover-social.jpg">
+	<meta name="description" content="In che modo gli schermi professionali per il Digital Signage possono trasformare uno showroom in un’esperienza coinvolgente ed immersiva che conquista i clienti?">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Display digitali: come progettare uno showroom coinvolgente?</title>
+	<link href="https://www.imprinting.info/component/search/?Itemid=353&amp;catid=26&amp;id=410&amp;format=opensearch" rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml">
+	<link href="../templates/yootheme/css/theme.12.css" rel="stylesheet">
+	<link href="../templates/yootheme/css/custom.css" rel="stylesheet">
+	<style>
+
+
+.bfClearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.bfFadingClass{
+display:none;
+}
+
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"7e0c628d191f09ba581a69ce12974a9f","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core.js"></script>
+	<script src="../media/system/js/core.js"></script>
+	<script src="../media/system/js/mootools-more.js"></script>
+	<script src="../media/jui/js/jquery.min.js"></script>
+	<script src="../media/jui/js/jquery-noconflict.js"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js"></script>
+	<script src="../media/jui/js/bootstrap.min.js"></script>
+	<script src="../components/com_breezingforms/libraries/js/sweetalert.min.js"></script>
+	<script src="../templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js"></script>
+	<script src="../templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-horizon.min.js"></script>
+	<script src="../templates/yootheme/js/theme.js"></script>
+	<script>
+<!--
+                    jQuery(document).ready(function()
+                    {
+                            jQuery(".hasTooltip").tooltip({"html": true,"container": "body"});
+                    });var JQuery = jQuery;
+
+			var inlineErrorElements = new Array();
+			var bfSummarizers = new Array();
+			var bfDeactivateField = new Array();
+			var bfDeactivateSection = new Array();
+			
+
+                        function bf_validate_nextpage(element, action)
+                        {
+                            if(typeof bfUseErrorAlerts != "undefined"){
+                             JQuery(".bfErrorMessage").html("");
+                             JQuery(".bfErrorMessage").css("display","none");
+                            }
+
+                            error = ff_validation(ff_currentpage);
+                            if (error != "") {
+                               if(typeof bfUseErrorAlerts == ""){
+                                   alert(error);
+                                } else {
+                                   bfShowErrors(error);
+                                }
+                                ff_validationFocus("");
+                            } else {
+                                ff_switchpage(ff_currentpage+1);
+                                self.scrollTo(0,0);
+                            }
+                        }
+
+
+			function bfCheckMaxlength(id, maxlength, showMaxlength){
+				if( JQuery("#ff_elem"+id).val().length > maxlength ){
+					JQuery("#ff_elem"+id).val( JQuery("#ff_elem"+id).val().substring(0, maxlength) );
+				}
+				if(showMaxlength){
+					JQuery("#bfMaxLengthCounter"+id).text( "(" + (maxlength - JQuery("#ff_elem"+id).val().length) + " chars left)" );
+				}
+			}
+			function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty){
+				bfSummarizers.push( { id : id, connectWith : connectWith, type : type, emptyMessage : emptyMessage, hideIfEmpty : hideIfEmpty } );
+			}
+			function bfField(name){
+				var value = "";
+				switch(ff_getElementByName(name).type){
+					case "radio":
+						if(JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "" && typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+							value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+							if(!isNaN(value)){
+								value = Number(value);
+							}
+						}
+						break;
+					case "checkbox":
+					case "select-one":
+					case "select-multiple":
+						var nodeList = document["ff_form61"][""+ff_getElementByName(name).name+""];
+						if(ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined"){
+							if(typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+								value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						} else {
+							var val = "";
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								value = val.substr(0, val.length - 2);
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						}
+						break;
+					default:
+						if(!isNaN(ff_getElementByName(name).value)){
+							value = Number(ff_getElementByName(name).value);
+						} else {
+							value = ff_getElementByName(name).value;
+						}
+				}
+				return value;
+			}
+			function populateSummarizers(){
+				// cleaning first
+
+				for(var i = 0; i < bfSummarizers.length; i++){
+					JQuery("#"+bfSummarizers[i].id).parent().css("display", "");
+					JQuery("#"+bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">"+bfSummarizers[i].emptyMessage+"</span>");
+				}
+				for(var i = 0; i < bfSummarizers.length; i++){
+					var summVal = "";
+					switch(bfSummarizers[i].type){
+						case "bfTextfield":
+						case "bfTextarea":
+						case "bfHidden":
+						case "bfCalendar":
+						case "bfNumberInput":
+                        case "bfCalendarResponsive":
+						case "bfFile":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() != ""){
+								JQuery("#"+bfSummarizers[i].id).text( JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() ).html();
+								var breakableText = JQuery("#"+bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+								if(breakableText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										breakableText = calc(breakableText);
+									}
+								}
+
+								JQuery("#"+bfSummarizers[i].id).html(breakableText);
+								summVal = breakableText;
+							}
+						break;
+						case "bfRadioGroup":
+						case "bfCheckbox":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "undefined"){
+								var theText = JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val();
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+						case "bfCheckboxGroup":
+						case "bfSelect":
+							var val = "";
+							var nodeList = document["ff_form61"]["ff_nm_"+bfSummarizers[i].connectWith+"[]"];
+
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								var theText = val.substr(0, val.length - 2);
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+					}
+
+					if( ( bfSummarizers[i].hideIfEmpty && summVal == "" ) || ( typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_"+bfSummarizers[i].connectWith+"[]"] ) ){
+                        JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+					} else {
+					    JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+					}
+				}
+			}
+
+		    bfToggleFieldsLoaded = false;
+		    bfSectionFieldsDeactivated = false;
+			JQuery(document).ready(function() {
+				if(typeof bfFade != "undefined")bfFade();
+				if(typeof bfRollover != "undefined")bfRollover();
+				if(typeof bfRollover2 != "undefined")bfRollover2();
+				if(typeof bfRegisterToggleFields != "undefined"){ 
+				    bfRegisterToggleFields(); 
+                }else{
+                    bfToggleFieldsLoaded = true;
+                }
+				if(typeof bfDeactivateSectionFields != "undefined"){ 
+				    bfDeactivateSectionFields(); 
+				}else{
+				    bfSectionFieldsDeactivated = true;
+				}
+                if(JQuery.bfvalidationEngine)
+                {
+                    JQuery.bfvalidationEngineLanguage.newLang();
+                    JQuery(".ff_elem").change(
+                        function(){
+                            JQuery.bfvalidationEngine.closePrompt(this);
+                        }
+                    );
+                }
+				JQuery(".bfQuickMode .hasTip").css("color","inherit"); // fixing label text color issue
+				JQuery(".bfQuickMode .bfTooltip").css("color","inherit"); // fixing label text color issue
+                JQuery("input[type=text]").bind("keypress", function(evt) {
+                    if(evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+			});
+		//-->document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });
+	</script>
+	<link rel="stylesheet" href="../components/com_breezingforms/themes/quickmode-bootstrap/system.css">
+	<script>UIkit.util.ready(() => {
+              UIkit.lightbox('#my-slider .uk-slider-items');
+      });</script>
+	<script>var $theme = {};</script>
+	<!-- Joomla Facebook Integration Begin -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '389175478706596', {}, {agent: 'pljoomla'});
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx" src="https://www.facebook.com/tr?id=389175478706596&ev=PageView&noscript=1">
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- Joomla Facebook Integration end -->
+
+    </head>
+    <body class="">
+	
+	    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNBQV47');</script>
+<!-- End Google Tag Manager -->
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<div class="tm-header-mobile uk-hidden@m" uk-header>
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="../index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="50" height="51" src="../images/logo/logo-IM-colore.svg"></a>
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+                        
+                        <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="slide" flip>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-vertical">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-195">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-102 js-accordion uk-parent"><a href> Display <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-130"><a href="../display-pubblicitari.html"> Business Display</a></li>
+		<li class="item-390"><a href="../videowall-e-ledwall.html"> Videowall e Ledwall</a></li>
+		<li class="item-425"><a href="../display-solutions/totem.html"> Totem</a></li>
+		<li class="item-132"><a href="../lavagne-interattive.html"> Lavagne Interattive</a></li>
+		<li class="item-117"><a href="../hotel-tv-samsung-smart-hospitality.html"> Hospitality TV</a></li>
+		<li class="item-454"><a href="../hospital-tv-strutture-sanitarie.html"> Healthcare</a></li></ul></li>
+	<li class="item-428 js-accordion uk-parent"><a href> IT <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-460"><a href="../sale-riunioni.html"> Sale riunioni</a></li>
+		<li class="item-451"><a href="../noleggio-notebook-samsung-galaxy-book3.html"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></li>
+	<li class="item-392 js-accordion uk-parent"><a href> Printing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-391"><a href="../production-printing.html"> Production Printing</a></li>
+		<li class="item-393"><a href="../printing-solutions.html"> Printing Solutions</a></li>
+		<li class="item-455"><a href="../offerte-multifunzione-ufficio.html"> Offerte Multifunzione Ufficio</a></li></ul></li>
+	<li class="item-348 uk-parent"><a href="../finishing.html"> Finishing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-429"><a href="../finishing/dtf.html"> DTF</a></li></ul></li>
+	<li class="item-417"><a href="../lavori.html"> Lavori</a></li>
+	<li class="item-353 uk-active"><a href="../blog.html"> Blog</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-159">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><p><a class="uk-button uk-button-secondary uk-text-middle" href="../contatti.html">Contatti</a></p></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-182">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid" uk-grid>
+<div class="uk-first-column"><a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;"></a></div>
+<div><a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;"></a></div>
+<div><a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: instagram; width: 20; height: 20;"></a></div>
+<div><a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;"></a></div>
+</div></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-tm-4">
+
+    
+    
+
+    <form id="search-tm-4" action="/blog" method="post" role="search" class="uk-search uk-search-default uk-width-1-1"><span uk-search-icon></span><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input"><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="353"></form>
+
+
+
+
+
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</div>
+
+
+
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="../index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="60" height="61" src="../images/logo/logo-IM-colore.svg"><img class="uk-logo-inverse" alt loading="eager" width="60" height="61" src="../images/logo/logo-IM-bianco.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav" id="module-194">
+    
+	<li class="item-102 uk-parent"><a role="button"> Display</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-130"><a href="../display-pubblicitari.html"> Business Display</a></li>
+		<li class="item-390"><a href="../videowall-e-ledwall.html"> Videowall e Ledwall</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-425"><a href="../display-solutions/totem.html"> Totem</a></li>
+		<li class="item-132"><a href="../lavagne-interattive.html"> Lavagne Interattive</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-117"><a href="../hotel-tv-samsung-smart-hospitality.html"> Hospitality TV</a></li>
+		<li class="item-454"><a href="../hospital-tv-strutture-sanitarie.html"> Healthcare</a></li></ul></div></div></div></li>
+	<li class="item-428 uk-parent"><a role="button"> IT</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-460"><a href="../sale-riunioni.html"> Sale riunioni</a></li>
+		<li class="item-451"><a href="../noleggio-notebook-samsung-galaxy-book3.html"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></div></div></div></li>
+	<li class="item-392 uk-parent"><a role="button"> Printing</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-391"><a href="../production-printing.html"> Production Printing</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-393"><a href="../printing-solutions.html"> Printing Solutions</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-455"><a href="../offerte-multifunzione-ufficio.html"> Offerte Multifunzione Ufficio</a></li></ul></div></div></div></li>
+	<li class="item-348 uk-parent"><a href="../finishing.html"> Finishing</a>
+	<div class="uk-navbar-dropdown"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-429"><a href="../finishing/dtf.html"> DTF</a></li></ul></div></div></div></li>
+	<li class="item-417"><a href="../lavori.html"> Lavori</a></li>
+	<li class="item-353 uk-active"><a href="../blog.html"> Blog</a></li></ul>
+
+<div class="uk-navbar-item" id="module-154">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><p><a class="uk-button uk-button-secondary uk-text-middle" href="../contatti.html">Contatti</a></p></div>
+
+</div>
+
+
+    <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-tm-3" action="/blog" method="post" role="search" class="uk-search uk-search-large"><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input uk-text-center" autofocus><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="353"></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</div>
+
+            
+            
+
+            
+            <div id="system-message-container" data-messages="[]">
+</div>
+
+            <!-- Builder #page --><style class="uk-margin-remove-adjacent">#page\#0 .uk-checkbox, #page\#0 .uk-radio, #page\#0 input[type=checkbox]:not([class*=uk-]), #page\#0 input[type=radio]:not([class*=uk-]) { margin-top: 3px; } #page\#0 .uk-input, #page\#0 .uk-select:not([multiple]):not([size]), #page\#0 .uneditable-input:not([class*=uk-]), #page\#0 input[type=color]:not([class*=uk-]), #page\#0 input[type=date]:not([class*=uk-]), #page\#0 input[type=datetime-local]:not([class*=uk-]), #page\#0 input[type=datetime]:not([class*=uk-]), #page\#0 input[type=email]:not([class*=uk-]), #page\#0 input[type=month]:not([class*=uk-]), #page\#0 input[type=number]:not([class*=uk-]), #page\#0 input[type=password]:not([class*=uk-]), #page\#0 input[type=search]:not([class*=uk-]), #page\#0 input[type=tel]:not([class*=uk-]), #page\#0 input[type=text]:not([class*=uk-]), #page\#0 input[type=time]:not([class*=uk-]), #page\#0 input[type=url]:not([class*=uk-]), #page\#0 input[type=week]:not([class*=uk-]), #page\#0 select:not([class*=uk-]):not([multiple]):not([size]) { height: 40px!important; } #page\#0 .bfQuickMode .controls .control-label { width: 100%; } #page\#0 .bfQuickMode .bfSubmitButton { float: none; display: block; margin-left: auto; margin-right: auto; white-space:nowrap; padding: 0 30px; vertical-align: middle; font-size: 12px; line-height: 40px; } #form .checkbox.inline+.checkbox.inline, #form .radio.inline+.radio.inline { margin-left: 20px;} #form .bfQuickMode .controls .control-label { width: 100%;} </style>
+<div class="uk-section-default uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-title-blog uk-text-center@m uk-text-center">        Come creare un'esperienza coinvolgente attraverso l'utilizzo di schermi digitali in uno showroom    </h1>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="glance" class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/e7/DS-SHOWROOM-cover-e7c6109d.jpeg" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvYmxvZy8yMDI0LzA5L0RTLVNIT1dST09NLWNvdmVyLmpwZyIsW1sidHlwZSIsWyJ3ZWJwIiwiODUiXV0sWyJkb1Jlc2l6ZSIsWzc2OSw1MTMsNzY5LDUxM11dLFsiZG9Dcm9wIixbNzY4LDUxMywwLDBdXV0sMTcxNzY2NDQ1NF0%3D&amp;file=e2%2FDS-SHOWROOM-cover-e2206890.webp&amp;hash=a58a5f76 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvYmxvZy8yMDI0LzA5L0RTLVNIT1dST09NLWNvdmVyLmpwZyIsW1sidHlwZSIsWyJ3ZWJwIiwiODUiXV0sWyJkb1Jlc2l6ZSIsWzEwMjUsNjg0LDEwMjUsNjg0XV0sWyJkb0Nyb3AiLFsxMDI0LDY4NCwwLDBdXV0sMTcxNzY2NDQ1NF0%3D&amp;file=53%2FDS-SHOWROOM-cover-53a7274d.webp&amp;hash=24a4ad08 1024w, \/templates\/yootheme\/cache\/82\/DS-SHOWROOM-cover-823510c2.webp 1200w, \/templates\/yootheme\/cache\/7d\/DS-SHOWROOM-cover-7dd486c3.webp 1366w, \/templates\/yootheme\/cache\/f6\/DS-SHOWROOM-cover-f6d4e711.webp 1600w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1200\/801) 150vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-padding-remove-vertical">    
+        
+        
+        
+            
+                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/1c/trasparente-00-1c5047c9.webp 768w, /templates/yootheme/cache/92/trasparente-00-9261e61c.webp 1024w, /templates/yootheme/cache/76/trasparente-00-76e29041.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img src="../templates/yootheme/cache/60/trasparente-00-60785e97.png" width="1200" height="600" class="el-image" alt="trasparente" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-section-default uk-section uk-section-small uk-padding-remove-bottom">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+
+    <div>
+        <ul class="uk-breadcrumb uk-margin-remove-bottom">
+        
+                            <li><a href="../index1.html">Home</a></li>
+            
+        
+                            <li><a href="../blog.html">Blog</a></li>
+            
+        
+        </ul>
+    </div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-section-small uk-padding-remove-bottom">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand" uk-grid>
+<div class="uk-grid-item-match uk-width-1-2@m border-left-visual">
+        <div class="uk-flex">    
+                <div data-src="/templates/yootheme/cache/61/trasparente-00-61fa1398.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/96\/trasparente-00-969cb964.webp 500w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 500\/500) 100vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-tile-small">        
+            
+                        <div class="uk-position-cover" style="background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(244,245,247,1) 100%); background-clip: padding-box"></div>            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<div class="uk-h5 uk-text-muted">        Indice dei contenuti    </div>
+<ul class="uk-list uk-list-muted uk-list-collapse">
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="#1" uk-scroll aria-label="&lt;p&gt;Digital Signage: innovazione e coinvolgimento per uno showroom di successo&lt;/p&gt;"><span class="el-image uk-text-muted" uk-icon="icon: arrow-right;"></span></a></div>        <div>
+            <div class="el-content uk-panel"><a href="#1" uk-scroll class="el-link uk-margin-remove-last-child"><p>Digital Signage: innovazione e coinvolgimento per uno showroom di successo</p></a></div>        </div>
+    </div>
+            </li>
+
+    <li class="el-item">        
+    <div class="uk-grid-small uk-child-width-expand uk-flex-nowrap uk-flex-middle" uk-grid>        <div class="uk-width-auto"><a href="#2" uk-scroll aria-label="&lt;p&gt;Digital Signage e tecnologie avanzate: AR, VR, IoT e sensori per un'esperienza interattiva in showroom&lt;/p&gt;"><span class="el-image uk-text-muted" uk-icon="icon: arrow-right;"></span></a></div>        <div>
+            <div class="el-content uk-panel"><a href="#2" uk-scroll class="el-link uk-margin-remove-last-child"><p>Digital Signage e tecnologie avanzate: AR, VR, IoT e sensori per un'esperienza interattiva in showroom</p></a></div>        </div>
+    </div>
+            </li>
+</ul>
+                
+                        </div>
+            
+                </div>
+        
+        </div>
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><span style="font-weight: 400;">In un settore ad oggi altamente competitivo come quello del retail, uno showroom non è più un semplice spazio espositivo, ma diviene il principale punto di contatto per offrire alla propria clientela un'esperienza memorabile e coinvolgente.</span></p>
+<p><span style="font-weight: 400;">In questo contesto, l'implementazione di schermi digitali professionali rappresenta una strategia avanzata per trasformare un locale commerciale in un ambiente originale ed interattivo, che catturi l'attenzione dei visitatori e li invogli ad esplorare per saperne di più.</span></p>
+<p><span style="font-weight: 400;">In questo articolo vediamo </span><b>come dare vita ad uno showroom all’avanguardia attraverso l'utilizzo di display per il Digital Signage</b><span style="font-weight: 400;">, analizzando le migliori pratiche e le tecnologie di ultima generazione che possono supportare le aziende nel raggiungimento di questo obiettivo.</span></p></div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/82/DS-SHOWROOM-01-82997bdc.webp 768w, /templates/yootheme/cache/f9/DS-SHOWROOM-01-f979d820.webp 800w, /templates/yootheme/cache/04/DS-SHOWROOM-01-04a39f12.webp 1024w, /templates/yootheme/cache/4e/DS-SHOWROOM-01-4e9b26f3.webp 1366w, /templates/yootheme/cache/92/DS-SHOWROOM-01-92a1fe56.webp 1598w, /templates/yootheme/cache/d8/DS-SHOWROOM-01-d878d8b9.webp 1599w" sizes="(min-width: 800px) 800px">
+<img src="../templates/yootheme/cache/a3/DS-SHOWROOM-01-a39f28d4.jpeg" width="800" height="533" class="el-image" alt="Utilizzo dei display digitali in uno showroom" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="1" class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<h2 class="uk-h2-blog uk-text-left@s uk-text-center">        Digital Signage: innovazione e coinvolgimento per uno showroom di successo    </h2>
+                
+                        </div>
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="1" class="uk-section-default uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><span style="font-weight: 400;">Tra gli strumenti di comunicazione più versatili ed innovativi del momento, </span><b>il Digital Signage è il mezzo più efficace per ottenere un impatto visivo immediato ed un coinvolgimento significativo dei clienti</b><span style="font-weight: 400;"> fin dal momento del loro primo ingresso in showroom.</span></p>
+<p><span style="font-weight: 400;">Come spiegato nell’articolo “</span><a href="398-la-sinergia-tra-digital-signage-visual-merchandising-e-marketing-esperienziale-per-creare-connessioni-emozionali-con-i-clienti.html" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"><span class="uk-link-blog">La sinergia tra Digital Signage, Visual Merchandising e Marketing esperienziale per creare connessioni emozionali con i clienti</span></span></a><span style="font-weight: 400;">”, infatti, le aziende, per distinguersi dalla concorrenza, devono puntare a trasformare l’interazione con la clientela in un viaggio coinvolgente e memorabile, che presenti all’utente un percorso completo e personalizzato in grado guidarlo nelle decisioni di acquisto. </span></p>
+<p><span style="font-weight: 400;">Grazie alle infinite possibilità di applicazione e alla loro capacità di mostrare </span><b>contenuti dinamici e personalizzati</b><span style="font-weight: 400;">, i </span><a href="../display-pubblicitari.html" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"><span class="uk-link-blog">display professionali</span></span></a><span style="font-weight: 400;"> che costituiscono i sistemi per il Digital Signage possono </span><b>trasformare uno spazio espositivo in un ambiente interattivo ed attraente</b><span style="font-weight: 400;">.</span></p></div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/69/DS-SHOWROOM-02-694876d8.webp 768w, /templates/yootheme/cache/1c/DS-SHOWROOM-02-1c790d81.webp 800w, /templates/yootheme/cache/64/DS-SHOWROOM-02-641f7495.webp 1024w, /templates/yootheme/cache/c0/DS-SHOWROOM-02-c0c5d18a.webp 1366w, /templates/yootheme/cache/12/DS-SHOWROOM-02-128cf6d5.webp 1600w" sizes="(min-width: 800px) 800px">
+<img src="../templates/yootheme/cache/31/DS-SHOWROOM-02-310cca2d.jpeg" width="800" height="500" class="el-image" alt="Utilizzo dei display digitali in uno showroom" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><strong>Ma come sfruttare al meglio le caratteristiche e i vantaggi di questa tecnologia per massimizzare l’esperienza del cliente?</strong></p>
+<p>Innanzitutto, la flessibilità degli schermi digitali permette di presentare una vasta gamma di contenuti visivi che possono essere appositamente progettati e facilmente aggiornati per proporre nuove campagne di marketing, prodotti o promozioni. Video ad alta definizione, animazioni e presentazioni interattive sono alcuni dei formati maggiormente in grado di catturare l’attenzione del pubblico e possono essere sfruttati per mettere in campo una comunicazione di grande efficacia. </p>
+<p><span style="font-weight: 400;">Inoltre, la possibilità di </span><b>personalizzare in tempo reale i contenuti visualizzati sui display</b><span style="font-weight: 400;"> significa che ogni visitatore può vedere messaggi rilevanti per le proprie preferenze, </span><b>aumentando così l’engagement e le possibilità di conversione</b><span style="font-weight: 400;">. Ad esempio, un cliente che ha già mostrato interesse per un determinato prodotto può essere accolto con offerte speciali o ulteriori informazioni pertinenti, mentre osserva video promozionali dello stesso prodotto in azione.</span></p>
+<p><span style="font-weight: 400;">I </span><b>display touchscreen interattivi</b><span style="font-weight: 400;"> consentono agli utenti di esplorare gli articoli in modo autonomo, visualizzando specifiche tecniche, varianti, opzioni di personalizzazione e recensioni di altri consumatori. Questa interattività non solo </span><b>rende l'esperienza più ricca e soddisfacente</b><span style="font-weight: 400;">, ma permette ai visitatori di </span><b>ottenere anche informazioni dettagliate in modo immediato ed intuitivo</b><span style="font-weight: 400;">.</span></p></div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/b1/DS-SHOWROOM-03-b10afaed.webp 768w, /templates/yootheme/cache/20/DS-SHOWROOM-03-2076d3d5.webp 800w, /templates/yootheme/cache/9e/DS-SHOWROOM-03-9e4e3237.webp 1024w, /templates/yootheme/cache/c2/DS-SHOWROOM-03-c26c51ac.webp 1366w, /templates/yootheme/cache/4d/DS-SHOWROOM-03-4de643e5.webp 1598w, /templates/yootheme/cache/07/DS-SHOWROOM-03-073f650a.webp 1599w" sizes="(min-width: 800px) 800px">
+<img src="../templates/yootheme/cache/20/DS-SHOWROOM-03-207206b1.jpeg" width="800" height="534" class="el-image" alt="Utilizzo dei display digitali in uno showroom" loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><span style="font-weight: 400;">È possibile, tuttavia, progettare location suggestive e creare un impatto visivo straordinario avvalendosi di </span><b>soluzioni di grande formato</b><span style="font-weight: 400;">, come i </span><a href="../videowall-e-ledwall.html" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"><span class="uk-link-blog">videowall</span></span></a><span style="font-weight: 400;">, composti da più schermi sincronizzati, o i </span><a href="../videowall-e-ledwall.html" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"><span class="uk-link-blog">ledwall</span></span></a><span style="font-weight: 400;">, spesso utilizzati per trasmettere clip promozionali, dedicate al lancio di nuovi prodotti o alle dimostrazioni dal vivo, ma anche solo per ricreare un determinato environment, offrendo una visione spettacolare e suscitando emozioni attraverso </span><b>ambientazioni immersive che trasformano l’intero showroom in uno spazio tematico</b><span style="font-weight: 400;"> che rispecchia l’identità del brand.</span></p>
+<p><span style="font-weight: 400;">Allo stesso modo, </span><b>impiegare display digitali per creare un percorso di visita opportunamente studiato e guidare i clienti in modo strategico</b><span style="font-weight: 400;"> può migliorare significativamente l’esperienza complessiva. Le mappe interattive possono aiutare il pubblico ad orientarsi facilmente e a scoprire i punti di interesse principali, facilitando anche la gestione del flusso dei visitatori.</span></p></div>
+                
+            
+        
+    
+</div>
+</div><div class="uk-grid-margin uk-container uk-container-small"><div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div uk-slideshow="ratio: 16:7;" class="uk-margin">
+    <div class="uk-position-relative">
+        
+            <ul class="uk-slideshow-items">                                <li class="el-item">
+                    
+
+    
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/09/DS-SHOWROOM-04-091f6f9b.webp 768w, /templates/yootheme/cache/12/DS-SHOWROOM-04-12e3339a.webp 1024w, /templates/yootheme/cache/25/DS-SHOWROOM-04-25a289ab.webp 1366w, /templates/yootheme/cache/96/DS-SHOWROOM-04-96a42b2c.webp 1600w" sizes="(max-aspect-ratio: 1600/777) 206vh">
+<img src="../templates/yootheme/cache/df/DS-SHOWROOM-04-dfd9af6e.jpeg" width="1600" height="777" class="el-image" alt loading="lazy" uk-cover>
+</picture>        
+    
+
+
+                </li>
+                                <li class="el-item">
+                    
+
+    
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/eb/DS-SHOWROOM-05-eb47c4e5.webp 768w, /templates/yootheme/cache/cc/DS-SHOWROOM-05-cc0d3c96.webp 1024w, /templates/yootheme/cache/c4/DS-SHOWROOM-05-c4119f0b.webp 1366w, /templates/yootheme/cache/b6/DS-SHOWROOM-05-b6d9f1f9.webp 1599w, /templates/yootheme/cache/3f/DS-SHOWROOM-05-3f3ff778.webp 1600w" sizes="(max-aspect-ratio: 1600/788) 203vh">
+<img src="../templates/yootheme/cache/86/DS-SHOWROOM-05-86d87245.jpeg" width="1600" height="788" class="el-image" alt loading="lazy" uk-cover>
+</picture>        
+    
+
+
+                </li>
+                            </ul>
+
+        
+                <div class="uk-visible@s"><a class="el-slidenav uk-position-medium uk-position-center-left" href="#" uk-slidenav-previous uk-slideshow-item="previous" aria-label="Previous slide"></a><a class="el-slidenav uk-position-medium uk-position-center-right" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="Next slide"></a></div>        
+                
+<div class="uk-position-bottom-center uk-position-medium uk-visible@s">
+<ul class="el-nav uk-dotnav uk-flex-center" uk-margin>        <li uk-slideshow-item="0">
+        <a href="#"></a>
+    </li>
+        <li uk-slideshow-item="1">
+        <a href="#"></a>
+    </li>
+    </ul>
+
+</div>
+        
+    </div>
+
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="2" class="uk-section-muted uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-grid-margin uk-container"><div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+<div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    
+<h2 class="uk-h2-blog uk-text-left@s uk-text-center">        Digital Signage e tecnologie avanzate: AR, VR, IoT e sensori per un'esperienza interattiva in showroom    </h2>
+                
+                        </div>
+            
+        
+    
+</div>
+</div></div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="1" class="uk-section-default uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><span style="font-weight: 400;">È fondamentale considerare che </span><b>l’integrazione dei sistemi Digital Signage con tecnologie avanzate</b><span style="font-weight: 400;">, come la realtà aumentata, la realtà virtuale, l’Internet of Things e i sensori di movimento, </span><b>può elevare ulteriormente l’esperienza all’interno dello showroom</b><span style="font-weight: 400;"> a nuovi livelli di interattività e personalizzazione, offrendo opportunità uniche per coinvolgere i visitatori in modi innovativi.</span></p>
+<p><span style="font-weight: 400;">La </span><b>Realtà Aumentata (AR)</b><span style="font-weight: 400;"> consente agli utenti di vedere come apparirebbero i prodotti nel loro ambiente reale. Utilizzando display o dispositivi mobili, i clienti possono infatti visualizzare versioni digitali degli articoli nel contesto del loro spazio e valutarne dimensioni, stile e funzionalità in modo realistico.</span></p>
+<p><span style="font-weight: 400;">La </span><b>Realtà Virtuale (VR)</b><span style="font-weight: 400;"> permette ai visitatori di immergersi completamente in ambienti virtuali, esplorando oggetti o scenari d’uso in modo approfondito. Questa tecnologia è particolarmente utile per prodotti complessi o di grandi dimensioni, che non possono essere esposti fisicamente nello showroom.</span></p>
+<p><span style="font-weight: 400;">L'integrazione di </span><b>sensori e tecnologie IoT (Internet of Things)</b><span style="font-weight: 400;"> nei sistemi Digital Signage consente, invece, di attivare contenuti specifici in risposta alla presenza dei visitatori: quando un cliente si avvicina ad un prodotto, ad esempio, il sensore può lanciare automaticamente un video esplicativo o una presentazione interattiva, fornendo informazioni aggiuntive senza richiedere l'intervento umano. Questo tipo di interazione immediata rende l'esperienza più fluida e personalizzata.</span></p>
+<p><span style="font-weight: 400;">I </span><b>beacon</b><span style="font-weight: 400;">, inoltre, sono piccoli dispositivi che inviano segnali Bluetooth ai dispositivi mobili dei visitatori, permettendo di visualizzare notifiche personalizzate basate sulla posizione. Ad esempio, quando un cliente entra in una determinata area dello showroom, può ricevere sul proprio smartphone informazioni dettagliate sui prodotti esposti, promozioni esclusive o inviti a partecipare a eventi speciali. Questa tecnologia non solo aumenta l'engagement, ma fornisce anche un livello aggiuntivo di personalizzazione.</span></p>
+<p><span style="font-weight: 400;">Tutte le soluzioni Digital Signage offrono, infine, </span><b>strumenti di analisi che permettono di monitorare il comportamento dei visitatori in tempo reale</b><span style="font-weight: 400;">. Questi dati possono essere utilizzati per ottimizzare continuamente i contenuti mostrati, apportare miglioramenti al layout dello showroom ed arricchire ulteriormente l'esperienza del cliente. Ad esempio, analizzando i dati di interazione, è possibile identificare quali prodotti attirano maggiormente l'attenzione e quali presentazioni sono più efficaci, adottando di conseguenza la migliore strategia espositiva.</span></p></div>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center">
+        <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/27/DS-SHOWROOM-06-2719f0a5.webp 768w, /templates/yootheme/cache/ec/DS-SHOWROOM-06-ece4bb60.webp 800w, /templates/yootheme/cache/97/DS-SHOWROOM-06-979a88e9.webp 1024w, /templates/yootheme/cache/b9/DS-SHOWROOM-06-b9e92967.webp 1366w, /templates/yootheme/cache/59/DS-SHOWROOM-06-5952fe5e.webp 1600w" sizes="(min-width: 800px) 800px">
+<img src="../templates/yootheme/cache/74/DS-SHOWROOM-06-745537ec.jpeg" width="800" height="534" class="el-image" alt loading="lazy">
+</picture>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-blog uk-margin"><p><b>Il Digital Signage risulta, dunque, una risorsa potente per creare uno showroom interattivo, coinvolgente e dall’alto impatto visivo</b><span style="font-weight: 400;">. Con la giusta combinazione di contenuti dinamici, personalizzazione, interattività e tecnologie avanzate, è possibile trasformare il proprio spazio espositivo in un ambiente che attrae e fidelizza i visitatori, portando ad un tangibile incremento delle vendite e a una maggiore soddisfazione del cliente.</span></p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-visible@s uk-section-secondary uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-visible@s tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1 uk-visible@s">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-emphasis uk-visible@s uk-margin"><p><span style="font-weight: 400;">Per approfondire l’argomento o per avere informazioni sulle tecnologie per il Digital Signage più adatte all’allestimento di uno showroom di successo compila il form e riserva una consulenza con un nostro esperto.</span></p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-hidden@s uk-section-secondary uk-section uk-section-small">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="uk-hidden@s tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1 uk-hidden@s">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-lead uk-text-emphasis uk-hidden@s uk-margin uk-text-center"><p><span style="font-weight: 400;">Per approfondire l’argomento o per avere informazioni sulle tecnologie per il Digital Signage più adatte all’allestimento di uno showroom di successo compila il form e riserva una consulenza con un nostro esperto.</span></p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+<div id="form" class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+            
+                
+                    <div id="page#0">
+<!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.  All rights reserved. -->
+<div class="bfClearfix">
+<script type="text/javascript">
+<!--
+ff_processor=new Object();ff_processor.okrun=true;ff_processor.ip='89.185.29.186';ff_processor.agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';ff_processor.browser='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
+ff_processor.opsys='win';ff_processor.provider='Unknown';ff_processor.submitted='2024-12-04 09:13:27';ff_processor.form=61;ff_processor.form_id='ff_form61';ff_processor.page=1;ff_processor.target=2;ff_processor.runmode=0;ff_processor.inframe=0;ff_processor.inline=0;
+ff_processor.template=0;ff_processor.homepage='https://www.imprinting.info';ff_processor.mossite='https://www.imprinting.info';ff_processor.images='https://www.imprinting.info/components/com_breezingforms/images';ff_processor.border='';ff_processor.align='';
+ff_processor.top='';ff_processor.suffix='';ff_processor.status=null;ff_processor.message=null;ff_processor.record_id=null;ff_processor.showgrid=false;ff_processor.traceBuffer=null;
+//-->
+</script>
+<script type="text/javascript" src="../components/com_breezingforms/facileforms.js"></script>
+<div id="ff_formdiv61" class="bfFormDiv">
+<style>
+#bfLabel3339 {
+    font-size: 15px;
+}
+</style>
+
+<style>
+#ff_elem3339 {
+    border: 1px solid #000;
+}
+</style>
+<script type="text/javascript">
+<!--
+
+function checkFileExtensions(){
+			return true;
+		}
+		var bfReCaptchaLoaded = true;
+                                    function bfCheckCaptcha(){
+					if(checkFileExtensions()){
+                                                function bfValidateCaptcha()
+                                                {
+                                                    if(typeof bfInvisibleRecaptcha != "undefined" && bfInvisibleRecaptcha === false){
+														if(typeof bfDoFlashUpload != 'undefined'){
+															bfDoFlashUpload();
+														} else {
+															ff_submitForm2();
+														}
+														return;
+                                                    }
+                                                    
+                                                    if(typeof onloadBFNewRecaptchaCallback == "undefined"){
+                                                        challengeField = JQuery("input#recaptcha_challenge_field").val();
+                                                        responseField = JQuery("input#recaptcha_response_field").val();
+                                                        var html = JQuery.ajax({
+                                                        type: "POST",
+                                                        url: "/component/breezingforms/raw/true/bfReCaptcha/true/form/61/tmpl/component?raw=true&amp;bfReCaptcha=true&amp;form=61&amp;Itemid=0&amp;tmpl=component",
+                                                        data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField,
+                                                        async: false
+                                                        }).responseText;
+
+                                                        if (html.replace(/^\s+|\s+$/, "") == "success")
+                                                        {
+                                                            if(typeof bfDoFlashUpload != 'undefined'){
+                                                                bfDoFlashUpload();
+                                                            } else {
+                                                                ff_submitForm2();
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                                if(typeof bfUseErrorAlerts == "undefined"){
+                                                                        alert("The captcha is missing or wrong!");
+                                                                } else {
+                                                                    if(typeof inlineErrorElements != "undefined"){
+                                                                        inlineErrorElements.push(["bfReCaptchaEntry","The captcha is missing or wrong!"]);
+                                                                    }
+                                                                    bfShowErrors("The captcha is missing or wrong!");
+                                                                }
+
+                                                                if(ff_currentpage != 1)ff_switchpage(1);
+                                                                Recaptcha.focus_response_field();
+
+                                                                Recaptcha.reload();
+
+                                                                if(document.getElementById("bfSubmitButton")){
+                                                                    document.getElementById("bfSubmitButton").disabled = false;
+                                                                }
+                                                                if(typeof JQuery != "undefined"){JQuery(".bfCustomSubmitButton").prop("disabled", false);}
+                                                                if(typeof ladda_button != "undefined"){
+                                                                    bf_restore_submitbutton();
+                                                                }
+                                                                
+                                                        }
+                                                    }
+                                                    else{
+                                                        
+                                                        if(typeof bfInvisibleRecaptcha != "undefined"){
+                                                        
+                                                            grecaptcha.execute();
+                                                        }
+                                                        
+                                                        var gresponse = grecaptcha.getResponse();
+                                                        
+                                                        if(gresponse == ""){
+                                                            
+                                                            if(typeof bfInvisibleRecaptcha == "undefined"){
+                                                            
+	                                                            if(typeof bfUseErrorAlerts == "undefined"){
+	                                                                    alert("The captcha is missing or wrong!");
+	                                                            } else {
+	                                                                if(typeof inlineErrorElements != "undefined"){
+	                                                                    inlineErrorElements.push(["bfReCaptchaEntry","The captcha is missing or wrong!"]);
+	                                                                }
+	                                                                bfShowErrors("The captcha is missing or wrong!");
+	                                                            }
+                                                            
+                                                            
+                                                                if(ff_currentpage != 1)ff_switchpage(1);
+                                                            }
+                                                            if(document.getElementById("bfSubmitButton")){
+                                                                document.getElementById("bfSubmitButton").disabled = false;
+                                                            }
+                                                            if(typeof JQuery != "undefined"){JQuery(".bfCustomSubmitButton").prop("disabled", false);}
+                                                            if(typeof ladda_button != "undefined"){
+                                                                bf_restore_submitbutton();
+                                                            }
+                                                            
+                                                            
+                                                        }else{
+               
+                                                            if(typeof bfDoFlashUpload != 'undefined'){
+                                                                bfDoFlashUpload();
+                                                            } else {
+                                                                ff_submitForm2();
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                bfValidateCaptcha();
+
+					}
+				}function ff_initialize(condition)
+{}
+onload=function()
+{ff_initialize('formentry');ff_initialize('pageentry');if(ff_processor&&ff_processor.traceBuffer)ff_traceWindow();}
+var ff_currentpage=1;
+function ff_switchpage(page){if(document.getElementById("bfPage1"))document.getElementById("bfPage1").style.display="none";if(document.getElementById("bfPage2"))document.getElementById("bfPage2").style.display="none";if(document.getElementById("bfPage"+page))document.getElementById("bfPage"+page).style.display="";
+ff_currentpage=page;ff_initialize("pageentry");}
+function ff_blog1_submitted(status,message){if(status==0){ff_switchpage(2);}else{alert(message);}}
+var ff_validationFocusName='';
+var ff_elements=[['ff_elem5646','ff_div5646','bfFakeName4',1,5646],['ff_elem5645','ff_div5645','bfFakeName3',1,5645],['ff_elem5644','ff_div5644','bfFakeName2',1,5644],['ff_elem5643','ff_div5643','bfFakeName',1,5643],['ff_elem3800','ff_div3800','tipologiadisplay',1,3800],
+['ff_elem3795','ff_div3795','nome',1,3795],['ff_elem3793','ff_div3793','azienda',1,3793],['ff_elem3792','ff_div3792','email',1,3792],['ff_elem3791','ff_div3791','telefono',1,3791],['ff_elem3790','ff_div3790','cittaconsegna',1,3790],['ff_elem3789','ff_div3789','messaggio',1,3789],
+['ff_elem3786','ff_div3786','acquisizione',1,3786],['ff_elem3788','ff_div3788','privacy',1,3788],['ff_elem5638','ff_elem5638','page',1,5638],['ff_elem5625','ff_div5625','recaptcha',1,5625]
+];
+function ff_getElementByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return eval('document.ff_form61.'+ff_elements[i][0]);return null;}
+function ff_getPageByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return ff_elements[i][3];return 0;}
+function ff_validationFocus(name)
+{if(name==undefined||name==''){if(ff_validationFocusName!=''){ff_switchpage(ff_getPageByName(ff_validationFocusName));if(ff_getElementByName(ff_validationFocusName).focus){ff_getElementByName(ff_validationFocusName).focus();}}}else{if(ff_validationFocusName=='')
+ff_validationFocusName=name;}}
+function ff_getElementByIndex(index)
+{if(index>=0&&index<ff_elements.length)
+return eval('document.ff_form61.'+ff_elements[index][0]);return null;}
+function ff_anychecked(element,message)
+{var name='';if(!element.name){if(element.length&&element.length!=0){name=element[0].name;var cnt=0;for(var i=0;i<element.length;i++)
+if(element[i].name==name)
+if(element[i].checked)cnt++;if(cnt==0){ff_validationFocus(element[0].name);if(message=='')message="Please check or select "+name+".\n";return message;}}else{return '';}}else{name=element.name;if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);
+var cnt=0;for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+if(ff_getElementByIndex(i).checked)cnt++;if(cnt==0){ff_validationFocus(element.name);if(message=='')message="Please check or select "+name+".\n";return message;}}return '';}
+function ff_validemail(element,message)
+{var check=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!check.test(element.value)){if(message=='')message=element.name+" is no valid email address.\n";ff_validationFocus(element.name);return message;}return '';}
+function ff_valuenotempty(element,message)
+{if(element.value!='')return '';if(message=='')message="Please enter "+element.name+".\n";ff_validationFocus(element.name);return message;}
+function ff_validation(page)
+{if(typeof inlineErrorElements!='undefined')inlineErrorElements=new Array();error='';ff_validationFocusName='';if(page==1||page==0){if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_nome[]']){errorout=ff_valuenotempty(document.ff_form61['ff_nm_nome[]'],"Inserisci il tuo nome e il tuo cognome\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["nome",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_azienda[]']){errorout=ff_valuenotempty(document.ff_form61['ff_nm_azienda[]'],"Inserisci la ragione sociale\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["azienda",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_email[]']){errorout=ff_validemail(document.ff_form61['ff_nm_email[]'],"Inserisci la tua e-mail\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["email",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_telefono[]']){errorout=ff_valuenotempty(document.ff_form61['ff_nm_telefono[]'],"Inserisci un recapito telefonico\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["telefono",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_cittaconsegna[]']){errorout=ff_valuenotempty(document.ff_form61['ff_nm_cittaconsegna[]'],"Inserisci la tua città\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["cittaconsegna",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_privacy[]']){errorout=ff_anychecked(document.ff_form61['ff_nm_privacy[]'],"Si prega di spuntare la casella\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["privacy",errorout]);}}}if(error!=""&&document.getElementById('ff_capimgValue')){document.getElementById('ff_capimgValue').src='/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom='+Math.random();
+document.getElementById('bfCaptchaEntry').value="";}if(error!=""&&document.getElementById("bfSubmitButton")){document.getElementById("bfSubmitButton").disabled=false;}if(error!=""&&typeof JQuery!="undefined"){JQuery(".bfCustomSubmitButton").prop("disabled",false);}
+return error;}
+function ff_validate_nextpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);}}
+function ff_validate_prevpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);}}}
+function ff_resetForm(element,action)
+{eval('document.'+ff_processor.form_id).reset();}
+function ff_submitForm()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}bfCheckCaptcha();}function ff_submitForm2()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}if(typeof bf_ajax_submit!='undefined'){bf_ajax_submit()}else{document.ff_form61.submit();}
+}
+function ff_validate_submit(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(0);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);}ff_validationFocus();
+}else
+ff_submitForm();}
+//-->
+</script>
+<form data-ajax="false" action="https://www.imprinting.info/blog/410-come-creare-un-esperienza-coinvolgente-attraverso-l-utilizzo-di-schermi-digitali-in-uno-showroom" method="post" name="ff_form61" id="ff_form61" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+<div id="bfPage1" class="bfPage">
+<script type="text/javascript"><!--
+bfDeactivateSection.push("iniziamo");
+//--></script>
+<section style="display:none" id="iniziamo">
+<div class="row-fluid"><i style="display:none;"></i><section class=" " id="tipologiadisplay">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<strong>Tipologia display</strong>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group" id="bfElemWrap3800">
+<div class="controls form-inline"><div class=" "><span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3800" for="ff_elem3800"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Interno" id="ff_elem3800">
+Interno</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3800_1" for="ff_elem3800_1"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Vetrina" id="ff_elem3800_1">
+Vetrina</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3800_2" for="ff_elem3800_2"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Videowall" id="ff_elem3800_2">
+Videowall</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3800_3" for="ff_elem3800_3"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Ledwall" id="ff_elem3800_3">
+Ledwall</label></span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+</div><!-- section normal --></section>
+<section class=" " id="datirichiedente">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<strong>Informazioni di contatto</strong>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group span6" id="bfElemWrap3795">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3795" for="ff_elem3795">Nome e cognome <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_nome[]" value="" id="ff_elem3795">
+</div></div></div>
+<div class="bfElemWrap control-group span6" id="bfElemWrap3793">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3793" for="ff_elem3793">Azienda <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_azienda[]" value="" id="ff_elem3793">
+</div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<section class=" " id="contatti">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span4" id="bfElemWrap3792">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3792" for="ff_elem3792">Email <i class="icon-asterisk"></i> 
+</label>
+<input placeholder="@" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_email[]" value="" id="ff_elem3792">
+</div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap3791">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3791" for="ff_elem3791">Telefono <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" type="number" name="ff_nm_telefono[]" value="" id="ff_elem3791" step="" max="" min="">
+</div></div><script type="text/javascript">
+							JQuery(document).ready(
+								JQuery("#ff_elem3791").css("width", "100%")
+							);</script></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap3790">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3790" for="ff_elem3790">Città <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem3790">
+</div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfElemWrap control-group" id="bfElemWrap3789">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3789" for="ff_elem3789">Lascia un messaggio (facoltativo)</label>
+<textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;" name="ff_nm_messaggio[]" id="ff_elem3789"></textarea>
+</div></div></div>
+<div class="bfElemWrap control-group" id="bfElemWrap3786">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel3786" for="ff_elem3786">Come ci hai conosciuto?</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3786" for="ff_elem3786"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google" id="ff_elem3786">
+Google</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3786_1" for="ff_elem3786_1"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social" id="ff_elem3786_1">
+Social</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3786_2" for="ff_elem3786_2"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail" id="ff_elem3786_2">
+Mail</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3786_3" for="ff_elem3786_3"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro" id="ff_elem3786_3">
+Altro</label></span></div></div></div>
+<section class=" " id="privacy">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span6" id="bfElemWrap3788">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel3788" for="ff_elem3788">Acconsento al trattamento dei miei dati in merito a questa richiesta. <i class="icon-asterisk"></i> 
+</label>
+<span class=""><input style="vertical-align: baseline;" class="ff_elem" type="checkbox" name="ff_nm_privacy[]" value="Acconsento" id="ff_elem3788">
+</span></div></div></div>
+<input class="ff_elem" type="hidden" name="ff_nm_page[]" value="https://www.imprinting.info:443/blog/410-come-creare-un-esperienza-coinvolgente-attraverso-l-utilizzo-di-schermi-digitali-in-uno-showroom" id="ff_elem5638">
+<div class="bfElemWrap control-group span6" id="bfElemWrap5625">
+<div class="controls form-inline"><div class=" "><span class="">                                        <div id="bfInvisibleReCaptchaContainer"></div>
+                                        <div id="bfInvisibleReCaptcha"></div>
+                                    
+									<script data-usercentrics="reCAPTCHA" type="text/javascript">
+										bfInvisibleRecaptcha = true;
+                                        var onloadBFNewRecaptchaCallback = function (){
+                                            grecaptcha.render('bfInvisibleReCaptchaContainer', {
+                                                'sitekey': '6LfT_8opAAAAALwv-9ku0UuthpYT2dJefeCr0nL_',
+                                                'expired-callback': recaptchaExpiredCallback,
+                                                'callback': recaptchaCheckedCallback,
+                                                "badge" : "",
+                                                'size': 'invisible'
+                                            });
+                                        };
+										
+										function recaptchaCheckedCallback(token){
+											if(token!=''){
+												bfInvisibleRecaptcha = false;
+											}
+											if(typeof bf_htmltextareainit != 'undefined'){
+												bf_htmltextareainit();
+											}
+											ff_validate_submit(this, 'click');
+										};
+										
+										function recaptchaExpiredCallback(){
+											grecaptcha.reset();
+										};
+									</script>
+                                    <script data-usercentrics="reCAPTCHA" src="../recaptcha/api-onloadBFNewRecaptchaCallback_explicit.js" async defer></script>
+                                    </span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfClearfix"></div><div class="form-actions"><div class=""><button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button" onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');" value="Invia la richiesta"><span>Invia la richiesta</span></button>
+</div></div></div><!-- bfPage end -->
+<div id="bfPage2" class="bfPage" style="display:none;">
+<div class="">
+<h2 style="text-align: center;">Grazie per la richiesta</h2>
+<p style="text-align: center;"><span class="lead">Verrai contattato al più presto da un nostro responsabile commerciale per offrirti la soluzione più adatta alle tue esigenze. </span></p>
+</div>
+</div>
+<noscript>Please turn on javascript to submit your data. Thank you!</noscript>
+<input type="hidden" name="ff_contentid" value="410">
+<input type="hidden" name="ff_applic" value="">
+<input type="hidden" name="ff_record_id" value="">
+<input type="hidden" name="ff_module_id" value="0">
+<input type="hidden" name="ff_form" value="61">
+<input type="hidden" name="ff_task" value="submit">
+<input type="hidden" name="ff_target" value="2">
+<input type="hidden" name="ff_align" value="">
+<input type="hidden" name="option" value="com_content">
+<input type="hidden" name="Itemid" value="353">
+<input type="hidden" name="id" value="410">
+</form>
+</div><!-- form end -->
+<script type="text/javascript">
+<!--
+if(typeof ff_processor != "undefined")ff_processor.traceBuffer = '\n'+
+'\074strong>*** EXCEPTION CAUGHT BY BREEZINGFORMS ***\074/strong>\n'+
+'PHP error level : E_DEPRECATED\n'+
+'PHP filename    : /var/www/vhosts/imprinting.info/httpdocs/components/com_breezingforms/facileforms.process.php(1245) : eval()&#039;d code\n'+
+'PHP linenumber  : 6\n'+
+'Last known pos  : Piece ff_InitLib at line 1\n'+
+'Error message   : Array and string offset access syntax with curly braces is deprecated\n'+
+'\n'+
+'';
+-->
+</script>
+</div>
+</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+            
+            
+<div id="module-173" class="builder"><!-- Builder #module-173 -->
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h2 class="uk-h5 uk-heading-line uk-text-muted uk-text-center">        <span><a class="el-link uk-link-reset" href="../blog.html">Ultimi articoli del blog</a></span>
+    </h2>
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="428-l-importanza-dei-contenuti-coinvolgenti-nel-digital-signage-catturare-l-attenzione-e-mantenere-l-interesse-del-pubblico.html" aria-label="L'importanza dei contenuti coinvolgenti nel Digital Signage: catturare l'attenzione e mantenere l'interesse del pubblico"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/29/DS-contenuti-cover-29f7ec9f.webp 600w, /templates/yootheme/cache/c0/DS-contenuti-cover-c091a023.webp 768w, /templates/yootheme/cache/0d/DS-contenuti-cover-0d10d192.webp 1024w, /templates/yootheme/cache/6a/DS-contenuti-cover-6ad13f11.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="../templates/yootheme/cache/53/DS-contenuti-cover-53a472b5.jpeg" width="600" height="400" class="el-image" alt="Contenuti coinvolgenti: il cuore dei sistemi Digital Signage" loading="lazy">
+</picture></a>        
+                    
+
+        
+                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        <a href="428-l-importanza-dei-contenuti-coinvolgenti-nel-digital-signage-catturare-l-attenzione-e-mantenere-l-interesse-del-pubblico.html" class="uk-link-heading">L'importanza dei contenuti coinvolgenti nel Digital Signage: catturare l'attenzione e mantenere l'interesse del pubblico</a>                    </h3>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="423-samsung-flip-l-evoluzione-della-lavagna-per-un-back-to-school-tecnologico.html" aria-label="Samsung Flip: l’evoluzione della lavagna per un back to school tecnologico"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/e3/Flip_back_to_school_cover-e3b28c6a.webp 600w, /templates/yootheme/cache/d9/Flip_back_to_school_cover-d9425bce.webp 768w, /templates/yootheme/cache/ce/Flip_back_to_school_cover-ce99eafc.webp 1024w, /templates/yootheme/cache/62/Flip_back_to_school_cover-6212eb8d.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="../templates/yootheme/cache/d1/Flip_back_to_school_cover-d17c98b2.jpeg" width="600" height="400" class="el-image" alt="Samsung Flip: la LIM per un Back to School tecnologico" loading="lazy">
+</picture></a>        
+                    
+
+        
+                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        <a href="423-samsung-flip-l-evoluzione-della-lavagna-per-un-back-to-school-tecnologico.html" class="uk-link-heading">Samsung Flip: l’evoluzione della lavagna per un back to school tecnologico</a>                    </h3>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <a href="418-digital-signage-e-visual-merchandising-come-amplificare-l-impatto-delle-campagne-di-marketing-sul-punto-vendita.html" aria-label="Digital Signage e Visual Merchandising: come amplificare l’impatto delle campagne di marketing sul punto vendita?"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/07/DS-e-VM-cover_ed-0736896f.webp 600w, /templates/yootheme/cache/b4/DS-e-VM-cover_ed-b4d9c4e6.webp 768w, /templates/yootheme/cache/64/DS-e-VM-cover_ed-64f50477.webp 1024w, /templates/yootheme/cache/3d/DS-e-VM-cover_ed-3d449259.webp 1200w" sizes="(min-width: 600px) 600px">
+<img src="../templates/yootheme/cache/6f/DS-e-VM-cover_ed-6f1b709d.jpeg" width="600" height="400" class="el-image" alt="Digital Signage e Visual Merchandising: come amplificare l’impatto delle campagne di marketing sul punto vendita?" loading="lazy">
+</picture></a>        
+                    
+
+        
+                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        <a href="418-digital-signage-e-visual-merchandising-come-amplificare-l-impatto-delle-campagne-di-marketing-sul-punto-vendita.html" class="uk-link-heading">Digital Signage e Visual Merchandising: come amplificare l’impatto delle campagne di marketing sul punto vendita?</a>                    </h3>        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+            <!-- Builder #footer -->
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin-small uk-text-center">
+        <a class="el-link" href="../index.html"><img src="../images/logo/logo-reg-footer.svg" width="120" height="120" class="el-image" alt="logo IM" loading="lazy"></a>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Solutions    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../display-pubblicitari.html" class="el-link uk-link-muted uk-margin-remove-last-child">Display</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../sale-riunioni1.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>IT</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../production-printing.html" class="el-link uk-link-muted uk-margin-remove-last-child">Printing</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../finishing.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Finishing</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Company    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../azienda.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Azienda</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../careers.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Careers</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../home-it/informativa-sulla-privacy.html" class="el-link uk-link-muted uk-margin-remove-last-child">Privacy</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../index2.html" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">Shop</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Focus    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../blog.html" class="el-link uk-link-muted uk-margin-remove-last-child">Blog</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../lavori.html" class="el-link uk-link-muted uk-margin-remove-last-child">Lavori</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../marketing.html" class="el-link uk-link-muted uk-margin-remove-last-child">Marketing</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-center">        Seguici anche su    </h3>
+<div class="uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl" target="_blank" rel="noreferrer"><span uk-icon="icon: linkedin; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions" target="_blank" rel="noreferrer"><span uk-icon="icon: facebook; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/" target="_blank" rel="noreferrer"><span uk-icon="icon: instagram; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" target="_blank" rel="noreferrer"><span uk-icon="icon: youtube; width: 20; height: 20;"></span></a></div>
+    
+    </div></div>
+<div class="uk-margin-medium uk-text-center">
+    <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w" sizes="(min-width: 76px) 76px">
+<img src="../templates/yootheme/cache/bb/logo-asroma-ProudMember-02-bb320a23.png" width="76" height="90" class="el-image" alt="logo as roma" loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr><div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri, 43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloak01ed6cf6b8b3305e3aceee101911ff78">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloak01ed6cf6b8b3305e3aceee101911ff78').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy01ed6cf6b8b3305e3aceee101911ff78 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addy01ed6cf6b8b3305e3aceee101911ff78 = addy01ed6cf6b8b3305e3aceee101911ff78 + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_text01ed6cf6b8b3305e3aceee101911ff78 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloak01ed6cf6b8b3305e3aceee101911ff78').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy01ed6cf6b8b3305e3aceee101911ff78 + '\'>'+addy_text01ed6cf6b8b3305e3aceee101911ff78+'<\/a>';
+		</script></span> - Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale<br> Via Lorenzo Bonincontri, 43 - 00147 Roma RM<br>REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloak6821958b9f16c9373ffae564d847a4ca">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloak6821958b9f16c9373ffae564d847a4ca').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy6821958b9f16c9373ffae564d847a4ca = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addy6821958b9f16c9373ffae564d847a4ca = addy6821958b9f16c9373ffae564d847a4ca + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_text6821958b9f16c9373ffae564d847a4ca = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloak6821958b9f16c9373ffae564d847a4ca').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy6821958b9f16c9373ffae564d847a4ca + '\'>'+addy_text6821958b9f16c9373ffae564d847a4ca+'<\/a>';
+		</script></span> <br>Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">Tutti i marchi riportati appartengono ai legittimi proprietari</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+		
+		 <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    </body>
+</html>

@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png" sizes="any">
+                <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+        <meta charset="utf-8">
+	<base href="https://www.imprinting.info/lavori/21-lavagne-interattive">
+	<meta name="description" content="I lavori e le installazioni eseguite presso i nostri clienti o attraverso i nostri partner.">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Lavagne Interattive</title>
+	<link href="/lavori/21-lavagne-interattive?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+	<link href="/lavori/21-lavagne-interattive?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+	<link href="https://www.imprinting.info/component/search/?Itemid=417&amp;id=21&amp;format=opensearch" rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml">
+	<link href="../components/com_breezingforms/libraries/jquery/validationEngine.jquery.css" rel="stylesheet">
+	<link href="../templates/yootheme/css/theme.12.css" rel="stylesheet">
+	<link href="../templates/yootheme/css/custom.css" rel="stylesheet">
+	<style>
+
+
+.bfClearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.bfFadingClass{
+display:none;
+}
+
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"7e0c628d191f09ba581a69ce12974a9f","system.paths":{"root":"","base":""}}</script>
+	<script src="../media/system/js/mootools-core.js"></script>
+	<script src="../media/system/js/core.js"></script>
+	<script src="../media/system/js/mootools-more.js"></script>
+	<script src="../media/jui/js/jquery.min.js"></script>
+	<script src="../media/jui/js/jquery-noconflict.js"></script>
+	<script src="../media/jui/js/jquery-migrate.min.js"></script>
+	<script src="../media/jui/js/bootstrap.min.js"></script>
+	<script src="../components/com_breezingforms/libraries/jquery/jquery.validationEngine-en.js"></script>
+	<script src="../components/com_breezingforms/libraries/jquery/jquery.validationEngine.js"></script>
+	<script src="../templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js"></script>
+	<script src="../templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-horizon.min.js"></script>
+	<script src="../templates/yootheme/js/theme.js"></script>
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });<!--
+                    jQuery(document).ready(function()
+                    {
+                            jQuery(".hasTooltip").tooltip({"html": true,"container": "body"});
+                    });var JQuery = jQuery;
+
+			var inlineErrorElements = new Array();
+			var bfSummarizers = new Array();
+			var bfDeactivateField = new Array();
+			var bfDeactivateSection = new Array();
+			
+
+                        function bf_validate_nextpage(element, action)
+                        {
+                            if(typeof bfUseErrorAlerts != "undefined"){
+                             JQuery(".bfErrorMessage").html("");
+                             JQuery(".bfErrorMessage").css("display","none");
+                            }
+
+                            error = ff_validation(ff_currentpage);
+                            if (error != "") {
+                               if(typeof bfUseErrorAlerts == ""){
+                                   alert(error);
+                                } else {
+                                   bfShowErrors(error);
+                                }
+                                ff_validationFocus("");
+                            } else {
+                                ff_switchpage(ff_currentpage+1);
+                                self.scrollTo(0,0);
+                            }
+                        }
+
+
+			function bfCheckMaxlength(id, maxlength, showMaxlength){
+				if( JQuery("#ff_elem"+id).val().length > maxlength ){
+					JQuery("#ff_elem"+id).val( JQuery("#ff_elem"+id).val().substring(0, maxlength) );
+				}
+				if(showMaxlength){
+					JQuery("#bfMaxLengthCounter"+id).text( "(" + (maxlength - JQuery("#ff_elem"+id).val().length) + " chars left)" );
+				}
+			}
+			function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty){
+				bfSummarizers.push( { id : id, connectWith : connectWith, type : type, emptyMessage : emptyMessage, hideIfEmpty : hideIfEmpty } );
+			}
+			function bfField(name){
+				var value = "";
+				switch(ff_getElementByName(name).type){
+					case "radio":
+						if(JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "" && typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+							value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+							if(!isNaN(value)){
+								value = Number(value);
+							}
+						}
+						break;
+					case "checkbox":
+					case "select-one":
+					case "select-multiple":
+						var nodeList = document["ff_form66"][""+ff_getElementByName(name).name+""];
+						if(ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined"){
+							if(typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+								value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						} else {
+							var val = "";
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								value = val.substr(0, val.length - 2);
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						}
+						break;
+					default:
+						if(!isNaN(ff_getElementByName(name).value)){
+							value = Number(ff_getElementByName(name).value);
+						} else {
+							value = ff_getElementByName(name).value;
+						}
+				}
+				return value;
+			}
+			function populateSummarizers(){
+				// cleaning first
+
+				for(var i = 0; i < bfSummarizers.length; i++){
+					JQuery("#"+bfSummarizers[i].id).parent().css("display", "");
+					JQuery("#"+bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">"+bfSummarizers[i].emptyMessage+"</span>");
+				}
+				for(var i = 0; i < bfSummarizers.length; i++){
+					var summVal = "";
+					switch(bfSummarizers[i].type){
+						case "bfTextfield":
+						case "bfTextarea":
+						case "bfHidden":
+						case "bfCalendar":
+						case "bfNumberInput":
+                        case "bfCalendarResponsive":
+						case "bfFile":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() != ""){
+								JQuery("#"+bfSummarizers[i].id).text( JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() ).html();
+								var breakableText = JQuery("#"+bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+								if(breakableText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										breakableText = calc(breakableText);
+									}
+								}
+
+								JQuery("#"+bfSummarizers[i].id).html(breakableText);
+								summVal = breakableText;
+							}
+						break;
+						case "bfRadioGroup":
+						case "bfCheckbox":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "undefined"){
+								var theText = JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val();
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+						case "bfCheckboxGroup":
+						case "bfSelect":
+							var val = "";
+							var nodeList = document["ff_form66"]["ff_nm_"+bfSummarizers[i].connectWith+"[]"];
+
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								var theText = val.substr(0, val.length - 2);
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+					}
+
+					if( ( bfSummarizers[i].hideIfEmpty && summVal == "" ) || ( typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_"+bfSummarizers[i].connectWith+"[]"] ) ){
+                        JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+					} else {
+					    JQuery("#"+bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+					}
+				}
+			}
+var bfUseErrorAlerts = false;
+
+				function bfShowErrors(error){
+                                        
+
+                                        if(JQuery.bfvalidationEngine)
+                                        {
+                                            JQuery("#ff_form66").bfvalidationEngine({
+                                              promptPosition: "bottomLeft",
+                                              success :  false,
+                                              failure : function() {}
+                                            });
+
+                                            for(var i = 0; i < inlineErrorElements.length; i++)
+                                            {
+                                                if(inlineErrorElements[i][1] != "")
+                                                {
+                                                    var prompt = null;
+
+                                                    if(inlineErrorElements[i][0] == "bfCaptchaEntry"){
+                                                        prompt = JQuery.bfvalidationEngine.buildPrompt("#bfCaptchaEntry",inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else if(inlineErrorElements[i][0] == "bfReCaptchaEntry"){
+                                                        // nothing here yet for recaptcha, alert is default
+                                                        alert(inlineErrorElements[i][1]);
+                                                    }
+                                                    else if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        alert(inlineErrorElements[i][1]);
+                                                        //prompt = JQuery.bfvalidationEngine.buildPrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val(),inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            prompt = JQuery.bfvalidationEngine.buildPrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id,inlineErrorElements[i][1],"error");
+                                                        }else{
+                                                            alert(inlineErrorElements[i][1]);
+                                                        }
+                                                    }
+
+                                                    JQuery(prompt).mouseover(
+                                                        function(){
+                                                            var inlineError = JQuery(this).attr("class").split(" ");
+                                                            if(inlineError && inlineError.length && inlineError.length == 2){
+                                                                var result = inlineError[1].split("formError");
+                                                                if(result && result.length && result.length >= 1){
+                                                                    JQuery.bfvalidationEngine.closePrompt("#"+result[0]);
+                                                                }
+                                                            }
+                                                        }
+                                                    );
+                                                }
+                                                else
+                                                {
+                                                    if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        //JQuery.bfvalidationEngine.closePrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val());
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            JQuery.bfvalidationEngine.closePrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            inlineErrorElements = new Array();
+                                        }
+				}
+		    bfToggleFieldsLoaded = false;
+		    bfSectionFieldsDeactivated = false;
+			JQuery(document).ready(function() {
+				if(typeof bfFade != "undefined")bfFade();
+				if(typeof bfRollover != "undefined")bfRollover();
+				if(typeof bfRollover2 != "undefined")bfRollover2();
+				if(typeof bfRegisterToggleFields != "undefined"){ 
+				    bfRegisterToggleFields(); 
+                }else{
+                    bfToggleFieldsLoaded = true;
+                }
+				if(typeof bfDeactivateSectionFields != "undefined"){ 
+				    bfDeactivateSectionFields(); 
+				}else{
+				    bfSectionFieldsDeactivated = true;
+				}
+                if(JQuery.bfvalidationEngine)
+                {
+                    JQuery.bfvalidationEngineLanguage.newLang();
+                    JQuery(".ff_elem").change(
+                        function(){
+                            JQuery.bfvalidationEngine.closePrompt(this);
+                        }
+                    );
+                }
+				JQuery(".bfQuickMode .hasTip").css("color","inherit"); // fixing label text color issue
+				JQuery(".bfQuickMode .bfTooltip").css("color","inherit"); // fixing label text color issue
+                JQuery("input[type=text]").bind("keypress", function(evt) {
+                    if(evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+			});
+		//-->
+	</script>
+	<script>UIkit.util.ready(() => {
+              UIkit.lightbox('#my-slider .uk-slider-items');
+      });</script>
+	<link rel="stylesheet" href="../components/com_breezingforms/themes/quickmode-bootstrap/system.css">
+	<script>var $theme = {};</script>
+	<!-- Joomla Facebook Integration Begin -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '389175478706596', {}, {agent: 'pljoomla'});
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx" src="https://www.facebook.com/tr?id=389175478706596&ev=PageView&noscript=1">
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- Joomla Facebook Integration end -->
+
+    </head>
+    <body class="">
+	
+	    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNBQV47');</script>
+<!-- End Google Tag Manager -->
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<div class="tm-header-mobile uk-hidden@m" uk-header>
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="../index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="50" height="51" src="../images/logo/logo-IM-colore.svg"></a>
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+                        
+                        <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="slide" flip>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-vertical">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-195">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-102 js-accordion uk-parent"><a href> Display <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-130"><a href="../display-pubblicitari.html"> Business Display</a></li>
+		<li class="item-390"><a href="../videowall-e-ledwall.html"> Videowall e Ledwall</a></li>
+		<li class="item-425"><a href="../display-solutions/totem.html"> Totem</a></li>
+		<li class="item-132"><a href="../lavagne-interattive.html"> Lavagne Interattive</a></li>
+		<li class="item-117"><a href="../hotel-tv-samsung-smart-hospitality.html"> Hospitality TV</a></li>
+		<li class="item-454"><a href="../hospital-tv-strutture-sanitarie.html"> Healthcare</a></li></ul></li>
+	<li class="item-428 js-accordion uk-parent"><a href> IT <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-460"><a href="../sale-riunioni.html"> Sale riunioni</a></li>
+		<li class="item-451"><a href="../noleggio-notebook-samsung-galaxy-book3.html"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></li>
+	<li class="item-392 js-accordion uk-parent"><a href> Printing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-391"><a href="../production-printing.html"> Production Printing</a></li>
+		<li class="item-393"><a href="../printing-solutions.html"> Printing Solutions</a></li>
+		<li class="item-455"><a href="../offerte-multifunzione-ufficio.html"> Offerte Multifunzione Ufficio</a></li></ul></li>
+	<li class="item-348 uk-parent"><a href="../finishing.html"> Finishing <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-429"><a href="../finishing/dtf.html"> DTF</a></li></ul></li>
+	<li class="item-417 uk-active"><a href="../lavori.html"> Lavori</a></li>
+	<li class="item-353"><a href="../blog.html"> Blog</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-159">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><p><a class="uk-button uk-button-secondary uk-text-middle" href="../contatti.html">Contatti</a></p></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-182">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid" uk-grid>
+<div class="uk-first-column"><a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;"></a></div>
+<div><a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;"></a></div>
+<div><a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: instagram; width: 20; height: 20;"></a></div>
+<div><a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;"></a></div>
+</div></div>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-tm-4">
+
+    
+    
+
+    <form id="search-tm-4" action="/lavori" method="post" role="search" class="uk-search uk-search-default uk-width-1-1"><span uk-search-icon></span><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input"><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="417"></form>
+
+
+
+
+
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</div>
+
+
+
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="../index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <img alt loading="eager" width="60" height="61" src="../images/logo/logo-IM-colore.svg"><img class="uk-logo-inverse" alt loading="eager" width="60" height="61" src="../images/logo/logo-IM-bianco.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav" id="module-194">
+    
+	<li class="item-102 uk-parent"><a role="button"> Display</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-130"><a href="../display-pubblicitari.html"> Business Display</a></li>
+		<li class="item-390"><a href="../videowall-e-ledwall.html"> Videowall e Ledwall</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-425"><a href="../display-solutions/totem.html"> Totem</a></li>
+		<li class="item-132"><a href="../lavagne-interattive.html"> Lavagne Interattive</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-117"><a href="../hotel-tv-samsung-smart-hospitality.html"> Hospitality TV</a></li>
+		<li class="item-454"><a href="../hospital-tv-strutture-sanitarie.html"> Healthcare</a></li></ul></div></div></div></li>
+	<li class="item-428 uk-parent"><a role="button"> IT</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-460"><a href="../sale-riunioni.html"> Sale riunioni</a></li>
+		<li class="item-451"><a href="../noleggio-notebook-samsung-galaxy-book3.html"> Noleggio Notebook Samsung Galaxy Book3</a></li></ul></div></div></div></li>
+	<li class="item-392 uk-parent"><a role="button"> Printing</a>
+	<div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-391"><a href="../production-printing.html"> Production Printing</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-393"><a href="../printing-solutions.html"> Printing Solutions</a></li></ul></div><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-455"><a href="../offerte-multifunzione-ufficio.html"> Offerte Multifunzione Ufficio</a></li></ul></div></div></div></li>
+	<li class="item-348 uk-parent"><a href="../finishing.html"> Finishing</a>
+	<div class="uk-navbar-dropdown"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-429"><a href="../finishing/dtf.html"> DTF</a></li></ul></div></div></div></li>
+	<li class="item-417 uk-active"><a href="../lavori.html"> Lavori</a></li>
+	<li class="item-353"><a href="../blog.html"> Blog</a></li></ul>
+
+<div class="uk-navbar-item" id="module-154">
+
+    
+    
+<div class="uk-margin-remove-last-child custom"><p><a class="uk-button uk-button-secondary uk-text-middle" href="../contatti.html">Contatti</a></p></div>
+
+</div>
+
+
+    <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal" uk-search-icon uk-toggle></a>
+
+    <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"></button>
+            <div class="uk-search uk-search-large">
+                <form id="search-tm-3" action="/lavori" method="post" role="search" class="uk-search uk-search-large"><input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca" type="search" class="uk-search-input uk-text-center" autofocus><input type="hidden" name="task" value="search"><input type="hidden" name="option" value="com_search"><input type="hidden" name="Itemid" value="417"></form>            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</div>
+
+            
+            
+
+            
+            <div id="tm-main" class="tm-main uk-section uk-section-default" uk-height-viewport="expand: true">
+                <div class="uk-container">
+
+                    
+                                                            <div class="uk-margin-medium-bottom">
+    <ul class="uk-breadcrumb">
+        
+                            <li><a href="../lavori.html">Lavori</a></li>
+            
+            </ul>
+</div>
+                            
+            
+            <div id="system-message-container" data-messages="[]">
+</div>
+
+            <div class="uk-panel uk-margin-medium-bottom">
+
+    
+    
+    
+    
+    
+            			            									<a href="/component/tags/tag/lavagne-interattive" class="" property="keywords" vocab="https://schema.org/">Lavagne Interattive</a>			    
+</div>
+
+
+
+
+
+    <div uk-grid class="uk-child-width-1-3@s uk-grid-row-large">
+                <div>
+<article id="article-212" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/212-university-of-arkansas-rome-center" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="University of Arkansas Rome Center">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2022-05-30T05:00:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/Univertisy_of_Arkansas_Rome_Center/20220301_124547_cover-ed.jpg">
+                    <a href="21-lavagne-interattive/212-university-of-arkansas-rome-center.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/49/20220301_124547_cover-ed-499cb581.webp 768w, /templates/yootheme/cache/33/20220301_124547_cover-ed-339b2a42.webp 1024w, /templates/yootheme/cache/6a/20220301_124547_cover-ed-6a2abc6c.webp 1200w, /templates/yootheme/cache/79/20220301_124547_cover-ed-79a393a3.webp 1366w, /templates/yootheme/cache/cd/20220301_124547_cover-ed-cd129cde.webp 1600w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Lavagne Interattive Multimediali nella sede di Roma dell'University of Arkansas" src="../templates/yootheme/cache/9e/20220301_124547_cover-ed-9e933076.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/212-university-of-arkansas-rome-center.html" class="uk-link-reset">University of Arkansas Rome Center</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-173" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Istituti Montesano sulla Marcellana e Buonabitacolo">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2021-12-06T17:00:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/montesano-buonabitacolo/montesano-buonabitacolo-WA0035-cover-2.jpg">
+                    <a href="21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/38/montesano-buonabitacolo-WA0035-cover-2-38d7923c.webp 768w, /templates/yootheme/cache/2d/montesano-buonabitacolo-WA0035-cover-2-2d8b3ebb.webp 1024w, /templates/yootheme/cache/29/montesano-buonabitacolo-WA0035-cover-2-29f08016.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="lavagna interattiva flip samsung in istituto comprensivo" src="../templates/yootheme/cache/4a/montesano-buonabitacolo-WA0035-cover-2-4a1b7fef.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo.html" class="uk-link-reset">Istituti Montesano sulla Marcellana e Buonabitacolo</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-162" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/162-sapienza-universita-di-roma" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Sapienza Università di Roma">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2021-10-19T17:00:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/sapienza/flip-sapienza-041.jpg">
+                    <a href="21-lavagne-interattive/162-sapienza-universita-di-roma.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ac/flip-sapienza-041-ac273441.webp 768w, /templates/yootheme/cache/e0/flip-sapienza-041-e00b56e7.webp 1024w, /templates/yootheme/cache/b9/flip-sapienza-041-b9bac0c9.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="lavagna interattiva" src="../templates/yootheme/cache/24/flip-sapienza-041-2486a095.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/162-sapienza-universita-di-roma.html" class="uk-link-reset">Sapienza Università di Roma</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-129" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/129-istituto-comprensivo-largo-oriani" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Istituto Comprensivo &quot;Largo Oriani&quot;">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2021-06-07T01:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/scuolalargooriani/scuola-largo-oriani-01-cover-social.jpg">
+                    <a href="21-lavagne-interattive/129-istituto-comprensivo-largo-oriani.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/b4/scuola-largo-oriani-01-cover-social-b43bb29a.webp 768w, /templates/yootheme/cache/90/scuola-largo-oriani-01-cover-social-901a49fc.webp 1024w, /templates/yootheme/cache/02/scuola-largo-oriani-01-cover-social-0205d93d.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Una lavagna interattiva multimediale Samsung Flip 2 installata in un'aula di un istituto scolastico" src="../templates/yootheme/cache/b5/scuola-largo-oriani-01-cover-social-b59efbc4.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/129-istituto-comprensivo-largo-oriani.html" class="uk-link-reset">Istituto Comprensivo "Largo Oriani"</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-119" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/119-generale-costruzioni-ferroviarie" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Generale Costruzioni Ferroviarie">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2021-05-14T01:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/GCF/20210329_111641_ed-COVER.jpg">
+                    <a href="21-lavagne-interattive/119-generale-costruzioni-ferroviarie.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/72/20210329_111641_ed-COVER-72d60376.webp 768w, /templates/yootheme/cache/b4/20210329_111641_ed-COVER-b446d25c.webp 1024w, /templates/yootheme/cache/5d/20210329_111641_ed-COVER-5d62b39e.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Lavagna interattiva Samsung Flip2 in sala riunioni" src="../templates/yootheme/cache/62/20210329_111641_ed-COVER-62748c6c.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/119-generale-costruzioni-ferroviarie.html" class="uk-link-reset">Generale Costruzioni Ferroviarie</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-87" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/87-totti-soccer-school" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Totti Soccer School">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2020-11-26T08:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/totti/02/totti-soccer-school-02-3-2.jpg">
+                    <a href="21-lavagne-interattive/87-totti-soccer-school.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/4e/totti-soccer-school-02-3-2-4e61b0dd.webp 768w, /templates/yootheme/cache/bb/totti-soccer-school-02-3-2-bbc7fbdc.webp 1024w, /templates/yootheme/cache/bf/totti-soccer-school-02-3-2-bfbc4571.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Samsung Flip 2 lavagna interattiva digitale a parete in scuola calcio" src="../templates/yootheme/cache/9c/totti-soccer-school-02-3-2-9c919f5b.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/87-totti-soccer-school.html" class="uk-link-reset">Totti Soccer School</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-80" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/80-comunita-di-sant-egidio" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Comunità di Sant'Egidio">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2020-10-01T07:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/santegidio/03/comunita-sante-egidio-lavagna-samsung-flip2-173433.jpg">
+                    <a href="21-lavagne-interattive/80-comunita-di-sant-egidio.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/ce/comunita-sante-egidio-lavagna-samsung-flip2-173433-ce895920.webp 768w, /templates/yootheme/cache/53/comunita-sante-egidio-lavagna-samsung-flip2-173433-53487905.webp 1024w, /templates/yootheme/cache/40/comunita-sante-egidio-lavagna-samsung-flip2-173433-40f0dee3.webp 1200w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Lavagna interattiva multimediale Samsung Flip da 55 e 65 pollici fissate a parete presso la Comunità di Sant'Egidio" src="../templates/yootheme/cache/2f/comunita-sante-egidio-lavagna-samsung-flip2-173433-2f224106.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/80-comunita-di-sant-egidio.html" class="uk-link-reset">Comunità di Sant'Egidio</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-65" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/65-federparchi-lim" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Federparchi">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2020-03-19T18:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/federparchi/01/federparhi-samsung-display-lavagna-inerattiva-02.jpg">
+                    <a href="21-lavagne-interattive/65-federparchi-lim.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/4a/federparhi-samsung-display-lavagna-inerattiva-02-4a59c109.webp 768w, /templates/yootheme/cache/c2/federparhi-samsung-display-lavagna-inerattiva-02-c26b96fa.webp 1024w, /templates/yootheme/cache/1e/federparhi-samsung-display-lavagna-inerattiva-02-1e01da5d.webp 1200w, /templates/yootheme/cache/b4/federparhi-samsung-display-lavagna-inerattiva-02-b4724683.webp 1351w, /templates/yootheme/cache/46/federparhi-samsung-display-lavagna-inerattiva-02-4625ab7b.webp 1352w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Lavagna interattiva Samsung display da 75 pollici con stand su rotelle" src="../templates/yootheme/cache/df/federparhi-samsung-display-lavagna-inerattiva-02-dfd852b6.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/65-federparchi-lim.html" class="uk-link-reset">Federparchi</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-74" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/74-regione-calabria-sala-convegni" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="Regione Calabria - Sala Convegni">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2020-03-19T18:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/regione-calabria/regione-calabria-flip2-01.jpg">
+                    <a href="21-lavagne-interattive/74-regione-calabria-sala-convegni.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/32/regione-calabria-flip2-01-3235a57a.webp 768w, /templates/yootheme/cache/96/regione-calabria-flip2-01-962699be.webp 1024w, /templates/yootheme/cache/0b/regione-calabria-flip2-01-0b554993.webp 1200w, /templates/yootheme/cache/6a/regione-calabria-flip2-01-6acedcf1.webp 1350w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Samsung Flip2 in Regione Calabria" src="../templates/yootheme/cache/ff/regione-calabria-flip2-01-ffdcb435.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/74-regione-calabria-sala-convegni.html" class="uk-link-reset">Regione Calabria - Sala Convegni</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+                <div>
+<article id="article-43" class="uk-article" data-permalink="https://www.imprinting.info/lavori/21-lavagne-interattive/43-ds-tech-roma-flip" typeof="Article" vocab="https://schema.org/">
+
+    <meta property="name" content="DS Tech - Roma">
+    <meta property="author" typeof="Person" content="Super User">
+    <meta property="dateModified" content="2023-08-03T09:12:56+00:00">
+    <meta property="datePublished" content="2020-03-19T18:16:57+00:00">
+    <meta class="uk-margin-remove-adjacent" property="articleSection" content="Lavagne Interattive">
+
+        
+    <div class="uk-text-center uk-margin-small-top" property="image" typeof="ImageObject">
+        <meta property="url" content="https://www.imprinting.info/images/lavori/lavagne/dst/01/dst-samsung-flip-lavagna-inerattiva-02.jpg">
+                    <a href="21-lavagne-interattive/43-ds-tech-roma-flip.html"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/3d/dst-samsung-flip-lavagna-inerattiva-02-3d08db91.webp 768w, /templates/yootheme/cache/ab/dst-samsung-flip-lavagna-inerattiva-02-ab44a603.webp 1024w, /templates/yootheme/cache/e4/dst-samsung-flip-lavagna-inerattiva-02-e4402cfd.webp 1200w, /templates/yootheme/cache/5c/dst-samsung-flip-lavagna-inerattiva-02-5c97fcee.webp 1272w" sizes="(min-width: 1200px) 1200px">
+<img loading="lazy" alt="Lavagna interattiva IWB Samsung Flip da 55 pollici su stand mobile e orientabile posizionata in una sala riunioni" src="../templates/yootheme/cache/5e/dst-samsung-flip-lavagna-inerattiva-02-5e6d32c1.jpeg" width="1200" height="800">
+</picture></a>
+            </div>
+
+        
+    
+        
+                    <h2 property="headline" class="uk-margin-top uk-margin-remove-bottom uk-text-center uk-h3">
+                <a href="21-lavagne-interattive/43-ds-tech-roma-flip.html" class="uk-link-reset">DS Tech - Roma</a>            </h2>
+        
+                        
+        
+        
+        
+                <div class="uk-margin-top" property="text">
+
+            
+                                        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    
+</article>
+</div>
+            </div>
+
+            
+                        
+                </div>
+            </div>
+            
+            
+<div id="module-187" class="builder"><!-- Builder #module-187 --><style class="uk-margin-remove-adjacent">#form .uk-checkbox, #form .uk-radio, #form input[type=checkbox]:not([class*=uk-]), #form input[type=radio]:not([class*=uk-]) { margin-top: 3px; } #form .uk-input, #form .uk-select:not([multiple]):not([size]), #form .uneditable-input:not([class*=uk-]), #form input[type=color]:not([class*=uk-]), #form input[type=date]:not([class*=uk-]), #form input[type=datetime-local]:not([class*=uk-]), #form input[type=datetime]:not([class*=uk-]), #form input[type=email]:not([class*=uk-]), #form input[type=month]:not([class*=uk-]), #form input[type=number]:not([class*=uk-]), #form input[type=password]:not([class*=uk-]), #form input[type=search]:not([class*=uk-]), #form input[type=tel]:not([class*=uk-]), #form input[type=text]:not([class*=uk-]), #form input[type=time]:not([class*=uk-]), #form input[type=url]:not([class*=uk-]), #form input[type=week]:not([class*=uk-]), #form select:not([class*=uk-]):not([multiple]):not([size]) { height: 40px!important; } #form .bfQuickMode .controls .control-label { width: 100%; } #form .bfQuickMode .bfSubmitButton { float: none; display: block; margin-left: auto; margin-right: auto; white-space:nowrap; padding: 0 30px; vertical-align: middle; font-size: 12px; line-height: 40px; } </style>
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-h2 uk-font-secondary uk-text-center">        Richiedi maggiori informazioni    </div><div id="form">
+<!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.  All rights reserved. -->
+<div class="bfClearfix">
+<script type="text/javascript">
+<!--
+ff_processor=new Object();ff_processor.okrun=true;ff_processor.ip='89.185.29.186';ff_processor.agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';ff_processor.browser='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
+ff_processor.opsys='win';ff_processor.provider='Unknown';ff_processor.submitted='2024-12-04 09:13:38';ff_processor.form=66;ff_processor.form_id='ff_form66';ff_processor.page=1;ff_processor.target=2;ff_processor.runmode=0;ff_processor.inframe=0;ff_processor.inline=0;
+ff_processor.template=0;ff_processor.homepage='https://www.imprinting.info';ff_processor.mossite='https://www.imprinting.info';ff_processor.images='https://www.imprinting.info/components/com_breezingforms/images';ff_processor.border='';ff_processor.align='';
+ff_processor.top='';ff_processor.suffix='';ff_processor.status=null;ff_processor.message=null;ff_processor.record_id=null;ff_processor.showgrid=false;ff_processor.traceBuffer=null;
+//-->
+</script>
+<script type="text/javascript" src="../components/com_breezingforms/facileforms.js"></script>
+<div id="ff_formdiv66" class="bfFormDiv">
+<style>
+#bfLabel2434 {
+    font-size: 15px;
+}
+</style>
+
+<style>
+#ff_elem2434 {
+    border: 1px solid #000;
+}
+</style>
+<script type="text/javascript">
+<!--
+
+function checkFileExtensions(){
+			return true;
+		}
+		function bfCheckCaptcha(){if(checkFileExtensions())ff_submitForm2();}function ff_initialize(condition)
+{}
+onload=function()
+{ff_initialize('formentry');ff_initialize('pageentry');if(ff_processor&&ff_processor.traceBuffer)ff_traceWindow();}
+var ff_currentpage=1;
+function ff_switchpage(page){if(document.getElementById("bfPage1"))document.getElementById("bfPage1").style.display="none";if(document.getElementById("bfPage2"))document.getElementById("bfPage2").style.display="none";if(document.getElementById("bfPage"+page))document.getElementById("bfPage"+page).style.display="";
+ff_currentpage=page;ff_initialize("pageentry");}
+function ff_lavagnelavori1_submitted(status,message){if(status==0){ff_switchpage(2);}else{alert(message);}}
+function ff_resetForm(element,action)
+{eval('document.'+ff_processor.form_id).reset();}
+function ff_submitForm()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}bfCheckCaptcha();}function ff_submitForm2()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}if(typeof bf_ajax_submit!='undefined'){bf_ajax_submit()}else{document.ff_form66.submit();}
+}
+var ff_validationFocusName='';
+var ff_elements=[['ff_elem5577','ff_div5577','bfFakeName2',1,5577],['ff_elem5576','ff_div5576','bfFakeName',1,5576],['ff_elem5579','ff_div5579','bfFakeName4',1,5579],['ff_elem5578','ff_div5578','bfFakeName3',1,5578],['ff_elem4036','ff_div4036','tipologiadisplay',1,4036],
+['ff_elem4035','ff_div4035','diagonale',1,4035],['ff_elem4034','ff_div4034','orientamento',1,4034],['ff_elem4037','ff_div4037','supporto',1,4037],['ff_elem4033','ff_div4033','larghezza',1,4033],['ff_elem4032','ff_div4032','altezza',1,4032],['ff_elem4029','ff_div4029','profondita',1,4029],
+['ff_elem4030','ff_div4030','connettivita',1,4030],['ff_elem4031','ff_div4031','nome',1,4031],['ff_elem4025','ff_div4025','azienda',1,4025],['ff_elem4024','ff_div4024','email',1,4024],['ff_elem4023','ff_div4023','telefono',1,4023],['ff_elem4022','ff_div4022','cittaconsegna',1,4022],
+['ff_elem4021','ff_div4021','messaggio',1,4021],['ff_elem4019','ff_div4019','acquisizione',1,4019],['ff_elem4028','ff_div4028','privacy',1,4028],['ff_elem5575','ff_elem5575','page',1,5575]
+];
+function ff_getElementByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return eval('document.ff_form66.'+ff_elements[i][0]);return null;}
+function ff_getPageByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return ff_elements[i][3];return 0;}
+function ff_validationFocus(name)
+{if(name==undefined||name==''){if(ff_validationFocusName!=''){ff_switchpage(ff_getPageByName(ff_validationFocusName));if(ff_getElementByName(ff_validationFocusName).focus){ff_getElementByName(ff_validationFocusName).focus();}}}else{if(ff_validationFocusName=='')
+ff_validationFocusName=name;}}
+function ff_getElementByIndex(index)
+{if(index>=0&&index<ff_elements.length)
+return eval('document.ff_form66.'+ff_elements[index][0]);return null;}
+function ff_anychecked(element,message)
+{var name='';if(!element.name){if(element.length&&element.length!=0){name=element[0].name;var cnt=0;for(var i=0;i<element.length;i++)
+if(element[i].name==name)
+if(element[i].checked)cnt++;if(cnt==0){ff_validationFocus(element[0].name);if(message=='')message="Please check or select "+name+".\n";return message;}}else{return '';}}else{name=element.name;if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);
+var cnt=0;for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+if(ff_getElementByIndex(i).checked)cnt++;if(cnt==0){ff_validationFocus(element.name);if(message=='')message="Please check or select "+name+".\n";return message;}}return '';}
+function ff_validemail(element,message)
+{var check=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!check.test(element.value)){if(message=='')message=element.name+" is no valid email address.\n";ff_validationFocus(element.name);return message;}return '';}
+function ff_valuenotempty(element,message)
+{if(element.value!='')return '';if(message=='')message="Please enter "+element.name+".\n";ff_validationFocus(element.name);return message;}
+function ff_validation(page)
+{if(typeof inlineErrorElements!='undefined')inlineErrorElements=new Array();error='';ff_validationFocusName='';if(page==1||page==0){if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_nome[]']){errorout=ff_valuenotempty(document.ff_form66['ff_nm_nome[]'],"Inserisci il tuo nome e il tuo cognome\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["nome",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_azienda[]']){errorout=ff_valuenotempty(document.ff_form66['ff_nm_azienda[]'],"Inserisci la ragione sociale\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["azienda",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_email[]']){errorout=ff_validemail(document.ff_form66['ff_nm_email[]'],"Inserisci la tua e-mail\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["email",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_telefono[]']){errorout=ff_valuenotempty(document.ff_form66['ff_nm_telefono[]'],"Inserisci un recapito telefonico\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["telefono",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_cittaconsegna[]']){errorout=ff_valuenotempty(document.ff_form66['ff_nm_cittaconsegna[]'],"Inserisci la tua città\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["cittaconsegna",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_privacy[]']){errorout=ff_anychecked(document.ff_form66['ff_nm_privacy[]'],"Si prega di leggere ed accettare l\'informativa sulla privacy\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["privacy",errorout]);}}}if(error!=""&&document.getElementById('ff_capimgValue')){document.getElementById('ff_capimgValue').src='/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom='+Math.random();
+document.getElementById('bfCaptchaEntry').value="";}if(error!=""&&document.getElementById("bfSubmitButton")){document.getElementById("bfSubmitButton").disabled=false;}if(error!=""&&typeof JQuery!="undefined"){JQuery(".bfCustomSubmitButton").prop("disabled",false);}
+return error;}
+function ff_validate_submit(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(0);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);}ff_validationFocus();
+}else
+ff_submitForm();}
+function ff_validate_nextpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);}}
+function ff_validate_prevpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);}}}
+//-->
+</script>
+<form data-ajax="false" action="https://www.imprinting.info/lavori/21-lavagne-interattive" method="post" name="ff_form66" id="ff_form66" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+<div id="bfPage1" class="bfPage">
+<div class="bfErrorMessage alert alert-error" style="display:none"></div>
+<section class=" " id="iniziamo">
+<div class="row-fluid"><i style="display:none;"></i><script type="text/javascript"><!--
+bfDeactivateSection.push("tipologiadisplay");
+//--></script>
+<section style="display:none" id="tipologiadisplay">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<p>&nbsp;</p>
+<p class="lead">Scegli la tipologia di display più adatto alle tue esigenze</p>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group" id="bfElemWrap4036">
+<div class="controls form-inline"><div class=" "><span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036" for="ff_elem4036"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Interno vetrina" id="ff_elem4036">
+Interno vetrina</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_1" for="ff_elem4036_1"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Esterno vetrina" id="ff_elem4036_1">
+Esterno vetrina</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_2" for="ff_elem4036_2"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Interno generico" id="ff_elem4036_2">
+Interno generico</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_3" for="ff_elem4036_3"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Touch" id="ff_elem4036_3">
+Touch</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_4" for="ff_elem4036_4"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Totem" id="ff_elem4036_4">
+Totem</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_5" for="ff_elem4036_5"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="VideoWall" id="ff_elem4036_5">
+VideoWall</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_6" for="ff_elem4036_6"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Lavagna interattiva" id="ff_elem4036_6">
+Lavagna interattiva</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4036_7" for="ff_elem4036_7"><input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]" value="Hotel TV" id="ff_elem4036_7">
+Hotel TV</label></span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<script type="text/javascript"><!--
+bfDeactivateSection.push("diagonale");
+//--></script>
+<section style="display:none" id="diagonale">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span4" id="bfElemWrap4035">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4035" for="ff_elem4035">Diagonale in pollici</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4035" for="ff_elem4035"><input class="ff_elem" type="checkbox" name="ff_nm_diagonale[]" value="55" id="ff_elem4035">
+55</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4035_1" for="ff_elem4035_1"><input class="ff_elem" type="checkbox" name="ff_nm_diagonale[]" value="65" id="ff_elem4035_1">
+65</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4035_2" for="ff_elem4035_2"><input class="ff_elem" type="checkbox" name="ff_nm_diagonale[]" value="85" id="ff_elem4035_2">
+85</label></span></div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4034">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4034" for="ff_elem4034">Orientamento</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4034" for="ff_elem4034"><input class="ff_elem" type="checkbox" name="ff_nm_orientamento[]" value="Orizzontale" id="ff_elem4034">
+Orizzontale</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4034_1" for="ff_elem4034_1"><input class="ff_elem" type="checkbox" name="ff_nm_orientamento[]" value="Verticale" id="ff_elem4034_1">
+Verticale</label></span></div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4037">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4037" for="ff_elem4037">Supporto</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4037" for="ff_elem4037"><input class="ff_elem" type="checkbox" name="ff_nm_supporto[]" value="A parete" id="ff_elem4037">
+A parete</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4037_1" for="ff_elem4037_1"><input class="ff_elem" type="checkbox" name="ff_nm_supporto[]" value="Stand mobile" id="ff_elem4037_1">
+Stand mobile</label></span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<script type="text/javascript"><!--
+bfDeactivateSection.push("spazio");
+//--></script>
+<section style="display:none" id="spazio">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<p>&nbsp;</p>
+<p class="lead">Indica lo spazio a disposizione per l'installazione del display</p>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group span4" id="bfElemWrap4033">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4033" for="ff_elem4033">Larghezza disponibile cm</label>
+<input class=" ff_elem inputbox" type="number" name="ff_nm_larghezza[]" value="" id="ff_elem4033" step="" max="" min="">
+</div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4032">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4032" for="ff_elem4032">Altezza disponibile cm</label>
+<input class=" ff_elem inputbox" type="number" name="ff_nm_altezza[]" value="" id="ff_elem4032" step="" max="" min="">
+</div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4029">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4029" for="ff_elem4029">Profondità disponibile cm</label>
+<input class=" ff_elem inputbox" type="number" name="ff_nm_profondita[]" value="" id="ff_elem4029" step="" max="" min="">
+</div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<script type="text/javascript"><!--
+bfDeactivateSection.push("infoaggiuntive");
+//--></script>
+<section style="display:none" id="infoaggiuntive">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfSectionDescription">
+<h4><br>Informazioni aggiuntive</h4>
+</div>
+<div class="bfClearfix">
+<div class="bfElemWrap control-group" id="bfElemWrap4030">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4030" for="ff_elem4030">Connettività disponibile</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4030" for="ff_elem4030"><input class="ff_elem" type="checkbox" name="ff_nm_connettivita[]" value="Nessuna" id="ff_elem4030">
+Nessuna</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4030_1" for="ff_elem4030_1"><input class="ff_elem" type="checkbox" name="ff_nm_connettivita[]" value="LAN" id="ff_elem4030_1">
+LAN</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4030_2" for="ff_elem4030_2"><input class="ff_elem" type="checkbox" name="ff_nm_connettivita[]" value="Wi-Fi" id="ff_elem4030_2">
+Wi-Fi</label></span></div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+</div><!-- section normal --></section>
+<section class=" " id="datirichiedente">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span6" id="bfElemWrap4031">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4031" for="ff_elem4031">Nome e cognome <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_nome[]" value="" id="ff_elem4031">
+</div></div></div>
+<div class="bfElemWrap control-group span6" id="bfElemWrap4025">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4025" for="ff_elem4025">Azienda <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_azienda[]" value="" id="ff_elem4025">
+</div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<section class=" " id="contatti">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group span4" id="bfElemWrap4024">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4024" for="ff_elem4024">Email <i class="icon-asterisk"></i> 
+</label>
+<input placeholder="@" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_email[]" value="" id="ff_elem4024">
+</div></div></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4023">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4023" for="ff_elem4023">Telefono <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" type="number" name="ff_nm_telefono[]" value="" id="ff_elem4023" step="" max="" min="">
+</div></div><script type="text/javascript">
+							JQuery(document).ready(
+								JQuery("#ff_elem4023").css("width", "100%")
+							);</script></div>
+<div class="bfElemWrap control-group span4" id="bfElemWrap4022">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4022" for="ff_elem4022">Città <i class="icon-asterisk"></i> 
+</label>
+<input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;" type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem4022">
+</div></div></div>
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfElemWrap control-group" id="bfElemWrap4021">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4021" for="ff_elem4021">Lascia un messaggio (facoltativo)</label>
+<textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;" name="ff_nm_messaggio[]" id="ff_elem4021"></textarea>
+</div></div></div>
+<div class="bfElemWrap control-group" id="bfElemWrap4019">
+<div class="controls form-inline"><div class=" "><label class="control-label bfLabelBlock" id="bfLabel4019" for="ff_elem4019">Come ci hai conosciuto?</label>
+<span class=""><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4019" for="ff_elem4019"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google" id="ff_elem4019">
+Google</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4019_1" for="ff_elem4019_1"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social" id="ff_elem4019_1">
+Social</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4019_2" for="ff_elem4019_2"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail" id="ff_elem4019_2">
+Mail</label><label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4019_3" for="ff_elem4019_3"><input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro" id="ff_elem4019_3">
+Altro</label></span></div></div></div>
+<section class=" " id="privacy">
+<div class="row-fluid"><i style="display:none;"></i><div class="bfClearfix">
+<div class="bfElemWrap control-group" id="bfElemWrap4028">
+<div class="controls form-inline"><div class=""><label class="control-label bfLabelBlock" id="bfLabel4028" for="ff_elem4028">Acconsento al trattamento dei miei dati in merito a questa richiesta. <i class="icon-asterisk"></i> 
+</label>
+<span class=""><input style="vertical-align: baseline;" class="ff_elem" type="checkbox" name="ff_nm_privacy[]" value="Acconsento" id="ff_elem4028">
+</span></div></div></div>
+<input class="ff_elem" type="hidden" name="ff_nm_page[]" value="https://www.imprinting.info:443/lavori/21-lavagne-interattive" id="ff_elem5575">
+</div><!-- inline -->
+</div><!-- section normal --></section>
+<div class="bfClearfix"></div><div class="form-actions"><div class=""><button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button" onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');" value="Invia la richiesta"><span>Invia la richiesta</span></button>
+</div></div></div><!-- bfPage end -->
+<div id="bfPage2" class="bfPage" style="display:none;">
+<div class="">
+<h2 style="text-align: center;">Grazie per la richiesta</h2>
+<p style="text-align: center;"><span class="lead">Verrai contattato al più presto da un nostro responsabile commerciale per offrirti la soluzione più adatta alle tue esigenze. </span></p>
+</div>
+<div class="bfErrorMessage alert alert-error" style="display:none"></div>
+</div>
+<noscript>Please turn on javascript to submit your data. Thank you!</noscript>
+<input type="hidden" name="ff_contentid" value="0">
+<input type="hidden" name="ff_applic" value="">
+<input type="hidden" name="ff_record_id" value="">
+<input type="hidden" name="ff_module_id" value="0">
+<input type="hidden" name="ff_form" value="66">
+<input type="hidden" name="ff_task" value="submit">
+<input type="hidden" name="ff_target" value="2">
+<input type="hidden" name="ff_align" value="">
+<input type="hidden" name="option" value="com_content">
+<input type="hidden" name="Itemid" value="417">
+<input type="hidden" name="id" value="21">
+</form>
+</div><!-- form end -->
+<script type="text/javascript">
+<!--
+if(typeof ff_processor != "undefined")ff_processor.traceBuffer = '\n'+
+'\074strong>*** EXCEPTION CAUGHT BY BREEZINGFORMS ***\074/strong>\n'+
+'PHP error level : E_DEPRECATED\n'+
+'PHP filename    : /var/www/vhosts/imprinting.info/httpdocs/components/com_breezingforms/facileforms.process.php(1245) : eval()&#039;d code\n'+
+'PHP linenumber  : 6\n'+
+'Last known pos  : Piece ff_InitLib at line 1\n'+
+'Error message   : Array and string offset access syntax with curly braces is deprecated\n'+
+'\n'+
+'';
+-->
+</script>
+</div>
+</div>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+            <!-- Builder #footer -->
+<div class="uk-section-muted uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin-small uk-text-center">
+        <a class="el-link" href="../index.html"><img src="../images/logo/logo-reg-footer.svg" width="120" height="120" class="el-image" alt="logo IM" loading="lazy"></a>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Solutions    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../display-pubblicitari.html" class="el-link uk-link-muted uk-margin-remove-last-child">Display</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../sale-riunioni1.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>IT</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../production-printing.html" class="el-link uk-link-muted uk-margin-remove-last-child">Printing</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../finishing.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Finishing</p></a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Company    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../azienda.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Azienda</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../careers.html" class="el-link uk-link-muted uk-margin-remove-last-child"><p>Careers</p></a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../home-it/informativa-sulla-privacy.html" class="el-link uk-link-muted uk-margin-remove-last-child">Privacy</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../index2.html" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">Shop</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-left@m uk-text-center">        Focus    </h3>
+<ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../blog.html" class="el-link uk-link-muted uk-margin-remove-last-child">Blog</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../lavori.html" class="el-link uk-link-muted uk-margin-remove-last-child">Lavori</a></div>            </li>
+
+    <li class="el-item">        
+    <div class="el-content uk-panel"><a href="../marketing.html" class="el-link uk-link-muted uk-margin-remove-last-child">Marketing</a></div>            </li>
+</ul>
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h5 uk-text-center">        Seguici anche su    </h3>
+<div class="uk-text-center">    <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl" target="_blank" rel="noreferrer"><span uk-icon="icon: linkedin; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions" target="_blank" rel="noreferrer"><span uk-icon="icon: facebook; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/" target="_blank" rel="noreferrer"><span uk-icon="icon: instagram; width: 20; height: 20;"></span></a></div>
+            <div>
+<a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos" target="_blank" rel="noreferrer"><span uk-icon="icon: youtube; width: 20; height: 20;"></span></a></div>
+    
+    </div></div>
+<div class="uk-margin-medium uk-text-center">
+    <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-panel uk-margin-remove-first-child">
+    
+                <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w" sizes="(min-width: 76px) 76px">
+<img src="../templates/yootheme/cache/bb/logo-asroma-ProudMember-02-bb320a23.png" width="76" height="90" class="el-image" alt="logo as roma" loading="lazy">
+</picture>        
+                    
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+</div></div>
+        </div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr><div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri, 43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloak2f4b01e2269f4ff266a48a9ee20d910e">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloak2f4b01e2269f4ff266a48a9ee20d910e').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy2f4b01e2269f4ff266a48a9ee20d910e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addy2f4b01e2269f4ff266a48a9ee20d910e = addy2f4b01e2269f4ff266a48a9ee20d910e + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_text2f4b01e2269f4ff266a48a9ee20d910e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloak2f4b01e2269f4ff266a48a9ee20d910e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy2f4b01e2269f4ff266a48a9ee20d910e + '\'>'+addy_text2f4b01e2269f4ff266a48a9ee20d910e+'<\/a>';
+		</script></span> - Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">©️ 2017 - 2024 I'MPRINTING Srl Unipersonale<br> Via Lorenzo Bonincontri, 43 - 00147 Roma RM<br>REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769 - <span class="nolink uk-link-muted"><span id="cloakd40c78db0206ee14eb50fc1172aea94f">Questo indirizzo email è protetto dagli spambots. È necessario abilitare JavaScript per vederlo.</span><script type='text/javascript'>
+				document.getElementById('cloakd40c78db0206ee14eb50fc1172aea94f').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyd40c78db0206ee14eb50fc1172aea94f = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+				addyd40c78db0206ee14eb50fc1172aea94f = addyd40c78db0206ee14eb50fc1172aea94f + 'p&#101;c' + '&#46;' + '&#105;t';
+				var addy_textd40c78db0206ee14eb50fc1172aea94f = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';document.getElementById('cloakd40c78db0206ee14eb50fc1172aea94f').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd40c78db0206ee14eb50fc1172aea94f + '\'>'+addy_textd40c78db0206ee14eb50fc1172aea94f+'<\/a>';
+		</script></span> <br>Società soggetta a direzione e controllo di Black Knight Capital Srl - P.iva: IT16776131001</div><div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">Tutti i marchi riportati appartengono ai legittimi proprietari</div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+		
+		 <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    </body>
+</html>
