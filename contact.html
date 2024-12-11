@@ -1,0 +1,2059 @@
+﻿<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png"
+          sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <meta name="title" content="Contatti" />
+    <meta name="metatitle" content="Contatti" />
+    <meta name="twitter:title" content="Contatti" />
+    <meta name="twitter:description" content="Il modo più rapido per entrare in contatto con la nostra azienda. Chiamaci allo 06 9113 3623 o scrivici attraverso il nostro modulo di contatto."
+    />
+    <meta name="twitter:image" content="https://www.imprinting.info/images/contatti/Progetto_senza_titolo.png"
+    />
+    <meta property="og:title" content="Contatti" />
+    <meta property="og:description" content="Il modo più rapido per entrare in contatto con la nostra azienda. Chiamaci allo 06 9113 3623 o scrivici attraverso il nostro modulo di contatto."
+    />
+    <meta property="og:url" content="https://www.imprinting.info/contatti"
+    />
+    <meta property="og:image" content="https://www.imprinting.info/images/contatti/Progetto_senza_titolo.png"
+    />
+    <meta name="description" content="Il modo più rapido per entrare in contatto con la nostra azienda. Chiamaci allo 06 9113 3623 o scrivici attraverso il nostro modulo di contatto."
+    />
+    <meta name="generator" content="Joomla! - Open Source Content Management"
+    />
+    <title>
+        Contatti
+    </title>
+    <link href="https://www.imprinting.info/contatti" rel="alternate" hreflang="it-IT"
+    />
+    <link href="https://www.imprinting.info/en/contacts" rel="alternate" hreflang="en-GB"
+    />
+    <link href="https://www.imprinting.info/component/search/?Itemid=114&amp;format=opensearch"
+          rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml"
+    />
+    <link href="static/css/validationengine.jquery.css" rel="stylesheet" />
+    <link href="static/css/theme.12.css" rel="stylesheet" />
+    <link href="static/css/custom.css" rel="stylesheet" />
+    <style>
+        .bfClearfix:after { content: "."; display: block; height: 0; clear: both;
+            visibility: hidden; } .bfFadingClass{ display:none; }
+    </style>
+    <script type="application/json" class="joomla-script-options new">
+        {
+            "csrf.token": "4e823d1aefce658c5cbd50771c1f454b",
+            "system.paths": {
+                "root": "",
+                "base": ""
+            }
+        }
+    </script>
+    <script src="static/js/moxie.js">
+    </script>
+    <script src="static/js/plupload.js">
+    </script>
+    <script src="static/js/mootools-core.js">
+    </script>
+    <script src="static/js/core.js">
+    </script>
+    <script src="static/js/mootools-more.js">
+    </script>
+    <script src="static/js/jquery.min.js">
+    </script>
+    <script src="static/js/jquery-noconflict.js">
+    </script>
+    <script src="static/js/jquery-migrate.min.js">
+    </script>
+    <script src="static/js/bootstrap.min.js">
+    </script>
+    <script src="static/js/jquery.validationengine-en.js">
+    </script>
+    <script src="static/js/jquery.validationengine.js">
+    </script>
+    <script src="static/js/center.js">
+    </script>
+    <script src="static/js/uikit.min.js">
+    </script>
+    <script src="static/js/uikit-icons-horizon.min.js">
+    </script>
+    <script src="static/js/theme.js">
+    </script>
+    <script>
+        <!--jQuery(document).ready(function() {
+            jQuery(".hasTooltip").tooltip({
+                "html": true,
+                "container": "body"
+            });
+        });
+        var JQuery = jQuery;
+
+        var inlineErrorElements = new Array();
+        var bfSummarizers = new Array();
+        var bfDeactivateField = new Array();
+        var bfDeactivateSection = new Array();
+
+        function bf_validate_nextpage(element, action) {
+            if (typeof bfUseErrorAlerts != "undefined") {
+                JQuery(".bfErrorMessage").html("");
+                JQuery(".bfErrorMessage").css("display", "none");
+            }
+
+            error = ff_validation(ff_currentpage);
+            if (error != "") {
+                if (typeof bfUseErrorAlerts == "") {
+                    alert(error);
+                } else {
+                    bfShowErrors(error);
+                }
+                ff_validationFocus("");
+            } else {
+                ff_switchpage(ff_currentpage + 1);
+                self.scrollTo(0, 0);
+            }
+        }
+
+        function bfCheckMaxlength(id, maxlength, showMaxlength) {
+            if (JQuery("#ff_elem" + id).val().length > maxlength) {
+                JQuery("#ff_elem" + id).val(JQuery("#ff_elem" + id).val().substring(0, maxlength));
+            }
+            if (showMaxlength) {
+                JQuery("#bfMaxLengthCounter" + id).text("(" + (maxlength - JQuery("#ff_elem" + id).val().length) + " chars left)");
+            }
+        }
+        function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty) {
+            bfSummarizers.push({
+                id: id,
+                connectWith: connectWith,
+                type: type,
+                emptyMessage: emptyMessage,
+                hideIfEmpty: hideIfEmpty
+            });
+        }
+        function bfField(name) {
+            var value = "";
+            switch (ff_getElementByName(name).type) {
+                case "radio":
+                    if (JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "" && typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                        value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                        if (!isNaN(value)) {
+                            value = Number(value);
+                        }
+                    }
+                    break;
+                case "checkbox":
+                case "select-one":
+                case "select-multiple":
+                    var nodeList = document["ff_form50"]["" + ff_getElementByName(name).name + ""];
+                    if (ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined") {
+                        if (typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                            value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    } else {
+                        var val = "";
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            value = val.substr(0, val.length - 2);
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    if (!isNaN(ff_getElementByName(name).value)) {
+                        value = Number(ff_getElementByName(name).value);
+                    } else {
+                        value = ff_getElementByName(name).value;
+                    }
+            }
+            return value;
+        }
+        function populateSummarizers() {
+            // cleaning first
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                JQuery("#" + bfSummarizers[i].id).parent().css("display", "");
+                JQuery("#" + bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">" + bfSummarizers[i].emptyMessage + "</span>");
+            }
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                var summVal = "";
+                switch (bfSummarizers[i].type) {
+                    case "bfTextfield":
+                    case "bfTextarea":
+                    case "bfHidden":
+                    case "bfCalendar":
+                    case "bfNumberInput":
+                    case "bfCalendarResponsive":
+                    case "bfFile":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val() != "") {
+                            JQuery("#" + bfSummarizers[i].id).text(JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val()).html();
+                            var breakableText = JQuery("#" + bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+                            if (breakableText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    breakableText = calc(breakableText);
+                                }
+                            }
+
+                            JQuery("#" + bfSummarizers[i].id).html(breakableText);
+                            summVal = breakableText;
+                        }
+                        break;
+                    case "bfRadioGroup":
+                    case "bfCheckbox":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "undefined") {
+                            var theText = JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val();
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                    case "bfCheckboxGroup":
+                    case "bfSelect":
+                        var val = "";
+                        var nodeList = document["ff_form50"]["ff_nm_" + bfSummarizers[i].connectWith + "[]"];
+
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            var theText = val.substr(0, val.length - 2);
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                }
+
+                if ((bfSummarizers[i].hideIfEmpty && summVal == "") || (typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_" + bfSummarizers[i].connectWith + "[]"])) {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+                } else {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+                }
+            }
+        }
+
+        var bfUseErrorAlerts = false;
+
+        function bfShowErrors(error) {
+
+            if (JQuery.bfvalidationEngine) {
+                JQuery("#ff_form50").bfvalidationEngine({
+                    promptPosition: "bottomLeft",
+                    success: false,
+                    failure: function() {}
+                });
+
+                for (var i = 0; i < inlineErrorElements.length; i++) {
+                    if (inlineErrorElements[i][1] != "") {
+                        var prompt = null;
+
+                        if (inlineErrorElements[i][0] == "bfCaptchaEntry") {
+                            prompt = JQuery.bfvalidationEngine.buildPrompt("#bfCaptchaEntry", inlineErrorElements[i][1], "error");
+                        } else if (inlineErrorElements[i][0] == "bfReCaptchaEntry") {
+                            // nothing here yet for recaptcha, alert is default
+                            alert(inlineErrorElements[i][1]);
+                        } else if (typeof JQuery("#bfUploader" + inlineErrorElements[i][0]).get(0) != "undefined") {
+                            alert(inlineErrorElements[i][1]);
+                            //prompt = JQuery.bfvalidationEngine.buildPrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val(),inlineErrorElements[i][1],"error");
+                        } else {
+                            if (ff_getElementByName(inlineErrorElements[i][0])) {
+                                prompt = JQuery.bfvalidationEngine.buildPrompt("#" + ff_getElementByName(inlineErrorElements[i][0]).id, inlineErrorElements[i][1], "error");
+                            } else {
+                                alert(inlineErrorElements[i][1]);
+                            }
+                        }
+
+                        JQuery(prompt).mouseover(function() {
+                            var inlineError = JQuery(this).attr("class").split(" ");
+                            if (inlineError && inlineError.length && inlineError.length == 2) {
+                                var result = inlineError[1].split("formError");
+                                if (result && result.length && result.length >= 1) {
+                                    JQuery.bfvalidationEngine.closePrompt("#" + result[0]);
+                                }
+                            }
+                        });
+                    } else {
+                        if (typeof JQuery("#bfUploader" + inlineErrorElements[i][0]).get(0) != "undefined") {
+                            //JQuery.bfvalidationEngine.closePrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val());
+                        } else {
+                            if (ff_getElementByName(inlineErrorElements[i][0])) {
+                                JQuery.bfvalidationEngine.closePrompt("#" + ff_getElementByName(inlineErrorElements[i][0]).id);
+                            }
+                        }
+                    }
+                }
+                inlineErrorElements = new Array();
+            }
+        }
+        bfToggleFieldsLoaded = false;
+        bfSectionFieldsDeactivated = false;
+        JQuery(document).ready(function() {
+            if (typeof bfFade != "undefined") bfFade();
+            if (typeof bfRollover != "undefined") bfRollover();
+            if (typeof bfRollover2 != "undefined") bfRollover2();
+            if (typeof bfRegisterToggleFields != "undefined") {
+                bfRegisterToggleFields();
+            } else {
+                bfToggleFieldsLoaded = true;
+            }
+            if (typeof bfDeactivateSectionFields != "undefined") {
+                bfDeactivateSectionFields();
+            } else {
+                bfSectionFieldsDeactivated = true;
+            }
+            if (JQuery.bfvalidationEngine) {
+                JQuery.bfvalidationEngineLanguage.newLang();
+                JQuery(".ff_elem").change(function() {
+                    JQuery.bfvalidationEngine.closePrompt(this);
+                });
+            }
+            JQuery(".bfQuickMode .hasTip").css("color", "inherit"); // fixing label text color issue
+            JQuery(".bfQuickMode .bfTooltip").css("color", "inherit"); // fixing label text color issue
+            JQuery("input[type=text]").bind("keypress",
+                function(evt) {
+                    if (evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+        });
+
+        var bfUploaders = [];
+        var bfUploaderErrorElements = [];
+        var bfFlashUploadInterval = null;
+        var bfFlashUploaders = new Array();
+        var bfFlashUploadersLength = 0;
+        function bfRefreshAll() {
+            for (var i = 0; i < bfUploaders.length; i++) {
+                bfUploaders[i].refresh();
+            }
+        }
+        function bfInitAll() {
+            for (var i = 0; i < bfUploaders.length; i++) {
+                bfUploaders[i].init();
+            }
+        }
+        function bfDoFlashUpload() {
+            JQuery("#bfSubmitMessage").css("visibility", "hidden");
+            JQuery("#bfSubmitMessage").css("display", "none");
+            JQuery("#bfSubmitMessage").css("z-index", "999999");
+            JQuery(".bfErrorMessage").html("");
+            JQuery(".bfErrorMessage").css("display", "none");
+            for (var i = 0; i < bfUploaderErrorElements.length; i++) {
+                JQuery("#" + bfUploaderErrorElements[i]).html("");
+            }
+            bfUploaderErrorElements = [];
+            if (ff_validation(0) == "") {
+                try {
+                    bfFlashUploadInterval = window.setInterval(bfCheckFlashUploadProgress, 1000);
+                    if (bfFlashUploadersLength > 0) {
+                        JQuery("#bfFileQueue").bfcenter(true);
+                        JQuery("#bfFileQueue").css("visibility", "visible");
+                        for (var i = 0; i < bfUploaders.length; i++) {
+                            bfUploaders[i].start();
+                        }
+                    }
+                } catch(e) {
+                    alert(e)
+                }
+            } else {
+                if (typeof bfUseErrorAlerts == "undefined") {
+                    alert(error);
+                } else {
+                    bfShowErrors(error);
+                }
+                ff_validationFocus("");
+                document.getElementById("bfSubmitButton").disabled = false;
+            }
+        }
+        function bfCheckFlashUploadProgress() {
+            if (JQuery("#bfFileQueue").html() == "") { // empty indicates that all queues are uploaded or in any way cancelled
+                JQuery("#bfFileQueue").css("visibility", "hidden");
+                window.clearInterval(bfFlashUploadInterval);
+                if (typeof bfAjaxObject101 != 'undefined' || typeof bfReCaptchaLoaded != 'undefined') {
+                    ff_submitForm2();
+                } else {
+                    ff_validate_submit(document.getElementById("bfSubmitButton"), "click");
+                }
+                JQuery(".bfFlashFileQueueClass").html("");
+                if (bfFlashUploadersLength > 0) {
+                    JQuery("#bfSubmitMessage").bfcenter(true);
+                    JQuery("#bfSubmitMessage").css("visibility", "visible");
+                    JQuery("#bfSubmitMessage").css("display", "block");
+                    JQuery("#bfSubmitMessage").css("z-index", "999999");
+                }
+
+            }
+        }
+
+        //-->
+        document.addEventListener('DOMContentLoaded',
+            function() {
+                Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                    span.innerText = span.textContent;
+                });
+            });
+    </script>
+    <link rel="stylesheet" href="static/css/system.css" />
+    <script>
+        UIkit.util.ready(() =>{
+            UIkit.lightbox('#my-slider .uk-slider-items');
+        });
+    </script>
+    <link href="https://www.imprinting.info/contatti" rel="alternate" hreflang="x-default"
+    />
+    <script>
+        var $theme = {};
+    </script>
+    <!-- Joomla Facebook Integration Begin -->
+    <script type='text/javascript'>
+        !
+            function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '389175478706596', {},
+            {
+                agent: 'pljoomla'
+            });
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" alt="fbpx" src="static/picture/18f91568e714474a9d7c5ce6df9e270a.gif"
+        />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- Joomla Facebook Integration end -->
+</head>
+
+<body class="">
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l: '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNBQV47');
+</script>
+<!-- End Google Tag Manager -->
+<div class="tm-page">
+    <div class="tm-header-mobile uk-hidden@m" uk-header>
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+             sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="https://www.imprinting.info/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="50" height="51" src="static/picture/logo-im-colore.svg">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+                                <div uk-navbar-toggle-icon>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true"
+             mode="slide" flip>
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close
+                        uk-toggle="cls: uk-close-large; mode: media; media: @s">
+                </button>
+                <div class="uk-margin-auto-vertical">
+                    <div class="uk-grid uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel" id="module-195">
+                                <ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+                                    <li class="item-102 js-accordion uk-parent">
+                                        <a href>
+                                            Display
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-130">
+                                                <a href="/display-pubblicitari">
+                                                    Business Display
+                                                </a>
+                                            </li>
+                                            <li class="item-390">
+                                                <a href="/videowall-e-ledwall">
+                                                    Videowall e Ledwall
+                                                </a>
+                                            </li>
+                                            <li class="item-425">
+                                                <a href="/display-solutions/totem">
+                                                    Totem
+                                                </a>
+                                            </li>
+                                            <li class="item-132">
+                                                <a href="/lavagne-interattive">
+                                                    Lavagne Interattive
+                                                </a>
+                                            </li>
+                                            <li class="item-117">
+                                                <a href="/hotel-tv-samsung-smart-hospitality">
+                                                    Hospitality TV
+                                                </a>
+                                            </li>
+                                            <li class="item-454">
+                                                <a href="/hospital-tv-strutture-sanitarie">
+                                                    Healthcare
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-428 js-accordion uk-parent">
+                                        <a href>
+                                            IT
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-460">
+                                                <a href="/sale-riunioni">
+                                                    Sale riunioni
+                                                </a>
+                                            </li>
+                                            <li class="item-451">
+                                                <a href="/noleggio-notebook-samsung-galaxy-book3">
+                                                    Noleggio Notebook Samsung Galaxy Book3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-392 js-accordion uk-parent">
+                                        <a href>
+                                            Printing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-391">
+                                                <a href="/production-printing">
+                                                    Production Printing
+                                                </a>
+                                            </li>
+                                            <li class="item-393">
+                                                <a href="/printing-solutions">
+                                                    Printing Solutions
+                                                </a>
+                                            </li>
+                                            <li class="item-455">
+                                                <a href="/offerte-multifunzione-ufficio">
+                                                    Offerte Multifunzione Ufficio
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-348 uk-parent">
+                                        <a href="/finishing">
+                                            Finishing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-429">
+                                                <a href="/finishing/dtf">
+                                                    DTF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-417">
+                                        <a href="/lavori">
+                                            Lavori
+                                        </a>
+                                    </li>
+                                    <li class="item-353">
+                                        <a href="/blog">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-159">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-182">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid"
+                                         uk-grid>
+                                        <div class="uk-first-column">
+                                            <a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon"
+                                               uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                               rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-tm-4">
+                                <form id="search-tm-4" action="/contatti" method="post" role="search"
+                                      class="uk-search uk-search-default uk-width-1-1">
+                                            <span uk-search-icon>
+                                            </span>
+                                    <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                           type="search" class="uk-search-input">
+                                    <input type="hidden" name="task" value="search">
+                                    <input type="hidden" name="option" value="com_search">
+                                    <input type="hidden" name="Itemid" value="114">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tm-header uk-visible@m" uk-header>
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top"
+             cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container">
+                    <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="60" height="61" src="static/picture/LOGO.png">
+                                <img class="uk-logo-inverse" alt loading="eager" width="60" height="61"
+                                     src="static/picture/LOGO.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav" id="module-194">
+                                <li class="item-102 uk-active uk-parent">
+                                    <a role="button">
+                                        Prodotti
+                                    </a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-390">
+                                                        <a href="./product1.html">
+                                                            product1
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-425">
+                                                        <a href="./lavagne-interattive.html">
+                                                            Product2
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-454">
+                                                        <a href="./product3.html">
+                                                            Product3
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-348 uk-parent">
+                                    <a href="chi_siamo.html">
+                                        Chi Siamo
+                                    </a>
+                                </li>
+                                <li class="item-417">
+                                    <a href="./case.html">
+                                        Case Studies / Portfolio
+                                    </a>
+                                </li>
+                                <li class="item-353">
+                                    <a href="./blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="uk-navbar-item" id="module-154">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="./contact.html">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal"
+                               uk-search-icon uk-toggle>
+                            </a>
+                            <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+                                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close
+                                            uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s">
+                                    </button>
+                                    <div class="uk-search uk-search-large">
+                                        <form id="search-tm-3" action="/display-pubblicitari" method="post" role="search"
+                                              class="uk-search uk-search-large">
+                                            <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                                   type="search" class="uk-search-input uk-text-center" autofocus>
+                                            <input type="hidden" name="task" value="search">
+                                            <input type="hidden" name="option" value="com_search">
+                                            <input type="hidden" name="Itemid" value="398">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="system-message-container" data-messages="[]">
+    </div>
+    <!-- Builder #page -->
+    <div class="uk-section-default" tm-header-transparent="light">
+        <div data-src="/templates/yootheme/cache/ab/contatti-18232889-01-ab5cf07a.jpeg"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvY29udGF0dGkvY29udGF0dGktMTgyMzI4ODktMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbNzY5LDI2Niw3NjksMjY2XV0sWyJkb0Nyb3AiLFs3NjgsMjY2LDAsMF1dXSwxNjk0MDI3MDUzXQ%3D%3D&amp;file=46%2Fcontatti-18232889-01-46e65b01.webp&amp;hash=4d8d8a8c 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvY29udGF0dGkvY29udGF0dGktMTgyMzI4ODktMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTAwMCwzNDYsMTAwMCwzNDZdXV0sMTY5NDAyNzA1M10%3D&amp;file=90%2Fcontatti-18232889-01-90b71854.webp&amp;hash=34b26931 1000w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvY29udGF0dGkvY29udGF0dGktMTgyMzI4ODktMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTAyNCwzNTQsMTAyNCwzNTRdXSxbImRvQ3JvcCIsWzEwMjQsMzU0LDAsMF1dXSwxNjk0MDI3MDUzXQ%3D%3D&amp;file=20%2Fcontatti-18232889-01-20b2a492.webp&amp;hash=d6b5147b 1024w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvY29udGF0dGkvY29udGF0dGktMTgyMzI4ODktMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTIwMCw0MTUsMTIwMCw0MTVdXSxbImRvQ3JvcCIsWzExOTgsNDE1LDEsMF1dXSwxNjk0MDI3MDUzXQ%3D%3D&amp;file=32%2Fcontatti-18232889-01-32393808.webp&amp;hash=769d1f7e 1198w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvY29udGF0dGkvY29udGF0dGktMTgyMzI4ODktMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTIwMCw0MTUsMTIwMCw0MTVdXSxbImRvQ3JvcCIsWzExOTksNDE1LDAsMF1dXSwxNjk0MDI3MDUzXQ%3D%3D&amp;file=5c%2Fcontatti-18232889-01-5c4eebce.webp&amp;hash=133e7234 1199w, \/templates\/yootheme\/cache\/74\/contatti-18232889-01-74b15c16.webp 1200w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1000\/346) 289vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large">
+            <div class="uk-container">
+                <div class="tm-header-placeholder uk-margin-remove-adjacent">
+                </div>
+                <div class="uk-grid-margin uk-container uk-container-xsmall uk-container-expand-left">
+                    <div class="tm-grid-expand" uk-grid>
+                        <div class="uk-grid-item-match uk-flex-bottom uk-light uk-width-1-2@m">
+                            <div class="uk-panel uk-width-1-1">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@m">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section uk-padding-remove-bottom">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h2 class="uk-h2">
+                        Per richieste specifiche puoi usare i moduli dedicati
+                    </h2>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-margin">
+                        <div class="uk-flex-middle uk-grid-column-medium uk-grid-row-small uk-child-width-auto"
+                             uk-grid>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/display-pubblicitari#form">
+                                    Display Signage
+                                </a>
+                            </div>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/hotel-tv-samsung-smart-hospitality#form">
+                                    Hospitality
+                                </a>
+                            </div>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/lavagne-interattive#form">
+                                    Lavagne interattive
+                                </a>
+                            </div>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/sale-riunioni#form">
+                                    Sale riunioni
+                                </a>
+                            </div>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/printing-solutions#form">
+                                    Printing
+                                </a>
+                            </div>
+                            <div class="el-item">
+                                <a class="el-content uk-button uk-button-default" href="/finishing#form">
+                                    Finishing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1@m">
+                    <div id="form">
+                        <!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by
+                        Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.
+                        All rights reserved. -->
+                        <div class="bfClearfix">
+                            <script type="text/javascript">
+                                <!--ff_processor = new Object();
+                                ff_processor.okrun = true;
+                                ff_processor.ip = '141.11.217.33';
+                                ff_processor.agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.browser = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.opsys = 'win';
+                                ff_processor.provider = 'Unknown';
+                                ff_processor.submitted = '2024-12-11 08:39:18';
+                                ff_processor.form = 50;
+                                ff_processor.form_id = 'ff_form50';
+                                ff_processor.page = 1;
+                                ff_processor.target = 2;
+                                ff_processor.runmode = 0;
+                                ff_processor.inframe = 0;
+                                ff_processor.inline = 0;
+                                ff_processor.template = 0;
+                                ff_processor.homepage = 'https://www.imprinting.info';
+                                ff_processor.mossite = 'https://www.imprinting.info';
+                                ff_processor.images = 'https://www.imprinting.info/components/com_breezingforms/images';
+                                ff_processor.border = '';
+                                ff_processor.align = '';
+                                ff_processor.top = '';
+                                ff_processor.suffix = '';
+                                ff_processor.status = null;
+                                ff_processor.message = null;
+                                ff_processor.record_id = null;
+                                ff_processor.showgrid = false;
+                                ff_processor.traceBuffer = null;
+                                //-->
+
+                            </script>
+                            <script type="text/javascript" src="static/js/facileforms.js">
+                            </script>
+                            <div id="ff_formdiv50" class="bfFormDiv">
+                                <script type="text/javascript">
+                                    <!--
+
+                                        function checkFileExtensions() {
+                                            var ff_elem2635Exts = false;
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".zip") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".rar") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".pdf") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".doc") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".xls") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".ppt") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".jpg") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".jpeg") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".gif") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value.toLowerCase().lastIndexOf(".png") != -1) {
+                                                ff_elem2635Exts = true;
+                                            } else if (!ff_elem2635Exts && document.getElementById("ff_elem2635").value == "") {
+                                                ff_elem2635Exts = true;
+                                            }
+                                            if (!ff_elem2635Exts) {
+                                                if (typeof bfUseErrorAlerts == "undefined") {
+                                                    alert("File extension not allowed!");
+                                                } else {
+                                                    bfShowErrors("File extension not allowed!");
+                                                }
+                                                if (ff_currentpage != 1) ff_switchpage(1);
+                                                if (document.getElementById("bfSubmitButton")) {
+                                                    document.getElementById("bfSubmitButton").disabled = false;
+                                                }
+                                                if (typeof JQuery != "undefined") {
+                                                    JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                }
+                                                return false;
+                                            }
+
+                                            return true;
+                                        }
+                                    var bfReCaptchaLoaded = true;
+                                    function bfCheckCaptcha() {
+                                        if (checkFileExtensions()) {
+                                            function bfValidateCaptcha() {
+                                                if (typeof bfInvisibleRecaptcha != "undefined" && bfInvisibleRecaptcha === false) {
+                                                    if (typeof bfDoFlashUpload != 'undefined') {
+                                                        bfDoFlashUpload();
+                                                    } else {
+                                                        ff_submitForm2();
+                                                    }
+                                                    return;
+                                                }
+
+                                                if (typeof onloadBFNewRecaptchaCallback == "undefined") {
+                                                    challengeField = JQuery("input#recaptcha_challenge_field").val();
+                                                    responseField = JQuery("input#recaptcha_response_field").val();
+                                                    var html = JQuery.ajax({
+                                                        type: "POST",
+                                                        url: "/component/breezingforms/raw/true/bfReCaptcha/true/form/50/tmpl/component?raw=true&amp;bfReCaptcha=true&amp;form=50&amp;Itemid=0&amp;tmpl=component",
+                                                        data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField,
+                                                        async: false
+                                                    }).responseText;
+
+                                                    if (html.replace(/^\s+|\s+$/, "") == "success") {
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    } else {
+                                                        if (typeof bfUseErrorAlerts == "undefined") {
+                                                            alert("The captcha is missing or wrong!");
+                                                        } else {
+                                                            if (typeof inlineErrorElements != "undefined") {
+                                                                inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                            }
+                                                            bfShowErrors("The captcha is missing or wrong!");
+                                                        }
+
+                                                        if (ff_currentpage != 1) ff_switchpage(1);
+                                                        Recaptcha.focus_response_field();
+
+                                                        Recaptcha.reload();
+
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    }
+                                                } else {
+
+                                                    if (typeof bfInvisibleRecaptcha != "undefined") {
+
+                                                        grecaptcha.execute();
+                                                    }
+
+                                                    var gresponse = grecaptcha.getResponse();
+
+                                                    if (gresponse == "") {
+
+                                                        if (typeof bfInvisibleRecaptcha == "undefined") {
+
+                                                            if (typeof bfUseErrorAlerts == "undefined") {
+                                                                alert("The captcha is missing or wrong!");
+                                                            } else {
+                                                                if (typeof inlineErrorElements != "undefined") {
+                                                                    inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                                }
+                                                                bfShowErrors("The captcha is missing or wrong!");
+                                                            }
+
+                                                            if (ff_currentpage != 1) ff_switchpage(1);
+                                                        }
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    } else {
+
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            bfValidateCaptcha();
+
+                                        }
+                                    }
+                                    function ff_initialize(condition) {}
+                                    onload = function() {
+                                        ff_initialize('formentry');
+                                        ff_initialize('pageentry');
+                                        if (ff_processor && ff_processor.traceBuffer) ff_traceWindow();
+                                    }
+                                    var ff_currentpage = 1;
+                                    function ff_switchpage(page) {
+                                        if (document.getElementById("bfPage1")) document.getElementById("bfPage1").style.display = "none";
+                                        if (document.getElementById("bfPage2")) document.getElementById("bfPage2").style.display = "none";
+                                        if (document.getElementById("bfPage" + page)) document.getElementById("bfPage" + page).style.display = "";
+                                        ff_currentpage = page;
+                                        ff_initialize("pageentry");
+                                    }
+                                    function ff_contattogenerico_submitted(status, message) {
+                                        if (status == 0) {
+                                            ff_switchpage(2);
+                                        } else {
+                                            alert(message);
+                                        }
+                                    }
+                                    function ff_resetForm(element, action) {
+                                        eval('document.' + ff_processor.form_id).reset();
+                                    }
+                                    var ff_validationFocusName = '';
+                                    var ff_elements = [['ff_elem5622', 'ff_div5622', 'bfFakeName2', 1, 5622], ['ff_elem5623', 'ff_div5623', 'bfFakeName3', 1, 5623], ['ff_elem5621', 'ff_div5621', 'bfFakeName', 1, 5621], ['ff_elem5624', 'ff_div5624', 'bfFakeName4', 1, 5624], ['ff_elem2632', 'ff_div2632', 'nome', 1, 2632], ['ff_elem2631', 'ff_div2631', 'cognome', 1, 2631], ['ff_elem2638', 'ff_div2638', 'azienda', 1, 2638], ['ff_elem2637', 'ff_div2637', 'email', 1, 2637], ['ff_elem2640', 'ff_div2640', 'telefono', 1, 2640], ['ff_elem2634', 'ff_div2634', 'cittaconsegna', 1, 2634], ['ff_elem2635', 'ff_div2635', 'allega', 1, 2635], ['ff_elem2636', 'ff_div2636', 'messaggio', 1, 2636], ['ff_elem2627', 'ff_div2627', 'acquisizione', 1, 2627], ['ff_elem2633', 'ff_div2633', 'privacy', 1, 2633], ['ff_elem5620', 'ff_div5620', 'recaptcha', 1, 5620]];
+                                    function ff_getElementByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return eval('document.ff_form50.' + ff_elements[i][0]);
+                                        return null;
+                                    }
+                                    function ff_getPageByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return ff_elements[i][3];
+                                        return 0;
+                                    }
+                                    function ff_validationFocus(name) {
+                                        if (name == undefined || name == '') {
+                                            if (ff_validationFocusName != '') {
+                                                ff_switchpage(ff_getPageByName(ff_validationFocusName));
+                                                if (ff_getElementByName(ff_validationFocusName).focus) {
+                                                    ff_getElementByName(ff_validationFocusName).focus();
+                                                }
+                                            }
+                                        } else {
+                                            if (ff_validationFocusName == '') ff_validationFocusName = name;
+                                        }
+                                    }
+                                    function ff_getElementByIndex(index) {
+                                        if (index >= 0 && index < ff_elements.length) return eval('document.ff_form50.' + ff_elements[index][0]);
+                                        return null;
+                                    }
+                                    function ff_anychecked(element, message) {
+                                        var name = '';
+                                        if (!element.name) {
+                                            if (element.length && element.length != 0) {
+                                                name = element[0].name;
+                                                var cnt = 0;
+                                                for (var i = 0; i < element.length; i++) if (element[i].name == name) if (element[i].checked) cnt++;
+                                                if (cnt == 0) {
+                                                    ff_validationFocus(element[0].name);
+                                                    if (message == '') message = "Please check or select " + name + ".\n";
+                                                    return message;
+                                                }
+                                            } else {
+                                                return '';
+                                            }
+                                        } else {
+                                            name = element.name;
+                                            if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                            var cnt = 0;
+                                            for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) if (ff_getElementByIndex(i).checked) cnt++;
+                                            if (cnt == 0) {
+                                                ff_validationFocus(element.name);
+                                                if (message == '') message = "Please check or select " + name + ".\n";
+                                                return message;
+                                            }
+                                        }
+                                        return '';
+                                    }
+                                    function ff_validemail(element, message) {
+                                        var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                                        if (!check.test(element.value)) {
+                                            if (message == '') message = element.name + " is no valid email address.\n";
+                                            ff_validationFocus(element.name);
+                                            return message;
+                                        }
+                                        return '';
+                                    }
+                                    function ff_valuenotempty(element, message) {
+                                        if (element.value != '') return '';
+                                        if (message == '') message = "Please enter " + element.name + ".\n";
+                                        ff_validationFocus(element.name);
+                                        return message;
+                                    }
+                                    function ff_validation(page) {
+                                        if (typeof inlineErrorElements != 'undefined') inlineErrorElements = new Array();
+                                        error = '';
+                                        ff_validationFocusName = '';
+                                        if (page == 1 || page == 0) {
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_nome[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form50['ff_nm_nome[]'], "Inserisci il tuo nome\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["nome", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_cognome[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form50['ff_nm_cognome[]'], "Inserisci il tuo cognome\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["cognome", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_azienda[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form50['ff_nm_azienda[]'], "Inserisci la ragione sociale\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["azienda", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_email[]']) {
+                                                errorout = ff_validemail(document.ff_form50['ff_nm_email[]'], "Inserisci la tua e-mail\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["email", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_telefono[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form50['ff_nm_telefono[]'], "Inserisci un recapito telefonico\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["telefono", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_cittaconsegna[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form50['ff_nm_cittaconsegna[]'], "Inserisci la tua città\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["cittaconsegna", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_privacy[]']) {
+                                                errorout = ff_anychecked(document.ff_form50['ff_nm_privacy[]'], "Si prega di leggere ed accettare l\'informativa sulla privacy\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["privacy", errorout]);
+                                                }
+                                            }
+                                        }
+                                        if (error != "" && document.getElementById('ff_capimgValue')) {
+                                            document.getElementById('ff_capimgValue').src = '/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom=' + Math.random();
+                                            document.getElementById('bfCaptchaEntry').value = "";
+                                        }
+                                        if (error != "" && document.getElementById("bfSubmitButton")) {
+                                            document.getElementById("bfSubmitButton").disabled = false;
+                                        }
+                                        if (error != "" && typeof JQuery != "undefined") {
+                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                        }
+                                        return error;
+                                    }
+                                    function ff_validate_prevpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            if (ff_currentpage > 1) {
+                                                ff_switchpage(ff_currentpage - 1);
+                                            }
+                                        }
+                                    }
+                                    function ff_submitForm() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        bfCheckCaptcha();
+                                    }
+                                    function ff_submitForm2() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        if (typeof bf_ajax_submit != 'undefined') {
+                                            bf_ajax_submit()
+                                        } else {
+                                            document.ff_form50.submit();
+                                        }
+                                    }
+                                    function ff_validate_submit(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(0);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus();
+                                        } else ff_submitForm();
+                                    }
+                                    function ff_validate_nextpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            ff_switchpage(ff_currentpage + 1);
+                                        }
+                                    }
+                                    //-->
+
+                                </script>
+                                <form data-ajax="false" action="https://www.imprinting.info/contatti"
+                                      method="post" name="ff_form50" id="ff_form50" enctype="multipart/form-data"
+                                      accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+                                    <div id="bfPage1" class="bfPage">
+                                        <div class="bfErrorMessage alert alert-error" style="display:none">
+                                        </div>
+                                        <section class=" " id="datirichiedente">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2632">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2632" for="ff_elem2632">
+                                                                    Nome
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_nome[]" value="" id="ff_elem2632" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2631">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2631" for="ff_elem2631">
+                                                                    Cognome
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_cognome[]" value="" id="ff_elem2631" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2638">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2638" for="ff_elem2638">
+                                                                    Azienda
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_azienda[]" value="" id="ff_elem2638" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <section class=" " id="contatti">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2637">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2637" for="ff_elem2637">
+                                                                    Email
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input placeholder="@" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_email[]" value="" id="ff_elem2637" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2640">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2640" for="ff_elem2640">
+                                                                    Telefono
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_telefono[]" value="" id="ff_elem2640" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span4" id="bfElemWrap2634">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2634" for="ff_elem2634">
+                                                                    Città
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                       type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem2634" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div style="display:none" class="bfElemWrap control-group" id="bfElemWrap2635">
+                                            <div class="controls form-inline">
+                                                <div class=" ">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel2635">
+                                                        Allega un file o una foto (facoltativo)
+                                                    </label>
+                                                    <span class="">
+                                                                <input type="hidden" id="flashUploadallega" name="flashUploadallega" value="bfFlashFileQueue2635"
+                                                                />
+                                                                <label id="bfUploadContainer2635">
+                                                                    <div class="btn btn-primary bfUploadButton button" id="bfPickFiles2635">
+                                                                        <i class="icon-upload">
+                                                                        </i>
+                                                                    </div>
+                                                                </label>
+                                                                <span id="bfUploaderallega">
+                                                                </span>
+                                                                <div class="bfFlashFileQueueClass" id="bfFlashFileQueue2635">
+                                                                </div>
+                                                                <script type="text/javascript">
+                                                                    <!--bfFlashUploaders.push('ff_elem2635');
+                                                                    var bfFlashFileQueue2635 = {};
+                                                                    function bfUploadImageThumb(file) {
+                                                                        var img;
+                                                                        img = new ctplupload.Image;
+                                                                        img.onload = function() {
+                                                                            img.embed(JQuery('#' + file.id + 'thumb').get(0), {
+                                                                                width: 100,
+                                                                                height: 60,
+                                                                                crop: true,
+                                                                                swf_url: mOxie.resolveUrl('https://www.imprinting.info/components/com_breezingforms/libraries/jquery/plupload/Moxie.swf')
+                                                                            });
+                                                                        };
+
+                                                                        img.onembedded = function() {
+                                                                            img.destroy();
+                                                                        };
+
+                                                                        img.onerror = function() {
+
+                                                                        };
+
+                                                                        img.load(file.getSource());
+
+                                                                    }
+                                                                    JQuery(document).ready(function() {
+                                                                        var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true: false);
+                                                                        var uploader = new plupload.Uploader({
+                                                                            max_retries: 10,
+                                                                            multi_selection: true,
+                                                                            unique_names: iOS,
+                                                                            chunk_size: '100kb',
+                                                                            runtimes: 'html5,html4',
+                                                                            browse_button: 'bfPickFiles2635',
+                                                                            container: 'bfUploadContainer2635',
+                                                                            file_data_name: 'Filedata',
+                                                                            multipart_params: {
+                                                                                form: 50,
+                                                                                itemName: 'allega',
+                                                                                bfFlashUploadTicket: 'bdf8c900856eebd745009f0ec9759f8d',
+                                                                                option: 'com_breezingforms',
+                                                                                format: 'html',
+                                                                                flashUpload: 'true',
+                                                                                Itemid: 0
+                                                                            },
+                                                                            url: 'https://www.imprinting.info/index.php',
+                                                                            flash_swf_url: 'https://www.imprinting.info/components/com_breezingforms/libraries/jquery/plupload/Moxie.swf',
+                                                                            filters: [{
+                                                                                title: 'Please choose your file(s)',
+                                                                                extensions: 'zip,rar,pdf,doc,xls,ppt,jpg,jpeg,gif,png'
+                                                                            }]
+                                                                        });
+                                                                        uploader.bind('FilesAdded',
+                                                                            function(up, files) {
+
+                                                                                for (var i in files) {
+                                                                                    if (typeof files[i].id != 'undefined' && files[i].id != null) {
+                                                                                        var fsize = '';
+                                                                                        if (typeof files[i].size != 'undefined') {
+                                                                                            fsize = '(' + plupload.formatSize(files[i].size) + ') ';
+                                                                                        }
+                                                                                        if (typeof bfUploadFileAdded == 'function') {
+                                                                                            bfUploadFileAdded(files[i]);
+                                                                                        }
+                                                                                        JQuery('#bfFileQueue').append('<div id="' + files[i].id + 'queue">' + (iOS ? '': files[i].name.replace(/[/\ ? %*:|"<>]/g, '')) + ' '+fsize+'<b></b></div>' );
+                                                                                    }
+                                                                                }
+                                                                                for (var i in files) {
+                                                                                    if(typeof files[i].id != 'undefined' && files[i].id != null){
+                                                                                        var error = false;
+                                                                                        var fsize = '';
+                                                                                        if(typeof files[i].size != 'undefined'){
+                                                                                            fsize = '(' + plupload.formatSize(files[i].size) + ') ';
+                                                                                        }
+                                                                                        // 假设 files 是一个包含文件信息的数组，iOS 是一个布尔值
+/var iOS = /* 这里应该是判断iOS的逻辑 */;
+
+for (var i = 0; i < files.length; i++) {
+    var fileName = files[i].name.replace(/[/?%*:|"<>]/g, '');
+/    var fsize = /* 文件大小的逻辑 */; /Ω 确保这里有一个获取文件大小的逻辑
+
+    // 创建要追加的 HTML 字符串
+    var itemHtml = '<div class="bfFileQueueItem" id="' + files[i].id + 'queueitem">' +
+        '<div id="' + files[i].id + 'thumb"></div>' +
+        '<div id="' + files[i].id + '">' +
+        '<img id="' + files[i].id + 'cancel" src="static/picture/cancel.png" style="cursor: pointer; padding-right: 10px;" />' +
+        (iOS ? '' : fileName.substring(0, 12)) + ' ' + fsize +
+        '<b id="' + files[i].id + 'msg" style="color: red;"></b>' +
+        '</div>' +
+        '</div>';
+
+    // 使用 jQuery 追加到指定元素
+    $('#bfFlashFileQueue2635').append(itemHtml);
+}
+                                                                                        var file_ = files[i];
+                                                                                        var uploader_ = uploader;
+                                                                                        var bfUploaders_ = bfUploaders;
+                                                                                        JQuery('#' + files[i].id + 'cancel').click(
+                                                                                            function(){
+                                                                                                for( var i = 0; i < bfUploaders_.length; i++ ){
+                                                                                                    bfUploaders_[i].stop();
+                                                                                                }
+                                                                                                var id_ = this.id.split('cancel');
+                                                                                                id_ = id_[0];
+                                                                                                uploader_.removeFileById(id_);
+                                                                                                JQuery('#'+id_+'queue').remove();
+                                                                                                JQuery('#'+id_+'queueitem').remove();
+                                                                                                bfFlashUploadersLength--;
+                                                                                                for( var i = 0; i < bfUploaders_.length; i++ ){
+                                                                                                    bfUploaders_[i].start();
+                                                                                                }
+                                                                                                // re-enable button if there is none left
+                                                                                                if( true == false ){
+                                                                                                    var the_size = JQuery('#bfFlashFileQueue2635 .bfFileQueueItem').size();
+                                                                                                    if( the_size == 0 ){
+                                                                                                        JQuery('#bfPickFiles2635').prop('disabled',false);
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        );
+                                                                                        var thebytes = 0;
+                                                                                        if(thebytes > 0 && typeof files[i].size != 'undefined' && files[i].size > thebytes){
+                                                                                            alert(' Too large, won\'t be uploaded!');
+                                                                                            error = true;
+                                                                                        }
+                                                                                        var ext = files[i].name.replace(/[/\?%*:|" < >] / g, '').split('.').pop().toLowerCase();
+                                                                                        var exts = 'zip,rar,pdf,doc,xls,ppt,jpg,jpeg,gif,png'.split(',');
+                                                                                        var found = 0;
+                                                                                        for (var x in exts) {
+                                                                                            if (exts[x] == ext) {
+                                                                                                found++;
+                                                                                            }
+                                                                                        }
+                                                                                        if (found == 0) {
+                                                                                            alert(' File extension not allowed!');
+                                                                                            error = true;
+                                                                                        }
+                                                                                        if (error) {
+                                                                                            JQuery('#' + files[i].id + 'queue').remove();
+                                                                                            JQuery('#' + files[i].id + 'queueitem').remove();
+                                                                                        } else {
+                                                                                            bfFlashUploadersLength++;
+                                                                                        }
+                                                                                        bfUploadImageThumb(files[i]);
+                                                                                    }
+                                                                                }
+                                                                                // disable the button if no multi upload
+                                                                                if (true == false) {
+                                                                                    var the_size = JQuery('#bfFlashFileQueue2635 .bfFileQueueItem').size();
+                                                                                    if (the_size > 0) {
+                                                                                        JQuery('#bfPickFiles2635').prop('disabled', true);
+                                                                                    }
+                                                                                }
+                                                                            });
+                                                                        uploader.bind('UploadProgress',
+                                                                            function(up, file) {
+                                                                                if (typeof JQuery('#' + file.id + 'queue').get(0) != 'undefined') {
+                                                                                    JQuery('#' + file.id + 'queue').get(0).getElementsByTagName('b')[0].innerHTML = file.percent + '% <div style="height: 5px;width: ' + (file.percent * 1.5) + 'px;background-color: #9de24f;"></div>';
+                                                                                }
+                                                                            });
+                                                                        uploader.bind('FileUploaded',
+                                                                            function(up, file, response) {
+                                                                                if (response.response != '') {
+                                                                                    if (response.response !== null) {
+                                                                                        alert(response.response);
+                                                                                    }
+                                                                                }
+                                                                                JQuery('#' + file.id + 'queue').remove();
+                                                                            });
+                                                                        uploader.init();
+                                                                        bfUploaders.push(uploader);
+                                                                    });
+                                                                    //-->
+
+                                                                </script>
+                                                                <input class="ff_elem" type="hidden" name="ff_nm_allega[]" id="ff_elem2635"
+                                                                />
+                                                                <input type="hidden" name="attachToAdminMail[allega]" value="true" />
+                                                            </span>
+                                                </div>
+                                            </div>
+                                            <script type="text/javascript">
+                                                < !--bfDeactivateField["ff_nm_allega[]"] = true;
+                                                //-->
+
+                                            </script>
+                                            <span id="ff_elem2635_files">
+                                                    </span>
+                                        </div>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap2636">
+                                            <div class="controls form-inline">
+                                                <div class="">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel2636" for="ff_elem2636">
+                                                        Lascia un messaggio (facoltativo)
+                                                    </label>
+                                                    <textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;"
+                                                              name="ff_nm_messaggio[]" id="ff_elem2636">
+                                                            </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap2627">
+                                            <div class="controls form-inline">
+                                                <div class=" ">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel2627" for="ff_elem2627">
+                                                        Come ci hai conosciuto?
+                                                    </label>
+                                                    <span class="">
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel2627"
+                                                                       for="ff_elem2627">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google"
+                                                                           id="ff_elem2627" />
+                                                                    Google
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel2627_1"
+                                                                       for="ff_elem2627_1">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social"
+                                                                           id="ff_elem2627_1" />
+                                                                    Social
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel2627_2"
+                                                                       for="ff_elem2627_2">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail"
+                                                                           id="ff_elem2627_2" />
+                                                                    Mail
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel2627_3"
+                                                                       for="ff_elem2627_3">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro"
+                                                                           id="ff_elem2627_3" />
+                                                                    Altro
+                                                                </label>
+                                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class=" " id="privacy">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfSectionDescription">
+                                                    <p>
+                                                        I tuoi dati personali saranno trattati secondo la nostra&nbsp;
+                                                        <a href="/home-it/informativa-sulla-privacy" target="_blank" rel="noopener noreferrer">
+                                                            Informativa sulla privacy&nbsp;(clicca qui)
+                                                        </a>
+                                                        .&nbsp;Con la pressione del tasto di invio, confermi di aver letto la
+                                                        nostra informativa e ci autorizzi al trattamento dei tuoi dati personali
+                                                        ai sensi dell'art. 13 del Regolamento (UE) n. 2016/679.
+                                                    </p>
+                                                </div>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap2633">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel2633" for="ff_elem2633">
+                                                                    Ho letto l'informativa privacy e acconsento al trattamento dei miei dati
+                                                                    in merito a questa richiesta.
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <span class="">
+                                                                            <input style="vertical-align: baseline;" class="ff_elem" type="checkbox"
+                                                                                   name="ff_nm_privacy[]" value="Acconsento" id="ff_elem2633" />
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap5620">
+                                                        <div class="controls form-inline">
+                                                            <div class=" ">
+                                                                        <span class="">
+                                                                            <div id="bfInvisibleReCaptchaContainer">
+                                                                            </div>
+                                                                            <div id="bfInvisibleReCaptcha">
+                                                                            </div>
+                                                                            <script data-usercentrics="reCAPTCHA" type="text/javascript">
+                                                                                bfInvisibleRecaptcha = true;
+                                                                                var onloadBFNewRecaptchaCallback = function() {
+                                                                                    grecaptcha.render('bfInvisibleReCaptchaContainer', {
+                                                                                        'sitekey': '6Lf3_MopAAAAAGO-8Tz_AicZp1GefsQYp9OTZmNN',
+                                                                                        'expired-callback': recaptchaExpiredCallback,
+                                                                                        'callback': recaptchaCheckedCallback,
+                                                                                        "badge": "clean",
+                                                                                        'size': 'invisible'
+                                                                                    });
+                                                                                };
+
+                                                                                function recaptchaCheckedCallback(token) {
+                                                                                    if (token != '') {
+                                                                                        bfInvisibleRecaptcha = false;
+                                                                                    }
+                                                                                    if (typeof bf_htmltextareainit != 'undefined') {
+                                                                                        bf_htmltextareainit();
+                                                                                    }
+                                                                                    if (typeof bfAjaxObject101 == 'undefined' && typeof bfReCaptchaLoaded == 'undefined') {
+                                                                                        bfDoFlashUpload()
+                                                                                    } else {
+                                                                                        ff_validate_submit(this, 'click')
+                                                                                    };
+                                                                                };
+
+                                                                                function recaptchaExpiredCallback() {
+                                                                                    grecaptcha.reset();
+                                                                                };
+                                                                            </script>
+                                                                            <script data-usercentrics="reCAPTCHA" src="static/js/api.js" async defer>
+                                                                            </script>
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfClearfix">
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="">
+                                                <button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button"
+                                                        onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};if(typeof bfAjaxObject101 == 'undefined' && typeof bfReCaptchaLoaded == 'undefined'){bfDoFlashUpload()}else{ff_validate_submit(this, 'click')};"
+                                                        value="Invia la richiesta">
+                                                            <span>
+                                                                Invia la richiesta
+                                                            </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- bfPage end -->
+                                    <div id="bfPage2" class="bfPage" style="display:none;">
+                                        <div class="">
+                                            <h2 style="text-align: center;">
+                                                Grazie per la richiesta
+                                            </h2>
+                                            <p style="text-align: center;">
+                                                        <span class="lead">
+                                                            Verrai contattato al più presto da un nostro responsabile commerciale
+                                                            per offrirti la soluzione più adatta alle tue esigenze.
+                                                        </span>
+                                            </p>
+                                        </div>
+                                        <div class="bfErrorMessage alert alert-error" style="display:none">
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="bfFlashUploadTicket" value="bdf8c900856eebd745009f0ec9759f8d"
+                                    />
+                                    <div style="visibility:hidden;" id="bfFileQueue">
+                                    </div>
+                                    <div style="visibility:hidden;display:none;" id="bfSubmitMessage">
+                                        Files submitted, sending form data now. Please do not abort!
+                                    </div>
+                                    <noscript>
+                                        Please turn on javascript to submit your data. Thank you!
+                                    </noscript>
+                                    <input type="hidden" name="ff_contentid" value="17" />
+                                    <input type="hidden" name="ff_applic" value="" />
+                                    <input type="hidden" name="ff_record_id" value="" />
+                                    <input type="hidden" name="ff_module_id" value="0" />
+                                    <input type="hidden" name="ff_form" value="50" />
+                                    <input type="hidden" name="ff_task" value="submit" />
+                                    <input type="hidden" name="ff_target" value="2" />
+                                    <input type="hidden" name="ff_align" value="" />
+                                    <input type="hidden" name="option" value="com_content" />
+                                    <input type="hidden" name="Itemid" value="114" />
+                                    <input type="hidden" name="id" value="17" />
+                                </form>
+                            </div>
+                            <!-- form end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Builder #footer -->
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <div class="uk-margin-small uk-text-center">
+                        <a class="el-link" href="/index.php">
+                            <img src="static/picture/logo-IM-color.png" width="120" height="120"
+                                 class="el-image" alt="logo IM" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Solutions
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/display-pubblicitari" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Display
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/it/sale-riunioni" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        IT
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/production-printing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Printing
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/finishing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Finishing
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Company
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/azienda" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Azienda
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://imprinting.info/careers" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Careers
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/home-it/informativa-sulla-privacy" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Privacy
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://shop.imprinting.info" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Shop
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Focus
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/blog" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Blog
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/lavori" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Lavori
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/marketing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Marketing
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-center">
+                        Seguici anche su
+                    </h3>
+                    <div class="uk-text-center">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin-medium uk-text-center">
+                        <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w"
+                                                sizes="(min-width: 76px) 76px">
+                                        <img src="static/picture/logo-asroma-proudmember-02-bb320a23.png" width="76"
+                                             height="90" class="el-image" alt="logo as roma" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <hr>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri,
+                        43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. -
+                        C.F./P.iva: IT01995060769 -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd53175c9549c8b499021688b14948a17">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd53175c9549c8b499021688b14948a17 = addyd53175c9549c8b499021688b14948a17 + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd53175c9549c8b499021688b14948a17 + '\'>' + addy_textd53175c9549c8b499021688b14948a17 + '<\/a>';
+                                    </script>
+                                </span>
+                        - Società soggetta a direzione e controllo di Black Knight Capital Srl
+                        - P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale
+                        <br />
+                        Via Lorenzo Bonincontri, 43 - 00147 Roma RM
+                        <br />
+                        REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769
+                        -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd33e5696de302d7e7e8d894e5e7d4f9e">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd33e5696de302d7e7e8d894e5e7d4f9e = addyd33e5696de302d7e7e8d894e5e7d4f9e + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd33e5696de302d7e7e8d894e5e7d4f9e + '\'>' + addy_textd33e5696de302d7e7e8d894e5e7d4f9e + '<\/a>';
+                                    </script>
+                                </span>
+                        <br />
+                        Società soggetta a direzione e controllo di Black Knight Capital Srl -
+                        P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">
+                        Tutti i marchi riportati appartengono ai legittimi proprietari
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47"
+            height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

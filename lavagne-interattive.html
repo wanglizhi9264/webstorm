@@ -1,0 +1,2704 @@
+﻿<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png"
+          sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <meta name="title" content="Lavagne Interattive Multimediali Samsung Flip"
+    />
+    <meta name="metatitle" content="Lavagne Interattive Multimediali Samsung Flip"
+    />
+    <meta name="twitter:title" content="Lavagne Interattive Multimediali Samsung Flip"
+    />
+    <meta name="twitter:description" content="Lavagne digitali per il lavoro in team e l'apprendimento interattivo. Condividere informazioni e collaborare è facile con le LIM Samsung."
+    />
+    <meta name="twitter:image" content="https://www.imprinting.info/images/display/lavagne/hero-flip-social-01.jpg"
+    />
+    <meta property="og:title" content="Lavagne Interattive Multimediali Samsung Flip"
+    />
+    <meta property="og:description" content="Lavagne digitali per il lavoro in team e l'apprendimento interattivo. Condividere informazioni e collaborare è facile con le LIM Samsung."
+    />
+    <meta property="og:url" content="https://www.imprinting.info/lavagne-interattive"
+    />
+    <meta property="og:image" content="https://www.imprinting.info/images/display/lavagne/hero-flip-social-01.jpg"
+    />
+    <meta name="description" content="Lavagne digitali per il lavoro in team e l'apprendimento interattivo. Condividere informazioni e collaborare è facile con le LIM Samsung."
+    />
+    <meta name="generator" content="Joomla! - Open Source Content Management"
+    />
+    <title>
+        Lavagne Interattive Multimediali Samsung Flip
+    </title>
+    <link href="https://www.imprinting.info/lavagne-interattive" rel="alternate"
+          hreflang="it-IT" />
+    <link href="https://www.imprinting.info/en/display-solutions/interactive-white-board"
+          rel="alternate" hreflang="en-GB" />
+    <link href="https://www.imprinting.info/component/search/?Itemid=300&amp;format=opensearch"
+          rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml"
+    />
+    <link href="static/css/validationengine.jquery.css" rel="stylesheet" />
+    <link href="static/css/hd-counter.css" rel="stylesheet" />
+    <link href="static/css/theme.12.css" rel="stylesheet" />
+    <link href="static/css/custom.css" rel="stylesheet" />
+    <style>
+        .bfClearfix:after { content: "."; display: block; height: 0; clear: both;
+            visibility: hidden; } .bfFadingClass{ display:none; }
+    </style>
+    <script type="application/json" class="joomla-script-options new">
+        {
+            "csrf.token": "d11603143cb6109773ce759574ebaaca",
+            "system.paths": {
+                "root": "",
+                "base": ""
+            }
+        }
+    </script>
+    <script src="static/js/mootools-core.js">
+    </script>
+    <script src="static/js/core.js">
+    </script>
+    <script src="static/js/mootools-more.js">
+    </script>
+    <script src="static/js/jquery.min.js">
+    </script>
+    <script src="static/js/jquery-noconflict.js">
+    </script>
+    <script src="static/js/jquery-migrate.min.js">
+    </script>
+    <script src="static/js/bootstrap.min.js">
+    </script>
+    <script src="static/js/jquery.validationengine-en.js">
+    </script>
+    <script src="static/js/jquery.validationengine.js">
+    </script>
+    <script src="static/js/hd-counter.js" defer>
+    </script>
+    <script src="static/js/uikit.min.js">
+    </script>
+    <script src="static/js/uikit-icons-horizon.min.js">
+    </script>
+    <script src="static/js/theme.js">
+    </script>
+    <script>
+        < !--jQuery(document).ready(function() {
+            jQuery(".hasTooltip").tooltip({
+                "html": true,
+                "container": "body"
+            });
+        });
+        var JQuery = jQuery;
+
+        var inlineErrorElements = new Array();
+        var bfSummarizers = new Array();
+        var bfDeactivateField = new Array();
+        var bfDeactivateSection = new Array();
+
+        function bf_validate_nextpage(element, action) {
+            if (typeof bfUseErrorAlerts != "undefined") {
+                JQuery(".bfErrorMessage").html("");
+                JQuery(".bfErrorMessage").css("display", "none");
+            }
+
+            error = ff_validation(ff_currentpage);
+            if (error != "") {
+                if (typeof bfUseErrorAlerts == "") {
+                    alert(error);
+                } else {
+                    bfShowErrors(error);
+                }
+                ff_validationFocus("");
+            } else {
+                ff_switchpage(ff_currentpage + 1);
+                self.scrollTo(0, 0);
+            }
+        }
+
+        function bfCheckMaxlength(id, maxlength, showMaxlength) {
+            if (JQuery("#ff_elem" + id).val().length > maxlength) {
+                JQuery("#ff_elem" + id).val(JQuery("#ff_elem" + id).val().substring(0, maxlength));
+            }
+            if (showMaxlength) {
+                JQuery("#bfMaxLengthCounter" + id).text("(" + (maxlength - JQuery("#ff_elem" + id).val().length) + " chars left)");
+            }
+        }
+        function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty) {
+            bfSummarizers.push({
+                id: id,
+                connectWith: connectWith,
+                type: type,
+                emptyMessage: emptyMessage,
+                hideIfEmpty: hideIfEmpty
+            });
+        }
+        function bfField(name) {
+            var value = "";
+            switch (ff_getElementByName(name).type) {
+                case "radio":
+                    if (JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "" && typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                        value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                        if (!isNaN(value)) {
+                            value = Number(value);
+                        }
+                    }
+                    break;
+                case "checkbox":
+                case "select-one":
+                case "select-multiple":
+                    var nodeList = document["ff_form73"]["" + ff_getElementByName(name).name + ""];
+                    if (ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined") {
+                        if (typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                            value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    } else {
+                        var val = "";
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            value = val.substr(0, val.length - 2);
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    if (!isNaN(ff_getElementByName(name).value)) {
+                        value = Number(ff_getElementByName(name).value);
+                    } else {
+                        value = ff_getElementByName(name).value;
+                    }
+            }
+            return value;
+        }
+        function populateSummarizers() {
+            // cleaning first
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                JQuery("#" + bfSummarizers[i].id).parent().css("display", "");
+                JQuery("#" + bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">" + bfSummarizers[i].emptyMessage + "</span>");
+            }
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                var summVal = "";
+                switch (bfSummarizers[i].type) {
+                    case "bfTextfield":
+                    case "bfTextarea":
+                    case "bfHidden":
+                    case "bfCalendar":
+                    case "bfNumberInput":
+                    case "bfCalendarResponsive":
+                    case "bfFile":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val() != "") {
+                            JQuery("#" + bfSummarizers[i].id).text(JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val()).html();
+                            var breakableText = JQuery("#" + bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+                            if (breakableText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    breakableText = calc(breakableText);
+                                }
+                            }
+
+                            JQuery("#" + bfSummarizers[i].id).html(breakableText);
+                            summVal = breakableText;
+                        }
+                        break;
+                    case "bfRadioGroup":
+                    case "bfCheckbox":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "undefined") {
+                            var theText = JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val();
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                    case "bfCheckboxGroup":
+                    case "bfSelect":
+                        var val = "";
+                        var nodeList = document["ff_form73"]["ff_nm_" + bfSummarizers[i].connectWith + "[]"];
+
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            var theText = val.substr(0, val.length - 2);
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                }
+
+                if ((bfSummarizers[i].hideIfEmpty && summVal == "") || (typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_" + bfSummarizers[i].connectWith + "[]"])) {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+                } else {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+                }
+            }
+        }
+
+        var bfUseErrorAlerts = false;
+
+        function bfShowErrors(error) {
+
+            if (JQuery.bfvalidationEngine) {
+                JQuery("#ff_form73").bfvalidationEngine({
+                    promptPosition: "bottomLeft",
+                    success: false,
+                    failure: function() {}
+                });
+
+                for (var i = 0; i < inlineErrorElements.length; i++) {
+                    if (inlineErrorElements[i][1] != "") {
+                        var prompt = null;
+
+                        if (inlineErrorElements[i][0] == "bfCaptchaEntry") {
+                            prompt = JQuery.bfvalidationEngine.buildPrompt("#bfCaptchaEntry", inlineErrorElements[i][1], "error");
+                        } else if (inlineErrorElements[i][0] == "bfReCaptchaEntry") {
+                            // nothing here yet for recaptcha, alert is default
+                            alert(inlineErrorElements[i][1]);
+                        } else if (typeof JQuery("#bfUploader" + inlineErrorElements[i][0]).get(0) != "undefined") {
+                            alert(inlineErrorElements[i][1]);
+                            //prompt = JQuery.bfvalidationEngine.buildPrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val(),inlineErrorElements[i][1],"error");
+                        } else {
+                            if (ff_getElementByName(inlineErrorElements[i][0])) {
+                                prompt = JQuery.bfvalidationEngine.buildPrompt("#" + ff_getElementByName(inlineErrorElements[i][0]).id, inlineErrorElements[i][1], "error");
+                            } else {
+                                alert(inlineErrorElements[i][1]);
+                            }
+                        }
+
+                        JQuery(prompt).mouseover(function() {
+                            var inlineError = JQuery(this).attr("class").split(" ");
+                            if (inlineError && inlineError.length && inlineError.length == 2) {
+                                var result = inlineError[1].split("formError");
+                                if (result && result.length && result.length >= 1) {
+                                    JQuery.bfvalidationEngine.closePrompt("#" + result[0]);
+                                }
+                            }
+                        });
+                    } else {
+                        if (typeof JQuery("#bfUploader" + inlineErrorElements[i][0]).get(0) != "undefined") {
+                            //JQuery.bfvalidationEngine.closePrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val());
+                        } else {
+                            if (ff_getElementByName(inlineErrorElements[i][0])) {
+                                JQuery.bfvalidationEngine.closePrompt("#" + ff_getElementByName(inlineErrorElements[i][0]).id);
+                            }
+                        }
+                    }
+                }
+                inlineErrorElements = new Array();
+            }
+        }
+        bfToggleFieldsLoaded = false;
+        bfSectionFieldsDeactivated = false;
+        JQuery(document).ready(function() {
+            if (typeof bfFade != "undefined") bfFade();
+            if (typeof bfRollover != "undefined") bfRollover();
+            if (typeof bfRollover2 != "undefined") bfRollover2();
+            if (typeof bfRegisterToggleFields != "undefined") {
+                bfRegisterToggleFields();
+            } else {
+                bfToggleFieldsLoaded = true;
+            }
+            if (typeof bfDeactivateSectionFields != "undefined") {
+                bfDeactivateSectionFields();
+            } else {
+                bfSectionFieldsDeactivated = true;
+            }
+            if (JQuery.bfvalidationEngine) {
+                JQuery.bfvalidationEngineLanguage.newLang();
+                JQuery(".ff_elem").change(function() {
+                    JQuery.bfvalidationEngine.closePrompt(this);
+                });
+            }
+            JQuery(".bfQuickMode .hasTip").css("color", "inherit"); // fixing label text color issue
+            JQuery(".bfQuickMode .bfTooltip").css("color", "inherit"); // fixing label text color issue
+            JQuery("input[type=text]").bind("keypress",
+                function(evt) {
+                    if (evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+        });
+
+        //-->
+        document.addEventListener('DOMContentLoaded',
+            function() {
+                Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                    span.innerText = span.textContent;
+                });
+            });
+    </script>
+    <link rel="stylesheet" href="static/css/system.css" />
+    <script>
+        UIkit.util.ready(() = >{
+            UIkit.lightbox('#my-slider .uk-slider-items');
+        });
+    </script>
+    <link href="https://www.imprinting.info/lavagne-interattive" rel="alternate"
+          hreflang="x-default" />
+    <script>
+        var $theme = {};
+    </script>
+    <!-- Joomla Facebook Integration Begin -->
+    <script type='text/javascript'>
+        !
+            function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '389175478706596', {},
+            {
+                agent: 'pljoomla'
+            });
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" alt="fbpx" src="static/picture/dd19d94e983f44b8b0037fc665c5d742.gif"
+        />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- Joomla Facebook Integration end -->
+</head>
+
+<body class="">
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l: '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNBQV47');
+</script>
+<!-- End Google Tag Manager -->
+<div class="tm-page">
+    <div class="tm-header-mobile uk-hidden@m" uk-header>
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+             sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="https://www.imprinting.info/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="50" height="51" src="static/picture/logo-im-colore.svg">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+                                <div uk-navbar-toggle-icon>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true"
+             mode="slide" flip>
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close
+                        uk-toggle="cls: uk-close-large; mode: media; media: @s">
+                </button>
+                <div class="uk-margin-auto-vertical">
+                    <div class="uk-grid uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel" id="module-195">
+                                <ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+                                    <li class="item-102 uk-active js-accordion uk-open uk-parent">
+                                        <a href>
+                                            Display
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-130">
+                                                <a href="/display-pubblicitari">
+                                                    Business Display
+                                                </a>
+                                            </li>
+                                            <li class="item-390">
+                                                <a href="/videowall-e-ledwall">
+                                                    Videowall e Ledwall
+                                                </a>
+                                            </li>
+                                            <li class="item-425">
+                                                <a href="/display-solutions/totem">
+                                                    Totem
+                                                </a>
+                                            </li>
+                                            <li class="item-132 uk-active">
+                                                <a href="/lavagne-interattive">
+                                                    Lavagne Interattive
+                                                </a>
+                                            </li>
+                                            <li class="item-117">
+                                                <a href="/hotel-tv-samsung-smart-hospitality">
+                                                    Hospitality TV
+                                                </a>
+                                            </li>
+                                            <li class="item-454">
+                                                <a href="/hospital-tv-strutture-sanitarie">
+                                                    Healthcare
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-428 js-accordion uk-parent">
+                                        <a href>
+                                            IT
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-460">
+                                                <a href="/sale-riunioni">
+                                                    Sale riunioni
+                                                </a>
+                                            </li>
+                                            <li class="item-451">
+                                                <a href="/noleggio-notebook-samsung-galaxy-book3">
+                                                    Noleggio Notebook Samsung Galaxy Book3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-392 js-accordion uk-parent">
+                                        <a href>
+                                            Printing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-391">
+                                                <a href="/production-printing">
+                                                    Production Printing
+                                                </a>
+                                            </li>
+                                            <li class="item-393">
+                                                <a href="/printing-solutions">
+                                                    Printing Solutions
+                                                </a>
+                                            </li>
+                                            <li class="item-455">
+                                                <a href="/offerte-multifunzione-ufficio">
+                                                    Offerte Multifunzione Ufficio
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-348 uk-parent">
+                                        <a href="/finishing">
+                                            Finishing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-429">
+                                                <a href="/finishing/dtf">
+                                                    DTF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-417">
+                                        <a href="/lavori">
+                                            Lavori
+                                        </a>
+                                    </li>
+                                    <li class="item-353">
+                                        <a href="/blog">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-159">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-182">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid"
+                                         uk-grid>
+                                        <div class="uk-first-column">
+                                            <a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon"
+                                               uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                               rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-tm-4">
+                                <form id="search-tm-4" action="/lavagne-interattive" method="post" role="search"
+                                      class="uk-search uk-search-default uk-width-1-1">
+                                            <span uk-search-icon>
+                                            </span>
+                                    <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                           type="search" class="uk-search-input">
+                                    <input type="hidden" name="task" value="search">
+                                    <input type="hidden" name="option" value="com_search">
+                                    <input type="hidden" name="Itemid" value="300">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tm-header uk-visible@m" uk-header>
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top"
+             cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container">
+                    <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="60" height="61" src="static/picture/LOGO.png">
+                                <img class="uk-logo-inverse" alt loading="eager" width="60" height="61"
+                                     src="static/picture/LOGO.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav" id="module-194">
+                                <li class="item-102 uk-active uk-parent">
+                                    <a role="button">
+                                        Prodotti
+                                    </a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-390">
+                                                        <a href="./product1.html">
+                                                            product1
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-425">
+                                                        <a href="./lavagne-interattive.html">
+                                                            Product2
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-454">
+                                                        <a href="./product3.html">
+                                                            Product3
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-348 uk-parent">
+                                    <a href="chi_siamo.html">
+                                        Chi Siamo
+                                    </a>
+                                </li>
+                                <li class="item-417">
+                                    <a href="./case.html">
+                                        Case Studies / Portfolio
+                                    </a>
+                                </li>
+                                <li class="item-353">
+                                    <a href="./blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="uk-navbar-item" id="module-154">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="./contact.html">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal"
+                               uk-search-icon uk-toggle>
+                            </a>
+                            <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+                                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close
+                                            uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s">
+                                    </button>
+                                    <div class="uk-search uk-search-large">
+                                        <form id="search-tm-3" action="/display-pubblicitari" method="post" role="search"
+                                              class="uk-search uk-search-large">
+                                            <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                                   type="search" class="uk-search-input uk-text-center" autofocus>
+                                            <input type="hidden" name="task" value="search">
+                                            <input type="hidden" name="option" value="com_search">
+                                            <input type="hidden" name="Itemid" value="398">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="system-message-container" data-messages="[]">
+    </div>
+    <!-- Builder #page -->
+    <style class="uk-margin-remove-adjacent">
+        #page\#0 .uk-button-default { padding: 0 50px; line-height: 40px; font-size:
+                12px; border-radius: 3px; background-color: #fff; color: #1E2B4F; border:
+                1px solid #1E2B4F; white-space:nowrap; } #page\#1 .uk-button-default {
+                                                             padding: 0 20px; line-height: 26px; font-size: 12px; border-radius: 3px;
+                                                             background-color: #fff; color: #1E2B4F; border: 0px solid #f7931e; } #page\#2
+                                                                                                                                  .uk-section-xsmall { padding-top: 7px; padding-bottom: 10px; } #page\#3
+                                                                                                                                                                                                 .uk-checkbox, #page\#3 .uk-radio, #page\#3 input[type=checkbox]:not([class*=uk-]),
+                                                                                                                                                                                                 #page\#3 input[type=radio]:not([class*=uk-]) { margin-top: 3px; } #page\#3
+                                                                                                                                                                                                                                                                   .uk-input, #page\#3 .uk-select:not([multiple]):not([size]), #page\#3 .uneditable-input:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=color]:not([class*=uk-]), #page\#3 input[type=date]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=datetime-local]:not([class*=uk-]), #page\#3 input[type=datetime]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=email]:not([class*=uk-]), #page\#3 input[type=month]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=number]:not([class*=uk-]), #page\#3 input[type=password]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=search]:not([class*=uk-]), #page\#3 input[type=tel]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=text]:not([class*=uk-]), #page\#3 input[type=time]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 input[type=url]:not([class*=uk-]), #page\#3 input[type=week]:not([class*=uk-]),
+                                                                                                                                                                                                                                                                   #page\#3 select:not([class*=uk-]):not([multiple]):not([size]) { height:
+                    40px!important; } #page\#3 .bfQuickMode .controls .control-label { width:
+                100%; } #page\#3 .bfQuickMode .bfSubmitButton { float: none; display: block;
+                            margin-left: auto; margin-right: auto; white-space:nowrap; padding: 0 30px;
+                            vertical-align: middle; font-size: 12px; line-height: 40px; } #page\#4
+                                                                                          .uk-overlay-primary{background: rgba(30,43,79,.5);}
+    </style>
+    <div class="uk-visible@s uk-section-default uk-position-relative">
+        <div data-src="/templates/yootheme/cache/73/hero-flip-01-737787e9.jpeg"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9sYXZhZ25lL2hlcm8tZmxpcC0wMS5qcGciLFtbInR5cGUiLFsid2VicCIsIjg1Il1dLFsiZG9SZXNpemUiLFs3NjgsNDMyLDc2OCw0MzJdXSxbImRvQ3JvcCIsWzc2OCw0MzIsMCwwXV1dLDE2OTQwMjcxNDBd&amp;file=ce%2Fhero-flip-01-cebc4d53.webp&amp;hash=16acf7c0 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9sYXZhZ25lL2hlcm8tZmxpcC0wMS5qcGciLFtbInR5cGUiLFsid2VicCIsIjg1Il1dLFsiZG9SZXNpemUiLFsxMDI0LDU3NiwxMDI0LDU3Nl1dLFsiZG9Dcm9wIixbMTAyNCw1NzYsMCwwXV1dLDE2OTQwMjcxNDBd&amp;file=21%2Fhero-flip-01-2180cfda.webp&amp;hash=9d68c9e6 1024w, \/templates\/yootheme\/cache\/ae\/hero-flip-01-aea3ca2f.webp 1200w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1200\/675) 178vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-left uk-section uk-section-xsmall uk-padding-remove-top">
+            <div class="uk-position-cover" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0) 100%);; background-clip: padding-box">
+            </div>
+            <div class="uk-container uk-position-relative">
+                <div class="tm-grid-expand uk-child-width-1-1 uk-margin-remove-vertical"
+                     uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-margin">
+                            <picture>
+                                <source type="image/webp" srcset="/templates/yootheme/cache/22/trasparente-00-22c6838e.webp 600w"
+                                        sizes="(min-width: 600px) 600px">
+                                <img src="static/picture/trasparente-00-accc90af.png" width="600" height="400"
+                                     class="el-image" alt="trasparente" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-grid-expand uk-grid-collapse uk-child-width-1-1" uk-grid>
+                    <div class="uk-grid-item-match uk-flex-middle uk-light uk-width-1-1">
+                        <div class="uk-panel uk-width-1-1">
+                            <h1 class="uk-heading-small uk-font-secondary uk-margin uk-text-center">
+                                Collaborare è facile con una lavagna
+                                <br>
+                                interattiva multimediale
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div id="page#0" class="uk-margin uk-text-center">
+                            <a class="el-content uk-button uk-button-default" href="#form" uk-scroll>
+                                Parla con un esperto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-hidden@s uk-section-default">
+        <div data-src="/templates/yootheme/cache/52/hero-flip-01-5223b23b.jpeg"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9sYXZhZ25lL2hlcm8tZmxpcC0wMS5qcGciLFtbInR5cGUiLFsid2VicCIsIjg1Il1dLFsiZG9SZXNpemUiLFs2MDAsMzM4LDYwMCwzMzhdXV0sMTY5NDAyNzE0MF0%3D&amp;file=b5%2Fhero-flip-01-b57601d2.webp&amp;hash=6e9ba08e 600w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9sYXZhZ25lL2hlcm8tZmxpcC0wMS5qcGciLFtbInR5cGUiLFsid2VicCIsIjg1Il1dLFsiZG9SZXNpemUiLFs3NzAsNDMzLDc3MCw0MzNdXSxbImRvQ3JvcCIsWzc2OCw0MzMsMSwwXV1dLDE2OTQwMjcxNDBd&amp;file=01%2Fhero-flip-01-016b924e.webp&amp;hash=41ab426d 768w, \/templates\/yootheme\/cache\/7b\/hero-flip-01-7b266406.webp 1024w, \/templates\/yootheme\/cache\/b1\/hero-flip-01-b1495a51.webp 1197w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvZGlzcGxheS9sYXZhZ25lL2hlcm8tZmxpcC0wMS5qcGciLFtbInR5cGUiLFsid2VicCIsIjg1Il1dLFsiZG9SZXNpemUiLFsxMjAwLDY3NSwxMjAwLDY3NV1dLFsiZG9Dcm9wIixbMTE5OCw2NzUsMSwwXV1dLDE2OTQwMjcxNDBd&amp;file=52%2Fhero-flip-01-525c5198.webp&amp;hash=60901ec8 1198w, \/templates\/yootheme\/cache\/3c\/hero-flip-01-3c2b825e.webp 1199w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 600\/338) 178vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-padding-remove-vertical">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-margin">
+                        <picture>
+                            <source type="image/webp" srcset="/templates/yootheme/cache/26/trasparente-00-2694b26f.webp 600w"
+                                    sizes="(min-width: 600px) 600px">
+                            <img src="static/picture/trasparente-00-a89ea14e.png" width="600" height="350"
+                                 class="el-image" alt="trasparente" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-hidden@s uk-section-default uk-section uk-padding-remove-vertical">
+        <div class="uk-grid-margin-small uk-container uk-container-large uk-padding-remove-horizontal">
+            <div class="tm-grid-expand uk-grid-column-medium uk-grid-row-small" uk-grid>
+                <div class="uk-light uk-width-1-2@s uk-width-1-2@m uk-width-1-2@l uk-width-1-3@xl">
+                </div>
+                <div class="uk-grid-item-match uk-width-1-2@s uk-width-1-2@m uk-width-1-3@l">
+                    <div class="uk-flex">
+                        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+                             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+                             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-tile-xsmall uk-flex uk-flex-bottom"
+                             style="background-color: rgba(255, 255, 255, 0.8);">
+                            <div class="uk-panel uk-width-1-1">
+                                <div class="uk-h3 uk-font-primary uk-margin-small uk-text-left@s uk-text-center">
+                                    <strong>
+                                        Collaborare è facile con una lavagna interattiva multimediale
+                                    </strong>
+                                </div>
+                                <div class="uk-panel uk-text-small uk-text-emphasis uk-margin-small uk-width-large uk-margin-auto uk-text-center">
+                                    Non richiede l'uso di carta o pennarelli. Offre funzionalità che semplificano
+                                    la presentazione, il salvataggio e la condivisione dei contenuti creati.
+                                    Tutto in maniera intuitiva e immediata.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page#2" class="uk-hidden@s sticky-bottom uk-section-default uk-light"
+         uk-sticky="animation: uk-animation-slide-top">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xsmall"
+             style="background-color: rgb(30, 43, 79);">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+                    <div class="uk-panel uk-width-1-1">
+                        <div id="page#1" class="uk-margin-remove-vertical uk-text-center">
+                            <div class="uk-flex-middle uk-grid-small uk-child-width-auto uk-flex-center"
+                                 uk-grid>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small" href="#form"
+                                       uk-scroll>
+                                        Chiedi un preventivo
+                                    </a>
+                                </div>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small" href="tel:+390691133623">
+                                                <span uk-icon="receiver">
+                                                </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h2 class="uk-h2 uk-text-center">
+                        <strong>
+                            Il miglior investimento nel futuro digitale della tua azienda!
+                        </strong>
+                    </h2>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        Lasciati ispirare ogni volta che usi Samsung Flip e scopri come è semplice
+                        collaborare in maniera ottimale ed efficiente.
+                    </div>
+                    <div class="uk-margin uk-text-center">
+                        <video src="/images/display/lavagne/video/flip-video-landing-02.mp4" controls
+                               poster="/images/display/lavagne/video/video_collaborare.jpg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h1 uk-font-primary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            Caratteristiche principali
+                        </strong>
+                    </div>
+                    <div class="uk-h2 uk-font-primary uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            Caratteristiche principali
+                        </strong>
+                    </div>
+                    <hr>
+                    <div class="uk-margin uk-text-center">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large uk-grid-match"
+                             uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/9d/icone-flip-blu-scrittura-9dde8799.webp 120w, /templates/yootheme/cache/97/icone-flip-blu-scrittura-97f70e72.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip-blu-scrittura-a10a9997.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Come scrivere su un foglio di carta
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            Modalità penna e pennello
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/34/icone-flip-blu-modifica-3447fa1a.webp 120w, /templates/yootheme/cache/6a/icone-flip-blu-modifica-6a4ab9b4.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip-blu-modifica-1190379f.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Modifica rapida dei contenuti
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            Collaborazione creativa ed efficiente
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/67/icone-flip-blu-compatibilita-67348b5c.webp 120w, /templates/yootheme/cache/21/icone-flip-blu-compatibilita-214eb2e2.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip-blu-compatibilita-195b7718.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Compatibilità avanzata
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            Molteplici opzioni di connessione
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/4d/icone-flip-blu-connettivita-4dbe044c.webp 120w, /templates/yootheme/cache/b9/icone-flip-blu-connettivita-b90d3800.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip-blu-connettivita-db0de28e.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Connettività versatile
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            USB, HDMI, NFC e screen mirroring
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section"
+             style="background-color: #1E2B4F;">
+            <div class="uk-container">
+                <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div class="uk-h2 uk-visible@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                                <strong>
+                                    Scopri come portare i tuoi meeting ad un livello superiore
+                                </strong>
+                            </div>
+                            <div class="uk-h3 uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                                <strong>
+                                    Scopri come portare i tuoi meeting ad un livello superiore
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div class="uk-margin uk-text-left@m uk-text-center">
+                                <a class="el-content uk-button uk-button-primary uk-button-large" href="#form"
+                                   uk-scroll>
+                                    Richiedi una demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container uk-container-xlarge">
+            <div class="tm-grid-expand uk-grid-column-medium uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-3@l">
+                    <h3 class="uk-h2 uk-text-center">
+                        <strong>
+                            Intuitivo e immediato
+                        </strong>
+                    </h3>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        Metti la versatilità nero su bianco. Con la LIM Samsung Flip, puoi selezionare,
+                        spostare, tagliare, acquisire e modificare le immagini in modo rapido e
+                        semplice. Puoi anche aggiungerle al display con un semplice clic per elaborarle
+                        ulteriormente.
+                    </div>
+                    <div class="uk-margin uk-text-center">
+                        <video src="/images/display/lavagne/video/modifica_flip2_f08.mp4" controls
+                               poster="/images/display/lavagne/video/video_modifica.jpg">
+                        </video>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <h3 class="uk-h2 uk-text-center">
+                        <strong>
+                            Compatibilità avanzata
+                        </strong>
+                    </h3>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        <p>
+                            Grazie al visualizzatore di documenti integrato, puoi aprire facilmente
+                            i tuoi file Microsoft Word, PowerPoint o PDF e, se il pubblico è numeroso,
+                            puoi trasferire i contenuti ad un altro display di grandi dimensioni grazie
+                            alla condivisione dello schermo in modalità wireless.
+                        </p>
+                    </div>
+                    <div class="uk-margin uk-text-center">
+                        <video src="/images/display/lavagne/video/compatibilita_flip2_f13.mp4"
+                               controls poster="/images/display/lavagne/video/video_compatibilita.jpg">
+                        </video>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <h3 class="uk-h2 uk-text-center">
+                        <strong>
+                            Connettività versatile
+                        </strong>
+                    </h3>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        <p>
+                            Le porte USB, HDMI, NFC e le funzionalità di condivisione dello schermo
+                            rendono possibile una collaborazione efficiente e permettono di visualizzare,
+                            modificare e condividere i tuoi contenuti in maniera interattiva.
+                        </p>
+                    </div>
+                    <div class="uk-margin uk-text-center">
+                        <video src="/images/display/lavagne/video/connettivita_flip2_f15_02.mp4"
+                               controls poster="/images/display/lavagne/video/video_connettivita.jpg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container uk-container-xlarge">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h2 class="uk-h2 uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            I benefici delle lavagne interattive Samsung
+                        </strong>
+                    </h2>
+                    <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        In ambito formativo, la lavagna interattiva multimediale stimola l'apprendimento
+                        perché integra e arricchisce la classica modalità della didattica frontale
+                        con l’impiego di immagini, foto, filmati, che possono aiutare ad approfondire
+                        e spiegare nozioni e concetti.
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-grid-column-medium uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-3@l">
+                    <div class="counter-container uk-margin uk-text-center" data-number="86"
+                         data-percentage="86" data-radius="80" data-duration="1500" data-uniqid="counter-67594db5e6136">
+                        <style>
+                            #counter-67594db5e6136 .counter-value { animation: counter-67594db5e6136
+                            1500ms; } @keyframes counter-67594db5e6136 { from { stroke-dashoffset:
+                                    502.65482457437; } to { stroke-dashoffset: 70.371675440411; } }
+                        </style>
+                        <div class="uk-inline">
+                            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">
+                                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9"
+                                        fill="none" />
+                                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133"
+                                        stroke-width="9" fill="none" />
+                            </svg>
+                            <div class="uk-position-center uk-overlay">
+                                        <span class="el-number uk-heading-small">
+                                            86
+                                        </span>
+                                <span class="el-unit">
+                                            %
+                                        </span>
+                                <span class="el-text">
+                                            <br>
+                                            dei docenti
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-h3 uk-text-center">
+                        <strong>
+                            Didattica potenziata
+                        </strong>
+                    </div>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        L’86,5% dei docenti indica che tramite l'impiego di una LIM la didattica
+                        tradizionale è potenziata in maniera rilevante, per l'aumento dell'attenzione
+                        e del coinvolgimento.
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <div class="counter-container uk-margin uk-text-center" data-number="91"
+                         data-percentage="91" data-radius="80" data-duration="1500" data-uniqid="counter-67594db5e64e7">
+                        <style>
+                            #counter-67594db5e64e7 .counter-value { animation: counter-67594db5e64e7
+                            1500ms; } @keyframes counter-67594db5e64e7 { from { stroke-dashoffset:
+                                    502.65482457437; } to { stroke-dashoffset: 45.238934211693; } }
+                        </style>
+                        <div class="uk-inline">
+                            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">
+                                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9"
+                                        fill="none" />
+                                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133"
+                                        stroke-width="9" fill="none" />
+                            </svg>
+                            <div class="uk-position-center uk-overlay">
+                                        <span class="el-number uk-heading-small">
+                                            91
+                                        </span>
+                                <span class="el-unit">
+                                            %
+                                        </span>
+                                <span class="el-text">
+                                            <br>
+                                            dei formatori
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-h3 uk-text-center">
+                        <strong>
+                            Apprendimento facilitato
+                        </strong>
+                    </div>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        <p>
+                            Il 91% dei formatori ritiene che faciliti nettamente l'apprendimento e
+                            la collaborazione, sia in ambiente scolastico che corporate.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <div class="counter-container uk-margin uk-text-center" data-number="95"
+                         data-percentage="95" data-radius="80" data-duration="1500" data-uniqid="counter-67594db5e690d">
+                        <style>
+                            #counter-67594db5e690d .counter-value { animation: counter-67594db5e690d
+                            1500ms; } @keyframes counter-67594db5e690d { from { stroke-dashoffset:
+                                    502.65482457437; } to { stroke-dashoffset: 25.132741228718; } }
+                        </style>
+                        <div class="uk-inline">
+                            <svg class="el-circle" width="176" height="176" viewBox="0 0 176 176">
+                                <circle class="counter-meter" cx="88" cy="88" r="80" stroke-width="9"
+                                        fill="none" />
+                                <circle class="counter-value" cx="88" cy="88" r="80" stroke="#77B133"
+                                        stroke-width="9" fill="none" />
+                            </svg>
+                            <div class="uk-position-center uk-overlay">
+                                        <span class="el-number uk-heading-small">
+                                            95
+                                        </span>
+                                <span class="el-unit">
+                                            %
+                                        </span>
+                                <span class="el-text">
+                                            <br>
+                                            dei manager
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-h3 uk-text-center">
+                        <strong>
+                            Workflow ottimizzato
+                        </strong>
+                    </div>
+                    <div class="uk-panel uk-margin uk-text-center">
+                        <p>
+                            Il 95% dei manager che hanno scelto di introdurre almeno uno di questi
+                            dispositivi in azienda, ha riscontrato un miglioramento nello svolgimento
+                            dei meeting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modelli" class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section"
+             style="background-color: #1E2B4F;">
+            <div class="uk-container uk-container-large">
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-margin-small uk-text-center">
+                            <picture>
+                                <source type="image/webp" srcset="/templates/yootheme/cache/9b/marchio-samsung-grigio-02-9b937135.webp 200w, /templates/yootheme/cache/f2/marchio-samsung-grigio-02-f25aac63.webp 400w"
+                                        sizes="(min-width: 200px) 200px">
+                                <img src="static/picture/marchio-samsung-grigio-02-c1d17f01.png" width="200"
+                                     height="29" class="el-image" alt="logo Samsung" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="uk-h3 uk-margin-remove-top uk-text-center">
+                            Gamma Samsung Flip e Flip PRO
+                        </div>
+                        <div class="uk-margin uk-text-center" uk-slider="autoplay: 1; pauseOnHover: false; autoplayInterval: 3000;">
+                            <div class="uk-position-relative">
+                                <ul class="uk-slider-items uk-grid uk-grid-large uk-grid-divider uk-grid-match">
+                                    <li class="uk-width-1-1 uk-width-1-3@m">
+                                        <div class="el-item uk-panel uk-margin-remove-first-child">
+                                            <picture>
+                                                <source type="image/webp" srcset="/templates/yootheme/cache/07/flip2-55-01-0789a425.webp 500w"
+                                                        sizes="(min-width: 500px) 500px">
+                                                <img src="static/picture/flip2-55-01-40e5e025.png" width="500" height="500"
+                                                     class="el-image" alt loading="lazy">
+                                            </picture>
+                                            <div class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">
+                                                Samsung Flip 55"
+                                            </div>
+                                            <div class="el-content uk-panel uk-margin-top">
+                                                E-Board orientabile e compatibile con stand mobile opzionale
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-width-1-1 uk-width-1-3@m">
+                                        <div class="el-item uk-panel uk-margin-remove-first-child">
+                                            <picture>
+                                                <source type="image/webp" srcset="/templates/yootheme/cache/08/flip2-65-01-080638c6.webp 500w"
+                                                        sizes="(min-width: 500px) 500px">
+                                                <img src="static/picture/flip2-65-01-f5653005.png" width="500" height="500"
+                                                     class="el-image" alt loading="lazy">
+                                            </picture>
+                                            <div class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">
+                                                Samsung Flip 65"
+                                            </div>
+                                            <div class="el-content uk-panel uk-margin-top">
+                                                E-board con design snello e montaggio a parete opzionale
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-width-1-1 uk-width-1-3@m">
+                                        <div class="el-item uk-panel uk-margin-remove-first-child">
+                                            <picture>
+                                                <source type="image/webp" srcset="/templates/yootheme/cache/86/flip2-85-02-86aaf3cc.webp 500w"
+                                                        sizes="(min-width: 500px) 500px">
+                                                <img src="static/picture/flip2-85-02-77321650.png" width="500" height="500"
+                                                     class="el-image" alt loading="lazy">
+                                            </picture>
+                                            <div class="el-title uk-h3 uk-font-secondary uk-margin-top uk-margin-remove-bottom">
+                                                Samsung Flip 85"
+                                            </div>
+                                            <div class="el-content uk-panel uk-margin-top">
+                                                E-board di grandi dimensioni con montaggio a parete opzionale
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"
+                                uk-margin>
+                                <li uk-slider-item="0">
+                                    <a href aria-label="Go to slide 1">
+                                    </a>
+                                </li>
+                                <li uk-slider-item="1">
+                                    <a href aria-label="Go to slide 2">
+                                    </a>
+                                </li>
+                                <li uk-slider-item="2">
+                                    <a href aria-label="Go to slide 3">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+                    <div class="uk-panel uk-width-1-1">
+                        <div class="uk-h2 uk-visible@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                            <strong>
+                                Richiedi un preventivo per la tua nuova LIM
+                            </strong>
+                        </div>
+                        <div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                            <strong>
+                                Richiedi un preventivo
+                                <br>
+                                per la tua nuova LIM
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+                    <div class="uk-panel uk-width-1-1">
+                        <div class="uk-margin uk-text-left@m uk-text-center">
+                            <a class="el-content uk-button uk-button-primary uk-button-large" href="#form"
+                               uk-scroll>
+                                Compila il form
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h1 uk-font-primary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            I nostri servizi includono
+                        </strong>
+                    </div>
+                    <div class="uk-h2 uk-font-primary uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            I nostri servizi includono
+                        </strong>
+                    </div>
+                    <hr>
+                    <div class="uk-margin uk-text-center">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large uk-grid-match"
+                             uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/94/icone-flip_mani-94690a32.webp 120w, /templates/yootheme/cache/53/icone-flip_mani-531cbb3d.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_mani-e3f2499d.png" width="120" height="120"
+                                             class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Consulenza pre-vendita
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per scegliere insieme i prodotti in grado di soddisfare al meglio le esigenze
+                                            di ogni cliente
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/2d/icone-flip_meet-2d48bff2.webp 120w, /templates/yootheme/cache/4f/icone-flip_meet-4fd389e3.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_meet-3ebbe41f.png" width="120" height="120"
+                                             class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Consulenza fiscale
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per svolgere le pratiche di noleggio e agevolazione fiscale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/57/icone-flip_assistenza-57a5556a.webp 120w, /templates/yootheme/cache/94/icone-flip_assistenza-94ef1cf1.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_assistenza-1f29897f.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Assistenza post-vendita
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per seguire i nostri clienti nella risoluzione dei problemi 24/7
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/09/icone-flip_formazione-090713f1.webp 120w, /templates/yootheme/cache/a2/icone-flip_formazione-a2397f3a.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_formazione-0d7786f1.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Formazione tecnica
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per tramettere le principali nozioni per la conoscenza e l'uso dei dispositivi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form" class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h1 uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                    <div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                <div class="uk-width-1-4@m">
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div id="page#3">
+                        <!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by
+                        Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.
+                        All rights reserved. -->
+                        <div class="bfClearfix">
+                            <script type="text/javascript">
+                                < !--ff_processor = new Object();
+                                ff_processor.okrun = true;
+                                ff_processor.ip = '141.11.217.33';
+                                ff_processor.agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.browser = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.opsys = 'win';
+                                ff_processor.provider = 'Unknown';
+                                ff_processor.submitted = '2024-12-11 08:30:46';
+                                ff_processor.form = 73;
+                                ff_processor.form_id = 'ff_form73';
+                                ff_processor.page = 1;
+                                ff_processor.target = 2;
+                                ff_processor.runmode = 0;
+                                ff_processor.inframe = 0;
+                                ff_processor.inline = 0;
+                                ff_processor.template = 0;
+                                ff_processor.homepage = 'https://www.imprinting.info';
+                                ff_processor.mossite = 'https://www.imprinting.info';
+                                ff_processor.images = 'https://www.imprinting.info/components/com_breezingforms/images';
+                                ff_processor.border = '';
+                                ff_processor.align = '';
+                                ff_processor.top = '';
+                                ff_processor.suffix = '';
+                                ff_processor.status = null;
+                                ff_processor.message = null;
+                                ff_processor.record_id = null;
+                                ff_processor.showgrid = false;
+                                ff_processor.traceBuffer = null;
+                                //-->
+
+                            </script>
+                            <script type="text/javascript" src="static/js/facileforms.js">
+                            </script>
+                            <div id="ff_formdiv73" class="bfFormDiv">
+                                <style>
+                                    #bfLabel2434 { font-size: 15px; }
+                                </style>
+                                <style>
+                                    #ff_elem2434 { border: 1px solid #000; }
+                                </style>
+                                <script type="text/javascript">
+                                    < !--
+
+                                        function checkFileExtensions() {
+                                            return true;
+                                        }
+                                    var bfReCaptchaLoaded = true;
+                                    function bfCheckCaptcha() {
+                                        if (checkFileExtensions()) {
+                                            function bfValidateCaptcha() {
+                                                if (typeof bfInvisibleRecaptcha != "undefined" && bfInvisibleRecaptcha === false) {
+                                                    if (typeof bfDoFlashUpload != 'undefined') {
+                                                        bfDoFlashUpload();
+                                                    } else {
+                                                        ff_submitForm2();
+                                                    }
+                                                    return;
+                                                }
+
+                                                if (typeof onloadBFNewRecaptchaCallback == "undefined") {
+                                                    challengeField = JQuery("input#recaptcha_challenge_field").val();
+                                                    responseField = JQuery("input#recaptcha_response_field").val();
+                                                    var html = JQuery.ajax({
+                                                        type: "POST",
+                                                        url: "/component/breezingforms/raw/true/bfReCaptcha/true/form/73/tmpl/component?raw=true&amp;bfReCaptcha=true&amp;form=73&amp;Itemid=0&amp;tmpl=component",
+                                                        data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField,
+                                                        async: false
+                                                    }).responseText;
+
+                                                    if (html.replace(/^\s+|\s+$/, "") == "success") {
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    } else {
+                                                        if (typeof bfUseErrorAlerts == "undefined") {
+                                                            alert("The captcha is missing or wrong!");
+                                                        } else {
+                                                            if (typeof inlineErrorElements != "undefined") {
+                                                                inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                            }
+                                                            bfShowErrors("The captcha is missing or wrong!");
+                                                        }
+
+                                                        if (ff_currentpage != 1) ff_switchpage(1);
+                                                        Recaptcha.focus_response_field();
+
+                                                        Recaptcha.reload();
+
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    }
+                                                } else {
+
+                                                    if (typeof bfInvisibleRecaptcha != "undefined") {
+
+                                                        grecaptcha.execute();
+                                                    }
+
+                                                    var gresponse = grecaptcha.getResponse();
+
+                                                    if (gresponse == "") {
+
+                                                        if (typeof bfInvisibleRecaptcha == "undefined") {
+
+                                                            if (typeof bfUseErrorAlerts == "undefined") {
+                                                                alert("The captcha is missing or wrong!");
+                                                            } else {
+                                                                if (typeof inlineErrorElements != "undefined") {
+                                                                    inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                                }
+                                                                bfShowErrors("The captcha is missing or wrong!");
+                                                            }
+
+                                                            if (ff_currentpage != 1) ff_switchpage(1);
+                                                        }
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    } else {
+
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            bfValidateCaptcha();
+
+                                        }
+                                    }
+                                    function ff_initialize(condition) {}
+                                    onload = function() {
+                                        ff_initialize('formentry');
+                                        ff_initialize('pageentry');
+                                        if (ff_processor && ff_processor.traceBuffer) ff_traceWindow();
+                                    }
+                                    var ff_currentpage = 1;
+                                    function ff_switchpage(page) {
+                                        if (document.getElementById("bfPage1")) document.getElementById("bfPage1").style.display = "none";
+                                        if (document.getElementById("bfPage2")) document.getElementById("bfPage2").style.display = "none";
+                                        if (document.getElementById("bfPage" + page)) document.getElementById("bfPage" + page).style.display = "";
+                                        ff_currentpage = page;
+                                        ff_initialize("pageentry");
+                                    }
+                                    function ff_lavagne02_submitted(status, message) {
+                                        if (status == 0) {
+                                            ff_switchpage(2);
+                                        } else {
+                                            alert(message);
+                                        }
+                                    }
+                                    var ff_validationFocusName = '';
+                                    var ff_elements = [['ff_elem5686', 'ff_div5686', 'bfFakeName4', 1, 5686], ['ff_elem5685', 'ff_div5685', 'bfFakeName3', 1, 5685], ['ff_elem5684', 'ff_div5684', 'bfFakeName2', 1, 5684], ['ff_elem5683', 'ff_div5683', 'bfFakeName', 1, 5683], ['ff_elem4288', 'ff_div4288', 'nome', 1, 4288], ['ff_elem4282', 'ff_div4282', 'azienda', 1, 4282], ['ff_elem4281', 'ff_div4281', 'email', 1, 4281], ['ff_elem4280', 'ff_div4280', 'telefono', 1, 4280], ['ff_elem4279', 'ff_div4279', 'cittaconsegna', 1, 4279], ['ff_elem4278', 'ff_div4278', 'messaggio', 1, 4278], ['ff_elem4276', 'ff_div4276', 'acquisizione', 1, 4276], ['ff_elem4285', 'ff_div4285', 'privacy', 1, 4285], ['ff_elem5125', 'ff_div5125', 'robot', 1, 5125]];
+                                    function ff_getElementByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return eval('document.ff_form73.' + ff_elements[i][0]);
+                                        return null;
+                                    }
+                                    function ff_getPageByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return ff_elements[i][3];
+                                        return 0;
+                                    }
+                                    function ff_validationFocus(name) {
+                                        if (name == undefined || name == '') {
+                                            if (ff_validationFocusName != '') {
+                                                ff_switchpage(ff_getPageByName(ff_validationFocusName));
+                                                if (ff_getElementByName(ff_validationFocusName).focus) {
+                                                    ff_getElementByName(ff_validationFocusName).focus();
+                                                }
+                                            }
+                                        } else {
+                                            if (ff_validationFocusName == '') ff_validationFocusName = name;
+                                        }
+                                    }
+                                    function ff_getElementByIndex(index) {
+                                        if (index >= 0 && index < ff_elements.length) return eval('document.ff_form73.' + ff_elements[index][0]);
+                                        return null;
+                                    }
+                                    function ff_anychecked(element, message) {
+                                        var name = '';
+                                        if (!element.name) {
+                                            if (element.length && element.length != 0) {
+                                                name = element[0].name;
+                                                var cnt = 0;
+                                                for (var i = 0; i < element.length; i++) if (element[i].name == name) if (element[i].checked) cnt++;
+                                                if (cnt == 0) {
+                                                    ff_validationFocus(element[0].name);
+                                                    if (message == '') message = "Please check or select " + name + ".\n";
+                                                    return message;
+                                                }
+                                            } else {
+                                                return '';
+                                            }
+                                        } else {
+                                            name = element.name;
+                                            if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                            var cnt = 0;
+                                            for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) if (ff_getElementByIndex(i).checked) cnt++;
+                                            if (cnt == 0) {
+                                                ff_validationFocus(element.name);
+                                                if (message == '') message = "Please check or select " + name + ".\n";
+                                                return message;
+                                            }
+                                        }
+                                        return '';
+                                    }
+                                    function ff_validemail(element, message) {
+                                        var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                                        if (!check.test(element.value)) {
+                                            if (message == '') message = element.name + " is no valid email address.\n";
+                                            ff_validationFocus(element.name);
+                                            return message;
+                                        }
+                                        return '';
+                                    }
+                                    function ff_valuenotempty(element, message) {
+                                        if (element.value != '') return '';
+                                        if (message == '') message = "Please enter " + element.name + ".\n";
+                                        ff_validationFocus(element.name);
+                                        return message;
+                                    }
+                                    function ff_validation(page) {
+                                        if (typeof inlineErrorElements != 'undefined') inlineErrorElements = new Array();
+                                        error = '';
+                                        ff_validationFocusName = '';
+                                        if (page == 1 || page == 0) {
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_nome[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form73['ff_nm_nome[]'], "Inserisci il tuo nome e il tuo cognome\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["nome", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_azienda[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form73['ff_nm_azienda[]'], "Inserisci la ragione sociale\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["azienda", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_email[]']) {
+                                                errorout = ff_validemail(document.ff_form73['ff_nm_email[]'], "Inserisci la tua e-mail\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["email", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_telefono[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form73['ff_nm_telefono[]'], "Inserisci un recapito telefonico\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["telefono", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_cittaconsegna[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form73['ff_nm_cittaconsegna[]'], "Inserisci la tua città\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["cittaconsegna", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_privacy[]']) {
+                                                errorout = ff_anychecked(document.ff_form73['ff_nm_privacy[]'], "Si prega di leggere ed accettare l\'informativa sulla privacy\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["privacy", errorout]);
+                                                }
+                                            }
+                                        }
+                                        if (error != "" && document.getElementById('ff_capimgValue')) {
+                                            document.getElementById('ff_capimgValue').src = '/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom=' + Math.random();
+                                            document.getElementById('bfCaptchaEntry').value = "";
+                                        }
+                                        if (error != "" && document.getElementById("bfSubmitButton")) {
+                                            document.getElementById("bfSubmitButton").disabled = false;
+                                        }
+                                        if (error != "" && typeof JQuery != "undefined") {
+                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                        }
+                                        return error;
+                                    }
+                                    function ff_validate_nextpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            ff_switchpage(ff_currentpage + 1);
+                                        }
+                                    }
+                                    function ff_validate_prevpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            if (ff_currentpage > 1) {
+                                                ff_switchpage(ff_currentpage - 1);
+                                            }
+                                        }
+                                    }
+                                    function ff_resetForm(element, action) {
+                                        eval('document.' + ff_processor.form_id).reset();
+                                    }
+                                    function ff_submitForm() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        bfCheckCaptcha();
+                                    }
+                                    function ff_submitForm2() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        if (typeof bf_ajax_submit != 'undefined') {
+                                            bf_ajax_submit()
+                                        } else {
+                                            document.ff_form73.submit();
+                                        }
+                                    }
+                                    function ff_validate_submit(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(0);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus();
+                                        } else ff_submitForm();
+                                    }
+                                    //-->
+
+                                </script>
+                                <form data-ajax="false" action="https://www.imprinting.info/lavagne-interattive"
+                                      method="post" name="ff_form73" id="ff_form73" enctype="multipart/form-data"
+                                      accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+                                    <div id="bfPage1" class="bfPage">
+                                        <div class="bfErrorMessage alert alert-error" style="display:none">
+                                        </div>
+                                        <section class=" " id="datirichiedente">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4288">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel4288" for="ff_elem4288">
+                                                                Nome
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_nome[]" value="" id="ff_elem4288" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4282">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel4282" for="ff_elem4282">
+                                                                Azienda
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_azienda[]" value="" id="ff_elem4282" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <section class=" " id="contatti">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4281">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel4281" for="ff_elem4281">
+                                                                Email
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input placeholder="@" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_email[]" value="" id="ff_elem4281" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4280">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel4280" for="ff_elem4280">
+                                                                Telefono
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" type="number" name="ff_nm_telefono[]"
+                                                                   value="" id="ff_elem4280" step="" max="" min="" />
+                                                        </div>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        JQuery(document).ready(JQuery("#ff_elem4280").css("width", "100%"));
+                                                    </script>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4279">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel4279" for="ff_elem4279">
+                                                                Città
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem4279" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap4278">
+                                            <div class="controls form-inline">
+                                                <div class="">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel4278" for="ff_elem4278">
+                                                        Lascia un messaggio (facoltativo)
+                                                    </label>
+                                                    <textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;"
+                                                              name="ff_nm_messaggio[]" id="ff_elem4278">
+                                                            </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap4276">
+                                            <div class="controls form-inline">
+                                                <div class=" ">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel4276" for="ff_elem4276">
+                                                        Come ci hai conosciuto?
+                                                    </label>
+                                                    <span class="">
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4276"
+                                                                       for="ff_elem4276">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google"
+                                                                           id="ff_elem4276" />
+                                                                    Google
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4276_1"
+                                                                       for="ff_elem4276_1">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social"
+                                                                           id="ff_elem4276_1" />
+                                                                    Social
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4276_2"
+                                                                       for="ff_elem4276_2">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail"
+                                                                           id="ff_elem4276_2" />
+                                                                    Mail
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4276_3"
+                                                                       for="ff_elem4276_3">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro"
+                                                                           id="ff_elem4276_3" />
+                                                                    Altro
+                                                                </label>
+                                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class=" " id="privacy">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap4285">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel4285" for="ff_elem4285">
+                                                                    Acconsento al trattamento dei miei dati in merito a questa richiesta.
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <span class="">
+                                                                            <input style="vertical-align: baseline;" class="ff_elem" type="checkbox"
+                                                                                   name="ff_nm_privacy[]" value="Acconsento" id="ff_elem4285" />
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap5125">
+                                                        <div class="controls form-inline">
+                                                            <div class=" ">
+                                                                        <span class="">
+                                                                            <div id="bfInvisibleReCaptchaContainer">
+                                                                            </div>
+                                                                            <div id="bfInvisibleReCaptcha">
+                                                                            </div>
+                                                                            <script data-usercentrics="reCAPTCHA" type="text/javascript">
+                                                                                bfInvisibleRecaptcha = true;
+                                                                                var onloadBFNewRecaptchaCallback = function() {
+                                                                                    grecaptcha.render('bfInvisibleReCaptchaContainer', {
+                                                                                        'sitekey': '6LfT_8opAAAAALwv-9ku0UuthpYT2dJefeCr0nL_',
+                                                                                        'expired-callback': recaptchaExpiredCallback,
+                                                                                        'callback': recaptchaCheckedCallback,
+                                                                                        "badge": "",
+                                                                                        'size': 'invisible'
+                                                                                    });
+                                                                                };
+
+                                                                                function recaptchaCheckedCallback(token) {
+                                                                                    if (token != '') {
+                                                                                        bfInvisibleRecaptcha = false;
+                                                                                    }
+                                                                                    if (typeof bf_htmltextareainit != 'undefined') {
+                                                                                        bf_htmltextareainit();
+                                                                                    }
+                                                                                    ff_validate_submit(this, 'click');
+                                                                                };
+
+                                                                                function recaptchaExpiredCallback() {
+                                                                                    grecaptcha.reset();
+                                                                                };
+                                                                            </script>
+                                                                            <script data-usercentrics="reCAPTCHA" src="static/js/api.js" async defer>
+                                                                            </script>
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfClearfix">
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="">
+                                                <button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button"
+                                                        onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');"
+                                                        value="Invia la richiesta">
+                                                            <span>
+                                                                Invia la richiesta
+                                                            </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- bfPage end -->
+                                    <div id="bfPage2" class="bfPage" style="display:none;">
+                                        <div class="">
+                                            <h2 style="text-align: center;">
+                                                Grazie per la richiesta
+                                            </h2>
+                                            <p style="text-align: center;">
+                                                        <span class="lead">
+                                                            Verrai contattato al più presto da un nostro responsabile commerciale
+                                                            per offrirti la soluzione più adatta alle tue esigenze.
+                                                        </span>
+                                            </p>
+                                        </div>
+                                        <div class="bfErrorMessage alert alert-error" style="display:none">
+                                        </div>
+                                    </div>
+                                    <noscript>
+                                        Please turn on javascript to submit your data. Thank you!
+                                    </noscript>
+                                    <input type="hidden" name="ff_contentid" value="155" />
+                                    <input type="hidden" name="ff_applic" value="" />
+                                    <input type="hidden" name="ff_record_id" value="" />
+                                    <input type="hidden" name="ff_module_id" value="0" />
+                                    <input type="hidden" name="ff_form" value="73" />
+                                    <input type="hidden" name="ff_task" value="submit" />
+                                    <input type="hidden" name="ff_target" value="2" />
+                                    <input type="hidden" name="ff_align" value="" />
+                                    <input type="hidden" name="option" value="com_content" />
+                                    <input type="hidden" name="Itemid" value="300" />
+                                    <input type="hidden" name="id" value="155" />
+                                </form>
+                            </div>
+                            <!-- form end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-4@m">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-grid-divider uk-grid-margin" uk-grid>
+                <div class="uk-width-1-4@m">
+                    <div class="uk-margin uk-text-center">
+                        <picture>
+                            <source type="image/webp" srcset="/templates/yootheme/cache/63/Google-Reviews-5-stelle-01-63d2e1c9.webp 220w, /templates/yootheme/cache/73/Google-Reviews-5-stelle-01-7370ce43.webp 399w, /templates/yootheme/cache/71/Google-Reviews-5-stelle-01-711bef45.webp 400w"
+                                    sizes="(min-width: 220px) 220px">
+                            <img src="static/picture/google-reviews-5-stelle-01-8888c4eb.png" width="220"
+                                 height="93" class="el-image" alt="recensioni" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="uk-width-3-4@m">
+                    <div class="uk-margin uk-width-2xlarge uk-margin-auto" uk-slider="autoplay: 1; pauseOnHover: false; autoplayInterval: 4000;">
+                        <div class="uk-position-relative">
+                            <ul class="uk-slider-items uk-grid uk-grid-match">
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Emiliano Papale
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Azienda composta da professionisti del Digital Signage e del Printing.
+                                            Li consiglio.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Mario Iannelli
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Molto gentili e competenti.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Roberto Romano
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Cortesi, competenti e professionali.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Biagio D'Auria
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            I Totem acquistati rispecchiano fedelmente quello che ci hanno proposto
+                                            nel preventivo e comunque molto più che superiori alle nostre aspettative.
+                                            Dal punto di vista del software, la programmazione...
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Fabio Fraccastoro
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Grande azienda con personale moooolto preparato.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s"
+                            uk-margin>
+                            <li uk-slider-item="0">
+                                <a href aria-label="Go to slide 1">
+                                </a>
+                            </li>
+                            <li uk-slider-item="1">
+                                <a href aria-label="Go to slide 2">
+                                </a>
+                            </li>
+                            <li uk-slider-item="2">
+                                <a href aria-label="Go to slide 3">
+                                </a>
+                            </li>
+                            <li uk-slider-item="3">
+                                <a href aria-label="Go to slide 4">
+                                </a>
+                            </li>
+                            <li uk-slider-item="4">
+                                <a href aria-label="Go to slide 5">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-grid-margin uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h2 uk-font-primary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            Case study
+                        </strong>
+                    </div>
+                    <div class="uk-h2 uk-font-primary uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <strong>
+                            Case study
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+            <div class="uk-width-1-1">
+                <div uk-slider="center: 1; autoplay: 1; pauseOnHover: false; autoplayInterval: 5000;"
+                     id="page#4" class="uk-margin uk-text-center">
+                    <div class="uk-position-relative">
+                        <ul class="uk-slider-items uk-grid uk-grid-small uk-grid-match">
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/212-university-of-arkansas-rome-center"
+                                   target="_blank" aria-label="University of Arkansas Rome Center">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/fa/20220301_124547_cover-ed-fa73f808.webp 600w, /templates/yootheme/cache/49/20220301_124547_cover-ed-499cb581.webp 768w, /templates/yootheme/cache/33/20220301_124547_cover-ed-339b2a42.webp 1024w, /templates/yootheme/cache/6a/20220301_124547_cover-ed-6a2abc6c.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/20220301_124547_cover-ed-5b41e684.jpeg" width="600"
+                                             height="400" alt="Lavagne Interattive Multimediali nella sede di Roma dell'University of Arkansas"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/fa/20220301_124547_cover-ed-fa73f808.webp 600w, /templates/yootheme/cache/49/20220301_124547_cover-ed-499cb581.webp 768w, /templates/yootheme/cache/33/20220301_124547_cover-ed-339b2a42.webp 1024w, /templates/yootheme/cache/6a/20220301_124547_cover-ed-6a2abc6c.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/20220301_124547_cover-ed-5b41e684.jpeg" width="600"
+                                             height="400" alt="Lavagne Interattive Multimediali nella sede di Roma dell'University of Arkansas"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                University of Arkansas Rome Center
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo"
+                                   target="_blank" aria-label="Istituti Montesano sulla Marcellana e Buonabitacolo">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8b/montesano-buonabitacolo-WA0035-cover-2-8b38dfb5.webp 600w, /templates/yootheme/cache/38/montesano-buonabitacolo-WA0035-cover-2-38d7923c.webp 768w, /templates/yootheme/cache/2d/montesano-buonabitacolo-WA0035-cover-2-2d8b3ebb.webp 1024w, /templates/yootheme/cache/29/montesano-buonabitacolo-WA0035-cover-2-29f08016.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/montesano-buonabitacolo-wa0035-cover-2-9c5fcd0f.jpeg"
+                                             width="600" height="400" alt="lavagna interattiva flip samsung in istituto comprensivo"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8b/montesano-buonabitacolo-WA0035-cover-2-8b38dfb5.webp 600w, /templates/yootheme/cache/38/montesano-buonabitacolo-WA0035-cover-2-38d7923c.webp 768w, /templates/yootheme/cache/2d/montesano-buonabitacolo-WA0035-cover-2-2d8b3ebb.webp 1024w, /templates/yootheme/cache/29/montesano-buonabitacolo-WA0035-cover-2-29f08016.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/montesano-buonabitacolo-wa0035-cover-2-9c5fcd0f.jpeg"
+                                             width="600" height="400" alt="lavagna interattiva flip samsung in istituto comprensivo"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Istituti Montesano sulla Marcellana e Buonabitacolo
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/162-sapienza-universita-di-roma" target="_blank"
+                                   aria-label="Sapienza Università di Roma">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/1f/flip-sapienza-041-1fc879c8.webp 600w, /templates/yootheme/cache/ac/flip-sapienza-041-ac273441.webp 768w, /templates/yootheme/cache/e0/flip-sapienza-041-e00b56e7.webp 1024w, /templates/yootheme/cache/8c/flip-sapienza-041-8cc7520f.webp 1198w, /templates/yootheme/cache/e2/flip-sapienza-041-e2b081c9.webp 1199w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/flip-sapienza-041-e1570a5e.jpeg" width="600"
+                                             height="400" alt="lavagna interattiva" loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/1f/flip-sapienza-041-1fc879c8.webp 600w, /templates/yootheme/cache/ac/flip-sapienza-041-ac273441.webp 768w, /templates/yootheme/cache/e0/flip-sapienza-041-e00b56e7.webp 1024w, /templates/yootheme/cache/8c/flip-sapienza-041-8cc7520f.webp 1198w, /templates/yootheme/cache/e2/flip-sapienza-041-e2b081c9.webp 1199w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/flip-sapienza-041-e1570a5e.jpeg" width="600"
+                                             height="400" alt="lavagna interattiva" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Sapienza Università di Roma
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/129-istituto-comprensivo-largo-oriani"
+                                   target="_blank" aria-label="Istituto Comprensivo &quot;Largo Oriani&quot;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/5c/scuola-largo-oriani-01-cover-social-5cb66726.webp 600w, /templates/yootheme/cache/b4/scuola-largo-oriani-01-cover-social-b43bb29a.webp 768w, /templates/yootheme/cache/27/scuola-largo-oriani-01-cover-social-27b4601d.webp 939w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/scuola-largo-oriani-01-cover-social-17ad01ee.jpeg"
+                                             width="600" height="400" alt="Una lavagna interattiva multimediale Samsung Flip 2 installata in un'aula di un istituto scolastico"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/5c/scuola-largo-oriani-01-cover-social-5cb66726.webp 600w, /templates/yootheme/cache/b4/scuola-largo-oriani-01-cover-social-b43bb29a.webp 768w, /templates/yootheme/cache/27/scuola-largo-oriani-01-cover-social-27b4601d.webp 939w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/scuola-largo-oriani-01-cover-social-17ad01ee.jpeg"
+                                             width="600" height="400" alt="Una lavagna interattiva multimediale Samsung Flip 2 installata in un'aula di un istituto scolastico"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Istituto Comprensivo "Largo Oriani"
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/119-generale-costruzioni-ferroviarie"
+                                   target="_blank" aria-label="Generale Costruzioni Ferroviarie">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/44/20210329_111641_ed-COVER-447a990c.webp 600w, /templates/yootheme/cache/72/20210329_111641_ed-COVER-72d60376.webp 768w, /templates/yootheme/cache/b4/20210329_111641_ed-COVER-b446d25c.webp 1024w, /templates/yootheme/cache/5d/20210329_111641_ed-COVER-5d62b39e.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/20210329_111641_ed-cover-0e98235e.jpeg" width="600"
+                                             height="400" alt="Lavagna interattiva Samsung Flip2 in sala riunioni" loading="lazy"
+                                             class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/44/20210329_111641_ed-COVER-447a990c.webp 600w, /templates/yootheme/cache/72/20210329_111641_ed-COVER-72d60376.webp 768w, /templates/yootheme/cache/b4/20210329_111641_ed-COVER-b446d25c.webp 1024w, /templates/yootheme/cache/5d/20210329_111641_ed-COVER-5d62b39e.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/20210329_111641_ed-cover-0e98235e.jpeg" width="600"
+                                             height="400" alt="Lavagna interattiva Samsung Flip2 in sala riunioni" loading="lazy"
+                                             class="el-image uk-transition-scale-up uk-transition-opaque" uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Generale Costruzioni Ferroviarie
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/lavori/21-lavagne-interattive/87-totti-soccer-school" target="_blank"
+                                   aria-label="Totti Soccer School">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/fd/totti-soccer-school-02-3-2-fd8efd54.webp 600w, /templates/yootheme/cache/4e/totti-soccer-school-02-3-2-4e61b0dd.webp 768w, /templates/yootheme/cache/bb/totti-soccer-school-02-3-2-bbc7fbdc.webp 1024w, /templates/yootheme/cache/bf/totti-soccer-school-02-3-2-bfbc4571.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/totti-soccer-school-02-3-2-dbea15c7.jpeg" width="600"
+                                             height="400" alt="Samsung Flip 2 lavagna interattiva digitale a parete in scuola calcio"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/fd/totti-soccer-school-02-3-2-fd8efd54.webp 600w, /templates/yootheme/cache/4e/totti-soccer-school-02-3-2-4e61b0dd.webp 768w, /templates/yootheme/cache/bb/totti-soccer-school-02-3-2-bbc7fbdc.webp 1024w, /templates/yootheme/cache/bf/totti-soccer-school-02-3-2-bfbc4571.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/totti-soccer-school-02-3-2-dbea15c7.jpeg" width="600"
+                                             height="400" alt="Samsung Flip 2 lavagna interattiva digitale a parete in scuola calcio"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Totti Soccer School
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s"
+                        uk-margin>
+                        <li uk-slider-item="0">
+                            <a href aria-label="Go to slide 1">
+                            </a>
+                        </li>
+                        <li uk-slider-item="1">
+                            <a href aria-label="Go to slide 2">
+                            </a>
+                        </li>
+                        <li uk-slider-item="2">
+                            <a href aria-label="Go to slide 3">
+                            </a>
+                        </li>
+                        <li uk-slider-item="3">
+                            <a href aria-label="Go to slide 4">
+                            </a>
+                        </li>
+                        <li uk-slider-item="4">
+                            <a href aria-label="Go to slide 5">
+                            </a>
+                        </li>
+                        <li uk-slider-item="5">
+                            <a href aria-label="Go to slide 6">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Builder #footer -->
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <div class="uk-margin-small uk-text-center">
+                        <a class="el-link" href="/index.php">
+                            <img src="static/picture/logo-IM-color.png" width="120" height="120"
+                                 class="el-image" alt="logo IM" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Solutions
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/display-pubblicitari" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Display
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/it/sale-riunioni" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        IT
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/production-printing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Printing
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/finishing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Finishing
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Company
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/azienda" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Azienda
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://imprinting.info/careers" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Careers
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/home-it/informativa-sulla-privacy" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Privacy
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://shop.imprinting.info" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Shop
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Focus
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/blog" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Blog
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/lavori" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Lavori
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/marketing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Marketing
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-center">
+                        Seguici anche su
+                    </h3>
+                    <div class="uk-text-center">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin-medium uk-text-center">
+                        <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w"
+                                                sizes="(min-width: 76px) 76px">
+                                        <img src="static/picture/logo-asroma-proudmember-02-bb320a23.png" width="76"
+                                             height="90" class="el-image" alt="logo as roma" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <hr>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri,
+                        43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. -
+                        C.F./P.iva: IT01995060769 -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd53175c9549c8b499021688b14948a17">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd53175c9549c8b499021688b14948a17 = addyd53175c9549c8b499021688b14948a17 + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd53175c9549c8b499021688b14948a17 + '\'>' + addy_textd53175c9549c8b499021688b14948a17 + '<\/a>';
+                                    </script>
+                                </span>
+                        - Società soggetta a direzione e controllo di Black Knight Capital Srl
+                        - P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale
+                        <br />
+                        Via Lorenzo Bonincontri, 43 - 00147 Roma RM
+                        <br />
+                        REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769
+                        -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd33e5696de302d7e7e8d894e5e7d4f9e">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd33e5696de302d7e7e8d894e5e7d4f9e = addyd33e5696de302d7e7e8d894e5e7d4f9e + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd33e5696de302d7e7e8d894e5e7d4f9e + '\'>' + addy_textd33e5696de302d7e7e8d894e5e7d4f9e + '<\/a>';
+                                    </script>
+                                </span>
+                        <br />
+                        Società soggetta a direzione e controllo di Black Knight Capital Srl -
+                        P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">
+                        Tutti i marchi riportati appartengono ai legittimi proprietari
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47"
+            height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

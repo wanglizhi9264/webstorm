@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/picture/logo-IM-color.png" type="image/x-icon"
+          sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo/logo-IM-color.png">
+    <meta charset="utf-8" />
+    <meta name="title" content="Attira i tuoi nuovi clienti con i Display da vetrina"/>
+    <meta name="metatitle" content="Attira i tuoi nuovi clienti con i Display da vetrina"/>
+    <meta name="twitter:title" content="Attira i tuoi nuovi clienti con i Display da vetrina"/>
+    <meta name="twitter:description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage."/>
+    <meta name="twitter:image" content="https://www.imprinting.info/images/display/signage/hero-samsung-vetrina-04.jpg"/>
+    <meta property="og:title" content="Attira i tuoi nuovi clienti con i Display da vetrina"/>
+    <meta property="og:description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage."/>
+    <meta property="og:url" content="https://www.imprinting.info/display-pubblicitari"/>
+    <meta property="og:image" content="https://www.imprinting.info/images/display/signage/hero-samsung-vetrina-04.jpg"/>
+    <meta name="description" content="Progetta un’esperienza stimolante e personalizzata per i tuoi clienti attraverso i nostri schermi pubblicitari e le nostre soluzioni Digital Signage."/>
+    <meta name="generator" content="Joomla! - Open Source Content Management"/>
+    <title>chi samo</title>
+    <link href="https://www.imprinting.info/component/search/?gad_source=5&amp;gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r39SrLIWdN4kVhqUPNPls4v-fu5syWU9x4h5zUjJjzfHwxnPq2i&amp;Itemid=398&amp;format=opensearch"
+          rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml"/>
+    <link href="static/css/hd-counter.css" rel="stylesheet" />
+    <link href="static/css/theme.12.css" rel="stylesheet" />
+    <link href="static/css/custom.css" rel="stylesheet" />
+    <style>
+        .bfClearfix:after { content: "."; display: block; height: 0; clear: both;
+            visibility: hidden; } .bfFadingClass{ display:none; }
+    </style>
+    <script type="application/json" class="joomla-script-options new">
+        {
+            "csrf.token": "cdc274263a48bc872bb7a8efd441efc9",
+            "system.paths": {
+                "root": "",
+                "base": ""
+            }
+        }
+    </script>
+    <script src="static/js/mootools-core.js"></script>
+    <script src="static/js/core.js"></script>
+    <script src="static/js/mootools-more.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery-noconflict.js"></script>
+    <script src="static/js/jquery-migrate.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/sweetalert.min.js"></script>
+    <script src="static/js/hd-counter.js" defer></script>
+    <script src="static/js/uikit.min.js"></script>
+    <script src="static/js/uikit-icons-horizon.min.js"></script>
+    <script src="static/js/theme.js"></script>
+    <script>
+        <!--
+            jQuery(document).ready(function() {
+            jQuery(".hasTooltip").tooltip({
+                "html": true,
+                "container": "body"
+            });
+        });
+        var JQuery = jQuery;
+
+        var inlineErrorElements = new Array();
+        var bfSummarizers = new Array();
+        var bfDeactivateField = new Array();
+        var bfDeactivateSection = new Array();
+
+        function bf_validate_nextpage(element, action) {
+            if (typeof bfUseErrorAlerts != "undefined") {
+                JQuery(".bfErrorMessage").html("");
+                JQuery(".bfErrorMessage").css("display", "none");
+            }
+
+            error = ff_validation(ff_currentpage);
+            if (error != "") {
+                if (typeof bfUseErrorAlerts == "") {
+                    alert(error);
+                } else {
+                    bfShowErrors(error);
+                }
+                ff_validationFocus("");
+            } else {
+                ff_switchpage(ff_currentpage + 1);
+                self.scrollTo(0, 0);
+            }
+        }
+
+        function bfCheckMaxlength(id, maxlength, showMaxlength) {
+            if (JQuery("#ff_elem" + id).val().length > maxlength) {
+                JQuery("#ff_elem" + id).val(JQuery("#ff_elem" + id).val().substring(0, maxlength));
+            }
+            if (showMaxlength) {
+                JQuery("#bfMaxLengthCounter" + id).text("(" + (maxlength - JQuery("#ff_elem" + id).val().length) + " chars left)");
+            }
+        }
+        function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty) {
+            bfSummarizers.push({
+                id: id,
+                connectWith: connectWith,
+                type: type,
+                emptyMessage: emptyMessage,
+                hideIfEmpty: hideIfEmpty
+            });
+        }
+        function bfField(name) {
+            var value = "";
+            switch (ff_getElementByName(name).type) {
+                case "radio":
+                    if (JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "" && typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                        value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                        if (!isNaN(value)) {
+                            value = Number(value);
+                        }
+                    }
+                    break;
+                case "checkbox":
+                case "select-one":
+                case "select-multiple":
+                    var nodeList = document["ff_form70"]["" + ff_getElementByName(name).name + ""];
+                    if (ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined") {
+                        if (typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                            value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    } else {
+                        var val = "";
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            value = val.substr(0, val.length - 2);
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    if (!isNaN(ff_getElementByName(name).value)) {
+                        value = Number(ff_getElementByName(name).value);
+                    } else {
+                        value = ff_getElementByName(name).value;
+                    }
+            }
+            return value;
+        }
+        function populateSummarizers() {
+            // cleaning first
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                JQuery("#" + bfSummarizers[i].id).parent().css("display", "");
+                JQuery("#" + bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">" + bfSummarizers[i].emptyMessage + "</span>");
+            }
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                var summVal = "";
+                switch (bfSummarizers[i].type) {
+                    case "bfTextfield":
+                    case "bfTextarea":
+                    case "bfHidden":
+                    case "bfCalendar":
+                    case "bfNumberInput":
+                    case "bfCalendarResponsive":
+                    case "bfFile":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val() != "") {
+                            JQuery("#" + bfSummarizers[i].id).text(JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val()).html();
+                            var breakableText = JQuery("#" + bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+                            if (breakableText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    breakableText = calc(breakableText);
+                                }
+                            }
+
+                            JQuery("#" + bfSummarizers[i].id).html(breakableText);
+                            summVal = breakableText;
+                        }
+                        break;
+                    case "bfRadioGroup":
+                    case "bfCheckbox":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "undefined") {
+                            var theText = JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val();
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                    case "bfCheckboxGroup":
+                    case "bfSelect":
+                        var val = "";
+                        var nodeList = document["ff_form70"]["ff_nm_" + bfSummarizers[i].connectWith + "[]"];
+
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            var theText = val.substr(0, val.length - 2);
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                }
+
+                if ((bfSummarizers[i].hideIfEmpty && summVal == "") || (typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_" + bfSummarizers[i].connectWith + "[]"])) {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+                } else {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+                }
+            }
+        }
+
+        bfToggleFieldsLoaded = false;
+        bfSectionFieldsDeactivated = false;
+        JQuery(document).ready(function() {
+            if (typeof bfFade != "undefined") bfFade();
+            if (typeof bfRollover != "undefined") bfRollover();
+            if (typeof bfRollover2 != "undefined") bfRollover2();
+            if (typeof bfRegisterToggleFields != "undefined") {
+                bfRegisterToggleFields();
+            } else {
+                bfToggleFieldsLoaded = true;
+            }
+            if (typeof bfDeactivateSectionFields != "undefined") {
+                bfDeactivateSectionFields();
+            } else {
+                bfSectionFieldsDeactivated = true;
+            }
+            if (JQuery.bfvalidationEngine) {
+                JQuery.bfvalidationEngineLanguage.newLang();
+                JQuery(".ff_elem").change(function() {
+                    JQuery.bfvalidationEngine.closePrompt(this);
+                });
+            }
+            JQuery(".bfQuickMode .hasTip").css("color", "inherit"); // fixing label text color issue
+            JQuery(".bfQuickMode .bfTooltip").css("color", "inherit"); // fixing label text color issue
+            JQuery("input[type=text]").bind("keypress",
+                function(evt) {
+                    if (evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+        });
+
+        //-->
+        document.addEventListener('DOMContentLoaded',
+            function() {
+                Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                    span.innerText = span.textContent;
+                });
+            });
+    </script>
+    <link rel="stylesheet" href="static/css/system.css" />
+    <script>UIkit.util.ready(() => {
+        UIkit.lightbox('#my-slider .uk-slider-items');
+    });
+    </script>
+    <script>
+        var $theme = {};
+    </script>
+    <!-- Joomla Facebook Integration Begin -->
+    <script type='text/javascript'>
+        !
+            function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '389175478706596', {},
+            {
+                agent: 'pljoomla'
+            });
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" alt="fbpx" src="static/picture/fc1677aa3e6c4f9d866915983780fcfa.gif"
+        />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- Joomla Facebook Integration end -->
+</head>
+
+<body class="">
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l: '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NNBQV47');
+        </script>
+        <!-- End Google Tag Manager -->
+        <div class="tm-page">
+            <div class="tm-header-mobile uk-hidden@m" uk-header>
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+             sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="./index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="50" height="51" src="static/picture/LOGO.PNG" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+                                <div uk-navbar-toggle-icon>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true"
+             mode="slide" flip>
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close
+                        uk-toggle="cls: uk-close-large; mode: media; media: @s">
+                </button>
+                <div class="uk-margin-auto-vertical">
+                    <div class="uk-grid uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel" id="module-195">
+                                <ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+                                    <li class="item-102 uk-active js-accordion uk-open uk-parent">
+                                        <a href>
+                                            Display
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-130 uk-active">
+                                                <a href="/display-pubblicitari">
+                                                    Business Display
+                                                </a>
+                                            </li>
+                                            <li class="item-390">
+                                                <a href="/videowall-e-ledwall">
+                                                    Videowall e Ledwall
+                                                </a>
+                                            </li>
+                                            <li class="item-425">
+                                                <a href="/display-solutions/totem">
+                                                    Totem
+                                                </a>
+                                            </li>
+                                            <li class="item-132">
+                                                <a href="/lavagne-interattive">
+                                                    Lavagne Interattive
+                                                </a>
+                                            </li>
+                                            <li class="item-117">
+                                                <a href="/hotel-tv-samsung-smart-hospitality">
+                                                    Hospitality TV
+                                                </a>
+                                            </li>
+                                            <li class="item-454">
+                                                <a href="/hospital-tv-strutture-sanitarie">
+                                                    Healthcare
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-428 js-accordion uk-parent">
+                                        <a href>
+                                            IT
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-460">
+                                                <a href="/sale-riunioni">
+                                                    Sale riunioni
+                                                </a>
+                                            </li>
+                                            <li class="item-451">
+                                                <a href="/noleggio-notebook-samsung-galaxy-book3">
+                                                    Noleggio Notebook Samsung Galaxy Book3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-392 js-accordion uk-parent">
+                                        <a href>
+                                            Printing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-391">
+                                                <a href="/production-printing">
+                                                    Production Printing
+                                                </a>
+                                            </li>
+                                            <li class="item-393">
+                                                <a href="/printing-solutions">
+                                                    Printing Solutions
+                                                </a>
+                                            </li>
+                                            <li class="item-455">
+                                                <a href="/offerte-multifunzione-ufficio">
+                                                    Offerte Multifunzione Ufficio
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-348 uk-parent">
+                                        <a href="/finishing">
+                                            Finishing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-429">
+                                                <a href="/finishing/dtf">
+                                                    DTF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-417">
+                                        <a href="/lavori">
+                                            Lavori
+                                        </a>
+                                    </li>
+                                    <li class="item-353">
+                                        <a href="/blog">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-159">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-182">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid"
+                                         uk-grid>
+                                        <div class="uk-first-column">
+                                            <a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon"
+                                               uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                               rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-tm-4">
+                                <form id="search-tm-4" action="/display-pubblicitari" method="post" role="search"
+                                      class="uk-search uk-search-default uk-width-1-1">
+                                            <span uk-search-icon>
+                                            </span>
+                                    <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                           type="search" class="uk-search-input">
+                                    <input type="hidden" name="task" value="search">
+                                    <input type="hidden" name="option" value="com_search">
+                                    <input type="hidden" name="Itemid" value="398">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="tm-header uk-visible@m" uk-header>
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top"
+             cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container">
+                    <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="60" height="61" src="static/picture/LOGO.png">
+                                <img class="uk-logo-inverse" alt loading="eager" width="60" height="61"
+                                     src="static/picture/LOGO.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav" id="module-194">
+                                <li class="item-102 uk-active uk-parent">
+                                    <a role="button">
+                                        Prodotti
+                                    </a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-390">
+                                                        <a href="./product1.html">
+                                                            product1
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-425">
+                                                        <a href="./lavagne-interattive.html">
+                                                            Product2
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-454">
+                                                        <a href="./product3.html">
+                                                            Product3
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-348 uk-parent">
+                                    <a href="./chi_siamo.html">
+                                        Chi Siamo
+                                    </a>
+                                </li>
+                                <li class="item-417">
+                                    <a href="./case.html">
+                                        Case Studies / Portfolio
+                                    </a>
+                                </li>
+                                <li class="item-353">
+                                    <a href="./blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="uk-navbar-item" id="module-154">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="./contact.html">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+                                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close
+                                            uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s">
+                                    </button>
+                                    <div class="uk-search uk-search-large">
+                                        <form id="search-tm-3" action="/display-pubblicitari" method="post" role="search"
+                                              class="uk-search uk-search-large">
+                                            <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                                   type="search" class="uk-search-input uk-text-center" autofocus>
+                                            <input type="hidden" name="task" value="search">
+                                            <input type="hidden" name="option" value="com_search">
+                                            <input type="hidden" name="Itemid" value="398">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div id="system-message-container" data-messages="[]">
+
+
+    </div>
+            <!-- Builder #page -->
+            <div class="uk-section-default uk-section">
+                <div class="uk-container uk-container-small">
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                        <div class="uk-width-1-1">
+                            <h1>
+                                Gloria Display
+                            </h1>
+                            <div class="uk-panel uk-margin">
+                                <p>
+                                    In questo documento si descrivono le modalità di gestione del sito web
+                                    imprinting.info (“Sito”), con riferimento al trattamento di dati personali
+                                    degli utenti (“Utente/Utenti”) che lo consultano.
+                                </p>
+                                <p>
+                                    È un’informativa resa ai sensi dell’art. 13 del Regolamento UE 679/2016
+                                    (“GDPR”), a tutti coloro che comunicano con I’mprinting S.r.l. (“Imprinting”
+                                    o “Società”) tramite compilazione dell’apposito form telematico per la
+                                    richiesta di informazioni in merito ai servizi del Titolare, disponibile
+                                    alla sezione “Contattaci” del Sito, o mediante l’invio di un messaggio
+                                    di posta elettronica all’indirizzo mail presente sul Sito.
+                                </p>
+                                <p>
+                                    L’informativa è resa solo per il Sito e non anche per altri siti web eventualmente
+                                    consultati dall’utente tramite link presenti sul Sito.
+                                </p>
+                                <p>
+                                    1. Titolare del trattamento dei dati
+                                    <br>
+                                    Il titolare del trattamento dei dati personali è la società I’mprinting
+                                    S.r.l., con sede legale in 00147 Roma, Via Bonincontri 43 (“Titolare”).
+                                </p>
+                                <p>
+                                    2.Tipologie di dati trattati e finalità del trattamento
+                                    <br>
+                                    2.1 Dati personali
+                                    <br>
+                                    La compilazione del form telematico per la richiesta di informazioni dei
+                                    servizi del Titolare, presente alla sezione “Contattaci”, comporta l’acquisizione
+                                    dei dati personali dell’Utente, ovvero il nome, il cognome, la società
+                                    di riferimento, il telefono e la mail.
+                                </p>
+                                <p>
+                                    2.2 Dati di navigazione
+                                    <br>
+                                    I sistemi informatici e le procedure software preposte al funzionamento
+                                    del Sito acquisiscono, nel corso del loro normale esercizio, alcuni dati
+                                    personali la cui trasmissione è implicita nell’uso dei protocolli di comunicazione
+                                    di internet.
+                                </p>
+                                <p>
+                                    Si tratta di informazioni che non sono raccolte per essere associate a
+                                    interessati identificati, ma che per loro stessa natura potrebbero, attraverso
+                                    elaborazioni ed associazioni con dati detenuti da terzi, permettere di
+                                    identificare gli Utenti.
+                                </p>
+                                <p>
+                                    In questa categoria di dati rientrano gli indirizzi IP o i nomi a dominio
+                                    dei computer utilizzati dagli Utenti che si connettono al Sito, gli indirizzi
+                                    in notazione URI (Uniform Resource Identifier) delle risorse richieste,
+                                    l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta
+                                    al server, la dimensione del file ottenuto in risposta, il codice numerico
+                                    indicante lo stato della risposta data dal server (buon fine, errore, ecc.)
+                                    ed altri parametri relativi al sistema operativo e all’ambiente informatico
+                                    dell’Utente.
+                                </p>
+                                <p>
+                                    Questi dati vengono utilizzati al solo fine di ricavare informazioni statistiche
+                                    anonime sull’uso del Sito e per controllarne il corretto funzionamento
+                                    e vengono cancellati immediatamente dopo l’elaborazione. I dati potrebbero
+                                    essere utilizzati per l’accertamento di responsabilità in caso di ipotetici
+                                    reati informatici ai danni del Sito: salva questa eventualità, allo stato
+                                    i dati sui contatti web non persistono per più di sette giorni.
+                                </p>
+                                <p>
+                                    2.3 Cookie
+                                    <br>
+                                    Per il trattamento dei dati degli Utenti tramite cookie, si prega di prendere
+                                    visione della relativa cookie policy disponibile sul Sito.
+                                </p>
+                                <p>
+                                    2.4 Dati forniti volontariamente dall’utente
+                                    <br>
+                                    L’invio facoltativo, esplicito e volontario di posta elettronica all’indirizzo
+                                    mail indicato sul Sito o le richieste di informazioni inviate tramite l’uso
+                                    della sezione “Contattaci” del Sito stesso, comportano la successiva acquisizione
+                                    di ogni altro dato personale degli Utenti inserito in tali comunicazioni,
+                                    che saranno trattati dal Titolare per le finalità indicate nel successivo
+                                    par. 3.
+                                </p>
+                                <p>
+                                    3. Finalità e base giuridica del trattamento
+                                    <br>
+                                    Il trattamento dei dati personali dell’Utente da parte del Titolare è
+                                    finalizzato a:
+                                </p>
+                                <p>
+                                    a) perseguire un proprio legittimo interesse, consistente nel garantire
+                                    la sicurezza del Sito e delle informazioni sullo stesso scambiate, ossia
+                                    la capacità di tale Sito di resistere, a un dato livello di sicurezza,
+                                    a eventi imprevisti o ad atti illeciti o dolosi che compromettano la disponibilità,
+                                    l'autenticità, l'integrità e la riservatezza dei dati personali conservati
+                                    o trasmessi e la sicurezza dei relativi servizi offerti o resi accessibili,
+                                    ai sensi dell’art. 6.1, lett. f) del GDPR;
+                                </p>
+                                <p>
+                                    b) consentire all’Utente di chiedere informazioni al Titolare in merito
+                                    ai servizi da quest’ultimo promozionati sul Sito ed evadere le richieste
+                                    di informazioni degli Utenti inviate all’indirizzo e-mail del Titolare
+                                    (es: fornire all’Utente il preventivo richiesto), ai sensi dell’art. 6.1,
+                                    lett. b) del GDPR.
+                                </p>
+                                <p>
+                                    c) l’invio di newsletter e comunicazioni di carattere promozionale agli
+                                    Utenti che abbiano richiesto informazioni al Titolare, sulla base del legittimo
+                                    interesse del Titolare a tenere aggiornati tali soggetti sull’attività
+                                    da esso svolta e sui servizi offerti nell’ambito della attività di comunicazione
+                                    e del marketing, ai sensi dell’art. 6.1, lett. f) del GDPR.
+                                </p>
+                                <p>
+                                    4. Modalità del trattamento
+                                    <br>
+                                    I dati personali sono trattati con sistemi manuali informatici ed automatizzati
+                                    per il tempo necessario a conseguire gli scopi per cui sono raccolti.
+                                </p>
+                                <p>
+                                    Il Titolare adotta specifiche misure di sicurezza al fine di garantire
+                                    il trattamento dei dati nel rispetto del GDPR, avuto particolare riguardo
+                                    alla prevenzione della perdita di tali dati, usi illeciti o non corretti
+                                    o accessi non autorizzati alle banche dati.
+                                </p>
+                                <p>
+                                    Si precisa, inoltre, che i dati personali dell’Utente sono oggetto di
+                                    trattamento da parte di soggetti debitamente incaricati all’assolvimento
+                                    di tali compiti, costantemente identificati e/o nominati, opportunamente
+                                    istruiti e resi edotti dai vincoli imposti dalla legge.
+                                </p>
+                                <p>
+                                    5. Trasferimento dei dati
+                                    <br>
+                                    I dati personali sono conservati presso la sede del Titolare, all’interno
+                                    dell’Unione Europea.
+                                </p>
+                                <p>
+                                    Resta in ogni caso inteso che il Titolare, ove si rendesse necessario,
+                                    avrà facoltà di spostare i server anche extra-UE. In tal caso, il Titolare
+                                    assicura sin d’ora che il trasferimento dei dati extra-UE avverrà in conformità
+                                    alle disposizioni di legge applicabili, previa stipula delle clausole contrattuali
+                                    standard previste dalla Commissione Europea.
+                                </p>
+                                <p>
+                                    6. Natura dei dati e conseguenze di un eventuale rifiuto di rispondere
+                                    <br>
+                                    Il conferimento dei dati per le finalità di cui al paragrafo 3 è facoltativo.
+                                </p>
+                                <p>
+                                    Il trattamento dei dati è necessario per l’inoltro delle richieste di
+                                    informazioni al Titolare, per consentire a quest’ultimo di evadere le richieste
+                                    degli Utenti, per comunicare agli Utenti l’eventuale preventivo richiesto
+                                    per la fruizione dei servizi del Titolare. Il rifiuto al suddetto trattamento,
+                                    pertanto, importerebbe l’impossibilità per l’Utente di comunicare con il
+                                    Titolare e/o a quest’ultimo di evadere la richiesta dell’Utente.
+                                </p>
+                                <p>
+                                    6. Diritti dell’interessato
+                                    <br>
+                                    L’utente, in qualità di interessato (ossia, soggetto a cui si riferiscono
+                                    i Dati), è titolare dei diritti conferiti dal GDPR. In particolare, in
+                                    base agli artt. 15 e ss. del GDPR, in qualsiasi momento e gratuitamente,
+                                    l’Utente ha diritto di richiedere informazioni in merito all’esistenza
+                                    del trattamento dei Dati, del periodo di conservazione degli stessi, di
+                                    ottenerne una copia, di rettificarli, integrarli, aggiornarli, cancellarli.
+                                    L’Utente ha il diritto di ottenere la limitazione del trattamento dei Dati
+                                    e di riceverne copia degli stessi su formato di uso comune e leggibile
+                                    da dispositivo automatico. L’Utente ha altresì diritto di opporsi al trattamento
+                                    e di proporre reclamo alla autorità di controllo competente.
+                                </p>
+                                <p>
+                                    Per esercitare i suddetti diritti, è sufficiente scrivere a I’mprinting,
+                                    alla sede legale sopraindicata o all’indirizzo di posta elettronica
+                                    <span id="cloak7746e53de7d1c8f8ced5156c525d8d8f">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloak7746e53de7d1c8f8ced5156c525d8d8f').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addy7746e53de7d1c8f8ced5156c525d8d8f = 'pr&#105;v&#97;cy' + '&#64;';
+                                        addy7746e53de7d1c8f8ced5156c525d8d8f = addy7746e53de7d1c8f8ced5156c525d8d8f + '&#105;mpr&#105;nt&#105;ng' + '&#46;' + '&#105;nf&#111;';
+                                        var addy_text7746e53de7d1c8f8ced5156c525d8d8f = 'pr&#105;v&#97;cy' + '&#64;' + '&#105;mpr&#105;nt&#105;ng' + '&#46;' + '&#105;nf&#111;';
+                                        document.getElementById('cloak7746e53de7d1c8f8ced5156c525d8d8f').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy7746e53de7d1c8f8ced5156c525d8d8f + '\'>' + addy_text7746e53de7d1c8f8ced5156c525d8d8f + '<\/a>';
+                                    </script>
+                                    .
+                                </p>
+                                <p>
+                                    Qualora l’interessato ritenga che siano stati violati i diritti a lui
+                                    conferiti dalla Legge, da parte del Titolare e/o di un terzo, egli ha il
+                                    diritto di proporre reclamo al Garante per la protezione dei Dati Personali
+                                    e/o ad altra autorità di controllo competente.
+                                </p>
+                                <p>
+                                    7. Comunicazione dei dati
+                                    <br>
+                                    I dati personali raccolti sul Sito non verranno comunicati, venduti o
+                                    ceduti a terzi, salve le ipotesi previste per legge.
+                                </p>
+                                <p>
+                                    È fatta salva, in ogni caso, la comunicazione di dati a società espressamente
+                                    incaricate a svolgere determinate prestazioni nell’ambito dell’attività
+                                    svolta dal Titolare e/o, in generale, in suo favore, che opereranno in
+                                    qualità di titolari autonomi e/o responsabili del trattamento, nonché la
+                                    comunicazione e/o diffusione di dati richiesti, in conformità alla legge,
+                                    da forze di polizia, dall’autorità giudiziaria, da organismi di informazione
+                                    e sicurezza o da altri soggetti pubblici per finalità di difesa o di sicurezza
+                                    dello Stato o di prevenzione, accertamento o repressione dei reati.
+                                </p>
+                                <p>
+                                    8.Modifiche
+                                    <br>
+                                    Il presente documento costituisce la privacy policy del Sito che sarà
+                                    soggetta nel tempo a possibili modifiche e/o aggiornamenti.
+                                </p>
+                                <p>
+                                    9. Durata del trattamento
+                                    <br>
+                                    Il trattamento avrà una durata non superiore a quella necessaria alla
+                                    finalità per cui i dati sono stati raccolti, dopodiché verranno conservati
+                                    unicamente in esecuzione degli obblighi di legge vigenti in materia, per
+                                    finalità di tipo amministrativo e/o per far valere o difendere un proprio
+                                    diritto, in caso di contenziosi e precontenziosi.
+                                </p>
+                                <p>
+                                    *** *** ***
+                                </p>
+                                <p>
+                                    La presente privacy policy entra in vigore il 01/07/2021.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div id="form" class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h1 uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                    <div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                <div class="uk-width-1-4@m">
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div id="page#4">
+                        <!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by
+                        Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.
+                        All rights reserved. -->
+                        <div class="bfClearfix">
+                            <script type="text/javascript">
+                                <!--ff_processor = new Object();
+                                ff_processor.okrun = true;
+                                ff_processor.ip = '89.185.29.186';
+                                ff_processor.agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.browser = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.opsys = 'win';
+                                ff_processor.provider = 'Unknown';
+                                ff_processor.submitted = '2024-12-04 07:29:22';
+                                ff_processor.form = 70;
+                                ff_processor.form_id = 'ff_form70';
+                                ff_processor.page = 1;
+                                ff_processor.target = 2;
+                                ff_processor.runmode = 0;
+                                ff_processor.inframe = 0;
+                                ff_processor.inline = 0;
+                                ff_processor.template = 0;
+                                ff_processor.homepage = 'https://www.imprinting.info';
+                                ff_processor.mossite = 'https://www.imprinting.info';
+                                ff_processor.images = 'https://www.imprinting.info/components/com_breezingforms/images';
+                                ff_processor.border = '';
+                                ff_processor.align = '';
+                                ff_processor.top = '';
+                                ff_processor.suffix = '';
+                                ff_processor.status = null;
+                                ff_processor.message = null;
+                                ff_processor.record_id = null;
+                                ff_processor.showgrid = false;
+                                ff_processor.traceBuffer = null;
+                                //-->
+
+                            </script>
+                            <script type="text/javascript" src="static/js/facileforms.js">
+                            </script>
+                            <div id="ff_formdiv70" class="bfFormDiv">
+                                <style>
+                                    #bfLabel3339 { font-size: 15px; }
+                                </style>
+                                <style>
+                                    #ff_elem3339 { border: 1px solid #000; }
+                                </style>
+                                <script type="text/javascript">
+                                    <!--
+                                        function checkFileExtensions() {
+                                            return true;
+                                        }
+                                    var bfReCaptchaLoaded = true;
+                                    function bfCheckCaptcha() {
+                                        if (checkFileExtensions()) {
+                                            function bfValidateCaptcha() {
+                                                if (typeof bfInvisibleRecaptcha != "undefined" && bfInvisibleRecaptcha === false) {
+                                                    if (typeof bfDoFlashUpload != 'undefined') {
+                                                        bfDoFlashUpload();
+                                                    } else {
+                                                        ff_submitForm2();
+                                                    }
+                                                    return;
+                                                }
+
+                                                if (typeof onloadBFNewRecaptchaCallback == "undefined") {
+                                                    challengeField = JQuery("input#recaptcha_challenge_field").val();
+                                                    responseField = JQuery("input#recaptcha_response_field").val();
+                                                    var html = JQuery.ajax({
+                                                        type: "POST",
+                                                        url: "/component/breezingforms/raw/true/bfReCaptcha/true/form/70/tmpl/component?raw=true&amp;bfReCaptcha=true&amp;form=70&amp;Itemid=0&amp;tmpl=component",
+                                                        data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField,
+                                                        async: false
+                                                    }).responseText;
+
+                                                    if (html.replace(/^\s+|\s+$/, "") == "success") {
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    } else {
+                                                        if (typeof bfUseErrorAlerts == "undefined") {
+                                                            alert("The captcha is missing or wrong!");
+                                                        } else {
+                                                            if (typeof inlineErrorElements != "undefined") {
+                                                                inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                            }
+                                                            bfShowErrors("The captcha is missing or wrong!");
+                                                        }
+
+                                                        if (ff_currentpage != 1) ff_switchpage(1);
+                                                        Recaptcha.focus_response_field();
+
+                                                        Recaptcha.reload();
+
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    }
+                                                } else {
+
+                                                    if (typeof bfInvisibleRecaptcha != "undefined") {
+
+                                                        grecaptcha.execute();
+                                                    }
+
+                                                    var gresponse = grecaptcha.getResponse();
+
+                                                    if (gresponse == "") {
+
+                                                        if (typeof bfInvisibleRecaptcha == "undefined") {
+
+                                                            if (typeof bfUseErrorAlerts == "undefined") {
+                                                                alert("The captcha is missing or wrong!");
+                                                            } else {
+                                                                if (typeof inlineErrorElements != "undefined") {
+                                                                    inlineErrorElements.push(["bfReCaptchaEntry", "The captcha is missing or wrong!"]);
+                                                                }
+                                                                bfShowErrors("The captcha is missing or wrong!");
+                                                            }
+
+                                                            if (ff_currentpage != 1) ff_switchpage(1);
+                                                        }
+                                                        if (document.getElementById("bfSubmitButton")) {
+                                                            document.getElementById("bfSubmitButton").disabled = false;
+                                                        }
+                                                        if (typeof JQuery != "undefined") {
+                                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                                        }
+                                                        if (typeof ladda_button != "undefined") {
+                                                            bf_restore_submitbutton();
+                                                        }
+
+                                                    } else {
+
+                                                        if (typeof bfDoFlashUpload != 'undefined') {
+                                                            bfDoFlashUpload();
+                                                        } else {
+                                                            ff_submitForm2();
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            bfValidateCaptcha();
+
+                                        }
+                                    }
+                                    function ff_initialize(condition) {}
+                                    onload = function() {
+                                        ff_initialize('formentry');
+                                        ff_initialize('pageentry');
+                                        if (ff_processor && ff_processor.traceBuffer) ff_traceWindow();
+                                    }
+                                    var ff_currentpage = 1;
+                                    function ff_switchpage(page) {
+                                        if (document.getElementById("bfPage1")) document.getElementById("bfPage1").style.display = "none";
+                                        if (document.getElementById("bfPage2")) document.getElementById("bfPage2").style.display = "none";
+                                        if (document.getElementById("bfPage" + page)) document.getElementById("bfPage" + page).style.display = "";
+                                        ff_currentpage = page;
+                                        ff_initialize("pageentry");
+                                    }
+                                    function ff_display02_submitted(status, message) {
+                                        if (status == 0) {
+                                            ff_switchpage(2);
+                                        } else {
+                                            alert(message);
+                                        }
+                                    }
+                                    var ff_validationFocusName = '';
+                                    var ff_elements = [['ff_elem5766', 'ff_div5766', 'bfFakeName4', 1, 5766], ['ff_elem5765', 'ff_div5765', 'bfFakeName3', 1, 5765], ['ff_elem5764', 'ff_div5764', 'bfFakeName2', 1, 5764], ['ff_elem5763', 'ff_div5763', 'bfFakeName', 1, 5763], ['ff_elem4174', 'ff_div4174', 'nome', 1, 4174], ['ff_elem4173', 'ff_div4173', 'azienda', 1, 4173], ['ff_elem4172', 'ff_div4172', 'email', 1, 4172], ['ff_elem4171', 'ff_div4171', 'telefono', 1, 4171], ['ff_elem4170', 'ff_div4170', 'cittaconsegna', 1, 4170], ['ff_elem4176', 'ff_div4176', 'tipologiadisplay', 1, 4176], ['ff_elem4169', 'ff_div4169', 'messaggio', 1, 4169], ['ff_elem4167', 'ff_div4167', 'acquisizione', 1, 4167], ['ff_elem4168', 'ff_div4168', 'privacy', 1, 4168], ['ff_elem5696', 'ff_div5696', 'recaptcha', 1, 5696]];
+                                    function ff_getElementByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return eval('document.ff_form70.' + ff_elements[i][0]);
+                                        return null;
+                                    }
+                                    function ff_getPageByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return ff_elements[i][3];
+                                        return 0;
+                                    }
+                                    function ff_validationFocus(name) {
+                                        if (name == undefined || name == '') {
+                                            if (ff_validationFocusName != '') {
+                                                ff_switchpage(ff_getPageByName(ff_validationFocusName));
+                                                if (ff_getElementByName(ff_validationFocusName).focus) {
+                                                    ff_getElementByName(ff_validationFocusName).focus();
+                                                }
+                                            }
+                                        } else {
+                                            if (ff_validationFocusName == '') ff_validationFocusName = name;
+                                        }
+                                    }
+                                    function ff_getElementByIndex(index) {
+                                        if (index >= 0 && index < ff_elements.length) return eval('document.ff_form70.' + ff_elements[index][0]);
+                                        return null;
+                                    }
+                                    function ff_anychecked(element, message) {
+                                        var name = '';
+                                        if (!element.name) {
+                                            if (element.length && element.length != 0) {
+                                                name = element[0].name;
+                                                var cnt = 0;
+                                                for (var i = 0; i < element.length; i++) if (element[i].name == name) if (element[i].checked) cnt++;
+                                                if (cnt == 0) {
+                                                    ff_validationFocus(element[0].name);
+                                                    if (message == '') message = "Please check or select " + name + ".\n";
+                                                    return message;
+                                                }
+                                            } else {
+                                                return '';
+                                            }
+                                        } else {
+                                            name = element.name;
+                                            if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                            var cnt = 0;
+                                            for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) if (ff_getElementByIndex(i).checked) cnt++;
+                                            if (cnt == 0) {
+                                                ff_validationFocus(element.name);
+                                                if (message == '') message = "Please check or select " + name + ".\n";
+                                                return message;
+                                            }
+                                        }
+                                        return '';
+                                    }
+                                    function ff_validemail(element, message) {
+                                        var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                                        if (!check.test(element.value)) {
+                                            if (message == '') message = element.name + " is no valid email address.\n";
+                                            ff_validationFocus(element.name);
+                                            return message;
+                                        }
+                                        return '';
+                                    }
+                                    function ff_valuenotempty(element, message) {
+                                        if (element.value != '') return '';
+                                        if (message == '') message = "Please enter " + element.name + ".\n";
+                                        ff_validationFocus(element.name);
+                                        return message;
+                                    }
+                                    function ff_validation(page) {
+                                        if (typeof inlineErrorElements != 'undefined') inlineErrorElements = new Array();
+                                        error = '';
+                                        ff_validationFocusName = '';
+                                        if (page == 1 || page == 0) {
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_nome[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form70['ff_nm_nome[]'], "Inserisci nome e cognome\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["nome", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_azienda[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form70['ff_nm_azienda[]'], "Inserisci la ragione sociale\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["azienda", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_email[]']) {
+                                                errorout = ff_validemail(document.ff_form70['ff_nm_email[]'], "Inserisci la tua e-mail\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["email", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_telefono[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form70['ff_nm_telefono[]'], "Inserisci un recapito telefonico\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["telefono", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_cittaconsegna[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form70['ff_nm_cittaconsegna[]'], "Inserisci la tua città\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["cittaconsegna", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_privacy[]']) {
+                                                errorout = ff_anychecked(document.ff_form70['ff_nm_privacy[]'], "Si prega di spuntare la casella\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["privacy", errorout]);
+                                                }
+                                            }
+                                        }
+                                        if (error != "" && document.getElementById('ff_capimgValue')) {
+                                            document.getElementById('ff_capimgValue').src = '/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom=' + Math.random();
+                                            document.getElementById('bfCaptchaEntry').value = "";
+                                        }
+                                        if (error != "" && document.getElementById("bfSubmitButton")) {
+                                            document.getElementById("bfSubmitButton").disabled = false;
+                                        }
+                                        if (error != "" && typeof JQuery != "undefined") {
+                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                        }
+                                        return error;
+                                    }
+                                    function ff_validate_nextpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            ff_switchpage(ff_currentpage + 1);
+                                        }
+                                    }
+                                    function ff_validate_prevpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            if (ff_currentpage > 1) {
+                                                ff_switchpage(ff_currentpage - 1);
+                                            }
+                                        }
+                                    }
+                                    function ff_resetForm(element, action) {
+                                        eval('document.' + ff_processor.form_id).reset();
+                                    }
+                                    function ff_submitForm() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        bfCheckCaptcha();
+                                    }
+                                    function ff_submitForm2() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        if (typeof bf_ajax_submit != 'undefined') {
+                                            bf_ajax_submit()
+                                        } else {
+                                            document.ff_form70.submit();
+                                        }
+                                    }
+                                    function ff_validate_submit(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(0);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus();
+                                        } else ff_submitForm();
+                                    }
+                                    //-->
+
+                                </script>
+                                <form data-ajax="false" action="https://www.imprinting.info/display-pubblicitari?gad_source=5&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p2s0Wg463lwWAVNffNFcO2uzmbv6P1jWGi17eq3v14f4E9XL03T1JRoCQ3UQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p9AVBUG0efy_-HWOAGAe1_dcnCsklXjnwGa3X6Nv1Qkf8GkaxQqWKBoC1rwQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p2OHc39iC7yTEpamL0Z7iSN6WREbVMUOZVlTeKEaSQZ8mK9feTBFexoCrUYQAvD_BwE?gad_source=1?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4Iw4-DlXmK8jkDsfcTTT-lQ8QJetLuY5AjTtULgX5yaM7dxsnrhQxoCku8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p-akyzFqqwLz4SlkQqr6XXvll5tz9bgWO80wc3b-CLapjkhDFD-orxoCFp8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pxxbFLjaYqyAao7C1BnbaSbTGZCLV6JB8m9KMOeAkdQPqhETN2RsFhoCkEoQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4XSl85Ti9CSDHhcn9y_uSgXX6Xu8VxteBzlYWHF_yn7bGYljiSgEhoC0z0QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p4PU_wfqtuDCnb8nCVD6DylcWNAbYGlxooS7aVnGTkzl3q5xg87P_BoCHX8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p-8QuPwrcfEnsu5xXR4upO8BIMGPVLWeyn_2So86J4nJDDo0EUVJcRoCFhcQAvD_BwE?gad_source=1&gclid=EAIaIQobChMI9NLJx7fLggMVJ4RoCR20WgNCEAAYAiAAEgKNCfD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p5HskpBBGC_I02XV5C3XRgtToHfJicEAktsnM5ImJpwA7DVVwkVImBoC0PYQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pwWjYBEapUsbUPeDajaw74Hnj7SeBcqxgf_oWkID3r62NKbJUFHADhoC0l8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pySaERpwEJ3iQES2g9XNyWEenJEG7qKm-EOTYC_5fVmVlwprinWi4xoCjI8QAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p9-n1MR84E_Gur94mYxiV8ZNWCgEmJ8NBcD2y9piRTzTIx_0GnvjbhoCxpsQAvD_BwE?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p1HB0iyr-tFX_9NFiaDRmytlRmteqiVKNtX2UkZ8FmfHfeyHpWy68xoCqCUQAvD_BwE?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r0cUrmm0-s_9GqtwWqLXk9xkEG8E2c1OgrBZmCz5rDzQD-HZO2hPNAaAqEdEALw_wcB?gad_source=1&gclid=EAIaIQobChMI-YifhJbNggMV9DcGAB1VtAI-EAAYAiAAEgKDs_D_BwE?gad_source=1&gclid=EAIaIQobChMI5enbt7TNggMVy5SDBx3w2wvxEAAYASAAEgL8GfD_BwE?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r39SrLIWdN4kVhqUPNPls4v-fu5syWU9x4h5zUjJjzfHwxnPq2i"
+                                      method="post" name="ff_form70" id="ff_form70" enctype="multipart/form-data"
+                                      accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+                                    <div id="bfPage1" class="bfPage">
+                                        <section class=" " id="datirichiedente">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4174">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <input placeholder="Nome e cognome" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_nome[]" value="" id="ff_elem4174" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4173">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <input placeholder="Azienda" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_azienda[]" value="" id="ff_elem4173" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <section class=" " id="contatti">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4172">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <input placeholder="Email" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_email[]" value="" id="ff_elem4172" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4171">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <input placeholder="Telefono" class=" ff_elem inputbox" type="number"
+                                                                   name="ff_nm_telefono[]" value="" id="ff_elem4171" step="" max="" min=""
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        JQuery(document).ready(JQuery("#ff_elem4171").css("width", "100%"));
+                                                    </script>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap4170">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <input placeholder="Citt&agrave;" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem4170" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <section class=" " id="tipologiadisplay">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfSectionDescription">
+                                                    <p>
+                                                        Tipologia display LCD
+                                                    </p>
+                                                </div>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group" id="bfElemWrap4176">
+                                                        <div class="controls form-inline">
+                                                            <div class=" ">
+                                                                        <span class="">
+                                                                            <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176"
+                                                                                   for="ff_elem4176">
+                                                                                <input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]"
+                                                                                       value="Interno" id="ff_elem4176" />
+                                                                                Interno
+                                                                            </label>
+                                                                            <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176_1"
+                                                                                   for="ff_elem4176_1">
+                                                                                <input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]"
+                                                                                       value="Vetrina" id="ff_elem4176_1" />
+                                                                                Vetrina
+                                                                            </label>
+                                                                            <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4176_2"
+                                                                                   for="ff_elem4176_2">
+                                                                                <input class="ff_elem" type="checkbox" name="ff_nm_tipologiadisplay[]"
+                                                                                       value="Touch" id="ff_elem4176_2" />
+                                                                                Touch
+                                                                            </label>
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap4169">
+                                            <div class="controls form-inline">
+                                                <div class="">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel4169" for="ff_elem4169">
+                                                        Lascia un messaggio (facoltativo)
+                                                    </label>
+                                                    <textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;"
+                                                              name="ff_nm_messaggio[]" id="ff_elem4169">
+                                                            </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap4167">
+                                            <div class="controls form-inline">
+                                                <div class=" ">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel4167" for="ff_elem4167">
+                                                        Come ci hai conosciuto?
+                                                    </label>
+                                                    <span class="">
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167"
+                                                                       for="ff_elem4167">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google"
+                                                                           id="ff_elem4167" />
+                                                                    Google
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_1"
+                                                                       for="ff_elem4167_1">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social"
+                                                                           id="ff_elem4167_1" />
+                                                                    Social
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_2"
+                                                                       for="ff_elem4167_2">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail"
+                                                                           id="ff_elem4167_2" />
+                                                                    Mail
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel4167_3"
+                                                                       for="ff_elem4167_3">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro"
+                                                                           id="ff_elem4167_3" />
+                                                                    Altro
+                                                                </label>
+                                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class=" " id="privacy">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap4168">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel4168" for="ff_elem4168">
+                                                                    Acconsento al trattamento dei miei dati in merito a questa richiesta.
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <span class="">
+                                                                            <input style="vertical-align: baseline;" class="ff_elem" type="checkbox"
+                                                                                   name="ff_nm_privacy[]" value="Acconsento" id="ff_elem4168" />
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bfElemWrap control-group span6" id="bfElemWrap5696">
+                                                        <div class="controls form-inline">
+                                                            <div class=" ">
+                                                                        <span class="">
+                                                                            <div id="bfInvisibleReCaptchaContainer">
+                                                                            </div>
+                                                                            <div id="bfInvisibleReCaptcha">
+                                                                            </div>
+                                                                            <script data-usercentrics="reCAPTCHA" type="text/javascript">
+                                                                                bfInvisibleRecaptcha = true;
+                                                                                var onloadBFNewRecaptchaCallback = function() {
+                                                                                    grecaptcha.render('bfInvisibleReCaptchaContainer', {
+                                                                                        'sitekey': '6LfT_8opAAAAALwv-9ku0UuthpYT2dJefeCr0nL_',
+                                                                                        'expired-callback': recaptchaExpiredCallback,
+                                                                                        'callback': recaptchaCheckedCallback,
+                                                                                        "badge": "",
+                                                                                        'size': 'invisible'
+                                                                                    });
+                                                                                };
+
+                                                                                function recaptchaCheckedCallback(token) {
+                                                                                    if (token != '') {
+                                                                                        bfInvisibleRecaptcha = false;
+                                                                                    }
+                                                                                    if (typeof bf_htmltextareainit != 'undefined') {
+                                                                                        bf_htmltextareainit();
+                                                                                    }
+                                                                                    ff_validate_submit(this, 'click');
+                                                                                };
+
+                                                                                function recaptchaExpiredCallback() {
+                                                                                    grecaptcha.reset();
+                                                                                };
+                                                                            </script>
+                                                                            <script data-usercentrics="reCAPTCHA" src="static/js/api.js" async defer>
+                                                                            </script>
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfClearfix">
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="">
+                                                <button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button"
+                                                        onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');"
+                                                        value="Invia la richiesta">
+                                                            <span>
+                                                                Invia la richiesta
+                                                            </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- bfPage end -->
+                                    <div id="bfPage2" class="bfPage" style="display:none;">
+                                        <div class="">
+                                            <h2 style="text-align: center;">
+                                                Grazie per la richiesta
+                                            </h2>
+                                            <p style="text-align: center;">
+                                                        <span class="lead">
+                                                            Verrai contattato al più presto da un nostro responsabile commerciale
+                                                            per offrirti la soluzione più adatta alle tue esigenze.
+                                                        </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <noscript>
+                                        Please turn on javascript to submit your data. Thank you!
+                                    </noscript>
+                                    <input type="hidden" name="ff_contentid" value="214" />
+                                    <input type="hidden" name="ff_applic" value="" />
+                                    <input type="hidden" name="ff_record_id" value="" />
+                                    <input type="hidden" name="ff_module_id" value="0" />
+                                    <input type="hidden" name="ff_form" value="70" />
+                                    <input type="hidden" name="ff_task" value="submit" />
+                                    <input type="hidden" name="ff_target" value="2" />
+                                    <input type="hidden" name="ff_align" value="" />
+                                    <input type="hidden" name="option" value="com_content" />
+                                    <input type="hidden" name="Itemid" value="398" />
+                                    <input type="hidden" name="id" value="214" />
+                                </form>
+                            </div>
+                            <!-- form end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-4@m">
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Builder #footer -->
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <div class="uk-margin-small uk-text-center">
+                        <a class="el-link" href="/index.php">
+                            <img src="static/picture/logo-english.jpg" width="120" height="120"
+                                 class="el-image" alt="logo IM" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        product
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/product1.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    product1
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/product2.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        product2
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/product3.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    product3
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Focus
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/blog.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Blog
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/chi_siamo.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    chi siamo
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/case.html" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    case
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-center">
+                        Seguici anche su
+                    </h3>
+                    <div class="uk-text-center">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+                            <p>
+                                <a  href="./contact.html" class="uk-link-muted uk-margin-remove-last-child">
+                                    Contacta
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <hr>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri,
+                        43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. -
+                        C.F./P.iva: IT01995060769 -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd53175c9549c8b499021688b14948a17">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd53175c9549c8b499021688b14948a17 = addyd53175c9549c8b499021688b14948a17 + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd53175c9549c8b499021688b14948a17 + '\'>' + addy_textd53175c9549c8b499021688b14948a17 + '<\/a>';
+                                    </script>
+                                </span>
+                        - Società soggetta a direzione e controllo di Black Knight Capital Srl
+                        - P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale
+                        <br />
+                        Via Lorenzo Bonincontri, 43 - 00147 Roma RM
+                        <br />
+                        REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769
+                        -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd33e5696de302d7e7e8d894e5e7d4f9e">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd33e5696de302d7e7e8d894e5e7d4f9e = addyd33e5696de302d7e7e8d894e5e7d4f9e + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd33e5696de302d7e7e8d894e5e7d4f9e + '\'>' + addy_textd33e5696de302d7e7e8d894e5e7d4f9e + '<\/a>';
+                                    </script>
+                                </span>
+                        <br />
+                        Società soggetta a direzione e controllo di Black Knight Capital Srl -
+                        P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">
+                        Tutti i marchi riportati appartengono ai legittimi proprietari
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47"
+            height="0" width="0" style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+
+</html>

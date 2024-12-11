@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75fc4bf7-d020-472e-ae53-39a5caf24235" name="更改" comment="首次提交">
+      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chi_siamo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lavagne-interattive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/validationengine.jquery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.validationengine-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.validationengine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/moxie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/plupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/1doc-180703-cover-6938533b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20210216_102900_cover-35a548ad.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20210224_114201b-b9255ea9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20210329_111641_ed-cover-0e98235e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20210909_173806_cover-c48ccd66.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20220301_124547_cover-ed-5b41e684.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/20220517_182628_cover-e0978b6b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/2d-impianti-display-vetrina-1092-02195f50.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/6d3bdda8eff34da7a0a66631b18005b6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/7-consigli-per-ds-memorabile_cover_01-social-7d103a35.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/912a1b9b4bfe45668758f47f3befca43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/_dcr1030-hdr-1-e525511a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/_dsc0341-hdr-1jpg_cover-ce23ff26.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/_dsc2548-1_cover-8368c653.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/_dsc7805-1jpg_cover-b3abe2fb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/_dsc8021-hdr-1jpg_cover-21b78fef.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/accessibilit_cover-f0c5929c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/antica-bottega-display-signage-vetrina-e-interno-07_3-2-1caf13ae.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/articolo-education-cover-social-01-b6c1ba5f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/articolo_flip_settembre_2021_cover-b93d40e2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/artigianino-display-vetrina-180834_3-2-5ec8f68d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/atmosfera-hotel-cover-4f2ac7b0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/autoclub-display-signage-vetrina-auto-salone-concessionaria-03-fcba9191.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/b2abae4c1d68415cac42b1dbc0e173d6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/balsamo-crivelli_102822_cover-98fc31bf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/bikappa-122947-cover-d0d72428.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/brossuratrici-cover-7611bebd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/business_display_retail_cover-da769327.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/canone-rai-e-schermi-pubblicitari-f1f32ff2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/carconi-183133-c463a546.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/case-roma-57f89a842194-cover-e72305d8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/catalogo_soluzioni_dopo_stampa_cover-b1d606a9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/centro-casa-immobiliare-lucera-display-signage-75-04-2c1b2bfa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/centro-giovanni-paolo-videowall-03-50c41441.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/coldwell-prati-3089-hdr-a3840b94.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/comparatore-ledwall-04-e1a35804.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/comparatore-videowall-06-4e534f3b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/comunicazione-visiva-hospitality_cover-d32dcabf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/comunita-sante-egidio-lavagna-samsung-flip2-173433-9fbaaa93.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/contenuti-per-schermi-digitali_cover-38ee0623.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/copisteria-cover-77c9b9e7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/costa-caffe-videowall-samsung-display-food-01-d0e9af7b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/costo-lavagne-cover-4bd468e3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/cs_01-70c931fd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/cs_08-9b0aa144.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/daruma-sushi-display-signage-da-interno-food-menu-04-7ee99aa9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dd19d94e983f44b8b0037fc665c5d742.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dentistart-162444-cover-ea7b35df.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/design-sale-riunioni_cover-cc482ff5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/digital-signage-l-uso-dei-display-durante-e-dopo-l-emergenza_00_cover-bc4b6c46.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/digital-workplace-cover-406487e7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/digital_signage_e_la_nuova_normalit_01-2dca9a26.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/digital_signage_generico_cover-e996d1ab.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/digitalizzare-sale-riunioni-cover-3ed2a932.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/display-e-business-tv_cover-social-8a33f66a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/display-signage-supermercato-palber-crai-111734-c4274da7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/display-vetrina-profumeria-mymoon-wa0047-8d56b607.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-contenuti-cover-53a472b5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-e-vm-cover_ed-6f1b709d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-impresa-sostenibile-cover-234fec5d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-ottica-cover2-ebe13b05.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-ristorante-cover-social-2b9bbaba.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-showroom-cover-feb08721.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds-sostenibile-cover-02_ed3-2-840fd010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ds_cover-7a52cd8c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dst-samsung-flip-lavagna-inerattiva-02-fe8e0c47.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dtf-cover-fb79b246.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dtf-vs-serigrafia-cover-1eaf18a6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dtf_2_cover-ceffe588.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/dtf_serigrafia_cover_ed-44ffbb18.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/elettrolazio-133-hdr-cover-de73b9f6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/enelx_piazzaanna_cover-c0df17a9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/esterni_conad_fondi_latina_34a4393-fbe79276.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/esterno-01-11c8ba53.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/family-pets-interno-163717-social-533d7525.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/farmacia-colli-portuensi-wa0016-a229a8e1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/farmacia-jungano-display-vetrina-1079-d71330a1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/farmacia-ovf-display-signage-vetrina-002-c912f05d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/farmacia-pontelungo-roma-display-vetrina-signage-090528-b1479920.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/farmacia-zamponi-display-signage-interno-02_3-2w-14e040a2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/fashion-market-114517-social-5b534270.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/federparchi-43-01-fa028672.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/federparhi-samsung-display-lavagna-inerattiva-02-109453df.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/finishing-macchine-cover-ed-69c451d4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/finishing_generico_cover_ed-488e5460.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/firotek_100138-cover-3a6b3bde.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip-pro_cover-78964b8c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip-sapienza-041-e1570a5e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip2-55-01-40e5e025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip2-65-01-f5653005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip2-85-02-77321650.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip_back_to_school_cover-d17c98b2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/flip_educational-01_social-5101b0c7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/foto-cover-articolo-b8fe04f5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/fustellatrici-cover-a1fad38d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/gianfornaio-1-385e5701.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/giviel_cover_ed-948f25bb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/health-display-hospital-03-1c20746a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/healthcare-icona_01-12766c35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/healthcare-icona_02-97447ec1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/healthcare-icona_03-5d7a8d52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/healthcare-icona_06-095dbc0f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/healthcare_cover-37592561.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hero-green-samsung-digital-signage-01_cover-59f3b667.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/holiday-inn-spa-videowall-display-05-51b45943.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hospitality-01-b80466be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hospitality-digital-signage-cover-social-204b13a6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel-belvedere-mentana-roma-tv-samsung-01-948271ac.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel-palazzo-doglio-fortevillage-cagliari-153729-59dfb76b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel-tv-quale-scegliere-cover-01-42782d9f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel-tv-samsung-switch-off-cover-5eda2dfc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel-tv-vs-hotel-mode-cover-53378bf3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hotel_tv_cover_01-93b0ea79.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/hybrid-workplace-01-cover-9299b441.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/icone-flip-blu-compatibilita-195b7718.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/icone-flip-blu-connettivita-db0de28e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/icone-flip-blu-modifica-1190379f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/icone-flip-blu-scrittura-a10a9997.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_advanced3-1a623492.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_businesstv1-e611adaa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_businesstv3-34e3bb60.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_interactive2-3679d71c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_premium1-b922e7de.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_standard3-c695ff57.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_videowall1-8d3ff78a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img_sub_features_videowall2-36b4ea25.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/immobiliare-monteverde-display-signage-vetrina-003-a9a01886.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/indoor-ledwall-01-1a6882d8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ise-2022-cover-46161ad7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ise_2023_10-c55d557d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/king-optic-181923-social-2f4e0a91.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/lavagne-cover-da12a3ad.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ledwall-dx-05-2bc220ef.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ledwall-esterno-sera-wa0002-675d36a6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ledwall-samsung-dstech-roma-05-8c336e6e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ledwall-tecnologia-sostenibile_02-social-6eb9590f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/lim_-_cover-d80137e4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/lim_sale_riunioni_cover-76868b05.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo-english.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_fortevillage_bn-e73a14ab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_hampton_bn-857bdcfe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_holiday-inn_bn-ee4a3be4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_marriott_bn-3af054f0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_palazzo doglio_bn-b9768290.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo_radisson_bn-63d97ec3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/lynk_cloud_cover-9a161dde.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/magri-gomme_0126-cover-3ecb5fd0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/marchio-samsung-grigio-02-c1d17f01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/mare-chiaro-hotel-tv-samsung-07-b51e307e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/mariaelena-sala-congressi-01-b6fb8b33.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/marilab-6568-hdr-7b3ac80c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/maxischermi-cover-02-7329da1d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/menu-digitali_cover2-7da15a8a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/miniso_0051_cover-44aae371.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/miomarket-display-signage-02-85c97b79.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/moderno-hotel-esterno-1-da7c6b06.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/montesano-buonabitacolo-wa0035-cover-2-9c5fcd0f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/muliere-ciampino-4439-cover-abf4b456.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/museo-01_cover-91670e15.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/oasi-park-display-signage-03-6b0d3abd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/ottica-la-pisana_105546-social-02-ca9d8722.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/parafarmacia-appia-display-signage-vetrina-farmacia-03-8739107e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/parafarmacia-baldovinetti-175946-cover-fdc1c0cd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/parrucchiera-altomare-maria-display-signage-vetrina-bifacciale-02-641cb2fa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/pianeta-maratea-hotel-tv-ascensore-01-7e72661b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/plastificatrici_cover-43dfcacf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/pompi-piazza-di-spagna-display-signage-food-pasticceria-01-83caa34f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/pompi-re-di-roma-display-signage-food-gelateria-02-dcb3e577.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/pr-03-d937a73d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/puntoclima_0147_cover-c03cc5bc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/regione-calabria-display-signage-elezioni-004-0321d46b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/regione-calabria-flip2-01-fa1b298b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/roma-five-suites-hotel-tv-samsung-07-59e4ac9a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/schermi-per-agenzie-immobiliari-cover-2-c642463b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/schermi-per-negozi_cover_ed-1f9da2bb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/schermi-pubblicitari-in-store_cover-f7ae7d52.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/scuola-largo-oriani-01-cover-social-17ad01ee.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/sheraton-5455-1-cover-b5cef0b2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/smart_hotel_cover-0177d797.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/sneakers-lab-wa0031_cover-94bf6dc7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/soluzioni-audiovisive-benessere_cover-97f90923.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/stampante-dtf-cover_social-23b4d759.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/suite-ritz-roma-hotel-tv-samsung-114939_3-2-8b454195.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/swipe-gif-04.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/switch-off-digitale-terrestre_03-12f10e16.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/switch-off-digitale-terrestre_05-6a1db896.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/t-hotel-lamezia-hotel-tv-06-8598e9d7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tasse-ds_03_cover-5c47282c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tecnologie_interattive_fiere_cover-7feaec7b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/termopresse-cover-2f8c51e4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/the-wall-cover-b9fb41d2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/todis-4876-cover-652f6f4e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totem-acea-04-cover-0e41f661.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totem-con-display-cover_02-social-2f91a429.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totem-cover_ed-94dc33f1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totem-generico-cover-3c0d290a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totem-touchscreen-3-cover-811cecc1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/totti-soccer-school-02-3-2-dbea15c7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/trasparente-00-876fa3b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tv-cliniche-private_cover-50002490.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tv-ospedali-cover-f88d85bf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/valentina_imm_04-cover-34494222.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/vetrine-digitali-cover-a6e07e50.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/victoria-terme-cover-02-5d591934.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videconferenza-cover-204c17d9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-10-221a2707.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-16-sala-riunioni-01-a932b304.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-centro-giovanni-xxiii-frascati-01-a8422a6e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-invitalia-04-3_3-d3c0ea1e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-samsung-4x2-46-pollici-biblioteca-guagnano-01-5099c450.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/videowall-sx-02-1afbdd71.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/vtx_cover2-af29edb1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/wellness-5644-cover-2b761ec7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/zero-pizza_162455-cover-c9a42f87.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/zerozerozerocento-3783-hdr-1-bea351c8.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/109-switch-off-del-digitale-terrestre-facile-e-veloce-con-gli-hotel-tv-samsung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/111-come-stimolare-la-socializzazione-in-contesti-difficili-attraverso-la-partecipazione-ad-attivita-videoludiche-di-gruppo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/114-digitale-terrestre-tutto-quello-che-c-e-da-sapere-sullo-switch-off-al-dvb-t2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/118-apprendimento-interattivo-per-un-mondo-che-cambia-con-le-lavagne-multimediali-di-samsung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/143-7-consigli-per-creare-un-digital-signage-memorabile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/146-la-lezione-appresa-dopo-un-anno-di-formazione-a-distanza.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/158-samsung-flip-come-cambia-l-insegnamento-in-aula-con-le-lavagne-interattive-multimediali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/164-ledwall-un-sistema-digital-signage-sostenibile-per-le-imprese.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/167-digital-signage-e-riaperture-com-e-cambiato-nell-ultimo-anno-l-utilizzo-dei-display-professionali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/171-l-hospitality-diventa-sempre-piu-smart-con-il-digital-signage-per-il-settore-alberghiero.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/188-hospitality-e-nuovo-digitale-terrestre-perche-scegliere-gli-hotel-tv-samsung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/191-lynk-cloud-la-piattaforma-all-in-one-di-samsung-per-il-settore-hospitality.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/198-high-tech-luxury-la-tecnologia-del-lusso-il-lusso-della-tecnologia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/201-insieme-per-il-domani-immaginare-un-pianeta-migliore-con-il-digital-signage-di-samsung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/205-office-technology-e-hybrid-workplace-progettare-ambienti-di-lavoro-per-il-benessere-digitale.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/210-ise-2022-samsung-presenta-la-nuova-era-della-tecnologia-microled.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/213-il-ruolo-del-digital-signage-nel-settore-healthcare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/217-digital-signage-e-la-nuova-normalita-in-un-mondo-in-costante-evoluzione.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/218-nuove-forme-di-comunicazione-e-marketing-che-cos-e-il-digital-signage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/219-totem-multimediali-cosa-sono-e-perche-possono-potenziare-la-tua-comunicazione.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/224-tecnologie-per-l-industrial-decoration-cos-e-la-stampa-direct-to-film.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/229-l-importanza-del-finishing-nel-mondo-dell-industrial-printing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/232-hospitality-tv-la-soluzione-digitale-per-una-gestione-centralizzata-delle-strutture-alberghiere.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/233-lavagne-interattive-multimediali-per-meeting-room-digitalizzate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/234-smart-tv-business-tv-e-display-professionali-digital-signage-quali-sono-le-differenze.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/236-digital-signage-per-il-retail-caratteristiche-e-vantaggi-degli-schermi-pubblicitari.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/237-lavagne-interattive-multimediali-tecnologie-per-innovare-la-didattica.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/239-soluzioni-di-finitura-per-valorizzare-i-prodotti-stampati-nel-nostro-catalogo-finishing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/240-retail-digital-signage-perche-utilizzare-uno-schermo-pubblicitario-in-negozio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/243-office-technology-come-digitalizzare-una-sala-riunioni.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/244-tecnologie-per-la-personalizzazione-dei-tessuti-le-migliori-stampanti-direct-to-film.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/246-finishing-le-migliori-tecnologie-per-la-finitura-professionale-nelle-fasi-di-dopo-stampa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/248-digital-signage-e-schermi-pubblicitari-quali-sono-le-tasse-da-pagare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/249-smart-hotel-cosa-sono-e-quali-vantaggi-offrono-agli-ospiti-e-agli-operatori-del-settore-hospitality.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/251-totem-interattivi-multimediali-perche-sono-sempre-piu-richiesti.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/253-in-che-modo-le-lavagne-interattive-multimediali-possono-accelerare-i-processi-di-digitalizzazione-scolastica.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/254-tecnologie-per-la-nobilitazione-su-stampa-digitale-cosa-sono-e-come-funzionano-le-plastificatrici.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/256-tecnologie-per-la-finitura-dei-prodotti-stampati-cosa-sono-le-brossuratrici.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/257-tecnologie-per-la-finitura-dei-prodotti-stampati-cosa-sono-le-fustellatrici.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/258-digital-signage-sostenibile-samsung-presenta-nuove-tecnologie-eco-consapevoli-all-integrated-systems-europe-2023.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/259-schermi-pubblicitari-per-negozi-verso-la-nuova-dimensione-della-tecnologia-retail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/261-schermi-pubblicitari-per-agenzie-immobiliari-i-vantaggi-del-digital-signage-per-il-settore-real-estate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/262-tecnologie-per-la-finitura-dei-prodotti-stampati-cosa-sono-le-termopresse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/263-hotel-tv-e-funzione-hotel-mode-sui-tv-quali-sono-le-differenze-tra-le-hospitality-tv-e-le-tv-consumer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/267-come-scegliere-un-sistema-di-videoconferenza-per-una-sala-riunioni.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/268-direct-to-film-printing-cosa-e-possibile-personalizzare-con-questa-tecnologia-di-stampa-innovativa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/269-vetrine-digitali-come-valorizzare-il-punto-vendita-con-gli-schermi-pubblicitari-professionali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/270-in-che-modo-la-stampa-dtf-rappresenta-un-evoluzione-della-serigrafia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/273-quanto-costa-una-lavagna-interattiva-multimediale.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/274-tecnologie-per-il-digital-signage-come-scegliere-il-totem-interattivo-multimediale-con-display.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/275-pagamento-del-canone-rai-per-gli-schermi-pubblicitari-cosa-c-e-da-sapere.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/276-tecnologie-per-il-digital-signage-i-vantaggi-dei-totem-interattivi-touchscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/277-soluzioni-tecnologiche-per-il-settore-hospitality-come-scegliere-gli-hotel-tv-per-una-struttura-alberghiera.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/286-digital-workplace-come-aumentare-il-benessere-nelle-sale-riunioni-digitali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/288-l-impatto-del-digital-signage-nell-industria-della-ristorazione-innovazione-e-coinvolgimento-della-clientela.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/290-digital-signage-una-forma-di-comunicazione-e-marketing-piu-sostenibile-per-le-imprese.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/294-la-tecnologia-avanzata-dei-televisori-samsung-per-ospedali-e-strutture-sanitarie-caratteristiche-e-vantaggi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/295-guida-completa-ai-maxischermi-quali-sono-le-differenze-tra-videowall-ledwall-e-schermi-unici.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/296-tv-per-cliniche-private-case-di-cura-ed-rsa-intrattenimento-per-il-paziente-gestione-facilitata-per-il-personale-sanitario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/375-come-ottimizzare-la-comunicazione-visiva-nel-settore-dell-ospitalita-per-migliorare-l-esperienza-degli-ospiti.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/378-come-creare-contenuti-coinvolgenti-per-gli-schermi-digitali-strategie-e-migliori-pratiche.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/380-guida-all-armonia-sensoriale-soluzioni-audiovisive-per-ambienti-benessere.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/384-visual-marketing-per-il-settore-retail-dell-ottica-come-attirare-e-coinvolgere-la-clientela-attraverso-i-display-digitali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/388-tecnologie-per-la-stampa-digitale-di-produzione-come-migliorare-l-efficienza-delle-operazioni-in-un-centro-stampa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/390-eccellenza-museale-le-migliori-pratiche-per-l-integrazione-di-schermi-digitali-e-tecnologie-interattive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/392-smart-signage-display-per-la-ristorazione-i-vantaggi-dei-menu-digitali-interattivi-nei-ristoranti-bar-e-fast-food.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/394-samsung-flip-pro-l-eccellenza-tecnologica-nei-contesti-educativi-ed-aziendali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/396-samsung-annuncia-la-piattaforma-vxt-all-in-one-per-la-creazione-di-contenuti-e-la-gestione-dei-display-digitali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/398-la-sinergia-tra-digital-signage-visual-merchandising-e-marketing-esperienziale-per-creare-connessioni-emozionali-con-i-clienti.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/403-innovazione-eco-sostenibile-la-stampa-dtf-come-alternativa-ecologica-alla-serigrafia-tradizionale.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/405-l-utilizzo-delle-tecnologie-interattive-per-coinvolgere-i-clienti-in-eventi-e-fiere-commerciali.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/407-le-ultime-tendenze-nel-design-e-nell-arredamento-di-sale-riunioni-smart-tecnologia-al-servizio-della-collaborazione.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/409-accessibilita-nelle-soluzioni-audiovisive-la-chiave-per-un-esperienza-inclusiva-e-coinvolgente.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/410-come-creare-un-esperienza-coinvolgente-attraverso-l-utilizzo-di-schermi-digitali-in-uno-showroom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/415-come-creare-un-atmosfera-accogliente-e-coinvolgente-in-un-hotel-mediante-l-utilizzo-di-soluzioni-audiovisive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/418-digital-signage-e-visual-merchandising-come-amplificare-l-impatto-delle-campagne-di-marketing-sul-punto-vendita.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/423-samsung-flip-l-evoluzione-della-lavagna-per-un-back-to-school-tecnologico.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/428-l-importanza-dei-contenuti-coinvolgenti-nel-digital-signage-catturare-l-attenzione-e-mantenere-l-interesse-del-pubblico.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/430-digital-signage-la-soluzione-tecnologica-per-un-impresa-piu-sostenibile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carrello/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/carrello/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat/airpods/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cat/airpods/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/ajax/-image_WyJpbWFnZXMvYmxvZy8yMDIyLzE2L3NjaGVybWlfcGVyX25lZ296aV8wNy5qcGciLFtbImRvUmVzaXplIixbMTQ0MCw3NDQsMTQ0MCw3NDRdXV0sMTY5NDAyNzMzMl0_cdschermi_per_negozi_07-cd97ad3f.jpeg_9ada57ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/ajax/-image_WyJpbWFnZXMvYmxvZy8yMDIzLzI4L3NvbHV6aW9uaS1hdWRpb3Zpc2l2ZS1iZW5lc3NlcmUtMDMuanBnIixbWyJkb1Jlc2l6ZSIsWzYwMCw0MDAsNjAwLDQwMF1dLFsiZG9Dcm9wIixbNjAwLDQwMCwwLD5e5799aaab765b62baa111e36c86195b.jpg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/condizioni-generali-di-vendita/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/condizioni-generali-di-vendita/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cs-v4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cs-v4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display-hero-01-56c99541.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display-solutions/totem.html" beforeDir="false" afterPath="$PROJECT_DIR$/display-solutions/totem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finishing/dtf.html" beforeDir="false" afterPath="$PROJECT_DIR$/finishing/dtf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-it/informativa-sulla-privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/home-it/informativa-sulla-privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/marketing/lavori/.imprinting-CP-web.pdf.baiduyun.uploading.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/marketing/lavori/.micarelli-video.mp4.baiduyun.uploading.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/marketing/lavori/.saioni-video1.mp4.baiduyun.uploading.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wlz_images/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/241-hampton-by-hilton-rome-north-fiano-romano.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/241-hampton-by-hilton-rome-north-fiano-romano.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/247-grand-hotel-duca-d-este-tivoli-terme.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/247-grand-hotel-duca-d-este-tivoli-terme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/265-victoria-terme-hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/265-victoria-terme-hotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/284-l-hotel-niccolo-v-trasforma-l-esperienza-degli-ospiti-con-le-nuove-hospitality-tv-samsung.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/284-l-hotel-niccolo-v-trasforma-l-esperienza-degli-ospiti-con-le-nuove-hospitality-tv-samsung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/382-il-nuovo-moderno-hotel-roma-sceglie-le-hospitality-tv-samsung-per-offrire-agli-ospiti-un-soggiorno-confortevole-e-tecnologico.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/382-il-nuovo-moderno-hotel-roma-sceglie-le-hospitality-tv-samsung-per-offrire-agli-ospiti-un-soggiorno-confortevole-e-tecnologico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/417-l-hotel-sheraton-rome-parco-de-medici-sceglie-il-digital-signage-samsung-per-una-comunicazione-efficace-e-un-accoglienza-impeccabile.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/417-l-hotel-sheraton-rome-parco-de-medici-sceglie-il-digital-signage-samsung-per-una-comunicazione-efficace-e-un-accoglienza-impeccabile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/48-grand-hotel-ritz-roma-parioli.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/48-grand-hotel-ritz-roma-parioli.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/50-hotel-belvedere-mentana.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/50-hotel-belvedere-mentana.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/51-hotel-marechiaro-gizzeria.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/51-hotel-marechiaro-gizzeria.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/52-roma-five-suites.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/52-roma-five-suites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/53-palazzo-doglio-forte-village-cagliari.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/53-palazzo-doglio-forte-village-cagliari.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/54-thotel-lamezia.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/54-thotel-lamezia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/55-grand-hotel-pianeta-maratea-resort.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/55-grand-hotel-pianeta-maratea-resort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/19-hotel-tv/56-federparchi-hotel-tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/19-hotel-tv/56-federparchi-hotel-tv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/112-farmacia-gallia.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/112-farmacia-gallia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/126-fem-agenzia-immobiliare-ferrari-meriziola.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/126-fem-agenzia-immobiliare-ferrari-meriziola.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/132-profumeria-muliere.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/132-profumeria-muliere.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/134-2d-impianti.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/134-2d-impianti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/138-farmacia-jungano.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/138-farmacia-jungano.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/141-carconi-parrucchieri-estetica.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/141-carconi-parrucchieri-estetica.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/142-ottica-la-pisana.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/142-ottica-la-pisana.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/145-family-pets.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/145-family-pets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/149-valentina-immobiliare.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/149-valentina-immobiliare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/154-farmacia-colli-portuensi.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/154-farmacia-colli-portuensi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/159-coldwell-banker-fine-real-estate.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/159-coldwell-banker-fine-real-estate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/163-fashion-market.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/163-fashion-market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/168-conad-superstore-fondi.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/168-conad-superstore-fondi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/170-wellness-village.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/170-wellness-village.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/175-mio-market.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/175-mio-market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/177-studio-dentistico-dott-orchi.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/177-studio-dentistico-dott-orchi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/182-parafarmacia-baldovinetti.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/182-parafarmacia-baldovinetti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/184-bikappa-infissi.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/184-bikappa-infissi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/185-elettrolazio.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/185-elettrolazio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/190-case-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/190-case-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/192-outlet-ottica-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/192-outlet-ottica-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/195-one-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/195-one-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/199-zero-pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/199-zero-pizza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/209-sneakers-lab-napoli.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/209-sneakers-lab-napoli.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/211-lacoste.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/211-lacoste.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/215-farmacia-balsamo-crivelli.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/215-farmacia-balsamo-crivelli.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/216-centro-ottico-tuscolano.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/216-centro-ottico-tuscolano.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/227-iperdem-frosinone.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/227-iperdem-frosinone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/238-dan-john.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/238-dan-john.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/252-philip-morris-international.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/252-philip-morris-international.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/260-il-gianfornaio.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/260-il-gianfornaio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/289-il-gruppo-marilab-sfrutta-il-digital-signage-per-migliorare-l-esperienza-dei-pazienti-con-una-comunicazione-innovativa-ed-efficace.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/289-il-gruppo-marilab-sfrutta-il-digital-signage-per-migliorare-l-esperienza-dei-pazienti-con-una-comunicazione-innovativa-ed-efficace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/293-zerozerocento-sporting-club-migliora-comunicazione-e-visibilita-con-le-soluzioni-samsung-per-il-digital-signage.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/293-zerozerocento-sporting-club-migliora-comunicazione-e-visibilita-con-le-soluzioni-samsung-per-il-digital-signage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/377-digital-signage-nel-settore-automotive-il-gruppo-magri-gomme-rivoluziona-la-comunicazione-dei-suoi-rivenditori.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/377-digital-signage-nel-settore-automotive-il-gruppo-magri-gomme-rivoluziona-la-comunicazione-dei-suoi-rivenditori.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/383-miniso-implementa-il-digital-signage-nel-nuovo-store-del-centro-commerciale-porta-di-roma-per-offrire-un-esperienza-di-acquisto-coinvolgente.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/383-miniso-implementa-il-digital-signage-nel-nuovo-store-del-centro-commerciale-porta-di-roma-per-offrire-un-esperienza-di-acquisto-coinvolgente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/402-todis-accoglie-l-innovazione-e-punta-sul-digital-signage-per-un-esperienza-d-acquisto-coinvolgente.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/402-todis-accoglie-l-innovazione-e-punta-sul-digital-signage-per-un-esperienza-d-acquisto-coinvolgente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/406-digital-signage-per-i-centri-unico-tecnologia-e-innovazione-nel-settore-dell-estetica-professionale.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/406-digital-signage-per-i-centri-unico-tecnologia-e-innovazione-nel-settore-dell-estetica-professionale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/408-eurofer-implementa-un-sistema-digital-signage-nelle-sue-8-sedi.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/408-eurofer-implementa-un-sistema-digital-signage-nelle-sue-8-sedi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/421-centri-ottici-milleocchiali.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/421-centri-ottici-milleocchiali.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/422-ibl-banca.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/422-ibl-banca.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/425-hego-good-food-lab.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/425-hego-good-food-lab.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/429-ama-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/429-ama-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/431-vimel-store.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/431-vimel-store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/45-daruma-sushi-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/45-daruma-sushi-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/49-parafarmacia-appia-organic-vitamins-food-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/49-parafarmacia-appia-organic-vitamins-food-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/57-artigianino.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/57-artigianino.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/58-pompi-re-di-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/58-pompi-re-di-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/59-pompi-piazza-di-spagna.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/59-pompi-piazza-di-spagna.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/60-oasi-park-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/60-oasi-park-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/62-farmacia-pontelungo-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/62-farmacia-pontelungo-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/64-autoclub-srl-bari-foggia-taranto-massafra.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/64-autoclub-srl-bari-foggia-taranto-massafra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/66-maria-altomare-salone-l-oreal.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/66-maria-altomare-salone-l-oreal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/71-agenzia-immobiliare-monteverde.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/71-agenzia-immobiliare-monteverde.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/72-parafarmacia-ovf.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/72-parafarmacia-ovf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/73-regione-calabria-elezioni.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/73-regione-calabria-elezioni.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/78-centro-casa-immobiliare-lucera.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/78-centro-casa-immobiliare-lucera.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/82-antica-bottega-104-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/82-antica-bottega-104-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/83-farmacia-zamponi-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/83-farmacia-zamponi-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/86-supermercato-palber-crai-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/86-supermercato-palber-crai-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/89-sala-congressi-casa-vacanze-mariaelena-rossano.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/89-sala-congressi-casa-vacanze-mariaelena-rossano.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/20-display-smart-signage/91-profumeria-mymoon.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/20-display-smart-signage/91-profumeria-mymoon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/119-generale-costruzioni-ferroviarie.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/119-generale-costruzioni-ferroviarie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/129-istituto-comprensivo-largo-oriani.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/129-istituto-comprensivo-largo-oriani.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/162-sapienza-universita-di-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/162-sapienza-universita-di-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/173-istituti-montesano-sulla-marcellana-e-buonabitacolo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/212-university-of-arkansas-rome-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/212-university-of-arkansas-rome-center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/43-ds-tech-roma-flip.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/43-ds-tech-roma-flip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/65-federparchi-lim.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/65-federparchi-lim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/74-regione-calabria-sala-convegni.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/74-regione-calabria-sala-convegni.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/80-comunita-di-sant-egidio.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/80-comunita-di-sant-egidio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/21-lavagne-interattive/87-totti-soccer-school.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/21-lavagne-interattive/87-totti-soccer-school.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/180-firotek.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/180-firotek.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/387-puntoclima-rivoluziona-la-presentazione-di-prodotti-e-servizi-nella-sede-centrale-con-l-installazione-di-un-videowall-3x3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/387-puntoclima-rivoluziona-la-presentazione-di-prodotti-e-servizi-nella-sede-centrale-con-l-installazione-di-un-videowall-3x3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/44-hotel-holiday-inn-nola.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/44-hotel-holiday-inn-nola.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/46-costa-caffe-sicilia.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/46-costa-caffe-sicilia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/76-centro-giovanni-paolo-i-roma.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/76-centro-giovanni-paolo-i-roma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/79-biblioteca-del-negroamaro-a-guagnano-lecce.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/79-biblioteca-del-negroamaro-a-guagnano-lecce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/81-centro-giovanni-xxiii-frascati.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/81-centro-giovanni-xxiii-frascati.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/22-video-wall/90-invitalia.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/22-video-wall/90-invitalia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/23-led-wall.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/23-led-wall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/23-led-wall/120-gi-vi-el-group-per-opus-art-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/23-led-wall/120-gi-vi-el-group-per-opus-art-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/23-led-wall/161-profumeria-muliere-viale-tiziano.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/23-led-wall/161-profumeria-muliere-viale-tiziano.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/23-led-wall/181-profumeria-muliere-ciampino.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/23-led-wall/181-profumeria-muliere-ciampino.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/23-led-wall/61-ds-tech-roma-led-wall.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/23-led-wall/61-ds-tech-roma-led-wall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/28-totem/152-enel-centro-commerciale-le-zagare.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/28-totem/152-enel-centro-commerciale-le-zagare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lavori/28-totem/222-totem-interattivo-personalizzato-acea-rieti.html" beforeDir="false" afterPath="$PROJECT_DIR$/lavori/28-totem/222-totem-interattivo-personalizzato-acea-rieti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/media/jui/fonts/IcoMoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-counter/css/hd-counter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-counter/js/hd-counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-image-comparison/css/hd-image-comparison.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hd-image-comparison.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-image-comparison/js/hd-image-comparison.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hd-image-comparison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-lottie/app/lottie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/system/herzogdupont/modules/elements/elements/hd-lottie/js/hd-lottie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/hd-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hd-counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/theme.12.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/theme.12.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/hd-counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hd-counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/sdk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/_dcr1030-hdr-1-655a5eb7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/alta-luminosita-01-1c2ab174.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/display-hero-01-56c99541.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/display-interattivi-cosmetici-01-24258949.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/display-interno-02-fc2d8b33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/display-interno-ambientato-01-dd372c9d.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/display-vetrina-ambientato-02-fe40d393.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/f1d138b999714a91af4baea87d3ec515.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/picture/18f91568e714474a9d7c5ce6df9e270a.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/fc1677aa3e6c4f9d866915983780fcfa.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/picture/5f32819e73ab4f289125974e9aa0f112.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/icona-fast-response-02-6d1de069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/icona-multi-touch-02-e9f21ca9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/icona-sicurezza-03-0d191b3c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/img_sub_features_outdoor1-7dde8f38.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/img_sub_features_outdoor3-e06d0f35.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/img_sub_features_standalone3-74bd9fe3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/logo_arena-ceb92df4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/logo_solo-affitti-90f3bd83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/omni.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/touch-cinema-01-aa910125.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/wifi-and-bluetooth-built-in-01-0c0e9375.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/picture/wifi-and-bluetooth-built-in-01-d5732f85.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/study.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wanglizhi9264 &lt;2544593672@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    },
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;wanglizhi9264&quot;,
+      &quot;author&quot;: &quot;wanglizhi9264&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wanglizhi9264&quot;,
+    &quot;author&quot;: &quot;wanglizhi9264&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="17365932-6775-42f0-8a08-861bfcb77816" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wanglizhi9264/webstorm&quot;,
+    &quot;accountId&quot;: &quot;17365932-6775-42f0-8a08-861bfcb77816&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2pkKoOQtcnZ1kyGUZx0AGlE3gvH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.12.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wanglizhi/Documents/project/www.imprinting.info&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="E:\webstorm\Zz_www.imprinting.info\images\logo" />
+      <recent name="E:\webstorm\Zz_www.imprinting.info" />
+      <recent name="E:\webstorm\Zz_www.imprinting.info\study" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/picture" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/wlz_images" />
+      <recent name="E:\webstorm\Zz_www.imprinting.info\wlz_images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="75fc4bf7-d020-472e-ae53-39a5caf24235" name="更改" comment="" />
+      <created>1733304807829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733304807829</updated>
+      <workItem from="1733304808873" duration="2040000" />
+      <workItem from="1733555299219" duration="11789000" />
+      <workItem from="1733734693480" duration="162000" />
+      <workItem from="1733739057946" duration="1564000" />
+      <workItem from="1733740654092" duration="9058000" />
+      <workItem from="1733817380341" duration="32998000" />
+      <workItem from="1733980277199" duration="4840000" />
+      <workItem from="1736065187142" duration="9642000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733740541149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733740541149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733740983758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733740983758</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733741709267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733741709267</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733817244971</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733817244971</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733817606275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733817606275</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit or your message here">
+      <option name="closed" value="true" />
+      <created>1733827506932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733827506932</updated>
+    </task>
+    <task id="LOCAL-00007" summary="首次提交">
+      <option name="closed" value="true" />
+      <created>1733903081686</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733903081686</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="qwsas" />
+    <MESSAGE value="Initial commit or your message here" />
+    <MESSAGE value="首次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
+  </component>
+</project>

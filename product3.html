@@ -1,0 +1,2393 @@
+﻿<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/logo/favicon/android-chrome-192x192.png"
+          sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo/favicon/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <meta name="title" content="Soluzioni Samsung per Healthcare: TV per strutture sanitarie"
+    />
+    <meta name="metatitle" content="Soluzioni Samsung per Healthcare: TV per strutture sanitarie"
+    />
+    <meta name="twitter:title" content="Soluzioni Samsung per Healthcare: TV per strutture sanitarie"
+    />
+    <meta name="twitter:description" content="Come creare un’esperienza più confortevole per i pazienti nelle camere degli ospedali o delle case di cura con intrattenimento e servizi di qualità superiore."
+    />
+    <meta name="twitter:image" content="https://www.imprinting.info/images/verticali/healthcare/health-rsa-01.jpg"
+    />
+    <meta property="og:title" content="Soluzioni Samsung per Healthcare: TV per strutture sanitarie"
+    />
+    <meta property="og:description" content="Come creare un’esperienza più confortevole per i pazienti nelle camere degli ospedali o delle case di cura con intrattenimento e servizi di qualità superiore."
+    />
+    <meta property="og:url" content="https://www.imprinting.info/hospital-tv-strutture-sanitarie"
+    />
+    <meta property="og:image" content="https://www.imprinting.info/images/verticali/healthcare/health-rsa-01.jpg"
+    />
+    <meta name="description" content="Come creare un’esperienza più confortevole per i pazienti nelle camere degli ospedali o delle case di cura con intrattenimento e servizi di qualità superiore."
+    />
+    <meta name="generator" content="Joomla! - Open Source Content Management"
+    />
+    <title>
+        Soluzioni Samsung per Healthcare: TV per strutture sanitarie
+    </title>
+    <link href="https://www.imprinting.info/hospital-tv-strutture-sanitarie"
+          rel="alternate" hreflang="it-IT" />
+    <link href="https://www.imprinting.info/en/display-solutions/healthcare"
+          rel="alternate" hreflang="en-GB" />
+    <link href="https://www.imprinting.info/component/search/?Itemid=453&amp;format=opensearch"
+          rel="search" title="Vai I'MPRINTING" type="application/opensearchdescription+xml"
+    />
+    <link href="static/css/theme.12.css" rel="stylesheet" />
+    <link href="static/css/custom.css" rel="stylesheet" />
+    <style>
+        .bfClearfix:after { content: "."; display: block; height: 0; clear: both;
+            visibility: hidden; } .bfFadingClass{ display:none; }
+    </style>
+    <script type="application/json" class="joomla-script-options new">
+        {
+            "csrf.token": "3d0937c06610b0e0500b12bf54071922",
+            "system.paths": {
+                "root": "",
+                "base": ""
+            }
+        }
+    </script>
+    <script src="static/js/mootools-core.js">
+    </script>
+    <script src="static/js/core.js">
+    </script>
+    <script src="static/js/mootools-more.js">
+    </script>
+    <script src="static/js/jquery.min.js">
+    </script>
+    <script src="static/js/jquery-noconflict.js">
+    </script>
+    <script src="static/js/jquery-migrate.min.js">
+    </script>
+    <script src="static/js/bootstrap.min.js">
+    </script>
+    <script src="static/js/sweetalert.min.js">
+    </script>
+    <script src="static/js/uikit.min.js">
+    </script>
+    <script src="static/js/uikit-icons-horizon.min.js">
+    </script>
+    <script src="static/js/theme.js">
+    </script>
+    <script>
+        <!--jQuery(document).ready(function() {
+            jQuery(".hasTooltip").tooltip({
+                "html": true,
+                "container": "body"
+            });
+        });
+        var JQuery = jQuery;
+
+        var inlineErrorElements = new Array();
+        var bfSummarizers = new Array();
+        var bfDeactivateField = new Array();
+        var bfDeactivateSection = new Array();
+
+        function bf_validate_nextpage(element, action) {
+            if (typeof bfUseErrorAlerts != "undefined") {
+                JQuery(".bfErrorMessage").html("");
+                JQuery(".bfErrorMessage").css("display", "none");
+            }
+
+            error = ff_validation(ff_currentpage);
+            if (error != "") {
+                if (typeof bfUseErrorAlerts == "") {
+                    alert(error);
+                } else {
+                    bfShowErrors(error);
+                }
+                ff_validationFocus("");
+            } else {
+                ff_switchpage(ff_currentpage + 1);
+                self.scrollTo(0, 0);
+            }
+        }
+
+        function bfCheckMaxlength(id, maxlength, showMaxlength) {
+            if (JQuery("#ff_elem" + id).val().length > maxlength) {
+                JQuery("#ff_elem" + id).val(JQuery("#ff_elem" + id).val().substring(0, maxlength));
+            }
+            if (showMaxlength) {
+                JQuery("#bfMaxLengthCounter" + id).text("(" + (maxlength - JQuery("#ff_elem" + id).val().length) + " chars left)");
+            }
+        }
+        function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty) {
+            bfSummarizers.push({
+                id: id,
+                connectWith: connectWith,
+                type: type,
+                emptyMessage: emptyMessage,
+                hideIfEmpty: hideIfEmpty
+            });
+        }
+        function bfField(name) {
+            var value = "";
+            switch (ff_getElementByName(name).type) {
+                case "radio":
+                    if (JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "" && typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                        value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                        if (!isNaN(value)) {
+                            value = Number(value);
+                        }
+                    }
+                    break;
+                case "checkbox":
+                case "select-one":
+                case "select-multiple":
+                    var nodeList = document["ff_form58"]["" + ff_getElementByName(name).name + ""];
+                    if (ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined") {
+                        if (typeof JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val() != "undefined") {
+                            value = JQuery("[name=\"" + ff_getElementByName(name).name + "\"]:checked").val();
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    } else {
+                        var val = "";
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            value = val.substr(0, val.length - 2);
+                            if (!isNaN(value)) {
+                                value = Number(value);
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    if (!isNaN(ff_getElementByName(name).value)) {
+                        value = Number(ff_getElementByName(name).value);
+                    } else {
+                        value = ff_getElementByName(name).value;
+                    }
+            }
+            return value;
+        }
+        function populateSummarizers() {
+            // cleaning first
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                JQuery("#" + bfSummarizers[i].id).parent().css("display", "");
+                JQuery("#" + bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">" + bfSummarizers[i].emptyMessage + "</span>");
+            }
+            for (var i = 0; i < bfSummarizers.length; i++) {
+                var summVal = "";
+                switch (bfSummarizers[i].type) {
+                    case "bfTextfield":
+                    case "bfTextarea":
+                    case "bfHidden":
+                    case "bfCalendar":
+                    case "bfNumberInput":
+                    case "bfCalendarResponsive":
+                    case "bfFile":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val() != "") {
+                            JQuery("#" + bfSummarizers[i].id).text(JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]").val()).html();
+                            var breakableText = JQuery("#" + bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+                            if (breakableText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    breakableText = calc(breakableText);
+                                }
+                            }
+
+                            JQuery("#" + bfSummarizers[i].id).html(breakableText);
+                            summVal = breakableText;
+                        }
+                        break;
+                    case "bfRadioGroup":
+                    case "bfCheckbox":
+                        if (JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val() != "undefined") {
+                            var theText = JQuery("[name=\"ff_nm_" + bfSummarizers[i].connectWith + "[]\"]:checked").val();
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                    case "bfCheckboxGroup":
+                    case "bfSelect":
+                        var val = "";
+                        var nodeList = document["ff_form58"]["ff_nm_" + bfSummarizers[i].connectWith + "[]"];
+
+                        for (var j = 0; j < nodeList.length; j++) {
+                            if (nodeList[j].checked || nodeList[j].selected) {
+                                val += nodeList[j].value + ", ";
+                            }
+                        }
+                        if (val != "") {
+                            var theText = val.substr(0, val.length - 2);
+                            if (theText != "") {
+                                var calc = null;
+                                eval("calc = typeof bfFieldCalc" + bfSummarizers[i].id + " != \"undefined\" ? bfFieldCalc" + bfSummarizers[i].id + " : null");
+                                if (calc) {
+                                    theText = calc(theText);
+                                }
+                            }
+                            JQuery("#" + bfSummarizers[i].id).html(theText);
+                            summVal = theText;
+                        }
+                        break;
+                }
+
+                if ((bfSummarizers[i].hideIfEmpty && summVal == "") || (typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_" + bfSummarizers[i].connectWith + "[]"])) {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "none");
+                } else {
+                    JQuery("#" + bfSummarizers[i].id).closest(".bfElemWrap").css("display", "block");
+                }
+            }
+        }
+
+        bfToggleFieldsLoaded = false;
+        bfSectionFieldsDeactivated = false;
+        JQuery(document).ready(function() {
+            if (typeof bfFade != "undefined") bfFade();
+            if (typeof bfRollover != "undefined") bfRollover();
+            if (typeof bfRollover2 != "undefined") bfRollover2();
+            if (typeof bfRegisterToggleFields != "undefined") {
+                bfRegisterToggleFields();
+            } else {
+                bfToggleFieldsLoaded = true;
+            }
+            if (typeof bfDeactivateSectionFields != "undefined") {
+                bfDeactivateSectionFields();
+            } else {
+                bfSectionFieldsDeactivated = true;
+            }
+            if (JQuery.bfvalidationEngine) {
+                JQuery.bfvalidationEngineLanguage.newLang();
+                JQuery(".ff_elem").change(function() {
+                    JQuery.bfvalidationEngine.closePrompt(this);
+                });
+            }
+            JQuery(".bfQuickMode .hasTip").css("color", "inherit"); // fixing label text color issue
+            JQuery(".bfQuickMode .bfTooltip").css("color", "inherit"); // fixing label text color issue
+            JQuery("input[type=text]").bind("keypress",
+                function(evt) {
+                    if (evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+        });
+
+        //-->
+        document.addEventListener('DOMContentLoaded',
+            function() {
+                Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                    span.innerText = span.textContent;
+                });
+            });
+    </script>
+    <link rel="stylesheet" href="static/css/system.css" />
+    <script>
+        UIkit.util.ready(() =>{
+            UIkit.lightbox('#my-slider .uk-slider-items');
+        });
+    </script>
+    <link href="https://www.imprinting.info/hospital-tv-strutture-sanitarie"
+          rel="alternate" hreflang="x-default" />
+    <script>
+        var $theme = {};
+    </script>
+    <!-- Joomla Facebook Integration Begin -->
+    <script type='text/javascript'>
+        !
+            function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '389175478706596', {},
+            {
+                agent: 'pljoomla'
+            });
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" alt="fbpx" src="static/picture/5f32819e73ab4f289125974e9aa0f112.gif"
+        />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- Joomla Facebook Integration end -->
+</head>
+
+<body class="">
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l: '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNBQV47');
+</script>
+<!-- End Google Tag Manager -->
+<div class="tm-page">
+    <div class="tm-header-mobile uk-hidden@m" uk-header>
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+             sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="https://www.imprinting.info/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="50" height="51" src="static/picture/logo-im-colore.svg">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a uk-toggle aria-label="Open Menu" href="#tm-dialog-mobile" class="uk-navbar-toggle">
+                                <div uk-navbar-toggle-icon>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true"
+             mode="slide" flip>
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close
+                        uk-toggle="cls: uk-close-large; mode: media; media: @s">
+                </button>
+                <div class="uk-margin-auto-vertical">
+                    <div class="uk-grid uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel" id="module-195">
+                                <ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+                                    <li class="item-102 uk-active js-accordion uk-open uk-parent">
+                                        <a href>
+                                            Display
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-130">
+                                                <a href="/display-pubblicitari">
+                                                    Business Display
+                                                </a>
+                                            </li>
+                                            <li class="item-390">
+                                                <a href="/videowall-e-ledwall">
+                                                    Videowall e Ledwall
+                                                </a>
+                                            </li>
+                                            <li class="item-425">
+                                                <a href="/display-solutions/totem">
+                                                    Totem
+                                                </a>
+                                            </li>
+                                            <li class="item-132">
+                                                <a href="/lavagne-interattive">
+                                                    Lavagne Interattive
+                                                </a>
+                                            </li>
+                                            <li class="item-117">
+                                                <a href="/hotel-tv-samsung-smart-hospitality">
+                                                    Hospitality TV
+                                                </a>
+                                            </li>
+                                            <li class="item-454 uk-active">
+                                                <a href="/hospital-tv-strutture-sanitarie">
+                                                    Healthcare
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-428 js-accordion uk-parent">
+                                        <a href>
+                                            IT
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-460">
+                                                <a href="/sale-riunioni">
+                                                    Sale riunioni
+                                                </a>
+                                            </li>
+                                            <li class="item-451">
+                                                <a href="/noleggio-notebook-samsung-galaxy-book3">
+                                                    Noleggio Notebook Samsung Galaxy Book3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-392 js-accordion uk-parent">
+                                        <a href>
+                                            Printing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-391">
+                                                <a href="/production-printing">
+                                                    Production Printing
+                                                </a>
+                                            </li>
+                                            <li class="item-393">
+                                                <a href="/printing-solutions">
+                                                    Printing Solutions
+                                                </a>
+                                            </li>
+                                            <li class="item-455">
+                                                <a href="/offerte-multifunzione-ufficio">
+                                                    Offerte Multifunzione Ufficio
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-348 uk-parent">
+                                        <a href="/finishing">
+                                            Finishing
+                                            <span uk-nav-parent-icon>
+                                                    </span>
+                                        </a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="item-429">
+                                                <a href="/finishing/dtf">
+                                                    DTF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-417">
+                                        <a href="/lavori">
+                                            Lavori
+                                        </a>
+                                    </li>
+                                    <li class="item-353">
+                                        <a href="/blog">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-159">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="https://www.imprinting.info/contatti">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-182">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid"
+                                         uk-grid>
+                                        <div class="uk-first-column">
+                                            <a href="https://www.linkedin.com/company/imprinting-srl" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.facebook.com/imprinting.solutions" rel="noreferrer"
+                                               class="el-link uk-icon-link uk-icon" uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/i_mprinting" rel="noreferrer" class="el-link uk-icon-link uk-icon"
+                                               uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                               rel="noreferrer" class="el-link uk-icon-link uk-icon" uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel" id="module-tm-4">
+                                <form id="search-tm-4" action="/hospital-tv-strutture-sanitarie" method="post"
+                                      role="search" class="uk-search uk-search-default uk-width-1-1">
+                                            <span uk-search-icon>
+                                            </span>
+                                    <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                           type="search" class="uk-search-input">
+                                    <input type="hidden" name="task" value="search">
+                                    <input type="hidden" name="option" value="com_search">
+                                    <input type="hidden" name="Itemid" value="453">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tm-header uk-visible@m" uk-header>
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top"
+             cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+            <div class="uk-navbar-container">
+                <div class="uk-container">
+                    <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+                        <div class="uk-navbar-left">
+                            <a href="index1.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                                <img alt loading="eager" width="60" height="61" src="static/picture/LOGO.png">
+                                <img class="uk-logo-inverse" alt loading="eager" width="60" height="61"
+                                     src="static/picture/LOGO.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav" id="module-194">
+                                <li class="item-102 uk-active uk-parent">
+                                    <a role="button">
+                                        Prodotti
+                                    </a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;pos&quot;:&quot;bottom-left&quot;}">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-390">
+                                                        <a href="./product1.html">
+                                                            product1
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-425">
+                                                        <a href="./lavagne-interattive.html">
+                                                            Product2
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="item-454">
+                                                        <a href="./product3.html">
+                                                            Product3
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-348 uk-parent">
+                                    <a href="chi_siamo.html">
+                                        Chi Siamo
+                                    </a>
+                                </li>
+                                <li class="item-417">
+                                    <a href="./case.html">
+                                        Case Studies / Portfolio
+                                    </a>
+                                </li>
+                                <li class="item-353">
+                                    <a href="./blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="uk-navbar-item" id="module-154">
+                                <div class="uk-margin-remove-last-child custom">
+                                    <p>
+                                        <a class="uk-button uk-button-secondary uk-text-middle" href="./contact.html">
+                                            Contatti
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="uk-navbar-toggle" id="module-tm-3" href="#search-tm-3-modal"
+                               uk-search-icon uk-toggle>
+                            </a>
+                            <div id="search-tm-3-modal" class="uk-modal-full" uk-modal="container: true">
+                                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close
+                                            uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s">
+                                    </button>
+                                    <div class="uk-search uk-search-large">
+                                        <form id="search-tm-3" action="/display-pubblicitari" method="post" role="search"
+                                              class="uk-search uk-search-large">
+                                            <input name="searchword" placeholder="Cerca" minlength="3" aria-label="Cerca"
+                                                   type="search" class="uk-search-input uk-text-center" autofocus>
+                                            <input type="hidden" name="task" value="search">
+                                            <input type="hidden" name="option" value="com_search">
+                                            <input type="hidden" name="Itemid" value="398">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="system-message-container" data-messages="[]">
+    </div>
+    <!-- Builder #page -->
+    <style class="uk-margin-remove-adjacent">
+        #page\#0 .uk-button-default { padding: 0 50px; line-height: 40px; font-size:
+                12px; border-radius: 3px; background-color: #fff; color: #1E2B4F; border:
+                1px solid #1E2B4F; white-space:nowrap; } #page\#1 .uk-button-default {
+                                                             padding: 0 20px; line-height: 26px; font-size: 12px; border-radius: 3px;
+                                                             background-color: #fff; color: #1E2B4F; border: 0px solid #f7931e; } #page\#2
+                                                                                                                                  .uk-section-xsmall { padding-top: 7px; padding-bottom: 10px; } #page\#3
+                                                                                                                                                                                                 .uk-button-default { padding: 0 50px; line-height: 40px; font-size: 12px;
+                                                                                                                                                                                                     border-radius: 3px; background-color: #fff; color: #1E2B4F; border: 1px
+            solid #1E2B4F; white-space:nowrap; } #page\#4 .uk-button-default { padding:
+                0 50px; line-height: 40px; font-size: 12px; border-radius: 3px; background-color:
+                #fff; color: #1E2B4F; border: 1px solid #1E2B4F; white-space:nowrap; }
+        #page\#5 .uk-checkbox, #page\#5 .uk-radio, #page\#5 input[type=checkbox]:not([class*=uk-]),
+        #page\#5 input[type=radio]:not([class*=uk-]) { margin-top: 3px; } #page\#5
+                                                                          .uk-input, #page\#5 .uk-select:not([multiple]):not([size]), #page\#5 .uneditable-input:not([class*=uk-]),
+                                                                          #page\#5 input[type=color]:not([class*=uk-]), #page\#5 input[type=date]:not([class*=uk-]),
+                                                                          #page\#5 input[type=datetime-local]:not([class*=uk-]), #page\#5 input[type=datetime]:not([class*=uk-]),
+                                                                          #page\#5 input[type=email]:not([class*=uk-]), #page\#5 input[type=month]:not([class*=uk-]),
+                                                                          #page\#5 input[type=number]:not([class*=uk-]), #page\#5 input[type=password]:not([class*=uk-]),
+                                                                          #page\#5 input[type=search]:not([class*=uk-]), #page\#5 input[type=tel]:not([class*=uk-]),
+                                                                          #page\#5 input[type=text]:not([class*=uk-]), #page\#5 input[type=time]:not([class*=uk-]),
+                                                                          #page\#5 input[type=url]:not([class*=uk-]), #page\#5 input[type=week]:not([class*=uk-]),
+                                                                          #page\#5 select:not([class*=uk-]):not([multiple]):not([size]) { height:
+                    40px!important; } #page\#5 .bfQuickMode .controls .control-label { width:
+                100%; } #page\#5 .bfQuickMode .bfSubmitButton { float: none; display: block;
+                            margin-left: auto; margin-right: auto; white-space:nowrap; padding: 0 30px;
+                            vertical-align: middle; font-size: 12px; line-height: 40px; } #page\#6
+                                                                                          .uk-overlay-primary{background: rgba(30,43,79,.5);}
+    </style>
+    <div class="uk-visible@s uk-section-default uk-position-relative">
+        <div data-src="/templates/yootheme/cache/ad/hospital-tv-01-ad52ac90.jpeg"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/50\/hospital-tv-01-5003eb99.webp 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvdmVydGljYWxpL2hlYWx0aGNhcmUvaG9zcGl0YWwtdHYtMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTAyNSw1NDMsMTAyNSw1NDNdXSxbImRvQ3JvcCIsWzEwMjQsNTQzLDAsMF1dXSwxNjk0MDI3Mjc1XQ%3D%3D&amp;file=86%2Fhospital-tv-01-86e23d17.webp&amp;hash=ac095c0d 1024w, \/templates\/yootheme\/cache\/a4\/hospital-tv-01-a4bfdb7c.webp 1200w, \/templates\/yootheme\/cache\/6b\/hospital-tv-01-6bee0e4a.webp 1366w, \/templates\/yootheme\/cache\/2b\/hospital-tv-01-2b8e5426.webp 1599w, \/templates\/yootheme\/cache\/03\/hospital-tv-01-0371e3fe.webp 1600w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1200\/636) 189vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xsmall uk-padding-remove-top">
+            <div class="uk-position-cover" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);; background-clip: padding-box">
+            </div>
+            <div class="uk-container uk-position-relative">
+                <div class="tm-grid-expand uk-child-width-1-1 uk-margin-remove-vertical"
+                     uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-margin">
+                            <picture>
+                                <source type="image/webp" srcset="/templates/yootheme/cache/22/trasparente-00-22c6838e.webp 600w"
+                                        sizes="(min-width: 600px) 600px">
+                                <img src="static/picture/trasparente-00-accc90af.png" width="600" height="400"
+                                     class="el-image" alt="trasparente" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-grid-expand uk-grid-collapse uk-child-width-1-1" uk-grid>
+                    <div class="uk-grid-item-match uk-flex-middle uk-light uk-width-1-1">
+                        <div class="uk-panel uk-width-1-1">
+                            <h1 class="uk-heading-small uk-font-secondary uk-margin uk-text-center">
+                                Hospital TV: contribuire ad un'esperienza confortevole per i pazienti
+                                nelle camere
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div id="page#0" class="uk-margin uk-text-center">
+                            <a class="el-content uk-button uk-button-default" href="#form" uk-scroll>
+                                Parla con un esperto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-hidden@s uk-section-default">
+        <div data-src="/templates/yootheme/cache/f1/hospital-tv-01-f10e4af2.jpeg"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvdmVydGljYWxpL2hlYWx0aGNhcmUvaG9zcGl0YWwtdHYtMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbNjAwLDMxOCw2MDAsMzE4XV1dLDE2OTQwMjcyNzVd&amp;file=14%2Fhospital-tv-01-14675b4d.webp&amp;hash=38fce496 600w, \/templates\/yootheme\/cache\/50\/hospital-tv-01-5003eb99.webp 768w, \/component\/ajax\/?p=image&amp;src=WyJpbWFnZXMvdmVydGljYWxpL2hlYWx0aGNhcmUvaG9zcGl0YWwtdHYtMDEuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTAyNSw1NDMsMTAyNSw1NDNdXSxbImRvQ3JvcCIsWzEwMjQsNTQzLDAsMF1dXSwxNjk0MDI3Mjc1XQ%3D%3D&amp;file=86%2Fhospital-tv-01-86e23d17.webp&amp;hash=ac095c0d 1024w, \/templates\/yootheme\/cache\/6a\/hospital-tv-01-6ac7f5c8.webp 1200w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 600\/318) 189vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-left uk-section uk-padding-remove-vertical">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-margin">
+                        <picture>
+                            <source type="image/webp" srcset="/templates/yootheme/cache/26/trasparente-00-2694b26f.webp 600w"
+                                    sizes="(min-width: 600px) 600px">
+                            <img src="static/picture/trasparente-00-a89ea14e.png" width="600" height="350"
+                                 class="el-image" alt="trasparente" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-hidden@s uk-section-default uk-section uk-padding-remove-vertical">
+        <div class="uk-grid-margin-small uk-container uk-container-large uk-padding-remove-horizontal">
+            <div class="tm-grid-expand uk-grid-column-medium uk-grid-row-small" uk-grid>
+                <div class="uk-light uk-width-1-2@s uk-width-1-2@m uk-width-1-2@l uk-width-1-3@xl">
+                </div>
+                <div class="uk-grid-item-match uk-width-1-2@s uk-width-1-2@m uk-width-1-3@l">
+                    <div class="uk-flex">
+                        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+                             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+                             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-tile-xsmall uk-flex uk-flex-bottom"
+                             style="background-color: rgba(255, 255, 255, 0.8);">
+                            <div class="uk-panel uk-width-1-1">
+                                <div class="uk-h3 uk-font-secondary uk-margin-small uk-text-left@s uk-text-center">
+                                    Hospital TV: contribuire ad un'esperienza confortevole per i pazienti
+                                    nelle camere
+                                </div>
+                                <div class="uk-panel uk-text-small uk-text-emphasis uk-margin-small uk-width-large uk-margin-auto uk-text-center">
+                                    Gli unici dispositivi nel mercato sviluppati specificatamente per il settore
+                                    sanitario
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page#2" class="uk-hidden@s sticky-bottom uk-section-default uk-light"
+         uk-sticky="animation: uk-animation-slide-top">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xsmall"
+             style="background-color: rgb(30, 43, 79);">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+                    <div class="uk-panel uk-width-1-1">
+                        <div id="page#1" class="uk-margin-remove-vertical uk-text-center">
+                            <div class="uk-flex-middle uk-grid-small uk-child-width-auto uk-flex-center"
+                                 uk-grid>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small" href="#form"
+                                       uk-scroll>
+                                        Chiedi un preventivo
+                                    </a>
+                                </div>
+                                <div class="el-item">
+                                    <a class="el-content uk-button uk-button-default uk-button-small" href="tel:+390691133623">
+                                                <span uk-icon="receiver">
+                                                </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-muted uk-section uk-section-xsmall">
+        <div class="tm-grid-expand uk-grid-column-collapse uk-grid-margin" uk-grid>
+            <div class="uk-grid-item-match uk-flex-middle uk-width-small@m">
+                <div class="uk-panel uk-width-1-1">
+                    <div class="uk-h6 uk-margin uk-text-center">
+                        Trusted by
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-item-match uk-flex-middle uk-width-expand@m">
+                <div class="uk-panel uk-width-1-1">
+                    <div class="uk-margin uk-text-center">
+                        <div class="uk-child-width-1-2 uk-child-width-1-6@s uk-flex-center uk-grid-column-collapse"
+                             uk-grid>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/78/logo_radisson_bn-78aacd4e.webp 136w, /templates/yootheme/cache/a0/logo_radisson_bn-a0463057.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_radisson_bn-63d97ec3.png" width="136" height="68"
+                                                 alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/4e/logo_hampton_bn-4e27a5f3.webp 136w, /templates/yootheme/cache/15/logo_hampton_bn-152aba4f.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_hampton_bn-857bdcfe.png" width="136" height="68"
+                                                 alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/93/logo_marriott_bn-931ceb56.webp 136w, /templates/yootheme/cache/c7/logo_marriott_bn-c7cf9879.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_marriott_bn-3af054f0.png" width="136" height="68"
+                                                 alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/4b/logo_holiday-inn_bn-4bfdcae7.webp 136w, /templates/yootheme/cache/f6/logo_holiday-inn_bn-f6a438e1.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_holiday-inn_bn-ee4a3be4.png" width="136"
+                                                 height="68" alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/ab/logo_fortevillage_bn-abdf9d26.webp 136w, /templates/yootheme/cache/a7/logo_fortevillage_bn-a70d0687.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_fortevillage_bn-e73a14ab.png" width="136"
+                                                 height="68" alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-light">
+                                    <div class="el-item uk-inline-clip">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/dd/logo_palazzo%20doglio_bn-dd4134f0.webp 136w, /templates/yootheme/cache/3d/logo_palazzo%20doglio_bn-3d050037.webp 272w"
+                                                    sizes="(min-width: 136px) 136px">
+                                            <img src="static/picture/logo_palazzo doglio_bn-b9768290.png" width="136"
+                                                 height="68" alt loading="lazy" class="el-image uk-transition-opaque">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="benefici" class="uk-section-default uk-section">
+        <div class="uk-container uk-container-xlarge">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h3 class="uk-h2 uk-font-secondary uk-margin-remove-vertical uk-text-center">
+                        Soluzioni per il settore sanitario e Hospital TV Samsung
+                    </h3>
+                    <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        <p>
+                            Il comfort e l'attenzione che i pazienti desiderano
+                        </p>
+                        <p>
+                            Tra le soluzioni per il settore Healthcare, le Hospital TV Samsung, progettate
+                            per i contesti sanitari, migliorano l'esperienza durante il soggiorno in
+                            ospedale, sia per i pazienti che per i familiari. Offrono intrattenimento
+                            in alta definizione, accesso ai social network e la possibilità di visualizzare
+                            materiale educativo correlato alle condizioni di salute, facilitando la
+                            comunicazione e il coinvolgimento, e contribuendo all'incremento dell'efficienza
+                            operativa complessiva della struttura. L'adozione di soluzioni tecnologicamente
+                            avanzate può promuovere un ambiente ospedaliero più confortevole, interattivo
+                            e funzionale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h2 uk-font-secondary uk-margin-remove-vertical uk-text-center">
+                        Caratteristiche uniche
+                    </div>
+                    <hr>
+                    <div class="uk-margin uk-text-center">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-row-large uk-grid-match"
+                             uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/4a/healthcare-icona_01-4a1886d8.webp 120w, /templates/yootheme/cache/4f/healthcare-icona_01-4f9acc08.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/healthcare-icona_01-12766c35.png" width="120"
+                                             height="120" class="el-image" alt="icona" loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Diversi formati
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            <p>
+                                                Scegli le TV più adatte alla tua struttura tra una vasta gamma di modelli
+                                                con differenti caratteristiche e funzionalità
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/d2/healthcare-icona_06-d213dac8.webp 120w, /templates/yootheme/cache/dc/healthcare-icona_06-dc349b9a.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/healthcare-icona_06-095dbc0f.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Controllo remoto
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            <p>
+                                                Monitora da remoto le TV in ogni camera per effettuare le configurazioni
+                                                e controllare le impostazioni di base
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/69/healthcare-icona_03-69d40fa3.webp 120w, /templates/yootheme/cache/a4/healthcare-icona_03-a4a54132.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/healthcare-icona_03-5d7a8d52.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Lynk Cloud
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            <p>
+                                                Controlla i dispositivi, gestisci i contenuti e analizza i dati attraverso
+                                                un'unica piattaforma integrata
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/95/healthcare-icona_02-958ac83e.webp 120w, /templates/yootheme/cache/d1/healthcare-icona_02-d13a87af.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/healthcare-icona_02-97447ec1.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Qualità delle immagini
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            <p>
+                                                Offri ai pazienti momenti di intrattenimento e svago con contenuti di
+                                                qualità e immagini straordinarie
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        <iframe src="https://www.youtube.com/embed/TITw5bwSpLY?v=TITw5bwSpLY&amp;t=&amp;disablekb=1"
+                                allow="autoplay" allowfullscreen uk-responsive width="1920" height="1080">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section"
+             style="background-color: #1E2B4F;">
+            <div class="uk-container">
+                <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-3-4@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div class="uk-h2 uk-font-secondary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                                Scopri le soluzioni Hospitality per la tua struttura sanitaria
+                            </div>
+                            <div class="uk-h3 uk-font-secondary uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                                Scopri le soluzioni Hospitality per la tua struttura sanitaria
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-1-4@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div id="page#3" class="uk-margin uk-text-center">
+                                <a class="el-content uk-button uk-button-default uk-button-large" href="#form"
+                                   uk-scroll>
+                                    Inizia ora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="benefici" class="uk-section-default uk-section">
+        <div class="uk-container uk-container-xlarge">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h3 class="uk-h2 uk-font-secondary uk-margin-remove-vertical uk-text-center">
+                        I benefici delle Hospital TV Samsung
+                    </h3>
+                    <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        <p>
+                            Le soluzioni Hospital TV Samsung offrono diversi benefici per le strutture
+                            sanitarie, come cliniche, ospedali, case di cura ed RSA, tra cui:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-grid-column-collapse uk-child-width-1-1 uk-grid-margin"
+                 uk-grid>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-1-1">
+                    <div class="uk-panel uk-width-1-1">
+                        <div class="uk-margin uk-text-center@s uk-text-center">
+                            <div class="uk-child-width-1-1 uk-child-width-1-3@l uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="el-item uk-card uk-card-default uk-card-body uk-margin-remove-first-child">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/de/img_sub_features_premium1-deba839a.webp 70w, /templates/yootheme/cache/08/img_sub_features_premium1-0800fde4.webp 140w"
+                                                    sizes="(min-width: 70px) 70px">
+                                            <img src="static/picture/img_sub_features_premium1-b922e7de.jpeg" width="70"
+                                                 height="70" class="el-image" alt loading="lazy">
+                                        </picture>
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-small-top uk-margin-remove-bottom">
+                                            Miglioramento dell'esperienza dei pazienti
+                                        </div>
+                                        <div class="el-content uk-panel uk-margin-small-top">
+                                            <p>
+                                                Grazie alla possibilità di accedere ad una vasta gamma di contenuti, tra
+                                                cui film, programmi televisivi e giochi, con le soluzioni Hospital TV Samsung
+                                                i pazienti possono distrarsi e rilassarsi durante la degenza. Ciò può contribuire
+                                                a ridurre lo stress e migliorare l'umore, con effetti positivi sulla guarigione.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="el-item uk-card uk-card-default uk-card-body uk-margin-remove-first-child">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/fa/img_sub_features_advanced3-fa3c089a.webp 70w, /templates/yootheme/cache/62/img_sub_features_advanced3-62a4ddd8.webp 140w"
+                                                    sizes="(min-width: 70px) 70px">
+                                            <img src="static/picture/img_sub_features_advanced3-1a623492.jpeg" width="70"
+                                                 height="70" class="el-image" alt loading="lazy">
+                                        </picture>
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-small-top uk-margin-remove-bottom">
+                                            Miglioramento della comunicazione interna
+                                        </div>
+                                        <div class="el-content uk-panel uk-margin-small-top">
+                                            Le soluzioni Hospital TV Samsung possono anche essere utilizzate per scopi
+                                            di comunicazione interna alla struttura, ad esempio per fornire informazioni
+                                            ai pazienti o per trasmettere avvisi al personale. Ciò può contribuire
+                                            a migliorare la gestione delle operazioni e la reputazione della struttura
+                                            stessa.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="el-item uk-card uk-card-default uk-card-body uk-margin-remove-first-child">
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/6a/img_sub_features_standard3-6a75739f.webp 70w, /templates/yootheme/cache/d7/img_sub_features_standard3-d71c23c3.webp 140w"
+                                                    sizes="(min-width: 70px) 70px">
+                                            <img src="static/picture/img_sub_features_standard3-c695ff57.jpeg" width="70"
+                                                 height="70" class="el-image" alt loading="lazy">
+                                        </picture>
+                                        <div class="el-title uk-h3 uk-font-secondary uk-margin-small-top uk-margin-remove-bottom">
+                                            Miglioramento dell'assistenza sanitaria
+                                        </div>
+                                        <div class="el-content uk-panel uk-margin-small-top">
+                                            <p>
+                                                Le soluzioni Hospital TV Samsung possono fornire ai pazienti informazioni
+                                                sanitarie importanti, ad esempio su terapie, condizioni di salute e regimi
+                                                dietetici, per prendersi cura di se stessi durante la degenza. Ciò può
+                                                contribuire a migliorare la qualità dell'assistenza sanitaria fornita.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section uk-padding-remove-vertical">
+        <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+            <div class="uk-width-1-1">
+                <div class="uk-margin uk-text-center">
+                    <picture>
+                        <source type="image/webp" srcset="/templates/yootheme/cache/2d/health-display-hospital-03-2d0597a3.webp 768w, /templates/yootheme/cache/91/health-display-hospital-03-919e4385.webp 1024w, /templates/yootheme/cache/84/health-display-hospital-03-84d4db31.webp 1200w, /templates/yootheme/cache/0f/health-display-hospital-03-0f901100.webp 1366w, /templates/yootheme/cache/86/health-display-hospital-03-867e421d.webp 1599w, /templates/yootheme/cache/ae/health-display-hospital-03-ae81f5c5.webp 1600w"
+                                sizes="(min-width: 1200px) 1200px">
+                        <img src="static/picture/health-display-hospital-03-1c20746a.jpeg" width="1200"
+                             height="640" class="el-image" alt="ospedale" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gestione-remota" class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h3 class="uk-h3 uk-font-secondary uk-text-center">
+                        Come aumentare l'efficienza della struttura sanitaria?
+                    </h3>
+                    <div class="uk-panel uk-margin uk-text-justify">
+                        <p>
+                            Le soluzioni Hospital TV Samsung possono essere integrate con i sistemi
+                            informatici esistenti, ad esempio per la gestione delle prenotazioni e
+                            la consegna dei pasti, aiutando il personale a ridurre i tempi di attesa
+                            e migliorando l'efficienza generale della struttura, con l'obiettivo di
+                            assicurare ai pazienti un servizio rapido e di alta qualità.
+                        </p>
+                    </div>
+                    <div class="uk-margin uk-text-center">
+                        <picture>
+                            <source type="image/webp" srcset="/templates/yootheme/cache/fb/hospitality-01-fb9ac5f6.webp 768w, /templates/yootheme/cache/cc/hospitality-01-ccbc178c.webp 800w"
+                                    sizes="(min-width: 800px) 800px">
+                            <img src="static/picture/hospitality-01-b80466be.png" width="800" height="428"
+                                 class="el-image" alt="samsung hospitality" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <h3 class="uk-h3 uk-font-secondary uk-text-center">
+                        Quali sono i vantaggi della gestione centralizzata?
+                    </h3>
+                    <div class="uk-panel uk-margin uk-text-justify">
+                        La piattaforma LYNK Cloud garantisce una maggiore efficienza nella gestione
+                        delle TV, che possono essere controllate e aggiornate in modo centralizzato,
+                        senza la necessità di intervenire manualmente. Consente anche di ottenere
+                        informazioni sull'uso dei dispositivi e dati utili per il miglioramento
+                        dell'assistenza e del servizio sanitario.
+                    </div>
+                    <div class="uk-margin">
+                        <video src="/images/display/hotel-tv/video/lynk-cloud-01.mp4" loop autoplay
+                               width="1440" height="650">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <h2 class="uk-h2 uk-font-secondary uk-visible@s uk-text-center">
+                        Un'esperienza più confortevole e familiare per i pazienti
+                    </h2>
+                    <div class="uk-h3 uk-font-secondary uk-hidden@s uk-text-center">
+                        Un'esperienza più confortevole e familiare per i pazienti
+                    </div>
+                    <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        Le più recenti tecnologie TV associate ad una soluzione per la gestione
+                        centralizzata dei display in ogni stanza possono contribuire a creare un'esperienza
+                        più confortevole e familiare per i pazienti.
+                    </div>
+                    <div class="uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                        <video src="/images/display/hotel-tv/video/LYNK-Cloud-Samsung.mp4" controls
+                               preload="none" poster="/templates/yootheme/cache/9e/video-copertina-03-9ef859c0.jpeg"
+                               width="1920" height="1080">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="servizi-inclusi" class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h1 uk-font-secondary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        I nostri servizi includono
+                    </div>
+                    <div class="uk-h2 uk-font-secondary uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        I nostri servizi includono
+                    </div>
+                    <hr>
+                    <div class="uk-margin uk-text-center">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large uk-grid-match"
+                             uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/94/icone-flip_mani-94690a32.webp 120w, /templates/yootheme/cache/53/icone-flip_mani-531cbb3d.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_mani-e3f2499d.png" width="120" height="120"
+                                             class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Consulenza pre-vendita
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per scegliere insieme i prodotti in grado di soddisfare al meglio le esigenze
+                                            di ogni cliente
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/2d/icone-flip_meet-2d48bff2.webp 120w, /templates/yootheme/cache/4f/icone-flip_meet-4fd389e3.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_meet-3ebbe41f.png" width="120" height="120"
+                                             class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Consulenza fiscale
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per svolgere le pratiche di noleggio e agevolazione fiscale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/57/icone-flip_assistenza-57a5556a.webp 120w, /templates/yootheme/cache/94/icone-flip_assistenza-94ef1cf1.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_assistenza-1f29897f.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Assistenza post-vendita
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            per seguire i nostri clienti nella risoluzione dei problemi 24/7
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/09/icone-flip_formazione-090713f1.webp 120w, /templates/yootheme/cache/a2/icone-flip_formazione-a2397f3a.webp 240w"
+                                                sizes="(min-width: 120px) 120px">
+                                        <img src="static/picture/icone-flip_formazione-0d7786f1.png" width="120"
+                                             height="120" class="el-image" alt loading="lazy">
+                                    </picture>
+                                    <div class="uk-padding-small uk-margin-remove-first-child">
+                                        <div class="el-title uk-h4 uk-font-secondary uk-margin-remove-top uk-margin-remove-bottom">
+                                            Formazione tecnica
+                                        </div>
+                                        <div class="el-content uk-panel">
+                                            <p>
+                                                per trasmettere le principali nozioni per la conoscenza e l'uso dei dispositivi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-light">
+        <div data-src="/templates/yootheme/cache/ab/trasparente-00-ab003b14.png"
+             data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/10\/trasparente-00-10e4158f.webp 1w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1\/1) 100vh&quot;}]"
+             uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section"
+             style="background-color: #1E2B4F;">
+            <div class="uk-container">
+                <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div class="uk-h2 uk-visible@s uk-margin-remove-vertical uk-text-center">
+                                <strong>
+                                    Parla con un esperto di Hospitality Technology
+                                </strong>
+                            </div>
+                            <div class="uk-h3 uk-hidden@s uk-margin-remove-vertical uk-text-right@m uk-text-center">
+                                <strong>
+                                    Parla con un esperto
+                                    <br>
+                                    di Hospitality Technology
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div id="page#4" class="uk-margin uk-text-center">
+                                <a class="el-content uk-button uk-button-default uk-button-large" href="#form"
+                                   uk-scroll>
+                                    Richiedi una consulenza
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form" class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h2 uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                    <div class="uk-h2 uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        <b>
+                            Richiedi maggiori informazioni
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-grid-margin" uk-grid>
+                <div class="uk-width-1-4@m">
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div id="page#5">
+                        <!-- BreezingForms V1.9.1 Stable (build 940) Copyright(c) 2008-2013 by
+                        Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.
+                        All rights reserved. -->
+                        <div class="bfClearfix">
+                            <script type="text/javascript">
+                                <!--ff_processor = new Object();
+                                ff_processor.okrun = true;
+                                ff_processor.ip = '141.11.217.33';
+                                ff_processor.agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.browser = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36';
+                                ff_processor.opsys = 'win';
+                                ff_processor.provider = 'Unknown';
+                                ff_processor.submitted = '2024-12-11 08:32:34';
+                                ff_processor.form = 58;
+                                ff_processor.form_id = 'ff_form58';
+                                ff_processor.page = 1;
+                                ff_processor.target = 2;
+                                ff_processor.runmode = 0;
+                                ff_processor.inframe = 0;
+                                ff_processor.inline = 0;
+                                ff_processor.template = 0;
+                                ff_processor.homepage = 'https://www.imprinting.info';
+                                ff_processor.mossite = 'https://www.imprinting.info';
+                                ff_processor.images = 'https://www.imprinting.info/components/com_breezingforms/images';
+                                ff_processor.border = '';
+                                ff_processor.align = '';
+                                ff_processor.top = '';
+                                ff_processor.suffix = '';
+                                ff_processor.status = null;
+                                ff_processor.message = null;
+                                ff_processor.record_id = null;
+                                ff_processor.showgrid = false;
+                                ff_processor.traceBuffer = null;
+                                //-->
+
+                            </script>
+                            <script type="text/javascript" src="static/js/facileforms.js">
+                            </script>
+                            <div id="ff_formdiv58" class="bfFormDiv">
+                                <style>
+                                    #bfLabel3339 { font-size: 15px; }
+                                </style>
+                                <style>
+                                    #ff_elem3339 { border: 1px solid #000; }
+                                </style>
+                                <script type="text/javascript">
+                                    <!--
+
+                                        function checkFileExtensions() {
+                                            return true;
+                                        }
+                                    function bfCheckCaptcha() {
+                                        if (checkFileExtensions()) ff_submitForm2();
+                                    }
+                                    function ff_initialize(condition) {}
+                                    onload = function() {
+                                        ff_initialize('formentry');
+                                        ff_initialize('pageentry');
+                                        if (ff_processor && ff_processor.traceBuffer) ff_traceWindow();
+                                    }
+                                    var ff_currentpage = 1;
+                                    function ff_switchpage(page) {
+                                        if (document.getElementById("bfPage1")) document.getElementById("bfPage1").style.display = "none";
+                                        if (document.getElementById("bfPage2")) document.getElementById("bfPage2").style.display = "none";
+                                        if (document.getElementById("bfPage" + page)) document.getElementById("bfPage" + page).style.display = "";
+                                        ff_currentpage = page;
+                                        ff_initialize("pageentry");
+                                    }
+                                    function ff_hospitality1_submitted(status, message) {
+                                        if (status == 0) {
+                                            ff_switchpage(2);
+                                        } else {
+                                            alert(message);
+                                        }
+                                    }
+                                    function ff_submitForm() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        bfCheckCaptcha();
+                                    }
+                                    function ff_submitForm2() {
+                                        if (document.getElementById('bfSubmitButton')) {
+                                            document.getElementById('bfSubmitButton').disabled = true;
+                                        }
+                                        if (typeof JQuery != 'undefined') {
+                                            JQuery('.bfCustomSubmitButton').prop('disabled', true);
+                                        }
+                                        if (typeof bf_ajax_submit != 'undefined') {
+                                            bf_ajax_submit()
+                                        } else {
+                                            document.ff_form58.submit();
+                                        }
+                                    }
+                                    var ff_validationFocusName = '';
+                                    var ff_elements = [['ff_elem4323', 'ff_div4323', 'bfFakeName', 1, 4323], ['ff_elem4324', 'ff_div4324', 'bfFakeName2', 1, 4324], ['ff_elem4325', 'ff_div4325', 'bfFakeName3', 1, 4325], ['ff_elem4326', 'ff_div4326', 'bfFakeName4', 1, 4326], ['ff_elem3578', 'ff_div3578', 'nome', 1, 3578], ['ff_elem3576', 'ff_div3576', 'azienda', 1, 3576], ['ff_elem3575', 'ff_div3575', 'email', 1, 3575], ['ff_elem3574', 'ff_div3574', 'telefono', 1, 3574], ['ff_elem3573', 'ff_div3573', 'cittaconsegna', 1, 3573], ['ff_elem3572', 'ff_div3572', 'messaggio', 1, 3572], ['ff_elem3570', 'ff_div3570', 'acquisizione', 1, 3570], ['ff_elem3571', 'ff_div3571', 'privacy', 1, 3571]];
+                                    function ff_getElementByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return eval('document.ff_form58.' + ff_elements[i][0]);
+                                        return null;
+                                    }
+                                    function ff_getPageByName(name) {
+                                        if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                        for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) return ff_elements[i][3];
+                                        return 0;
+                                    }
+                                    function ff_validationFocus(name) {
+                                        if (name == undefined || name == '') {
+                                            if (ff_validationFocusName != '') {
+                                                ff_switchpage(ff_getPageByName(ff_validationFocusName));
+                                                if (ff_getElementByName(ff_validationFocusName).focus) {
+                                                    ff_getElementByName(ff_validationFocusName).focus();
+                                                }
+                                            }
+                                        } else {
+                                            if (ff_validationFocusName == '') ff_validationFocusName = name;
+                                        }
+                                    }
+                                    function ff_getElementByIndex(index) {
+                                        if (index >= 0 && index < ff_elements.length) return eval('document.ff_form58.' + ff_elements[index][0]);
+                                        return null;
+                                    }
+                                    function ff_anychecked(element, message) {
+                                        var name = '';
+                                        if (!element.name) {
+                                            if (element.length && element.length != 0) {
+                                                name = element[0].name;
+                                                var cnt = 0;
+                                                for (var i = 0; i < element.length; i++) if (element[i].name == name) if (element[i].checked) cnt++;
+                                                if (cnt == 0) {
+                                                    ff_validationFocus(element[0].name);
+                                                    if (message == '') message = "Please check or select " + name + ".\n";
+                                                    return message;
+                                                }
+                                            } else {
+                                                return '';
+                                            }
+                                        } else {
+                                            name = element.name;
+                                            if (name.substr(0, 6) == 'ff_nm_') name = name.substring(6, name.length - 2);
+                                            var cnt = 0;
+                                            for (var i = 0; i < ff_elements.length; i++) if (ff_elements[i][2] == name) if (ff_getElementByIndex(i).checked) cnt++;
+                                            if (cnt == 0) {
+                                                ff_validationFocus(element.name);
+                                                if (message == '') message = "Please check or select " + name + ".\n";
+                                                return message;
+                                            }
+                                        }
+                                        return '';
+                                    }
+                                    function ff_validemail(element, message) {
+                                        var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                                        if (!check.test(element.value)) {
+                                            if (message == '') message = element.name + " is no valid email address.\n";
+                                            ff_validationFocus(element.name);
+                                            return message;
+                                        }
+                                        return '';
+                                    }
+                                    function ff_valuenotempty(element, message) {
+                                        if (element.value != '') return '';
+                                        if (message == '') message = "Please enter " + element.name + ".\n";
+                                        ff_validationFocus(element.name);
+                                        return message;
+                                    }
+                                    function ff_validation(page) {
+                                        if (typeof inlineErrorElements != 'undefined') inlineErrorElements = new Array();
+                                        error = '';
+                                        ff_validationFocusName = '';
+                                        if (page == 1 || page == 0) {
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_nome[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form58['ff_nm_nome[]'], "Inserisci il tuo nome e cognome\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["nome", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_azienda[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form58['ff_nm_azienda[]'], "Inserisci la ragione sociale\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["azienda", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_email[]']) {
+                                                errorout = ff_validemail(document.ff_form58['ff_nm_email[]'], "Inserisci la tua e-mail\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["email", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_telefono[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form58['ff_nm_telefono[]'], "Inserisci un recapito telefonico\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["telefono", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_cittaconsegna[]']) {
+                                                errorout = ff_valuenotempty(document.ff_form58['ff_nm_cittaconsegna[]'], "Inserisci la tua città\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["cittaconsegna", errorout]);
+                                                }
+                                            }
+                                            if (typeof bfDeactivateField == 'undefined' || !bfDeactivateField['ff_nm_privacy[]']) {
+                                                errorout = ff_anychecked(document.ff_form58['ff_nm_privacy[]'], "Si prega di accettare\n");
+                                                error += errorout
+                                                if (typeof inlineErrorElements != 'undefined') {
+                                                    inlineErrorElements.push(["privacy", errorout]);
+                                                }
+                                            }
+                                        }
+                                        if (error != "" && document.getElementById('ff_capimgValue')) {
+                                            document.getElementById('ff_capimgValue').src = '/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom=' + Math.random();
+                                            document.getElementById('bfCaptchaEntry').value = "";
+                                        }
+                                        if (error != "" && document.getElementById("bfSubmitButton")) {
+                                            document.getElementById("bfSubmitButton").disabled = false;
+                                        }
+                                        if (error != "" && typeof JQuery != "undefined") {
+                                            JQuery(".bfCustomSubmitButton").prop("disabled", false);
+                                        }
+                                        return error;
+                                    }
+                                    function ff_validate_submit(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(0);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus();
+                                        } else ff_submitForm();
+                                    }
+                                    function ff_resetForm(element, action) {
+                                        eval('document.' + ff_processor.form_id).reset();
+                                    }
+                                    function ff_validate_prevpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            if (ff_currentpage > 1) {
+                                                ff_switchpage(ff_currentpage - 1);
+                                            }
+                                        }
+                                    }
+                                    function ff_validate_nextpage(element, action) {
+                                        if (typeof bfUseErrorAlerts != 'undefined') {
+                                            JQuery(".bfErrorMessage").html('');
+                                            JQuery(".bfErrorMessage").css("display", "none");
+                                        }
+                                        error = ff_validation(ff_currentpage);
+                                        if (error != '') {
+                                            if (typeof bfUseErrorAlerts == 'undefined') {
+                                                alert(error);
+                                            } else {
+                                                bfShowErrors(error);
+                                            }
+                                            ff_validationFocus('');
+                                        } else {
+                                            ff_switchpage(ff_currentpage + 1);
+                                        }
+                                    }
+                                    //-->
+
+                                </script>
+                                <form data-ajax="false" action="https://www.imprinting.info/hospital-tv-strutture-sanitarie"
+                                      method="post" name="ff_form58" id="ff_form58" enctype="multipart/form-data"
+                                      accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+                                    <div id="bfPage1" class="bfPage">
+                                        <section class=" " id="datirichiedente">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap3578">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel3578" for="ff_elem3578">
+                                                                Nome
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_nome[]" value="" id="ff_elem3578" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap3576">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel3576" for="ff_elem3576">
+                                                                Azienda
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_azienda[]" value="" id="ff_elem3576" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <section class=" " id="contatti">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap3575">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel3575" for="ff_elem3575">
+                                                                Email
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input placeholder="@" class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_email[]" value="" id="ff_elem3575" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap3574">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel3574" for="ff_elem3574">
+                                                                Telefono
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" type="number" name="ff_nm_telefono[]"
+                                                                   value="" id="ff_elem3574" step="" max="" min="" />
+                                                        </div>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        JQuery(document).ready(JQuery("#ff_elem3574").css("width", "100%"));
+                                                    </script>
+                                                </div>
+                                                <div class="bfElemWrap control-group" id="bfElemWrap3573">
+                                                    <div class="controls form-inline">
+                                                        <div class="">
+                                                            <label class="control-label bfLabelBlock" id="bfLabel3573" for="ff_elem3573">
+                                                                Città
+                                                                <i class="icon-asterisk">
+                                                                </i>
+                                                            </label>
+                                                            <input class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;"
+                                                                   type="text" name="ff_nm_cittaconsegna[]" value="" id="ff_elem3573" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap3572">
+                                            <div class="controls form-inline">
+                                                <div class="">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel3572" for="ff_elem3572">
+                                                        Lascia un messaggio (facoltativo)
+                                                    </label>
+                                                    <textarea class=" ff_elem inputbox" style="width:100% !important; min-width:100% !important;height:200px;"
+                                                              name="ff_nm_messaggio[]" id="ff_elem3572">
+                                                            </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bfElemWrap control-group" id="bfElemWrap3570">
+                                            <div class="controls form-inline">
+                                                <div class=" ">
+                                                    <label class="control-label bfLabelBlock" id="bfLabel3570" for="ff_elem3570">
+                                                        Come ci hai conosciuto?
+                                                    </label>
+                                                    <span class="">
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3570"
+                                                                       for="ff_elem3570">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Google"
+                                                                           id="ff_elem3570" />
+                                                                    Google
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3570_1"
+                                                                       for="ff_elem3570_1">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Social"
+                                                                           id="ff_elem3570_1" />
+                                                                    Social
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3570_2"
+                                                                       for="ff_elem3570_2">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Mail"
+                                                                           id="ff_elem3570_2" />
+                                                                    Mail
+                                                                </label>
+                                                                <label style="vertical-align: baseline;" class="checkbox inline " id="bfGroupLabel3570_3"
+                                                                       for="ff_elem3570_3">
+                                                                    <input class="ff_elem" type="checkbox" name="ff_nm_acquisizione[]" value="Altro"
+                                                                           id="ff_elem3570_3" />
+                                                                    Altro
+                                                                </label>
+                                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <section class=" " id="privacy">
+                                            <div class="row-fluid">
+                                                <i style="display:none;">
+                                                </i>
+                                                <div class="bfClearfix">
+                                                    <div class="bfElemWrap control-group" id="bfElemWrap3571">
+                                                        <div class="controls form-inline">
+                                                            <div class="">
+                                                                <label class="control-label bfLabelBlock" id="bfLabel3571" for="ff_elem3571">
+                                                                    Acconsento al trattamento dei miei dati in merito a questa richiesta.
+                                                                    <i class="icon-asterisk">
+                                                                    </i>
+                                                                </label>
+                                                                <span class="">
+                                                                            <input style="vertical-align: baseline;" class="ff_elem" type="checkbox"
+                                                                                   name="ff_nm_privacy[]" value="Acconsento" id="ff_elem3571" />
+                                                                        </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- inline -->
+                                            </div>
+                                            <!-- section normal -->
+                                        </section>
+                                        <div class="bfClearfix">
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="">
+                                                <button type="button" id="bfSubmitButton" class="bfSubmitButton btn btn-primary pull-right button"
+                                                        onclick="this.disabled=true;if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');"
+                                                        value="Invia la richiesta">
+                                                            <span>
+                                                                Invia la richiesta
+                                                            </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- bfPage end -->
+                                    <div id="bfPage2" class="bfPage" style="display:none;">
+                                        <div class="">
+                                            <h2 style="text-align: center;">
+                                                Grazie per la richiesta
+                                            </h2>
+                                            <p style="text-align: center;">
+                                                        <span class="lead">
+                                                            Verrai contattato al più presto da un nostro responsabile commerciale
+                                                            per offrirti la soluzione più adatta alle tue esigenze.
+                                                        </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <noscript>
+                                        Please turn on javascript to submit your data. Thank you!
+                                    </noscript>
+                                    <input type="hidden" name="ff_contentid" value="291" />
+                                    <input type="hidden" name="ff_applic" value="" />
+                                    <input type="hidden" name="ff_record_id" value="" />
+                                    <input type="hidden" name="ff_module_id" value="0" />
+                                    <input type="hidden" name="ff_form" value="58" />
+                                    <input type="hidden" name="ff_task" value="submit" />
+                                    <input type="hidden" name="ff_target" value="2" />
+                                    <input type="hidden" name="ff_align" value="" />
+                                    <input type="hidden" name="option" value="com_content" />
+                                    <input type="hidden" name="Itemid" value="453" />
+                                    <input type="hidden" name="id" value="291" />
+                                </form>
+                            </div>
+                            <!-- form end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-4@m">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="tm-grid-expand uk-grid-divider uk-grid-margin" uk-grid>
+                <div class="uk-width-1-4@m">
+                    <div class="uk-margin uk-text-center">
+                        <picture>
+                            <source type="image/webp" srcset="/templates/yootheme/cache/63/Google-Reviews-5-stelle-01-63d2e1c9.webp 220w, /templates/yootheme/cache/73/Google-Reviews-5-stelle-01-7370ce43.webp 399w, /templates/yootheme/cache/71/Google-Reviews-5-stelle-01-711bef45.webp 400w"
+                                    sizes="(min-width: 220px) 220px">
+                            <img src="static/picture/google-reviews-5-stelle-01-8888c4eb.png" width="220"
+                                 height="93" class="el-image" alt="recensioni" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="uk-width-3-4@m">
+                    <div class="uk-margin uk-width-2xlarge uk-margin-auto" uk-slider="autoplay: 1; pauseOnHover: false; autoplayInterval: 4000;">
+                        <div class="uk-position-relative">
+                            <ul class="uk-slider-items uk-grid uk-grid-match">
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Emiliano Papale
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Azienda composta da professionisti del Digital Signage e del Printing.
+                                            Li consiglio.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Mario Iannelli
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Molto gentili e competenti.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Roberto Romano
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Cortesi, competenti e professionali.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Biagio D'Auria
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            I Totem acquistati rispecchiano fedelmente quello che ci hanno proposto
+                                            nel preventivo e comunque molto più che superiori alle nostre aspettative.
+                                            Dal punto di vista del software, la programmazione...
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-1-1 uk-width-4-5@s uk-width-5-6@m uk-width-4-5@l">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <div class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
+                                            Fabio Fraccastoro
+                                        </div>
+                                        <picture>
+                                            <source type="image/webp" srcset="/templates/yootheme/cache/c9/stelle-5-c9fce6f9.webp 150w, /templates/yootheme/cache/8c/stelle-5-8c2b606d.webp 299w, /templates/yootheme/cache/e1/stelle-5-e1420008.webp 300w"
+                                                    sizes="(min-width: 150px) 150px">
+                                            <img src="static/picture/stelle-5-c936a5d2.png" width="150" height="30"
+                                                 class="el-image uk-margin-top" alt="stelle" loading="lazy">
+                                        </picture>
+                                        <div class="el-content uk-panel uk-margin-top">
+                                            Grande azienda con personale moooolto preparato.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s"
+                            uk-margin>
+                            <li uk-slider-item="0">
+                                <a href aria-label="Go to slide 1">
+                                </a>
+                            </li>
+                            <li uk-slider-item="1">
+                                <a href aria-label="Go to slide 2">
+                                </a>
+                            </li>
+                            <li uk-slider-item="2">
+                                <a href aria-label="Go to slide 3">
+                                </a>
+                            </li>
+                            <li uk-slider-item="3">
+                                <a href aria-label="Go to slide 4">
+                                </a>
+                            </li>
+                            <li uk-slider-item="4">
+                                <a href aria-label="Go to slide 5">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="case-study" class="uk-section-default uk-section">
+        <div class="uk-grid-margin uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+                <div class="uk-width-1-1">
+                    <div class="uk-h2 uk-font-secondary uk-visible@s uk-margin-remove-vertical uk-text-center">
+                        Approfondimenti
+                    </div>
+                    <div class="uk-h2 uk-font-secondary uk-hidden@s uk-margin-remove-vertical uk-text-center">
+                        Approfondimenti
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+            <div class="uk-width-1-1">
+                <div uk-slider="center: 1; autoplay: 1; pauseOnHover: false; autoplayInterval: 5000;"
+                     id="page#6" class="uk-margin uk-text-center">
+                    <div class="uk-position-relative">
+                        <ul class="uk-slider-items uk-grid uk-grid-small uk-grid-match">
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/blog/294-la-tecnologia-avanzata-dei-televisori-samsung-per-ospedali-e-strutture-sanitarie-caratteristiche-e-vantaggi"
+                                   target="_blank" aria-label="La tecnologia avanzata dei televisori Samsung per ospedali e strutture sanitarie: caratteristiche e vantaggi">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8a/TV-ospedali-cover-8a2e0f5e.webp 600w, /templates/yootheme/cache/39/TV-ospedali-cover-39c142d7.webp 768w, /templates/yootheme/cache/21/TV-ospedali-cover-21700d27.webp 1024w, /templates/yootheme/cache/78/TV-ospedali-cover-78c19b09.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/tv-ospedali-cover-f88d85bf.jpeg" width="600"
+                                             height="400" alt="hospital tv" loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8a/TV-ospedali-cover-8a2e0f5e.webp 600w, /templates/yootheme/cache/39/TV-ospedali-cover-39c142d7.webp 768w, /templates/yootheme/cache/21/TV-ospedali-cover-21700d27.webp 1024w, /templates/yootheme/cache/78/TV-ospedali-cover-78c19b09.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/tv-ospedali-cover-f88d85bf.jpeg" width="600"
+                                             height="400" alt="hospital tv" loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-position-medium uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-h4 uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                La tecnologia avanzata dei televisori Samsung per ospedali e strutture
+                                                sanitarie: caratteristiche e vantaggi
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/blog/296-tv-per-cliniche-private-case-di-cura-ed-rsa-intrattenimento-per-il-paziente-gestione-facilitata-per-il-personale-sanitario"
+                                   target="_blank" aria-label="TV per cliniche private, case di cura ed RSA: intrattenimento per il paziente, gestione facilitata per il personale sanitario">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/3f/tv-cliniche-private_cover-3feb1c28.webp 600w, /templates/yootheme/cache/8c/tv-cliniche-private_cover-8c0451a1.webp 768w, /templates/yootheme/cache/cc/tv-cliniche-private_cover-cc129d98.webp 1024w, /templates/yootheme/cache/95/tv-cliniche-private_cover-95a30bb6.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/tv-cliniche-private_cover-50002490.jpeg" width="600"
+                                             height="400" alt="TV per cliniche private, case di cura ed RSA: intrattenimento per il paziente, gestione facilitata per il personale sanitario"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/3f/tv-cliniche-private_cover-3feb1c28.webp 600w, /templates/yootheme/cache/8c/tv-cliniche-private_cover-8c0451a1.webp 768w, /templates/yootheme/cache/cc/tv-cliniche-private_cover-cc129d98.webp 1024w, /templates/yootheme/cache/95/tv-cliniche-private_cover-95a30bb6.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/tv-cliniche-private_cover-50002490.jpeg" width="600"
+                                             height="400" alt="TV per cliniche private, case di cura ed RSA: intrattenimento per il paziente, gestione facilitata per il personale sanitario"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-position-medium uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-h4 uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                TV per cliniche private, case di cura ed RSA: intrattenimento per il paziente,
+                                                gestione facilitata per il personale sanitario
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="el-item">
+                                <a class="uk-cover-container uk-transition-toggle uk-display-block uk-link-toggle"
+                                   href="/blog/213-il-ruolo-del-digital-signage-nel-settore-healthcare" target="_blank"
+                                   aria-label="Il ruolo del Digital Signage nel settore Healthcare: come la segnaletica digitale supporta l’assistenza sanitaria migliorando l’esperienza dei pazienti">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8e/Healthcare_cover-8e735d07.webp 600w, /templates/yootheme/cache/3d/Healthcare_cover-3d9c108e.webp 768w, /templates/yootheme/cache/70/Healthcare_cover-703463aa.webp 1024w, /templates/yootheme/cache/29/Healthcare_cover-2985f584.webp 1200w"
+                                                sizes="(min-width: 600px) 600px">
+                                        <img src="static/picture/healthcare_cover-37592561.jpeg" width="600" height="400"
+                                             alt="Digital Signage per Healthcare: display nella hall di un grande ospedale"
+                                             loading="lazy" class="uk-invisible">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/8e/Healthcare_cover-8e735d07.webp 600w, /templates/yootheme/cache/3d/Healthcare_cover-3d9c108e.webp 768w, /templates/yootheme/cache/70/Healthcare_cover-703463aa.webp 1024w, /templates/yootheme/cache/29/Healthcare_cover-2985f584.webp 1200w"
+                                                sizes="(max-aspect-ratio: 600/400) 150vh">
+                                        <img src="static/picture/healthcare_cover-37592561.jpeg" width="600" height="400"
+                                             alt="Digital Signage per Healthcare: display nella hall di un grande ospedale"
+                                             loading="lazy" class="el-image uk-transition-scale-up uk-transition-opaque"
+                                             uk-cover>
+                                    </picture>
+                                    <div class="uk-position-center uk-position-medium uk-tile-default">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+                                            <h3 class="el-title uk-h4 uk-font-secondary uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                                Il ruolo del Digital Signage nel settore Healthcare: come la segnaletica
+                                                digitale supporta l’assistenza sanitaria migliorando l’esperienza dei pazienti
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s"
+                        uk-margin>
+                        <li uk-slider-item="0">
+                            <a href aria-label="Go to slide 1">
+                            </a>
+                        </li>
+                        <li uk-slider-item="1">
+                            <a href aria-label="Go to slide 2">
+                            </a>
+                        </li>
+                        <li uk-slider-item="2">
+                            <a href aria-label="Go to slide 3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Builder #footer -->
+    <div class="uk-section-muted uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-grid-row-large uk-grid-divider uk-grid-margin-large"
+                 uk-grid>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <div class="uk-margin-small uk-text-center">
+                        <a class="el-link" href="/index.php">
+                            <img src="static/picture/logo-IM-color.png" width="120" height="120"
+                                 class="el-image" alt="logo IM" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Solutions
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/display-pubblicitari" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Display
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/it/sale-riunioni" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        IT
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/production-printing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Printing
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/finishing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Finishing
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Company
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/azienda" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Azienda
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://imprinting.info/careers" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    <p>
+                                        Careers
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/home-it/informativa-sulla-privacy" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Privacy
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="https://shop.imprinting.info" target="_blank" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Shop
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-left@m uk-text-center">
+                        Focus
+                    </h3>
+                    <ul class="uk-list uk-text-small uk-text-left@m uk-text-center">
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/blog" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Blog
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/lavori" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Lavori
+                                </a>
+                            </div>
+                        </li>
+                        <li class="el-item">
+                            <div class="el-content uk-panel">
+                                <a href="/marketing" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                    Marketing
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@s uk-width-1-5@m">
+                    <h3 class="uk-h5 uk-text-center">
+                        Seguici anche su
+                    </h3>
+                    <div class="uk-text-center">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-inline" uk-grid>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.linkedin.com/company/imprinting-srl"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: linkedin; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.facebook.com/imprinting.solutions"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: facebook; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.instagram.com/i_mprinting/"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: instagram; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="el-link uk-icon-link" href="https://www.youtube.com/channel/UCjOO55b0f-jZxKqmBfsy6yw/videos"
+                                   target="_blank" rel="noreferrer">
+                                            <span uk-icon="icon: youtube; width: 20; height: 20;">
+                                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin-medium uk-text-center">
+                        <div class="uk-child-width-1-1 uk-grid-column-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <picture>
+                                        <source type="image/webp" srcset="/templates/yootheme/cache/17/logo-asroma-ProudMember-02-172a432d.webp 76w, /templates/yootheme/cache/02/logo-asroma-ProudMember-02-02692ad2.webp 152w"
+                                                sizes="(min-width: 76px) 76px">
+                                        <img src="static/picture/logo-asroma-proudmember-02-bb320a23.png" width="76"
+                                             height="90" class="el-image" alt="logo as roma" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+                <div class="uk-width-1-1">
+                    <hr>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-visible@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale - Via Lorenzo Bonincontri,
+                        43 - 00147 Roma RM - REA RM-1555576 - Capitale sociale €120.000 i.v. -
+                        C.F./P.iva: IT01995060769 -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd53175c9549c8b499021688b14948a17">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd53175c9549c8b499021688b14948a17 = addyd53175c9549c8b499021688b14948a17 + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd53175c9549c8b499021688b14948a17 = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd53175c9549c8b499021688b14948a17').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd53175c9549c8b499021688b14948a17 + '\'>' + addy_textd53175c9549c8b499021688b14948a17 + '<\/a>';
+                                    </script>
+                                </span>
+                        - Società soggetta a direzione e controllo di Black Knight Capital Srl
+                        - P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-hidden@m uk-margin uk-text-center">
+                        ©️ 2017 - 2024 I'MPRINTING Srl Unipersonale
+                        <br />
+                        Via Lorenzo Bonincontri, 43 - 00147 Roma RM
+                        <br />
+                        REA RM-1555576 - Capitale sociale €120.000 i.v. - C.F./P.iva: IT01995060769
+                        -
+                        <span class="nolink uk-link-muted">
+                                    <span id="cloakd33e5696de302d7e7e8d894e5e7d4f9e">
+                                        Questo indirizzo email è protetto dagli spambots. È necessario abilitare
+                                        JavaScript per vederlo.
+                                    </span>
+                                    <script type='text/javascript'>
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML = '';
+                                        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                        var path = 'hr' + 'ef' + '=';
+                                        var addyd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;';
+                                        addyd33e5696de302d7e7e8d894e5e7d4f9e = addyd33e5696de302d7e7e8d894e5e7d4f9e + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        var addy_textd33e5696de302d7e7e8d894e5e7d4f9e = '&#105;mpr&#105;nt&#105;ngr&#105;&#111;n&#101;r&#111;' + '&#64;' + 'p&#101;c' + '&#46;' + '&#105;t';
+                                        document.getElementById('cloakd33e5696de302d7e7e8d894e5e7d4f9e').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd33e5696de302d7e7e8d894e5e7d4f9e + '\'>' + addy_textd33e5696de302d7e7e8d894e5e7d4f9e + '<\/a>';
+                                    </script>
+                                </span>
+                        <br />
+                        Società soggetta a direzione e controllo di Black Knight Capital Srl -
+                        P.iva: IT16776131001
+                    </div>
+                    <div class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center">
+                        Tutti i marchi riportati appartengono ai legittimi proprietari
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNBQV47"
+            height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
